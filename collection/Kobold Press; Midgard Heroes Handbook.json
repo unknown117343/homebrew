@@ -13,10 +13,13 @@
 					"Foopsie42"
 				],
 				"version": "3.0",
-				"color": "A170AF",
+				"color": "c03a28",
 				"url": "https://koboldpress.com/kpstore/product/midgard-heroes-handbook-for-5th-edition-dnd-5e/"
 			}
 		],
+		"optionalFeatureTypes": {
+			"Rune": "Rune Magic"
+		},
 		"dateAdded": 0,
 		"dateLastModified": 0,
 		"edition": "classic"
@@ -1282,7 +1285,7 @@
 			"page": 75,
 			"level": 1,
 			"entries": [
-				"You have made a pact with a being from the Plane of Shadows whose goal is to plunge the world into unending darkness. You may or may not share this ambition, but you’ve sworn loyalty to this entity. Unlike fiends who seek to corrupt and destroy, light-eaters want to make the Material Plane more like their own Shadow Realm. Many light-eaters were once liches, shadow dragons, death knights, vampiric wizards, or other shadow beings that existed long enough to amass great power before abandoning their former paths to pursue the glorification of the night as an end in itself.",
+				"You have made a pact with a being from the Plane of Shadows whose goal is to plunge the world into unending darkness. You may or may not share this ambition, but you've sworn loyalty to this entity. Unlike fiends who seek to corrupt and destroy, light-eaters want to make the Material Plane more like their own Shadow Realm. Many light-eaters were once liches, shadow dragons, death knights, vampiric wizards, or other shadow beings that existed long enough to amass great power before abandoning their former paths to pursue the glorification of the night as an end in itself.",
                 "Except as noted below, light eaters function as warlocks and use the warlock spell list.",
 				{
 					"type": "refSubclassFeature",
@@ -1699,5 +1702,689 @@
                 "Additionally, you can expend your ritual focus three times between rests"
 			]
 		}
-    ]
+    ],
+	"optionalfeature": [
+		{
+			"name": "Ingwaz",
+			"source": "MidgardHeroes",
+			"page": 133,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"7": [
+							"calling to the vaettir|MidgardHeroes"
+						],
+						"8": [
+							"speak with dead"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true
+				}
+			],
+			"entries": [
+				"{@i Ancestors, major deities}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have proficiency on Intelligence ({@skill History}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "When 1 action is spent tracing ingwaz on a {@item spear}, the rune gains favor from the Aesir for the first character who throws the spear over the heads of an enemy force consisting of nine or more opponents; the spear thrower adds {@damage 1d4} radiant damage to his or her weapon attacks. The bonus can be gained up to 8 hours after the rune is traced, and once triggered it lasts 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When ingwaz is traced on the face of a willing creature, it turns the creature into a berserker, granting it the benefits of a barbarian's {@classFeature Rage|Barbarian||1} class feature as though the recipient were a {@class barbarian} of the rune master's level. Tracing the rune takes 2 rounds, and the effect lasts 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "You learn the {@spell calling to the vaettir|MidgardHeroes} ritual (see Rune Rituals)."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "When traced on the nails and flesh of a corpse, this rune acts as a {@spell speak with dead} spell. Tracing the rune takes 1 minute and the effect lasts while you {@condition concentration||concentrate}, for up to 10 minutes." 						}
+					]
+				}
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Rune Knowledge",
+			"source": "MidgardHeroes",
+			"page": 98,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 12
+						}
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Runes",
+					"featureType": [
+						"Rune"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"entries": [
+				"You are wise in the lore of two {@filter runes of your choice|optionalfeatures|feature type=Rune}. You always have access to their rune bonuses. In addition, every day you can invoke one rune power for each rune you've learned, provided you meet any other requirements such as a minimum level.",
+				"You can select this feat multiple times. Each time you do, you gain the bonus and powers of two additional {@filter runes of your choice|optionalfeatures|feature type=Rune}."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Soulforging",
+			"source": "MidgardHeroes",
+			"page": 19,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a complete mechanical body worth worth 100 gp",
+					"cost": 1000000,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You and a willing humanoid subject must chant an incantation in unison during the entire casting time. At the end of this period the subject's soul and consciousness leave its body. The subject must make a DC 14 Charisma saving throw. If it fails, you take {@damage 2d10} psychic damage and {@damage 2d10} radiant damage from waves of uncontrolled energy ripping out from the disembodied spirit. You can maintain the spell, allowing the subject to repeat the saving throw at the end of each of your turns, with the same consequence to you for each failure. If you choose not to maintain the spell or are unable to do so, the subject's soul is traumatically drawn back to its body; the subject immediately drops to 0 hit points and is dying.",
+				"If the save succeeds, the subject's soul is transferred into the waiting soul gem and immediately animates the constructed body. The subject is now a gearforged. It loses all of its previous racial traits and gains gearfoged traits. The subject's original body dies and cannot be returned to life by any means unless its soul is freed from the soul gem.",
+				"If the spellcaster dies during a soulforging, the subject also dies and its soul becomes a {@creature wraith}.",
+				"Up to four other spellcasters of at least 5th level can assist you in casting soulforging. Each assistant reduces the DC of the subject's Charisma saving throw by 1. In the event of a failed saving throw, the spellcaster and each assistant take damage. An assistant who drops out of the casting can't rejoin."
+			],
+			"damageInflict": [
+				"psychic",
+				"radiant"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Clockwork Domain",
+							"shortName": "Clockwork",
+							"source": "MidgardHeroes"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Calling to the Vaettir",
+			"source": "MidgardHeroes",
+			"page": 137,
+			"level": 4,
+			"school": "N",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 90,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "wine or mead poured onto the ground, gifts for the vaettir worth 500 gp, {@dice 2d6} hit points of the caster's blood, and the wound can't be healed until an agreement is reached with the vaettir",
+					"cost": 50000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 28,
+						"upTo": true
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"{@i “Come forth from your mound, sleeping hero. Come forth for the honors I would bestow and the honor of those who dwell in your shadow. Come forth by the blood I spill and the gold I give you. Come forth and aid the children of your land.”}",
+				"You call for aid from a {@creature vaettir|MidgardHeroes} — one of the dead and undead ancestors or former occupants of the land. You must be related to the creature, must have lived nearby for at least a year, or must have a relative of the creature present at the ritual of their own free will. Entreaties can raise the vaettir from their barrows to protect, bestow blessings, or remove curses. The vaettir, however, are greedy and demanding allies. They're also difficult to send away once roused, requiring a successful Charisma ({@skill Persuasion}) contest at the least, bribery or even a sacrifice at the most; the specific price is determined by the GM.",
+				"The ritual summons an undead creature from beneath the earth. Typically, a {@creature vaettir|MidgardHeroes} ({@creature vaettir|ToB|Tome of Beasts}) is summoned, but sometimes other undead answer the call, depending on the nature of the ancestor interred. You can ask the creature to perform one task, such as defending you against attack, bestowing or removing a curse, retrieving a stolen object, avenging an insult, providing information, or a similar favor. The undead will keep at the task until it's completed or until 28 days have elapsed. The task must be within the undead's power to accomplish or it simply ignores the request and returns to its repose. For example, a vaettir can't journey to the elemental planes to retrieve something.",
+				"Persuading the vaettir to undertake the task requires explaining why you need it done and how it also benefits the vaettir to help—blood relations are strong motivators here—followed by a successful Charisma ({@skill Persuasion}) contest opposed by the vaettir's Charisma (or a {@skill Deception} contest if the caster lies). Vaettir usually awake with an indifferent attitude; disagreeable, but not outright hostile. If the vaettir is not persuaded to help or is offended, it's likely to attack. It may cast {@spell bestow curse} or {@spell geas} on you, or rise from its mound to demand tribute, or physically attack you and any associates nearby. At no time during this process is the vaettir under your control. The ritual simply gets it to listen to you, but it makes its own decisions.",
+				"The creature typically returns to its barrow or grave when the task is done and it's collected its payment, tribute, or praise. If anything has been stolen during its absence, it's certain to seek recompense or revenge against the person who called it out."
+			],
+			"abilityCheck": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"feats": [
+				{
+					"name": "Rune Knowledge",
+					"source": "MidgardHeroes"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Ingwaz",
+					"source": "MidgardHeroes",
+					"featureType": [
+						"Rune"
+					]
+				}
+			]
+		},
+		{
+			"name": "Absolute Command",
+			"source": "MidgardHeroes",
+			"page": 148,
+			"level": 4,
+			"school": "T",
+			"subschools": [
+				"Clockwork"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a pair of small gloves fitted with a conduit and worth 100 gp",
+					"cost": 10000,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You can control a {@filter construct you have built with a challenge rating of 6 or less|bestiary|challenge rating=[&0;&6],type=construct}. You can manipulate objects with your construct as precisely as its construction allows, and you perceive its surroundings through its sensory inputs as if you inhabited its body.",
+				"The construct uses the caster's Proficiency bonus (modified by the construct's Strength and Dexterity scores). You can use the manipulators of the construct to perform any number of skill-based tasks, using the construct's Strength and Dexterity modifiers when using skills based on those particular abilities.",
+				"Your body remains immobile, as if {@condition paralyzed}, for the duration of the spell. The construct must remain within 100 feet of you. If it moves beyond this distance, the spell immediately ends and the caster's mind returns to his body."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using higher-level spell slots, you may control a {@filter construct with a challenge rating 2 higher for each slot level you use above 4th|bestiary|challenge rating=[&0;&16],type=construct}. The construct's range also increases by 10 feet for each slot level."
+					]
+				}
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Acid Rain",
+			"source": "MidgardHeroes",
+			"page": 148,
+			"level": 5,
+			"school": "C",
+			"subschools": [
+				"elemental"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of acid"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You unleash a storm of swirling acid in a cylinder 20 feet wide and 30 feet high, centered on a point you can see. The area is {@quickref Vision and Light|PHB|2|0|heavily obscured}{@sup {@variantrule Heavily Obscured|XPHB|'24}} by the driving acidfall. A creature that starts its turn in the area or that enters the area for the first time on its turn takes {@damage 6d6} acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature takes half as much damage from the acid (as if it had made a successful saving throw) at the start of its first turn after leaving the affected area."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 6d6|5-9|1d6} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Adjust Positioning",
+			"source": "MidgardHeroes",
+			"page": 148,
+			"level": 1,
+			"school": "T",
+			"subschools": [
+				"battle"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You adjust the location of an ally to a better tactical position. You move one willing creature 5 feet. This movement does not provoke {@action opportunity attack||opportunity attacks}. The creature moves bodily through the intervening space (as opposed to teleporting or gating), so there can be no physical blockage (wall, door) between them."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target an additional willing creature for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		}
+		
+		
+		
+
+	],
+	"monster": [
+		{
+			"name": "Vaettir",
+			"source": "MidgardHeroes",
+			"page": 209,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"dex": "+4",
+				"con": "+5",
+				"wis": "+3",
+				"cha": "+4"
+			},
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"senses": [
+				"truesight 30 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The vaettir's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"2e": [
+							"{@spell gaseous form}",
+							"{@spell hunter's mark}"
+						],
+						"1e": [
+							"{@spell enlarge/reduce}",
+							"{@spell phantom steed}"
+						]
+					},
+					"weekly": {
+						"1": [
+							"{@spell bestow curse}",
+							"{@spell geas}",
+							"{@spell remove curse}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Covetous Bond",
+					"entries": [
+						"'Corpse-black' vættir can see the face of any creature in possession of any item the vættir ever claimed as its own. It also detects the direction and distance to items that were ever in its possession, so long as that item is currently possessed by another. If the item changes hands, then the new owner becomes the target of the vættir's hunt. 'Bone-white' vættir instead detect individuals who have offended them. Neither time nor distance affects these abilities, so long as both parties are on the same plane."
+					]
+				},
+				{
+					"name": "Deathless",
+					"entries": [
+						"The vættir is destroyed when reduced to 0 hit points, but it returns to unlife where it fell on the next nightfall with full hit points. It can be killed only by removing its head, burning the corpse, and dumping the ashes in the sea, or by returning it to its burial mound, placing an open pair of scissors on its chest, and driving pins through its feet."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"Vættir avoid daylight. A vættir in direct sunlight has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vaettir makes two greataxe attacks or two longbow attacks."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 5}) slashing damage plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Corpse Breath {@recharge 5}",
+					"entries": [
+						"The vættir spews forth a 15-foot cone of putrid gas. Those caught in the area must succeed on a {@dc 13} Constitution saving throw or become {@condition poisoned} for {@dice 1d4} rounds."
+					]
+				},
+				{
+					"name": "Maddening Gaze (1/Day)",
+					"entries": [
+						"The vaettir can lock eyes with a creature and drive it mad. Any creature within 30 feet of a vaettir that is the focus of its gaze must make a {@dc 12} Charisma saving throw or become {@spell confusion||confused} (as the spell) for {@dice 1d4} rounds. If the save is successful, the target is immune to the effect for 24 hours."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"attachedItems": [
+				"greataxe|phb",
+				"longbow|phb"
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"N",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"{@i A hulking form in ancient mail emerges from its barrow, bronze axe gripped in its withered hands. A rictus grin stretches its moldering face as the stench of death fills the air.}",
+					"Vættir are ancestral spirits, sometimes protective and helpful but demanding of reverence and wrathful if offended. Landvættir dwell in barrows while sjövættir reside beneath lakes, rivers, or the sea. Servants of the land, they are favored by the Vanir, who grant them the ability to curse those who disrespect the wild or ancient laws and traditions.",
+					"A wrathful vættir typically rises from its mound in response to the theft of items they consider theirs (including heirlooms passed on to living descendants) or perceived disrespect (leaving the dragon prow attached to a longship coming into land is a common offense, as is failing to make offerings to them). Vættir jealously guard both honor and treasures, becoming relentless enemies over matters as small as an accidental word or a single coin.",
+					"A vættir's skin is typically blue-black in color, taut over its bones and sinews, lips drawn back in a cruel grimace. There exists a rarer, bone-white variety that cares little for material possessions, instead guarding their honor or a patch of land with equal ruthlessness. Both varieties can be called upon by descendants and those who live nearby for aid, although there's always a price. A vættir's 'help' is often more than the asker bargained for."
+				]
+			}
+		}
+	]
 }
