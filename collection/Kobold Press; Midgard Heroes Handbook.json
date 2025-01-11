@@ -17,6 +17,12 @@
 				"url": "https://koboldpress.com/kpstore/product/midgard-heroes-handbook-for-5th-edition-dnd-5e/"
 			}
 		],
+		"dependencies": {
+			"baseitem": [
+				"PHB",
+				"DMG"
+			]
+		},
 		"optionalFeatureTypes": {
 			"Rune": "Rune Magic"
 		},
@@ -24,6 +30,27 @@
 		"dateLastModified": 0,
 		"edition": "classic"
 	},
+	"variantrule": [
+		{
+			"name": "Weapon Options",
+			"source": "MidgardHeroes",
+			"page": 46,
+			"ruleType": "O",
+			"entries": [
+				"A weapon is more than the damage it deals. In combat, skilled warriors use their weapons to confuse, disorient, and disadvantage their enemies before moving in for the kill. This section offers unique maneuvers for specific weapons, giving them a distinct impact on the battlefield.",
+				"Unless specified otherwise, any of the maneuvers described here can be used by any character as long as they are wielding the appropriate weapon and are proficient with it. If a maneuver requires a creature to make a saving throw, the DC equals:",
+				{
+					"type": "abilityDc",
+					"name": "Weapon Maneuvers",
+					"attributes": [
+						"STR",
+						"DEX"
+					]
+				},
+				"Unless specified, these maneuvers have only their listed effect and don't deal normal weapon damage."
+			]
+		}
+	],
     "subclass": [
 		{
 			"name": "Path of the Ancestors",
@@ -1705,6 +1732,143 @@
     ],
 	"optionalfeature": [
 		{
+			"name": "Algiz",
+			"source": "MidgardHeroes",
+			"page": 131,
+			"featureType": [
+				"Rune"
+			],
+			"entries": [
+				"{@i Elk and reindeer, evading danger; the god {@deity Heimdall|Norse}}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You can make an {@item elk horn rod|MidgardHeroes} in 6 hours, and you gain a +1 bonus on initiative checks"
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "Living creatures that are within 10 feet of an algiz rune when it is etched on the ground or on a wall gain a +2 bonus on Wisdom ({@skill Perception}) checks and have advantage on saving throws against sleep spells and other magical effects that cause {@condition unconscious||unconsciousness}. Both effects last for 8 hours. Scribing the rune takes 15 minutes."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "Marking a willing creature with the algiz rune transforms the creature into an {@creature elk} or reindeer, as per {@spell polymorph}. Drawing the rune on the creature takes 1 action and the change lasts while you {@condition concentration||concentrate}, for up to 1 hour. "
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ansuz",
+			"source": "MidgardHeroes",
+			"page": 132,
+			"featureType": [
+				"Rune"
+			],
+			"entries": [
+				"{@i Gods and outsiders}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You get a +1 bonus on Intelligence ({@skill Arcana}) checks made to identify the type, powers, or weaknesses of aberrations, celestials, fey, and fiends. Once per day, the ansuz rune can be sketched on an object to ward off giants and fey hostile to the Aesir. The rune must be presented boldly toward such creatures, each of which makes a Charisma saving throw. Creatures that fail the saving throw must stay at least 5 feet away from the rune and cannot touch or make melee attacks against the creature presenting it, as long as the symbol is boldly and aggressively presented (which requires an action each round). Sketching the rune takes 1 action, and the marked object remains effective for 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "Sketching ansuz on the floor or a wall allows all worshippers of the Aesir within 10 feet of it to add {@dice 1d4} to each of their attack rolls, similar to a {@spell bless} spell. Sketching the rune takes 2 actions, and it remains effective while you {@condition concentration||concentrate}, for up to 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Mastery Power (11th level):",
+							"entry": "When traced on the forehead of a willing creature, ansuz sends the creature into a trance during which it receives a message from the gods, identical in effect to a {@spell divination} spell. A creature can experience only one such trance per week. Tracing the rune takes 10 minutes, and the trance lasts 1 round."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Berkanan",
+			"source": "MidgardHeroes",
+			"page": 132,
+			"featureType": [
+				"Rune"
+			],
+			"entries": [
+				"{@i Birch tree, love, new beginnings; the Bear Maiden}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You get a +1 bonus on Charisma ({@skill Persuasion}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Powers:",
+							"entries": [
+								"When traced on a living creature, this rune grants that creature advantage on a single Charisma (Persuasion) of its choosing. Tracing the rune takes 10 minutes, and it remains effective for up to 24 hours. This benefit can be granted only once per day.",
+								"When berkanan is traced on a living plant, an effect identical to {@spell spike growth} erupts in a 20-foot radius around the rune. Tracing the rune on a plant takes 1 action, and the effect lasts while you {@condition concentration||concentrate}, for up to 10 minutes."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Mastery Power (11th level):",
+							"entry": "You can create a {@item philter of love} once per week."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dagaz",
+			"source": "MidgardHeroes",
+			"page": 132,
+			"featureType": [
+				"Rune"
+			],
+			"entries": [
+				"{@i Day and laying the dead to rest}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You always know exactly how long it will be until the next sunset or sunrise."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th Level):",
+							"entry": "Spending 10 minutes tracing dagaz onto a creature cures it of magical {@condition blinded||blindness}."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (6th Level):",
+							"entry": "Tracing dagaz onto an object makes it {@quickref Vision and Light|PHB|2|0|glow brightly}{@sup {@variantrule Bright Light|XPHB|'24}} in a 60-foot radius and {@quickref Vision and Light|PHB|2|0|dimly}{@sup {@variantrule Dim Light|XPHB|'24}} out to 120 feet. Magical darkness of 3rd level or lower is dispelled if this light overlaps it. The light is blocked normally by opaque objects or structures. Tracing the rune this way takes 1 action, and the light lasts while you {@condition concentration||concentrate}, for up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (13th level):",
+							"entry": "Once per week, dagaz can be sketched onto the ground or a wall to create an instantaneous effect identical to a cleric's {@classFeature Channel Divinity: Turn Undead|Cleric||2} class ability. Sketching the rune takes 1 action, and it affects undead within 30 feet that can see it at the moment of its completion."
+						
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Ingwaz",
 			"source": "MidgardHeroes",
 			"page": 133,
@@ -2184,10 +2348,6 @@
 				]
 			}
 		}
-		
-		
-		
-
 	],
 	"monster": [
 		{
@@ -2386,5 +2546,1609 @@
 				]
 			}
 		}
+	],
+	"itemProperty": [
+		{
+			"name": "Ensnaring",
+			"abbreviation": "MHH:Ensnare",
+			"source": "UltimateAdventurer",
+			"page": 50,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Ensnaring",
+					"entries": [
+						"A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net."
+					]
+				}
+			]
+		}
+	],
+	"baseitem": [
+		{
+			"name": "Greatsword",
+			"source": "MidgardHeroes",
+			"page": 46,
+			"_copy": {
+				"name": "Greatsword",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Arcing Slash",
+					"entries": [
+						"When you attack with a greatsword, you may choose to target two creatures within your reach with a single attack. This attack uses the same attack roll for both targets and deals slashing damage equal to {@damage 1d6} plus your Strength modifier to each target."
+					
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grinding Halt",
+					"entries": [
+						"Whenever you must make a Strength saving throw to avoid being moved against your will, you can dig the blade of your greatsword into the ground as a reaction. Roll {@dice 2d6} and add the number rolled to the saving throw. If the effect pushing you does not have a saving throw, you move 5 feet fewer."
+					]
+				}
+			]
+		},
+		{
+			"name": "Longsword",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Longsword",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Lock Blades",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to make an attack roll with your weapon. If the result of this roll equals or exceeds their attack roll, their attack misses."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Short Draw",
+					"entries": [
+						"As an attack, you may draw a sheathed one-handed sword and make an attack roll to strike the enemy with its pommel, leaving the target gasping for breath. This attack deals no damage, but the next attack roll made against the target has advantage. You must have at least one hand free to take this action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rapier",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Rapier",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Main Gauche",
+					"entries": [
+						"While wielding both a rapier and a {@item dagger|MidgardHeroes}, you may use a reaction after being attacked to roll a {@dice d4} and add the result to your Armor Class until the end of the attacker’s turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Short Draw",
+					"entries": [
+						"As an attack, you may draw a sheathed one-handed sword and make an attack roll to strike the enemy with its pommel, leaving the target gasping for breath. This attack deals no damage, but the next attack roll made against the target has advantage. You must have at least one hand free to take this action."
+					]
+				}
+			]
+		
+		},
+		{
+			"name": "Scimitar",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Scimitar",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Bloody Wound",
+					"entries": [
+						"When you hit a creature with a scimitar, you can choose to make a superficial but bloody wound. The attack deals no damage, but the target takes {@damage 1d6} slashing damage at the beginning of each of its turns until it makes a {@dc 10} Wisdom ({@skill Medicine}) check as an action to stop the bleeding or until it receives magical healing. A creature can have only one bloody wound at a time."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Short Draw",
+					"entries": [
+						"As an attack, you may draw a sheathed one-handed sword and make an attack roll to strike the enemy with its pommel, leaving the target gasping for breath. This attack deals no damage, but the next attack roll made against the target has advantage. You must have at least one hand free to take this action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shortsword",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Shortsword",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Close Quarters Combat",
+					"entries": [
+						"When you successfully {@action grapple} a creature or escape a grapple, you may make a single attack with a short sword as a bonus action. Additionally, whenever a creature fails to escape a grapple with you, you may make a single attack with a short sword as a reaction."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Short Draw",
+					"entries": [
+						"As an attack, you may draw a sheathed one-handed sword and make an attack roll to strike the enemy with its pommel, leaving the target gasping for breath. This attack deals no damage, but the next attack roll made against the target has advantage. You must have at least one hand free to take this action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Battleaxe",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Battleaxe",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Crushing Blow",
+					"entries": [
+						"As an action, you can make a single attack roll with your battleaxe against an armored or naturally armored creature within 5 feet of you. If the attack hits, the target’s AC is permanently reduced by 1 until its armor is repaired, but cannot be reduced below 10 + the target’s Dexterity modifier. This attack has no effect on creatures with magical armor, unless your battleaxe is also magical."
+					]
+				}
+			]
+		},
+		{
+			"name": "Glaive",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Glaive",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Disarming Parry",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your glaive’s hook and disarm them. Make an attack roll with your glaive. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip (Large)",
+					"entries": [
+						"As an attack while you are wielding a glaive, you may sweep your opponent’s legs in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Halberd",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Halberd",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Rebuff",
+					"entries": [
+						"As an attack while you are wielding a halberd, you may use the haft of your weapon to rebuff up to two adjacent creatures. Make a single attack roll against one or two adjacent creatures within 5 feet of you. If the attack hits a target, you push it up to 10 feet away from you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip (Large)",
+					"entries": [
+						"As an attack while you are wielding a halberd, you may catch your opponent's leg in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lance",
+			"source": "MidgardHeroes",
+			"page": 47,
+			"_copy": {
+				"name": "Lance",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Charge",
+					"entries": [
+						"If you move at least 20 feet straight toward a creature before hitting it with a lance attack, the target takes an extra {@damage 1d12} piercing damage and must make a Strength saving throw. On a failure, the target falls {@condition prone}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repel Charge",
+					"entries": [
+						"As an action, you can set your lance against a charge. If a creature moves at least 20 feet straight toward you and attacks you, you may use your reaction to make an attack with your lance. If this attack hits, it is an automatic critical hit and the target must make a Strength saving throw. On a failure, it falls {@condition prone} and falls off its mount if it is mounted."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pike",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Pike",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Disarming Parry",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your weapon's hook, tines or prongs and disarm them. Make an attack roll with your weapon. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip (Large)",
+					"entries": [
+						"As an attack while you are wielding a pike, you may catch your opponent's leg in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Phalanx",
+					"entries": [
+						"If you are adjacent to at least two other pikewielders, your pike attacks have advantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repel Charge",
+					"entries": [
+						"As an action, you can set your pike against a charge. If a creature moves at least 20 feet straight toward you and attacks you, you may use your reaction to make an attack with your pike before the attacker makes its attack roll. If your attack hits, it is an automatic critical hit, and the target has disadvantage on its attack roll."
+					]
+				}
+			]
+		},
+		{
+			"name": "Quarterstaff",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Quarterstaff",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Vault",
+					"entries": [
+						"You can use your quarterstaff to help you leap long distances. You can use an action to double the length of your long jump, allowing you to leap a number of feet up to twice your Strength score (this jump is part of your movement). If you land adjacent to a creature at the end of this jump, you can make a single attack with your quarterstaff as part of this action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Trident",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Trident",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Pin",
+					"entries": [
+						"As an action, make an attack roll against a Medium creature you are grappling. If the attack hits, you catch one of the target’s limbs between the tines and bury the trident in the ground, {@condition restrained||restraining} the creature until the weapon is dislodged. The target may make a Strength or Dexterity saving throw (their choice) at the end of each of their turns to escape."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Disarming Parry",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your trident’s tines and disarm them. Make an attack roll with your trident. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "Club",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Club",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Improvised Clobber",
+					"entries": [
+						"If you are using an improvised weapon that counts as a club, you may choose to strike with such force that your weapon breaks. As an action, make a single club attack. On a hit, this attack is an automatic critical hit and your improvised club breaks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blackjack",
+					"entries": [
+						"Make a single attack roll with your club against a humanoid target. If the attack hits, it does no damage, but the target must make a Constitution saving throw or be {@condition stunned} until the beginning of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flail",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Flail",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Chain Garrote",
+					"entries": [
+						"While wielding a flail, you may attempt to {@action grapple} a creature by looping the chain of your flail around its neck. While {@condition grappled} in this way, the creature cannot speak, cannot breathe, and has disadvantage on attack rolls against you. If you {@quickref surprise|PHB|3|0|surprised} the creature with this grapple, it cannot hold its breath and immediately begins suffocating. Creatures that you cannot grapple or do not need to breathe are unaffected by this maneuver."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shield Snare",
+					"entries": [
+						"As an action while wielding a flail, you may make a single attack roll against a target carrying a {@item shield|PHB} or a similar defensive tool. This attack ignores any bonus to AC granted by the shield and deals normal weapon damage. If the attack hits, the target must also make a Strength saving throw. On a failure, its shield is pulled from its grip and lands at its feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "Greatclub",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Greatclub",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Hurling Impact",
+					"entries": [
+						"As an action, you can make a single attack roll with your greatclub against a Medium or smaller target. If the attack hits, it does normal weapon damage and the target must make a Strength saving throw. On a failure, the target is pushed up to 5 feet away from you. On a critical hit, this attack does {@damage 2d8} extra damage and the greatclub breaks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ribshatter",
+					"entries": [
+						"Make a single attack roll with your greatclub against a humanoid target. This attack does normal weapon damage and the target must make a Constitution saving throw. On a failure, it is stunned until the beginning of its next turn. If the damage you dealt was greater than the creature's maximum hit dice, it is {@condition stunned} until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mace",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Mace",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Bruising Blow",
+					"entries": [
+						"As an action, make a single attack roll with your mace against a living creature. If the attack hits, it deals normal weapon damage and the target must make a Constitution saving throw. On a failure, the target does not add its Dexterity modifier to its AC until the end of your next turn or until it is treated with a successful DC 10 Wisdom ({@condition Medicine}) check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ribshatter",
+					"entries": [
+						"Make a single attack roll with your mace against a humanoid target. This attack does normal weapon damage and the target must make a Constitution saving throw. On a failure, it is stunned until the beginning of its next turn. If the damage you dealt was greater than the creature's maximum hit dice, it is {@condition stunned} until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Morningstar",
+			"source": "MidgardHeroes",
+			"page": 48,
+			"_copy": {
+				"name": "Morningstar",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Bruising Blow",
+					"entries": [
+						"As an action, make a single attack roll with your morningstar against a living creature. If the attack hits, it deals normal weapon damage and the target must make a Constitution saving throw. On a failure, the target does not add its Dexterity modifier to its AC until the end of your next turn or until it is treated with a successful DC 10 Wisdom ({@condition Medicine}) check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ribshatter",
+					"entries": [
+						"Make a single attack roll with your morningstar against a humanoid target. This attack does normal weapon damage and the target must make a Constitution saving throw. On a failure, it is stunned until the beginning of its next turn. If the damage you dealt was greater than the creature's maximum hit dice, it is {@condition stunned} until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maul",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Maul",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Crushing Blow",
+					"entries": [
+						"As an action, you can make a single attack roll with your maul against an armored or naturally armored creature within 5 feet of you. If the attack hits, the target's AC is permanently reduced by 1 until its armor is repaired, but cannot be reduced below 10 + the target's Dexterity modifier. This attack has no effect on creatures with magical armor, unless your maul is also magical."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hurling Impact",
+					"entries": [
+						"As an action, you can make a single attack roll with your maul against a Medium or smaller target. If the attack hits, it does normal weapon damage, and the target must make a Strength saving throw. On a failure, the target is pushed up to 15 feet away from you."
+					]
+				}
+			]
+		},
+		{
+			"name": "War Pick",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "War Pick",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Piercing Point",
+					"entries": [
+						"As an action, you may pinpoint a weak point of an opponent’s armor and make a single attack with your war pick against it. This attack pierces armor, treating the target’s AC as 10 + their Dexterity modifier. On a hit, this attack does normal weapon damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip (Medium)",
+					"entries": [
+						"As an attack while you are wielding a war pick, you may catch your opponent's leg in an attempt to trip them. Make an attack roll against a Medium or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Warhammer",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Warhammer",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Bruising Blow",
+					"entries": [
+						"As an action, make a single attack roll with your warhammer against a living creature. If the attack hits, it deals normal weapon damage and the target must make a Constitution saving throw. On a failure, the target does not add its Dexterity modifier to its AC until the end of your next turn or until it is treated with a successful DC 10 Wisdom ({@condition Medicine}) check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sundering Strike",
+					"entries": [
+						"As part of the attack action, make a single attack roll with your warhammer against a creature wielding a weapon, including natural weapons. If the attack hits, the weapon is damaged, and all attacks made with this weapon have disadvantage. Another sundering strike destroys the weapon. This attack has no effect on magical weapons, unless your warhammer is also magical."
+					]
+				}
+			]
+		},
+		{
+			"name": "Whip",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Whip",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Bullwhip",
+					"entries": [
+						"As part of your attack action, make a whip attack against a beast or a creature with an Intelligence score of 2 or lower. The target must make a Wisdom saving throw or be {@condition frightened} of you until the end of its next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Snare",
+					"entries": [
+						"As part of your attack action, you may snap your whip around a creature or its weapon. If you target the weapon, the creature must make a Strength saving throw or drop its weapon at its feet. If you target the creature, it must make a Strength saving throw or be {@condition restrained}. It may repeat this saving throw at the end of each of its turns. You cannot make whip attacks until the restrained condition is ended."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dagger",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Dagger",
+				"source": "PHB"
+			},			
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Pinning Point",
+					"entries": [
+						"When you make a melee or ranged weapon attack with a dagger, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the knife's point. This maneuver can be used against creatures without clothing at the GM's discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target's speed is reduced to zero until the weapon is removed. The target can make another Strength saving throw as an action on its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Concealed Blade",
+					"entries": [
+						"Instead of making a Dexterity ({@skill Stealth}) check to hide yourself, you may make a Dexterity ({@skill Sleight of Hand}) check—contested by an active or passive Wisdom ({@skill Perception}) check—to conceal your dagger. As an action, you may make a weapon attack with a concealed dagger against a creature that has not yet acted in combat. This attack has advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dart",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Dart",
+				"source": "PHB"
+			},			
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Pinning Point",
+					"entries": [
+						"When you make a melee or ranged weapon attack with a dagger, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the knife's point. This maneuver can be used against creatures without clothing at the GM's discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target's speed is reduced to zero until the weapon is removed. The target can make another Strength saving throw as an action on its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Concealed Blade",
+					"entries": [
+						"Instead of making a Dexterity ({@skill Stealth}) check to hide yourself, you may make a Dexterity ({@skill Sleight of Hand}) check—contested by an active or passive Wisdom ({@skill Perception}) check—to conceal your dagger. As an action, you may make a weapon attack with a concealed dagger against a creature that has not yet acted in combat. This attack has advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Handaxe",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Handaxe",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Pinning Edge",
+					"entries": [
+						"When you make a melee or ranged weapon attack with a hand axe, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the axe’s edge. This maneuver can be used against creatures without clothing at the GM’s discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target’s speed is reduced to zero until the axe is removed. The target can make another Strength saving throw as an action on its turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Javelin",
+			"source": "MidgardHeroes",
+			"page": 49,
+			"_copy": {
+				"name": "Javelin",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Fearsome Accuracy",
+					"entries": [
+						"As an attack, you may throw your javelin at a creature at the very limit of your range. Make an attack roll against a creature exactly 120 feet away. If the attack hits, the creature takes normal damage and must make a Wisdom saving throw. On a failure, the creature becomes {@condition frightened} of you for 1 minute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip (Large)",
+					"entries": [
+						"As an attack while you are wielding a javelin, you may catch your opponent's leg in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Light Hammer",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Light Hammer",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Dazing Blow",
+					"entries": [
+						"As an action, you may make a single ranged weapon attack with a light hammer. If the attack hits, the target must make a Constitution saving throw or be {@condition incapacitated} until the end of its next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sunder Joints",
+					"entries": [
+						"When you make a melee weapon attack with a light hammer against a creature in {@filter medium or heavy armor|items|source=|type=heavy armor;medium armor|category=|miscellaneous=}, you may choose to damage the joints of their armor instead of dealing damage to the creature. If the attack hits, the creature’s movement is reduced by 10 feet until the end of their next turn. This reduction is not cumulative."
+					]
+				}
+			]
+		},
+		{
+			"name": "Net",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Net",
+				"source": "PHB"
+			},
+			"property": [
+				"T",
+				"MHH:Ensnare"
+			],
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Blinding Binds",
+					"entries": [
+						"Instead of {@condition restrained||restraining} your foe, you may instead wrap the thick cords of your net around a single creature’s head. A Large or smaller creature hit by a net when you use this maneuver is {@condition blinded} but is not restrained, until the net is removed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wing-Wrapping Net",
+					"entries": [
+						"Instead of {@condition restrained||restraining} a flying creature, you may entangle its wings in your net. A Huge or smaller winged creature hit by a net when you use this maneuver has its fly speed reduced to 0 (but is not restrained) until the net is removed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Blowgun",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Blowgun",
+				"source": "PHB"
+			},
+			"entries": [
+				"A blowgun has no specific maneuvers to use in combat, but a character with a {@item poisoner's kit|PHB}{@sup {@item poisoner's kit|XPHB|'24}} can spend a {@quickref resting|phb|2|0|short rest}{@sup {@variantrule Short Rest|XPHB|'24}} creating one of the following simple poisons: {@item deathtoad toxin|MidgardHeroes}, {@item chuul ichor|MidgardHeroes} and {@item Svirfneblin Wooziness Tonic|MidgardHeroes}. Applying a poison to a blowgun dart is a bonus action, and each vial of poison has 10 uses before it must be created again. A poison’s effects are in addition to the 1 piercing damage dealt by a blow dart."
+			]
+		},
+		{
+			"name": "Composite Bow",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"type": "R",
+			"rarity": "none",
+			"weight": 8,
+			"value": 10000,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"H",
+				"2H",
+				"S"
+			],
+			"range": "150/600",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "arrow|phb",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"The composite bow's unique construction gives it an incredibly heavy draw, making it usable only by the strongest archers. Characters with Strength 14 or lower have disadvantage on attacks made with a composite bow."
+					]
+				},
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Power Shot",
+					"entries": [
+						"When you make an attack with a composite bow, you may take a penalty on your attack roll equal to your Strength modifier. This penalty must be applied before the roll is made. If the attack hits, it deals additional damage equal to twice your Strength modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Staggering Shot",
+					"entries": [
+						"As an action while wielding a composite bow, you may make a single ranged weapon attack. If this attack hits, the enemy takes full weapon damage and must make a Constitution saving throw. On a failure, the target's speed is reduced to 0 until the end of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Heavy Crossbow",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Heavy Crossbow",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Shrapnel Shot",
+					"entries": [
+						"As an action, make a single attack with your crossbow against an unattended object. The attack deals double damage to the target. If the object is destroyed, it explodes into a cloud of shrapnel. Choose one of the following options:",
+						{
+							"type": "list",
+							"items": [
+								"Creatures within 5 feet of the object must make a Dexterity saving throw, taking {@damage 1d6} piercing damage on a failure.",
+								"A creature adjacent to the object must make a Constitution saving throw. On a failure, the creature is {@condition blinded} until the beginning of your next turn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Patient Shot",
+					"entries": [
+						"You carefully align your crossbow’s sights over your target. As an action in a turn that you have not moved, you may make a single crossbow attack with advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Light Crossbow",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Light Crossbow",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Shrapnel Shot",
+					"entries": [
+						"As an action, make a single attack with your crossbow against an unattended object. The attack deals double damage to the target. If the object is destroyed, it explodes into a cloud of shrapnel. Choose one of the following options:",
+						{
+							"type": "list",
+							"items": [
+								"Creatures within 5 feet of the object must make a Dexterity saving throw, taking {@damage 1d6} piercing damage on a failure.",
+								"A creature adjacent to the object must make a Constitution saving throw. On a failure, the creature is {@condition blinded} until the beginning of your next turn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Patient Shot",
+					"entries": [
+						"You carefully align your crossbow’s sights over your target. As an action in a turn that you have not moved, you may make a single crossbow attack with advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Musket",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Musket",
+				"source": "DMG"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Shrapnel Shot",
+					"entries": [
+						"As an action, make a single attack with your rifle against an unattended object. The attack deals double damage to the target. If the object is destroyed, it explodes into a cloud of shrapnel. Choose one of the following options:",
+						{
+							"type": "list",
+							"items": [
+								"Creatures within 5 feet of the object must make a Dexterity saving throw, taking {@damage 1d6} piercing damage on a failure.",
+								"A creature adjacent to the object must make a Constitution saving throw. On a failure, the creature is {@condition blinded} until the beginning of your next turn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Patient Shot",
+					"entries": [
+						"You carefully align your rifle’s sights over your target. As an action in a turn that you have not moved, you may make a single rifle attack with advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Hunting Rifle",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Hunting Rifle",
+				"source": "DMG"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Shrapnel Shot",
+					"entries": [
+						"As an action, make a single attack with your rifle against an unattended object. The attack deals double damage to the target. If the object is destroyed, it explodes into a cloud of shrapnel. Choose one of the following options:",
+						{
+							"type": "list",
+							"items": [
+								"Creatures within 5 feet of the object must make a Dexterity saving throw, taking {@damage 1d6} piercing damage on a failure.",
+								"A creature adjacent to the object must make a Constitution saving throw. On a failure, the creature is {@condition blinded} until the beginning of your next turn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Patient Shot",
+					"entries": [
+						"You carefully align your rifle’s sights over your target. As an action in a turn that you have not moved, you may make a single rifle attack with advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Hand Crossbow",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Hand Crossbow",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Concealed Sidearm",
+					"entries": [
+						"Instead of making a Dexterity ({@skill Stealth}) check to hide yourself, you may make a Dexterity ({@skill Sleight of Hand}) check—contested by an active or passive Wisdom ({@skill Perception}) check—to conceal your hand crossbow. As an action, you may make a weapon attack with a concealed crossbow against a creature that has not yet acted in combat. This attack has advantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rapid Shot",
+					"entries": [
+						"You rapidly reload your hand crossbow, throwing off your aim but allowing you to make an additional attack this turn. As a bonus action, you may reload your hand crossbow and make an attack with it against a target within 30 feet. This attack has disadvantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pistol",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Pistol",
+				"source": "DMG"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Concealed Sidearm",
+					"entries": [
+						"Instead of making a Dexterity ({@skill Stealth}) check to hide yourself, you may make a Dexterity ({@skill Sleight of Hand}) check—contested by an active or passive Wisdom ({@skill Perception}) check—to conceal your pistol. As an action, you may make a weapon attack with a concealed crossbow against a creature that has not yet acted in combat. This attack has advantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rapid Shot",
+					"entries": [
+						"You rapidly reload your pistol, throwing off your aim but allowing you to make an additional attack this turn. As a bonus action, you may reload your pistol and make an attack with it against a target within 30 feet. This attack has disadvantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Revolver",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"_copy": {
+				"name": "Revolver",
+				"source": "DMG"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Concealed Sidearm",
+					"entries": [
+						"Instead of making a Dexterity ({@skill Stealth}) check to hide yourself, you may make a Dexterity ({@skill Sleight of Hand}) check—contested by an active or passive Wisdom ({@skill Perception}) check—to conceal your revolver. As an action, you may make a weapon attack with a concealed crossbow against a creature that has not yet acted in combat. This attack has advantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rapid Shot",
+					"entries": [
+						"You rapidly reload your revolver, throwing off your aim but allowing you to make an additional attack this turn. As a bonus action, you may reload your revolver and make an attack with it against a target within 30 feet. This attack has disadvantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Longbow",
+			"source": "MidgardHeroes",
+			"page": 51,
+			"_copy": {
+				"name": "Longbow",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Pinning Shot",
+					"entries": [
+						"When you make an attack with a bow, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the arrow’s point. This maneuver can be used against creatures without clothing at the GM’s discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target’s speed is reduced to 0 until the arrow is removed. The target can make another Strength saving throw as an action on its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Distracting Shot",
+					"entries": [
+						"As an action, make a single attack with your bow. You intentionally miss your target but give an ally the chance to attack while it is distracted. The next attack roll against the target has advantage if it is made before the beginning of the target’s next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trick Shot",
+					"entries": [
+						"As an action, make a single stylish bow attack with disadvantage. If the lower roll would also hit the target, you automatically score a critical hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shortbow",
+			"source": "MidgardHeroes",
+			"page": 51,
+			"_copy": {
+				"name": "Shortbow",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Pinning Shot",
+					"entries": [
+						"When you make an attack with a bow, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the arrow’s point. This maneuver can be used against creatures without clothing at the GM’s discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target’s speed is reduced to 0 until the arrow is removed. The target can make another Strength saving throw as an action on its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Distracting Shot",
+					"entries": [
+						"As an action, make a single attack with your bow. You intentionally miss your target but give an ally the chance to attack while it is distracted. The next attack roll against the target has advantage if it is made before the beginning of the target’s next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trick Shot",
+					"entries": [
+						"As an action, make a single stylish bow attack with disadvantage. If the lower roll would also hit the target, you automatically score a critical hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sling",
+			"source": "MidgardHeroes",
+			"page": 51,
+			"_copy": {
+				"name": "Sling",
+				"source": "PHB"
+			},
+			"entries": [
+				"{@note for more information on weapon maneuvers, see {@variantrule Weapon Options|MidgardHeroes}}.",
+				{
+					"type": "entries",
+					"name": "Underdog Strike",
+					"entries": [
+						"As an action, you may make a single ranged weapon attack with your sling against a creature at least 1 size category larger than you. This attack deals normal weapon damage, and an extra {@damage 1d4} bludgeoning damage per size category difference."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Headcrack",
+					"entries": [
+						"As an action, you may make a single ranged weapon attack with your sling. If the attack hits, the target must make a Constitution saving throw or be {@condition stunned} until the beginning of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dwarven Tijino",
+			"source": "MidgardHeroes",
+			"page": 51,
+			"type": "M",
+			"rarity": "none",
+			"weight": 12,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H",
+				"S"
+			],
+			"dmg1": "2d4",
+			"dmgType": "P",
+			"axe": true,
+			"polearm": true,
+			"weapon": true,
+			"entries": [
+				"The tijino poleaxe bears a long axe blade in front, with a long, looping backhook designed to unhorse riders. As a polearm, tijino wielders can also use the disarming parry and trip maneuvers.",
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"The tijino poleaxe has reach. You can strike opponents 10 feet away with it, but you cannot use it against an adjacent foe."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Disarming Parry",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your tijino's hook and disarm them. Make an attack roll with your tijino. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip",
+					"entries": [
+						"As an attack while you are wielding a tijino, you may sweep your opponent's legs in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unmount",
+					"entries": [
+						"As an action while wielding a tijino, you may make a single attack against a mounted creature. If the attack hits, the target must make a Strength saving throw. On a failure, the target is dismounted and falls {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nordmansch Greataxe",
+			"source": "MidgardHeroes",
+			"page": 52,
+			"type": "M",
+			"rarity": "none",
+			"weight": 8,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true,
+			"entries": [
+				"The nordmansch greataxe likely originated with the foresters and lumberjacks of the Ordenn forest, who found a secret way of making axe heads they continue to keep secret. The nordmansch make more axes than their woodsmen actually need.",
+				"The nordmansch greataxe is a two-handed weapon built to sunder other weapons. Its edge is hardened especially for this purpose, and its haft is likewise set with trapping prongs to catch and hold a foe's weapon. At the GM's discretion, typical greataxes may also use the sundering strike maneuver.",
+				{
+					"type": "entries",
+					"name": "Sundering Strike",
+					"entries": [
+						"As part of the attack action, make a single attack roll with your nordmansch against a creature wielding a weapon, including natural weapons. If the attack hits, the weapon is damaged, and all attacks made with this weapon have disadvantage. Another sundering strike destroys the weapon. This attack has no effect on magical weapons, unless your nordmansch is also magical."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Disarming Parry",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your nordmansch's prongs and disarm them. Make an attack roll with your nordmansch. If the result of this roll equals or exceeds their attack roll, their attack misses, and they must succeed on a Strength saving throw or drop their weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "Northlands Estoc",
+			"source": "MidgardHeroes",
+			"page": 52,
+			"type": "M",
+			"rarity": "none",
+			"weight": 8,
+			"value": 4000,
+			"weaponCategory": "martial",
+			"property": [
+				"S",
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"dmg2": "1d8",
+			"bonusWeaponDamage": "1d6",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"A hand-and-a-half sword designed to pierce heavy armor and sharpened only on the tip, an estoc is 4 feet long, sometimes with a second crossguard. It is said to have been used first by the knights of Vael Turog and Balinor against the elves, but now is used by dwarven mercenaries and human knights who expect to fight other heavily armored warriors. Its anti-armor properties make it popular with monster hunters and dragon slayers as well. Sometimes called the “tuck.”",
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"The estoc deals an additional {@damage 1d6} damage to creatures wearing {@filter heavy armor|items|source=|type=heavy armor|miscellaneous=}, or naturally armored creatures with an AC of 16 or higher."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armor-Piercing Thrust",
+					"entries": [
+						"As an action, you may pinpoint a weak point of an opponent's armor and make a single attack with your estoc against it. This attack pierces armor, treating the target's AC as 10 + their Dexterity modifier. On a hit, this attack does normal weapon damage, and does not deal the additional damage granted by the estoc's special property (above)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blunted Bash",
+					"entries": [
+						"Instead of dealing piercing damage, you can choose to deal bludgeoning damage by striking the target with the estoc's unsharpened blade. This attack's damage die is one size smaller than normal ({@damage 1d4} if one-handed, {@damage 1d6} if two-handed), and cannot benefit from the estoc's special property (above)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rothenian Poniard",
+			"source": "MidgardHeroes",
+			"page": 52,
+			"type": "M",
+			"rarity": "none",
+			"weight": 4,
+			"value": 10000,
+			"weaponCategory": "martial",
+			"property": [
+				"S",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"dmg2": "1d10",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"This longsword has a spring-loaded poniard concealed in the hilt, which quickly extends when the hilt is gripped in a particular way. It is particularly beloved by rogues, as the concealed blade helps them sneak attack opponents already locked in combat. Kariv of a crueler bent have been known to poison the secondary blade.",
+				"Thanks to its hidden blade, the Rothenian poniard has the following special ability:",
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"The larger blade is a versatile weapon, and the secondary blade is a light weapon. You may make an attack with the secondary blade as a bonus action, as if you were two-weapon fighting. Retracting the poniard requires an action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hidden Poniard",
+					"entries": [
+						"If the poniard is still concealed within your sword's hilt, you may make a Dexterity ({@skill Sleight of Hand}) check opposed by a target creature's Wisdom ({@skill Perception}) check. If you win this contest, you may make a single attack roll with the concealed poniard against that target. This attack has advantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dikama (Fang Blade)",
+			"source": "MidgardHeroes",
+			"page": 53,
+			"type": "M",
+			"rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"dagger": true,
+			"weapon": true,
+			"entries": [
+				"First crafted by the bronzesmiths of the Lion Kingdom of Omphaya, the wicked dikama fang blade is shaped like a serrated, oversized lion's tooth.",
+				{
+					"type": "entries",
+					"name": "Bloody Wound",
+					"entries": [
+						"When you hit a living creature with a dikama, you can choose to make a superficial but bloody wound. The attack deals no damage, but the target takes {@damage 1d6} slashing damage at the beginning of each of its turns until it or another creature makes a successful DC 10 Wisdom ({@skill Medicine}) check as an action to stop the bleeding or until it receives magical healing."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Serrated Twist",
+					"entries": [
+						"When you deal damage to a living creature with a dikama (not including damage from the Bloody Wound maneuver), you may twist the serrated blade as a bonus action. The creature must make a Constitution saving throw or take {@damage 2d4} slashing damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nurian Hook",
+			"source": "MidgardHeroes",
+			"page": 53,
+			"type": "M",
+			"rarity": "none",
+			"weight": 6,
+			"value": 600,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				"A Nurian hook is a 1-foot-long square shaft that ends in a bronze hook with an arrow-shaped point at the pommel. Embalmers and butchers use it to hang up corpses.",
+				{
+					"type": "entries",
+					"name": "Disarming Parry",
+					"entries": [
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your hook and disarm them. Make an attack roll with your Nurian hook. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trip",
+					"entries": [
+						"As an attack while you are wielding a Nurian hook, you may catch your opponent's leg in an attempt to trip them. Make an attack roll against a Medium or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall prone."
+					]
+				}
+			]
+		},
+		{
+			"name": "Scorpion Stiletto",
+			"source": "MidgardHeroes",
+			"page": 53,
+			"type": "M",
+			"rarity": "none",
+			"weight": 6,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"entries": [
+				"Politics in the Mharoti Empire are a battlefield, and not all wars there are won with words. The scorpion stiletto appears as an ornate, ceremonial knife, but its beauty distracts from the deadly poison secreted within—the venom of the Mharoti emerald scorpion. Though this knife originated in the Dragon Empire, it is now wielded by assassins and cutthroat politicians throughout Midgard and the Southlands.",
+				"Because they're so specialized for assassination, a scorpion stiletto can't be bought from most weapon dealers. A potential buyer must either find a disreputable merchant who'll sell one under the table or a disreputable weaponsmith who'll make one to order. In either case, the price must be negotiated.",
+				"Maneuvers that can be used with a dagger can also be used with a scorpion stiletto.",
+				{
+					"type": "entries",
+					"name": "Pinning Point",
+					"entries": [
+						"When you make a melee or ranged weapon attack with a stiletto, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the knife's point. This maneuver can be used against creatures without clothing at the GM's discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target's speed is reduced to zero until the dagger is removed. The target can make another Strength saving throw as an action on its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Concealed Blade",
+					"entries": [
+						"Instead of making a Dexterity ({@skill Stealth}) check to hide yourself, you may make a Dexterity (Sleight of Hand) check—contested by an active or passive Wisdom ({@skill Perception}) check—to conceal your stiletto. As an action, you may make a weapon attack with a concealed dagger against a creature that has not yet acted in combat. This attack has advantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Release Venom",
+					"entries": [
+						"A vial of venom can be loaded into the handle of this stiletto. As a bonus action, you can press the jewel on the dagger's pommel to release the venom into a groove on the blade. Any type of {@filter injury poison|items|source=|type=|miscellaneous=|poison type=injury} can be loaded into the stiletto's hidden chamber, but the most common is emerald scorpion venom."
+					]
+				}
+			]
+		}
+	],
+	"itemGroup": [
+		{
+			"name": "Alchemist's Smoke (*)",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"type": "G",
+			"rarity": "none",
+			"weight": 1,
+			"value": 2000,
+			"entries": [
+				"Kobolds invented these smoke bombs, but now they can be found all over Midgard. Each one is a fist-sized clay bulb containing a mixture of volatile chemicals that produce a cloud of dense smoke on contact with air. A smoke bulb can be thrown up to 20 feet as an action. It shatters on impact to create a cloud of smoke that fills a 10-foot cube. The cube is {@quickref Vision and Light|PHB|2|0|heavily obscured}{@sup {@variantrule Heavily Obscured|XPHB|'24}} for 5 rounds, then the smoke clears.",
+				"{@note * This item group has the same name and source as the item {@item Alchemist's Smoke|MidgardHeroes}}."
+			],
+			"items": [
+				"Alchemist's Smoke|MidgardHeroes",
+				"Alchemist's Smoke (Acid)|MidgardHeroes",
+				"Alchemist's Smoke (Poison)|MidgardHeroes"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Deathtoad Toxin",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"type": "G",
+			"rarity": "none",
+			"poison": true,
+			"poisonTypes": [
+				"injury"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"charges": "10",
+			"entries": [
+				"A creature hit by a dart coated with this poison must make a {@dc 10} Constitution saving throw. On a failure, it takes {@damage 2d6} poison damage."
+			]
+		},
+		{
+			"name": "Chuul Ichor",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"type": "G",
+			"rarity": "none",
+			"poison": true,
+			"poisonTypes": [
+				"injury"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"charges": "10",
+			"entries": [
+				"A creature hit by a dart coated with this poison must make a {@dc 10} Constitution saving throw. On a failure, it is {@condition paralyzed} until the beginning of its next turn."
+			]
+		},
+		{
+			"name": "Svirfneblin Wooziness Tonic",
+			"source": "MidgardHeroes",
+			"page": 50,
+			"type": "G",
+			"rarity": "none",
+			"poison": true,
+			"poisonTypes": [
+				"injury"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"charges": "10",
+			"entries": [
+				"A creature hit by a dart coated with this poison must make a {@dc 10} Constitution saving throw. On a failure, it is {@condition poisoned} until the end of its next turn."
+			]
+		},
+		{
+			"name": "Emerald Scorpion Venom",
+			"source": "MidgardHeroes",
+			"page": 53,
+			"type": "G",
+			"rarity": "none",
+			"poison": true,
+			"poisonTypes": [
+				"injury"
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"entries": [
+				"A creature subjected to this poison must make a {@dc 16} Constitution saving throw at the beginning of each of its turns, taking 24 ({@damage 7d6}) poison damage on a failed saving throw, or half as much on a successful one. This poison lasts until the target succeeds on three saving throws or is magically cured."
+			]
+		},
+		{
+			"name": "Elk Horn Rod",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"type": "RD|DMG",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 2,
+			"focus": true,
+			"entries": [
+				"This rod is fashioned from elk or reindeer horn and marked with the algiz rune. As an action, its wielder can grant a +1 bonus on saving throws against spells and magical effects to a target touched by the wand, including him/herself. The bonus lasts 1 round. If the elk horn rod is held when performing the somatic component of dispel magic or comparable magic, it grants a +1 bonus on the caster's spellcasting ability check"
+			],
+			"reprintedAs": [
+				"Elk Horn Rod|VoM"
+			]
+		},
+		{
+			"name": "Nithing Pole",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"A nithing pole is crafted to exact retribution for an act of cowardice or dishonor. It’s a sturdy wooden stave, 6 to 10 feet long, carved with runes that name the dishonored target of the stave’s curse. The carved shaft is draped in horsehide, topped with a horse’s skull, and placed where its target is expected to pass by; typically the pole is driven into the ground or wedged into a rocky cleft in a remote spot where the intended victim won’t see it until it’s too late.",
+				"A pole is created to punish a specific person for a specific crime. The exact target must be named on the pole; a generic identity such as “the person who blinded Lars Gustafson” isn’t precise enough. The moment the named target approaches within 333 feet, the pole casts {@spell bestow curse} (with range 333 feet instead of touch) on the target.",
+				"The DC for the target’s Wisdom saving throw is 15; if the saving throw succeeds, the pole recasts the spell every round until the saving throw fails, the target retreats out of range, or the nithing pole is destroyed. Anyone other than the pole’s creator who tries to destroy or knock down a nithing pole is also targeted by a bestow curse spell, but only once.",
+				"The effect of the curse is set when the pole is created. The pole becomes nonmagical once it has laid its curse on its intended target; an untriggered and forgotten nithing pole remains dangerous for centuries. The curse lasts 8 hours and doesn’t require {@condition concentration}."
+			],
+			"attachedSpells": [
+				"bestow curse"
+			],
+			"reprintedAs": [
+				"Nithing Pole|KPDM",
+				"Nithing Pole|VoM"
+			]
+		},
+		{
+			"name": "Alchemist's Smoke",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"type": "G",
+			"rarity": "none",
+			"weight": 1,
+			"value": 2000,
+			"entries": [
+				"Kobolds invented these smoke bombs, but now they can be found all over Midgard. Each one is a fist-sized clay bulb containing a mixture of volatile chemicals that produce a cloud of dense smoke on contact with air. A smoke bulb can be thrown up to 20 feet as an action. It shatters on impact to create a cloud of smoke that fills a 10-foot cube. The cube is {@quickref Vision and Light|PHB|2|0|heavily obscured}{@sup {@variantrule Heavily Obscured|XPHB|'24}} for 5 rounds, then the smoke clears."
+			]
+		},
+		{
+			"name": "Alchemist's Smoke (Acid)",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"type": "G",
+			"rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"entries": [
+				"Kobolds invented these smoke bombs, but now they can be found all over Midgard. Each one is a fist-sized clay bulb containing a mixture of volatile chemicals that produce a cloud of dense smoke on contact with air. A smoke bulb can be thrown up to 20 feet as an action. It shatters on impact to create a cloud of smoke that fills a 10-foot cube. The cube is {@quickref Vision and Light|PHB|2|0|heavily obscured}{@sup {@variantrule Heavily Obscured|XPHB|'24}} for 5 rounds, then the smoke clears.",
+				"Specialized versions of alchemist's smoke deals {@damage 1d4} acid damage to creatures that start their turn in the cube."
+			]
+		},
+		{
+			"name": "Alchemist's Smoke (Poison)",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"type": "G",
+			"rarity": "none",
+			"weight": 1,
+			"value": 5000,
+			"entries": [
+				"Kobolds invented these smoke bombs, but now they can be found all over Midgard. Each one is a fist-sized clay bulb containing a mixture of volatile chemicals that produce a cloud of dense smoke on contact with air. A smoke bulb can be thrown up to 20 feet as an action. It shatters on impact to create a cloud of smoke that fills a 10-foot cube. The cube is {@quickref Vision and Light|PHB|2|0|heavily obscured}{@sup {@variantrule Heavily Obscured|XPHB|'24}} for 5 rounds, then the smoke clears.",
+				"Specialized versions of alchemist's smoke deals {@damage 1d4} poison damage to creatures that start their turn in the cube."
+			]
+		},
+		{
+			"name": "Clockwork Caltrops (bag of 20)",
+			"source": "MidgardHeroes",
+			"page": 210,
+			"type": "G",
+			"rarity": "none",
+			"weight": 5,
+			"value": 2500,
+			"entries": [
+				"Clockwork caltrops resemble regular caltrops but with the following differences. A bag of 20 caltrops can be activated by being shaken vigorously; this takes an action, and the caltrops remain activated for one minute. If they're dumped onto the ground (as a bonus action) while activated, the spring-driven caltrops hop around erratically in an area of 100 square feet for 5 rounds (30 seconds). A creature that enters the area must make a successful {@dc 15} Dexterity saving throw or take 1 piercing damage, stop moving this turn, and have its walking speed reduced by 10 feet until it recovers at least 1 hit point. The saving throw succeeds automatically if the creature moves at half speed and foregoes taking an action until the start of its next turn. After 5 rounds, the caltrops stop hopping and have no further effect. If the caltrops are dumped out without being activated, treat them as standard {@item caltrop||caltrops}. Clockwork caltrops can be gathered up for reuse after they stop hopping around."
+			]
+		}
+	],
+	"condition": [
+		{
+			"name": "Snow Blindness",
+			"source": "MidgardHeroes",
+			"page": 211,
+			"entries": [
+				"Northerners believe that snow blindness is caused by light glittering on snow or ice, and sometimes by malevolent spirits. The real cause is intense ultraviolet rays burning the eye.",
+				"Snow blindness becomes a danger after 4 hours of exposure to a brightly sunlit snowscape. Starting at the end of the 4th hour of exposure, a character must make a Constitution saving throw at the end of every hour; the DC equals 10 + hours exposed beyond 3 (or, for simplicity, 7 + hours of exposure).",
+				"Travelers have devised effective precautions. Characters can avoid making a check by taking a {@quickref resting|phb|2|0|short rest}{@sup {@variantrule Short Rest|XPHB|'24}} after 3 hours, or by wearing dark goggles or snow visors (similar to goggles but made from an opaque material such as bone with a narrow, horizontal slit instead of tinted lenses).",
+				"Monsters {@filter native to the environment|bestiary|source=|environment=arctic|miscellaneous=} are immune, as are {@filter constructs|bestiary|source=|type=construct|miscellaneous=} and {@filter undead|bestiary|source=|type=undead|miscellaneous=}.",
+				"Failing the saving throw imposes the first stage of snow blindness: the character has disadvantage on Wisdom ({@skill Perception}) checks that rely on sight, weapon and spell ranges (for visually targeted spells) are halved, and all attack rolls are made with a -2 penalty. A second failed saving throw brings on the second stage of snow blindness: severe pain in the eyes, sight range is limited to 15 feet, and disadvantage on attack rolls and Wisdom ({@skill Perception}) checks that rely on sight. Spending two days in a dimly-lit environment reduces snow blindness by one stage. Sight is restored completely by {@spell lesser restoration} or comparable magic."
+			]
+		},
+		{
+			"name": "Frostbite and Hypothermia",
+			"source": "MidgardHeroes",
+			"page": 211,
+			"entries": [
+				"Basic rules for surviving cold weather can be found in the fifth edition rules. Characters who aren't prepared for cold weather or who are exposed to {@hazard extreme cold||extreme, unnatural, or magical cold} can experience both hypothermia and frostbite. Under those conditions, characters must make Constitution saving throws to avoid harm; the GM determines when saving throws are called for and the DC for each one. Each failed saving throw increases the risk and damage, as described below.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Stage 1:Frostnipped",
+							"entries": [
+								"The skin itches, aches, and becomes numb. Yellow and white patches form. Frostnipped characters have a-2 penalty on Strength and Dexterity checks."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Stage 2: Shiverstruck",
+							"entries": [
+								"The character gains one level of {@condition exhaustion}, shivers uncontrollably, and his or her teeth chatter. A shiverstruck spellcaster must make a successful {@dc 10} Constitution check (with disadvantage because of {@condition exhaustion}) to cast a spell with a verbal or somatic component; if the check fails, the spell slot isn't expended. Tasks such as getting into or out of armor take twice as long."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Stage 3: Kissed by the Ice Maiden (Hypothermia)",
+							"entries": [
+								"The character gains a level of {@condition exhaustion} and can't recover from exhaustion until after a {@quickref resting||2|0|long rest}{@sup {@variantrule Long Rest|XPHB|'24}} in a warm environment. The character's skin develops black blisters but the character's body is numb\u2014which may initially seem a relief. A hypothermic character is only superficially aware of his or her surroundings and may trudge past shelter or blunder into monsters or hazards without realizing it.",
+								"Even simple activities such as drawing or sheathing a weapon, loading a crossbow, or retrieving something from a pouch or pack require a successful {@dc 10} Dexterity check (made with disadvantage from {@condition exhaustion}) to accomplish without fumbling and dropping the item. This can be avoided if the character takes four times longer than normal to do simple things. More complex tasks, such as starting a fire with flint and steel, are impossible."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Stage 4: Frostbitten",
+							"entries": [
+								"The character gains a level of {@condition exhaustion} and becomes {@condition incapacitated}. Eventually organs fail, flesh dies and becomes gangrenous, teeth freeze and shatter, fingers and toes snap off, and other permanent injuries occur. The effect of such losses is determined by the GM. Every additional failed Constitution saving throw at this level of exposure adds another level of {@condition exhaustion}. The character can survive and recover if rescued, but only magic can restore lost limbs and damaged organs."
+							]
+						}
+					]
+				}
+			]
+		}		
 	]
 }
