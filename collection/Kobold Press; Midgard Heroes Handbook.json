@@ -41,13 +41,38 @@
 				"Unless specified otherwise, any of the maneuvers described here can be used by any character as long as they are wielding the appropriate weapon and are proficient with it. If a maneuver requires a creature to make a saving throw, the DC equals:",
 				{
 					"type": "abilityDc",
-					"name": "Weapon Maneuvers",
+					"name": "Weapon Maneuver",
 					"attributes": [
 						"STR",
 						"DEX"
 					]
 				},
 				"Unless specified, these maneuvers have only their listed effect and don't deal normal weapon damage."
+			]
+		},
+		{
+			"name": "Rune Magic",
+			"source": "MidgardHeroes",
+			"page": 131,
+			"ruleType": "O",
+			"entries": [
+				"Accessing the magic inherent within runes requires the {@feat Rune Knowledge|MidgardHeroes} feat (see chapter 5). If the option to gain feats isn't being used in your campaign, then Rune Knowledge can be gained in place of level-based ability score improvement, if your GM approves. Alternatively, characters might need to accomplish other, story-related tasks determined by the GM to gain Rune Knowledge. Once those obstacles are cleared, all characters who meet the prerequisites can gain Rune Knowledge and Rune Mastery. Once a character acquires the Rune Knowledge feat, he or she can begin making use of the runes described here.",
+				"Where a rune calls for a saving throw, the DC equals:",
+				{
+					"type": "abilityDc",
+					"name": "Rune Magic",
+					"attributes": [
+						"the rune maker's ability bonus"
+					]
+				},
+				"The rune maker's applicable ability is the same as the ability being used for the saving throw unless a different one is specified; e.g., if a rune calls for a Charisma saving throw, the rune maker's Charisma modifies the DC.",
+				{
+					"type": "section",
+					"name": "Rune Rituals",
+					"entries": [
+						"These rituals are gained by learning and mastering individual runes, as noted above. Any character who learns to use a rune can eventually master its associated ritual."
+					]
+				}
 			]
 		}
 	],
@@ -1738,6 +1763,15 @@
 			"featureType": [
 				"Rune"
 			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"8": [
+							"polymorph"
+						]
+					}
+				}
+			],
 			"entries": [
 				"{@i Elk and reindeer, evading danger; the god {@deity Heimdall|Norse}}",
 				{
@@ -1747,7 +1781,7 @@
 						{
 							"type": "item",
 							"name": "Rune Bonus:",
-							"entry": "You can make an {@item elk horn rod|MidgardHeroes} in 6 hours, and you gain a +1 bonus on initiative checks"
+							"entry": "You can make an {@item elk horn rod|MidgardHeroes} in 6 hours, and you gain a +1 bonus on initiative checks."
 						},
 						{
 							"type": "item",
@@ -1761,6 +1795,9 @@
 						}
 					]
 				}
+			],
+			"reprintedAs": [
+				"Algiz|KPDM"
 			]
 		},
 		{
@@ -1769,6 +1806,18 @@
 			"page": 132,
 			"featureType": [
 				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"7": [
+							"bless"
+						],
+						"11": [
+							"divination"
+						]
+					}
+				}
 			],
 			"entries": [
 				"{@i Gods and outsiders}",
@@ -1793,6 +1842,9 @@
 						}
 					]
 				}
+			],
+			"reprintedAs": [
+				"Ansuz|KPDM"
 			]
 		},
 		{
@@ -1801,6 +1853,15 @@
 			"page": 132,
 			"featureType": [
 				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"spike growth"
+						]
+					}
+				}
 			],
 			"entries": [
 				"{@i Birch tree, love, new beginnings; the Bear Maiden}",
@@ -1824,10 +1885,13 @@
 						{
 							"type": "item",
 							"name": "Mastery Power (11th level):",
-							"entry": "You can create a {@item philter of love} once per week."
+							"entry": "You can create a {@item philter of love}{@sup {@item philter of love|XDMG|'24}} once per week."
 						}
 					]
 				}
+			],
+			"reprintedAs": [
+				"Berkanan|KPDM"
 			]
 		},
 		{
@@ -1862,10 +1926,233 @@
 							"type": "item",
 							"name": "Rune Mastery Power (13th level):",
 							"entry": "Once per week, dagaz can be sketched onto the ground or a wall to create an instantaneous effect identical to a cleric's {@classFeature Channel Divinity: Turn Undead|Cleric||2} class ability. Sketching the rune takes 1 action, and it affects undead within 30 feet that can see it at the moment of its completion."
-						
 						}
 					]
 				}
+			],
+			"reprintedAs": [
+				"Dagaz|KPDM"
+			]
+		},
+		{
+			"name": "Ehwaz",
+			"source": "MidgardHeroes",
+			"page": 132,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"4": [
+							"knock"
+						],
+						"5": [
+							"phantom steed"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Horses, freedom, the Nithing Pole}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You get a +1 bonus to Wisdom ({@skill Animal Handling}) checks made to control a mount, and to Dexterity checks made to wriggle free of bonds."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th Level):",
+							"entry": "Spending 1 action to trace ehwaz onto a lock or shackles has the same effect as a {@spell knock} spell but without the loud knocking sound."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "When sketched on the ground, ehwaz summons a {@spell phantom steed}. Sketching the rune takes 5 minutes, and the summoned steed remains for 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (9th level):",
+							"entry": "You can create a {@item nithing pole|MidgardHeroes} (see the appendix) once per month. The process can only be performed during a new moon, takes 12 hours, and requires bloodletting that leaves a permanent scar in the shape of the ehwaz rune on the rune maker's left hand. Each creation of a nithing pole creates a new scar; those after the first don't need to be on the hand, but they must be on the hands or arms."
+						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Ehwaz|KPDM"
+			]
+		},
+		{
+			"name": "Eiwaz",
+			"source": "MidgardHeroes",
+			"page": 133,
+			"featureType": [
+				"Rune"
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"4": [
+							"shillelagh"
+						],
+						"8": [
+							"contact other planes"
+						],
+						"11": [
+							"tree stride"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Yew tree, Yggdrasil}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have proficiency on Intelligence ({@skill Arcana}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th Level):",
+							"entry": "Spending 1 action to trace eiwaz onto a suitably-sized piece of wood transforms it into a {@spell shillelagh} for 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "Sleeping for at least 10 minutes under a tracing of eiwaz on a blanket, a wall, or the ceiling causes the rune maker to dream of the Nine Worlds. These dreams produce answers the same as {@spell contact other plane} (including possible side effects)."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (11th level):",
+							"entry": "When carved on the bark of a living tree, eiwaz allows the rune master to travel between that tree and another tree within 500 feet also marked with eiwaz, as if under the effect of {@spell tree stride}. Each carving takes 1 action, and the effect lasts while you {@condition concentration||concentrate}, for up to 1 minute after the second carving is done."
+						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Eiwaz|KPDM"
+			]
+		},
+		{
+			"name": "Gebu",
+			"source": "MidgardHeroes",
+			"page": 133,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"identify",
+							"sanctuary"
+						],
+						"8": [
+							"calm emotions"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Generosity and hospitality, and gifts}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have advantage on Intelligence checks to estimate an item's value."
+						},
+						{
+							"type": "item",
+							"name": "Rune Powers:",
+							"entry": "When 1 minute is spent carefully examining an item while tracing gebu on it, you learn the item's name and magical properties the same as if you'd cast an {@spell identify} spell. Alternatively, if 1 action is spent tracing gebu on a willing creature, that creature gains sanctuary as if affected by the spell. The rune maker can't invoke {@spell sanctuary} on him or her self. The sanctuary effect lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "Gebu can be rapidly (1 action) scratched or sketched onto a wall, floor, or other surface of an enclosed space in a way that makes it clearly visible. For up to 1 minute, the rune maker can activate the rune with a command word, provided he or she is within 20 feet of it. All creatures within 20 feet of the rune and with a clear line of sight to it (regardless of whether they can actually see it) must make a Charisma saving throw. Those that fail are affected as if by a {@spell calm emotions} spell that lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Gebu|KPDM"
+			]
+		},
+		{
+			"name": "Hagalaz",
+			"source": "MidgardHeroes",
+			"page": 133,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"protection from energy"
+						],
+						"9": [
+							"sleet storm"
+						],
+						"14": [
+							"dispel magic",
+							"control weather"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Hail and winter weather}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have advantage on Wisdom ({@skill Survival}) checks made to accurately predict weather conditions for the next 24 hours in your vicinity."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power:",
+							"entry": "Spending 1 action tracing hagalaz on a willing creature grants it {@spell protection from energy} (cold) while you {@condition concentration||concentrate}, for up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (9th level):",
+							"entry": "When sketched on the ground under the open sky, hagalaz conjures a {@spell sleet storm} centered on a point of the rune maker's choosing within 150 feet. Sketching the rune takes 4 rounds and the storm lasts while you {@condition concentration||concentrate}, for up to 2 minutes."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (14th level):",
+							"entry": "When sketched on the ground within the area of a magical storm caused by {@spell sleet storm}, {@spell ice storm}, {@spell control weather} (hail and blizzard only), or comparable magic, hagalaz acts as a {@spell dispel magic} spell cast with a 7th-level slot. If the storm being dispelled is from 8th or 9th level magic, the rune maker uses Charisma as his or her spellcasting ability to test the rune's effectiveness. Sketching the rune takes 2 rounds."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (14th level):",
+							"entry": "When sketched on the ground within the area of a natural (nonmagical) storm, hagalaz has the effect of a {@spell control weather} spell. Sketching the rune takes 1 hour and the control lasts while you {@condition concentration||concentrate}, for up to 8 hours."
+						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Hagalaz|KPDM"
 			]
 		},
 		{
@@ -1879,7 +2166,7 @@
 				{
 					"innate": {
 						"7": [
-							"calling to the vaettir|MidgardHeroes"
+							"calling to the Vættir|MidgardHeroes"
 						],
 						"8": [
 							"speak with dead"
@@ -1916,7 +2203,7 @@
 						{
 							"type": "item",
 							"name": "Rune Power (7th level):",
-							"entry": "You learn the {@spell calling to the vaettir|MidgardHeroes} ritual (see Rune Rituals)."
+							"entry": "You learn the {@spell calling to the Vættir|MidgardHeroes} ritual (see Rune Rituals)."
 						},
 						{
 							"type": "item",
@@ -1924,6 +2211,810 @@
 							"entry": "When traced on the nails and flesh of a corpse, this rune acts as a {@spell speak with dead} spell. Tracing the rune takes 1 minute and the effect lasts while you {@condition concentration||concentrate}, for up to 10 minutes." 						}
 					]
 				}
+			],
+			"reprintedAs": [
+				"Ingwaz|KPDM"
+			]
+		},
+		{
+			"name": "Isaz",
+			"source": "MidgardHeroes",
+			"page": 133,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"8": [
+							"create tupilak|MidgardHeroes"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Ice, imprisonment, and paralysis; the gods Boreas and Mara}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "When you take cold damage, you take 1 point less than normal."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "When 1 action is spent tracing isaz on the ground, slick ice spreads out to cover an area of 225 square feet. The iced area can have any shape the rune maker wants; if you use a grid of 5-foot squares, the ice covers 9 squares. Every square of ice must be connected to at least one other along one or more sides. Ice-filled squares are {@quickref difficult terrain||3}, and the difficulty of Dexterity ({@skill Acrobatics}) checks in the area increases by five. The ice is nonmagical and melts normally."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When the isaz rune is traced on a weapon, the weapon sheds {@quickref Vision and Light|PHB|2|0|bright light}{@sup {@variantrule Bright Light|XPHB|'24}} in a 10-foot radius and {@quickref Vision and Light|PHB|2|0|dim light}{@sup {@variantrule Dim Light|XPHB|'24}} for an additional 10 feet, and it does an extra {@damage 1d4} cold damage on a hit. Tracing the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "A shield marked with this rune glitters like frost in the morning sun. As an action, a wielder of the shield who is in direct sunlight can focus its reflection on a single enemy within 30 feet; the target must make a successful Constitution saving throw or be affected by the first stage of {@condition snow blindness|MidgardHeroes} (see the appendix). The DC for the saving throw equals 8 + your Dexterity bonus + your proficiency bonus. If the target creature is already affected by the first stage of snow blindness, a failed Constitution saving throw brings on the second stage of snow blindness. Marking the shield takes 1 action, and the rune remains effective while you {@condition concentration||concentrate}, for up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "You learn the {@spell create tupilak|MidgardHeroes} ritual (see Rune Rituals)."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Isaz|KPDM"
+			]
+		},
+		{
+			"name": "Jera",
+			"source": "MidgardHeroes",
+			"page": 134,
+			"featureType": [
+				"Rune"
+			],
+			"skillProficiencies": [
+				{
+					"nature": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"8": [
+							"plant growth"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Abundant harvest; the gods Freyr and Freyja}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have proficiency on Intelligence ({@skill Nature}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "When traced on the belly of a living creature, the jera rune guarantees that any sexual union involving that creature in the next 24 hours proves fruitful. If traced on a pregnant creature at least once per month during its pregnancy, the rune guarantees a successful birth and healthy baby or babies. Tracing the rune takes 1 action."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (6th level):",
+							"entry": "When jera is traced on a wooden table, plate, or platter, all food and drink that's spoiled, rotten, diseased, poisonous, or otherwise contaminated within 20 feet becomes pure and safe for consumption. Tracing the rune takes 1 action."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "When marked in the earth among living plants, the rune has the effect of a localized (100-foot radius) {@spell plant growth} spell. Sketching the rune takes 1 action."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Jera|KPDM"
+			]
+		},
+		{
+			"name": "Kaunen",
+			"source": "MidgardHeroes",
+			"page": 134,
+			"featureType": [
+				"Rune"
+			],
+			"skillProficiencies": [
+				{
+					"nature": true
+				}
+			],
+			"entries": [
+				"{@i Flaming torch, enlightenment, and ulcers}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You gain darkvision (30 feet). If you already have darkvision, you gain proficiency on Wisdom ({@skill Perception}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "When 1 minute is spent tracing kaunen on the ground, it burns like a campfire for up to 8 hours. The fire is 2 feet in diameter and the flames are magical, causing {@damage 2d6} fire damage per round to any creature in the fire. Neither the rune nor the fire can be moved once created, but the fire can spread normally to inflammable materials."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "Tracing kaunen onto a weapon causes that weapon to shed {@quickref Vision and Light|PHB|2|0|bright light}{@sup {@variantrule Bright Light|XPHB|'24}} in a 10-foot radius plus {@quickref Vision and Light|PHB|2|0|dim light}{@sup {@variantrule Dim Light|XPHB|'24}} for another 10 feet, and the weapon does an extra {@damage 1d6} fire damage on a hit. Tracing the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "When traced on a living creature, kaunan burns away illness and ailments the same as a {@spell lesser restoration} spell. Invoking the rune takes 1 action."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Kaunen|KPDM"
+			]
+		},
+		{
+			"name": "Laukaz",
+			"source": "MidgardHeroes",
+			"page": 134,
+			"featureType": [
+				"Rune"
+			],
+			"languageProficiencies": [
+				{
+					"aquan": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"7": [
+							"water breathing"
+						],
+						"11": [
+							"control water"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Water, the sea; the god Njord}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You gain {@language Aquan|PHB}{@sup {@language Aquan|XPHB|'24}} as a bonus language. If you already know this language, you have advantage on Charisma ({@skill Persuasion}) checks with creatures from the elemental plane of water."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "When you spend 1 action tracing laukaz on an object, it becomes more bouyant. Anyone grasping the object has advantage on Strength ({@skill Athletics}) checks to swim or to stay afloat. The effect lasts 24 hours."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "When you trace laukaz on a living creature’s chest, it grants them {@spell water breathing}. Tracing the rune takes 1 action, and the effect lasts 24 hours."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (11th level):",
+							"entry": "When the rune is sketched on a lakebed, riverbed, or sea bottom, laukaz allows the rune maker to control nearby water as a {@spell control water} spell. Sketching the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 10 minutes."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Laukaz|KPDM"
+			]
+		},
+		{
+			"name": "Mannaz",
+			"source": "MidgardHeroes",
+			"page": 134,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"5": [
+							"calm emotions"
+						],
+						"9": [
+							"awaken"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Humanoids, especially humans and dwarves}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You get a +1 bonus on saving throws against petrification and effects that alter your form such as lycanthropy, {@spell polymorph}, or {@spell flesh to stone}."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When traced on the ground, a boulder, or a wall, mannaz produces an effect identical to a {@spell calm emotions} spell on all living creatures within 20 feet of the rune. Tracing the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (8th level):",
+							"entry": "When traced on the flesh of a creature, mannaz returns a lycanthrope to its humanoid form or dispels (as {@spell dispel magic}) a polymorph effect the target is currently under. Unwilling creatures resist this with a Charisma saving throw; use your Wisdom modifier to set the DC. Tracing the rune takes 1 action."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (9th level):",
+							"entry": "Invoking mannaz upon a plant or animal awakens it, per the {@spell awaken} spell. Invoking the rune this way takes 8 hours, and the effect is permanent."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Mannaz|KPDM"
+			]
+		},
+		{
+			"name": "Naudiz",
+			"source": "MidgardHeroes",
+			"page": 135,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"spare the dying"
+								]
+							}
+						},
+						"4": [
+							"guidance",
+							"resistance"
+						],
+						"9": [
+							"awaken"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Necessity and need}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "Once per day, you can cast spare the dying."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "By spending 1 action to trace naudiz on an item, you grant {@spell guidance} or {@spell resistance} to any creature that touches it (the creature chooses which). A number of creatures equal to your proficiency bonus can benefit from this effect. Both the rune and the effect last while you {@condition concentration||concentrate}, for up to 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "Naudiz can be traced in the air in such a way that five creatures within 10 feet of you have their hit point maximums increased by 5, and they gain 5 hit points. Tracing the rune takes 1 action, and the effect lasts 8 hours."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (15th level):",
+							"entry": "When naudiz is traced on an object weighing no more than 20 lb., for the next 24 hours you can call that item to you. The item teleports into your hand instantly when you spend an action calling it. The maximum range is 400 feet. If another creature is holding the object, that creature prevents it from teleporting with a successful Charisma saving throw; use your Wisdom modifier to set the DC. Tracing the rune takes just 1 action, and it remains until it's used or for 24 hours."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Naudiz|KPDM"
+			]
+		},
+		{
+			"name": "Nyköping",
+			"source": "MidgardHeroes",
+			"page": 135,
+			"featureType": [
+				"Rune"
+			],
+			"skillProficiencies": [
+				{
+					"survival": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"6": [
+							"gust of wind"
+						],
+						"9": [
+							"haste"
+						],
+						"11": [
+							"curse of the wild moon|MidgardHeroes"
+						],
+						"13": [
+							"control weather"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i The passage of time, the seasons, and the phases of the moon}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have proficiency with Wisdom ({@skill Survival}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When the rune is sketched on the ground, nyköping allows up to six creatures of your choice to each regain hit points equal to {@dice 2d8} + your wisdom modifier. You must be able to see the creatures, and they must be within 30 feet of you. Invoking the rune this way takes 10 minutes."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (6th level):",
+							"entry": "When 1 action is spent tracing the rune on the ground under open sky, nyköping creates a {@spell gust of wind}. The wind lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (9th level):",
+							"entry": "Tracing nyköping on a creature grants it {@spell haste}, per the spell. Creating the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+ 						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (11th level):",
+							"entry": "You learn the {@spell curse of the wild moon|MidgardHeroes} ritual (see Rune Rituals)."
+ 						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (13th level):",
+							"entry": "When nyköping is sketched on the ground beneath open sky, the weather in the area improves toward clear skies, the same as if you'd cast {@spell control weather}. The rune can only improve the weather, not make it more severe. Sketching the rune takes 1 hour, and the effect lasts 8 hours."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Nyköping|KPDM"
+			]
+		},
+		{
+			"name": "Otalan",
+			"source": "MidgardHeroes",
+			"page": 135,
+			"featureType": [
+				"Rune"
+			],
+			"skillProficiencies": [
+				{
+					"persuasion": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"7": [
+							"scrying"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Property, inheritance, and family}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have proficiency with Charisma ({@skill Persuasion}) checks."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "When traced on a reflective surface (for example, on a mirror, a polished shield, or even on still water), otalan lets you scry on an object that you've possessed for at least one week, or on any member of your immediate family within three generations of you, per the {@spell scrying} spell. Tracing the rune takes 10 minutes and the effect lasts while you {@condition concentration||concentrate}, for up to 10 minutes."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (13th level):",
+							"entry": "When otalan is invoked on an object, the rune's power lingers harmlessly in the item until the death of the item's owner. The moment that creature dies, the object teleports into the hands of another individual whose identity was specified when the rune was created. This person can be identified by name, by a title, or by relationship (for example, “the king of Noatun” or “my firstborn son”). This power functions over any range as long as the object and target are on the same plane. If another creature holds the object when its owner dies, that creature can try to prevent the object from teleporting by making a Charisma saving throw; use your Wisdom modifier to set the DC. The rune remains effective until it's triggered, but it ends when the rune maker uses this power to invoke the rune on a different object. Creating the rune takes 10 minutes."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Otalan|KPDM"
+			]
+		},
+		{
+			"name": "Perto",
+			"source": "MidgardHeroes",
+			"page": 135,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"4": [
+							"disguise self"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Things are not as they seem; the god Loki}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have a +1 bonus on Wisdom ability checks to solve riddles or puzzles, and on Wisdom saving throws against illusions."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "When you spend 1 action tracing perto on a creature, you can change the creature's appearance, following the guidelines for {@spell disguise self}. If the creature has Intelligence 3 or higher, it can change its own appearance. The rune remains effective for 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "Spending 1 action to trace perto on the ground causes all objects within 10 feet of the rune to be undetectable through divination magic or scrying sensors. The effect lasts for 8 hours."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Perto|KPDM"
+			]
+		},
+		{
+			"name": "Raido",
+			"source": "MidgardHeroes",
+			"page": 136,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"5": [
+							"water walk"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Travel}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "Your speed increases by 5 feet, and you always know which way is north."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "The possessor of an object that's had raido sketched onto it has advantage on Dexterity ({@skill Acrobatics}) checks made to ski, skate, or control a sled. Sketching the rune takes 1 minute and the effect lasts while you {@condition concentration||concentrate}, up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "A living creature with raido traced on its skin gains the benefit of {@spell water walk} for 1 minute. Tracing the rune takes 1 action."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "A living creature with raido traced on its skin can undertake a {@quickref Travel Pace|PHB|4|0|forced march} for an additional 4 hours before suffering {@condition exhaustion} penalties. Invoking the rune takes 10 minutes, and the effect lasts 4 hours."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Raido|KPDM"
+			]
+		},
+		{
+			"name": "Sowilo",
+			"source": "MidgardHeroes",
+			"page": 136,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"5": [
+							"enthrall"
+						],
+						"7": [
+							"daylight"
+						],
+						"13": [
+							"sunbeam"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i The sun; the god Baldur}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You gain immunity to {@condition |MidgardHeroes} (see the appendix)."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When invoked on a creature, the rune grants it magical confidence and charisma, enabling it to {@spell enthrall} an audience, per the spell. Tracing the rune takes 1 action, and the effect lasts 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "Spending 1 action tracing sowilo onto an object makes it glow as if with the {@spell daylight} spell for 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (13th level):",
+							"entry": "Spending 1 action invoking sowilo on the brow of a creature causes its eyes to emit a {@spell sunbeam}, per the spell. The creature is immune to {@condition blinded||blindness} for the duration of the effect, which lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Sowilo|KPDM"
+			]
+		},
+		{
+			"name": "Tewaz",
+			"source": "MidgardHeroes",
+			"page": 136,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"5": [
+							"calm emotions"
+						],
+						"9": [
+							"tyr's peace|MidgardHeroes"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Fearlessness, assemblies or councils, the god Tyr}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You have advantage on saving throws against the frightened condition."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "Tewaz can be sketched on an object to ward off {@filter wolves|bestiary|source=|miscellaneous=|search=wolf}, {@creature worg||worgs}{@sup {@creature worg|XMM|'24}}, {@creature werewolf||werewolves}, and other lupine creatures. The rune must be presented boldly toward such creatures, each of which makes a Charisma saving throw. Creatures that fail the saving throw must stay at least 5 feet away from the rune and cannot touch or make melee attacks against the creature presenting it, as long as the symbol is boldly and aggressively presented (which requires an action each round). Sketching the rune takes 1 action, and the marked object remains effective for 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "If you spend 1 action tracing tewaz onto a shield, it gains the properties of a {@item shield of missile attraction|DMG}{@sup {@item shield of missile attraction|XDMG|'24}} for 10 minutes."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When tewaz is sketched somewhere clearly visible, it acts as a {@spell calm emotions} spell on all creatures that can see it within a 20-foot radius. Sketching the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 minute."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (9th level):",
+							"entry": "You learn the {@spell Tyr's peace|MidgardHeroes} ritual (see Rune Rituals)."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Tewaz|KPDM"
+			]
+		},
+		{
+			"name": "Turisaz",
+			"source": "MidgardHeroes",
+			"page": 136,
+			"featureType": [
+				"Rune"
+			],
+			"languageProficiencies": [
+				{
+					"giant": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"8": [
+							"glyph of warding"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Giants; thunder and lightning}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "You gain {@language Giant} as a bonus language. If you already know this language, you have advantage on Wisdom ({@skill Insight}) checks involving giants."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "A weapon marked with turisaz does an extra {@damage 1d4} lightning damage with each hit. Marking the weapon takes 1 action, and the effect lasts until it's been triggered five times or up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "Armor marked with turisaz has resistance to lightning damage and applies a +2 bonus to the wearer’s Strength score. Marking the armor takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "When inscribed on a surface, the turisaz rune acts as a {@spell glyph of warding}. Sketching the rune takes 1 hour, and the effect lasts until it's triggered or dispelled (as a 4th-level spell effect)."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Turisaz|KPDM"
+			]
+		},
+		{
+			"name": "Uruz",
+			"source": "MidgardHeroes",
+			"page": 136,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"7": [
+							"scourge of the hateful nettles|MidgardHeroes"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Wild ox, sacrifice to the gods, and strength}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "For the purposes of carrying capacity, treat your Strength score as if it were 2 points higher."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "The wielder of a shield that's been inscribed with uruz gains the benefits of the {@feat Charger} feat. Tracing the rune takes 1 minute, and the effect lasts 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (5th level):",
+							"entry": "When uruz is traced on the flesh of a living creature, the creature's carrying capacity doubles and it has advantage on Strength checks. Tracing the rune takes 1 action and the effect lasts while you {@condition concentration||concentrate}, up to 1 hour."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (7th level):",
+							"entry": "You learn the {@spell scourge of hateful nettles|MidgardHeroes} ritual (see Rune Rituals)."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "When invoked on an appropriate sacrifice (food, a symbolic weapon, an animal), this rune assures the sacrifice will amend any offenses the sacrifice giver has made against the gods (treat as {@spell remove curse}). Drawing the gods' attention this way isn't always entirely beneficial; they may also place a {@spell geas} or some other effect on an especially bold or interesting person, at the GM's discretion. Tracing the rune onto a sacrifice takes 1 hour, and the sacrifice must be offered within another hour."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Uruz|KPDM"
+			]
+		},
+		{
+			"name": "Wunjo",
+			"source": "MidgardHeroes",
+			"page": 137,
+			"featureType": [
+				"Rune"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"4": [
+							"animal friendship"
+						]
+					}
+				}
+			],
+			"entries": [
+				"{@i Happiness and joy}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rune Bonus:",
+							"entry": "Whenever you receive {@variantrule Inspiration}, you have a 20% chance to retain it (for a second use, but no more) after using it or gifting it to another character."
+						},
+						{
+							"type": "item",
+							"name": "Rune Power (4th level):",
+							"entry": "Tracing the wunjo rune on the ground or on a boulder acts as the {@spell animal friendship} spell. Creating the rune takes 1 action, and the effect lasts 24 hours."
+						},
+						{
+							"type": "item",
+							"name": "Rune Mastery Power (8th level):",
+							"entry": "If you spend 1 action sketching wunjo onto an object which you then hold aloft, your allies have advantage on saving throws against effects that cause fear, charm, or domination. The effect lasts while you {@condition concentration||concentrate}, for up to 10 minutes."
+ 						}
+					]
+				}
+			],
+			"reprintedAs": [
+				"Wunjo|KPDM"
 			]
 		}
 	],
@@ -1955,6 +3046,28 @@
 			"entries": [
 				"You are wise in the lore of two {@filter runes of your choice|optionalfeatures|feature type=Rune}. You always have access to their rune bonuses. In addition, every day you can invoke one rune power for each rune you've learned, provided you meet any other requirements such as a minimum level.",
 				"You can select this feat multiple times. Each time you do, you gain the bonus and powers of two additional {@filter runes of your choice|optionalfeatures|feature type=Rune}."
+			],
+			"reprintedAs": [
+				"Rune Knowledge|KPDM"
+			]
+		},
+		{
+			"name": "Rune Mastery",
+			"source": "MidgardHeroes",
+			"page": 98,
+			"prerequisite": [
+				{
+					"feat": [
+						"Rune Knowledge|MidgardHeroes"
+					]
+				}
+			],
+			"entries": [
+				"You have mastered the secret powers of one ancient rune. Choose one {@filter rune|optionalfeatures|feature type=Rune} that you already learned through {@feat Rune Knowledge}. Once per day, you can invoke one of its Rune Mastery powers.",
+				"You can select this feat multiple times. Each time you do, you learn the Rune Mastery powers of a different rune from your repertoire."
+			],
+			"reprintedAs": [
+				"Rune Mastery|KPDM"
 			]
 		}
 	],
@@ -2027,7 +3140,7 @@
 			}
 		},
 		{
-			"name": "Calling to the Vaettir",
+			"name": "Calling to the Vættir",
 			"source": "MidgardHeroes",
 			"page": 137,
 			"level": 4,
@@ -2052,7 +3165,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "wine or mead poured onto the ground, gifts for the vaettir worth 500 gp, {@dice 2d6} hit points of the caster's blood, and the wound can't be healed until an agreement is reached with the vaettir",
+					"text": "wine or mead poured onto the ground, gifts for the Vættir worth 500 gp, {@dice 2d6} hit points of the caster's blood, and the wound can't be healed until an agreement is reached with the Vættir",
 					"cost": 50000,
 					"consume": true
 				}
@@ -2072,9 +3185,9 @@
 			},
 			"entries": [
 				"{@i “Come forth from your mound, sleeping hero. Come forth for the honors I would bestow and the honor of those who dwell in your shadow. Come forth by the blood I spill and the gold I give you. Come forth and aid the children of your land.”}",
-				"You call for aid from a {@creature vaettir|MidgardHeroes} — one of the dead and undead ancestors or former occupants of the land. You must be related to the creature, must have lived nearby for at least a year, or must have a relative of the creature present at the ritual of their own free will. Entreaties can raise the vaettir from their barrows to protect, bestow blessings, or remove curses. The vaettir, however, are greedy and demanding allies. They're also difficult to send away once roused, requiring a successful Charisma ({@skill Persuasion}) contest at the least, bribery or even a sacrifice at the most; the specific price is determined by the GM.",
-				"The ritual summons an undead creature from beneath the earth. Typically, a {@creature vaettir|MidgardHeroes} ({@creature vaettir|ToB|Tome of Beasts}) is summoned, but sometimes other undead answer the call, depending on the nature of the ancestor interred. You can ask the creature to perform one task, such as defending you against attack, bestowing or removing a curse, retrieving a stolen object, avenging an insult, providing information, or a similar favor. The undead will keep at the task until it's completed or until 28 days have elapsed. The task must be within the undead's power to accomplish or it simply ignores the request and returns to its repose. For example, a vaettir can't journey to the elemental planes to retrieve something.",
-				"Persuading the vaettir to undertake the task requires explaining why you need it done and how it also benefits the vaettir to help—blood relations are strong motivators here—followed by a successful Charisma ({@skill Persuasion}) contest opposed by the vaettir's Charisma (or a {@skill Deception} contest if the caster lies). Vaettir usually awake with an indifferent attitude; disagreeable, but not outright hostile. If the vaettir is not persuaded to help or is offended, it's likely to attack. It may cast {@spell bestow curse} or {@spell geas} on you, or rise from its mound to demand tribute, or physically attack you and any associates nearby. At no time during this process is the vaettir under your control. The ritual simply gets it to listen to you, but it makes its own decisions.",
+				"You call for aid from a {@creature Vættir|MidgardHeroes} — one of the dead and undead ancestors or former occupants of the land. You must be related to the creature, must have lived nearby for at least a year, or must have a relative of the creature present at the ritual of their own free will. Entreaties can raise the Vættir from their barrows to protect, bestow blessings, or remove curses. The Vættir, however, are greedy and demanding allies. They're also difficult to send away once roused, requiring a successful Charisma ({@skill Persuasion}) contest at the least, bribery or even a sacrifice at the most; the specific price is determined by the GM.",
+				"The ritual summons an undead creature from beneath the earth. Typically, a {@creature Vættir|MidgardHeroes} ({@creature Vættir|ToB|Tome of Beasts}) is summoned, but sometimes other undead answer the call, depending on the nature of the ancestor interred. You can ask the creature to perform one task, such as defending you against attack, bestowing or removing a curse, retrieving a stolen object, avenging an insult, providing information, or a similar favor. The undead will keep at the task until it's completed or until 28 days have elapsed. The task must be within the undead's power to accomplish or it simply ignores the request and returns to its repose. For example, a Vættir can't journey to the elemental planes to retrieve something.",
+				"Persuading the Vættir to undertake the task requires explaining why you need it done and how it also benefits the Vættir to help—blood relations are strong motivators here—followed by a successful Charisma ({@skill Persuasion}) contest opposed by the Vættir's Charisma (or a {@skill Deception} contest if the caster lies). Vættir usually awake with an indifferent attitude; disagreeable, but not outright hostile. If the Vættir is not persuaded to help or is offended, it's likely to attack. It may cast {@spell bestow curse} or {@spell geas} on you, or rise from its mound to demand tribute, or physically attack you and any associates nearby. At no time during this process is the Vættir under your control. The ritual simply gets it to listen to you, but it makes its own decisions.",
 				"The creature typically returns to its barrow or grave when the task is done and it's collected its payment, tribute, or praise. If anything has been stolen during its absence, it's certain to seek recompense or revenge against the person who called it out."
 			],
 			"abilityCheck": [
@@ -2082,6 +3195,9 @@
 			],
 			"areaTags": [
 				"ST"
+			],
+			"miscTags": [
+				"SMN"
 			],
 			"feats": [
 				{
@@ -2092,6 +3208,273 @@
 			"optionalfeatures": [
 				{
 					"name": "Ingwaz",
+					"source": "MidgardHeroes",
+					"featureType": [
+						"Rune"
+					]
+				}
+			]
+		},
+		{
+			"name": "Create Tupilak",
+			"source": "MidgardHeroes",
+			"page": 138,
+			"level": 4,
+			"school": "N",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 9,
+					"unit": "hour",
+					"note": "per night for 9 consecutive nights"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "tupilak construct"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"condition": "until destroyed, or it destroys its creator"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This infamous ritual was learned from the enigmatic skraeling of the farthest reaches of the Northlands. It creates a {@creature tupilak golem|MidgardHeroes|tupilak}, a construct that tracks and kills a hated enemy, usually a rival.",
+				"First, a body must be constructed for the tupilak from the body parts of recently-dead animals and children. The body is wrapped in seaweed or vines and then encased in an outer shell made from bone treated with icy unguents and sealing salves worth 3,000 gp. The body can't be animated until a tupilak idol (with a material cost of 2,500 gp) is inserted, to serve as its heart. The verbal component is an ancient, hours-long song of revenge, sung over the construct’s body during each night's ritual. This construction process consumes nine consecutive nights with a 9-hour ritual each night.",
+				"The final ritual captures a hungry spirit of Ginnungagap to animate the construct. These spirits are vengeful and mercenary; many intended victims of tupilaks have saved their own lives by figuring out how to turn a resentful, murderous construct against its creator."
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"feats": [
+				{
+					"name": "Rune Knowledge",
+					"source": "MidgardHeroes"
+				},
+				{
+					"name": "Rune Mastery",
+					"source": "MidgardHeroes"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Isaz",
+					"source": "MidgardHeroes",
+					"featureType": [
+						"Rune"
+					]
+				}
+			]
+		},
+		{
+			"name": "Curse of the Wild Moon",
+			"source": "MidgardHeroes",
+			"page": 138,
+			"level": 6,
+			"school": "T",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 90,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "animal of the kind you wish to create, which is killed during the ritual, plus powdered silver worth at least 500 gp",
+					"cost": 500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You trace runes in a circle around a sacrificial animal and a bound target, chanting a litany of courtesies and praise to the old ways and the wildness hidden in all, as a lunar eclipse signals that the witching hour approaches.",
+				"By creating a circle of arcane and wild natural glyphs from powdered silver, sacrificing an animal, and sprinkling its blood onto a target while imploring the spirits of the wild and old ways to heed your call, you transform a living creature into a {@filter lycanthrope|bestiary|source=|tag=human;shapechanger|miscellaneous=|search=were}. The type of lycanthrope matches the animal that was sacrificed (bear, wolf, boar, etc.). An unwilling target must be bound and helpless, and it still makes a Charisma saving throw; the DC equals 8 + your Charisma modifier + your proficiency bonus. If the saving throw succeeds, the intended target resists the transformation and the curse descends on you instead!",
+				"The affected target transforms into its lycanthropic form 10 minutes after the ritual is completed.",
+				"An unwilling target afflicted with lycanthropy through this ritual is driven to hunt and slay the person who conducted the ritual. They can control their bloodlust when in human form, but when the beast takes control, they seek the one who cursed them. Because their rational mind and memories are suppressed in animal form, the hunt isn't organized or efficient, but sometimes they stumble onto a scent that puts them on the right trail. In their murderous rage, they'll kill anyone related to the target of their hate. A lycanthrope created by the ritual rebounding on its caster tends to be the most savage, unreasoning of all; they're known for slaughtering their own families, friends, and neighbors."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"feats": [
+				{
+					"name": "Rune Knowledge",
+					"source": "MidgardHeroes"
+				},
+				{
+					"name": "Rune Mastery",
+					"source": "MidgardHeroes"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Nyköping",
+					"source": "MidgardHeroes",
+					"featureType": [
+						"Rune"
+					]
+				}
+			]
+		},
+		{
+			"name": "Scourge of Hateful Nettles",
+			"source": "MidgardHeroes",
+			"page": 138,
+			"level": 4,
+			"school": "N",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 4,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a whip made from nettles; blood, hair, or other sympathetic object from the target, smeared or hung around your neck"
+				}
+			},
+			"duration": [
+				{
+					"type": "special",
+					"condition": "1 hour per check"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"How much are you willing to suffer to inflict pain on your enemy? Scourge your own flesh with a whip of nettles and briars, and as long as you can stand the flogging, the target suffers three times the pain you do. The target's flesh first itches uncontrollably, then turns raw and blistered, then bleeds freely. The slightest movement or weight on his back is agony.",
+				"The target of the ritual must be within 10 miles of the caster.",
+				"To represent the first hour of the ritual, the caster takes {@damage 1d6} psychic damage and the target and caster conduct a Constitution contest. The loser of the contest gains one level of {@condition exhaustion}. The caster can continue the ritual for as long as he or she is willing to take the punishment. In practical terms, a caster is unlikely to continue the ritual after losing the first contest because exhaustion puts him or her at a disadvantage on subsequent Constitution checks.",
+				"Only living creatures that feel pain and injury can cast this ritual, which lasts as long as you continue scourging yourself. For each additional hour spent scourging, the caster takes another {@damage 1d6} psychic damage and the target and caster conduct another Constitution contest, with the loser gaining one level of exhaustion. The caster can recover from exhaustion normally through {@quickref resting|phb|2|0|rest}, but the target's exhaustion can be removed only by {@subclassFeature Limited Wish|Warlock||Genie|TCE|14|limited wish}, {@spell remove curse}, {@spell wish}, or comparable magic. If the caster's pain, damage, or exhaustion is treated in any way during the ritual, the ritual ends immediately. When the ritual ends, the caster takes another {@damage 1d6} psychic damage and gains a final level of exhaustion."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"feats": [
+				{
+					"name": "Rune Knowledge",
+					"source": "MidgardHeroes"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Uruz",
+					"source": "MidgardHeroes",
+					"featureType": [
+						"Rune"
+					]
+				}
+			]
+		},
+		{
+			"name": "Tyr's Peace",
+			"source": "MidgardHeroes",
+			"page": 139,
+			"level": 5,
+			"school": "N",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 5,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 35
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 9,
+						"upTo": true
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You call upon Tyr to ward off treachery and violence at a meeting. At least nine men and/or women must swear the oath of amity, and they must include representatives of each faction (family, clan, nation, felag, etc.) being covered by the ritual. The duration and area of effect (which can be as small as a single room or as large as 12 square miles—a radius of 2 miles around the ritual site) are set during the casting. Performing the ritual adds one level of {@condition exhaustion} to the caster, and the blood offerings demanded by Tyr and the ancestors cause {@damage 1d6} slashing damage to each participant in the ritual.",
+				"Once it takes effect, the ritual punishes anyone from an affected faction who spills blood in the area. Legal executions, religious sacrifices, and sanctioned duels of honor are exempt. The ritual's protection covers only those factions that were invoked and swore the oath of peace in the casting, either as victims or as perpetrators. Anyone who kills or harms another is cursed (as the {@spell bestow curse} spell), as is every intelligent creature complicit in the misdeed. The curse manifests as bloody hands (no amount of washing can clean away the blood) and disadvantage on Charisma checks. The curse can be lifted by {@subclassFeature Limited Wish|Warlock||Genie|TCE|14|limited wish}, {@spell remove curse}, {@spell wish}, or comparable magic, but the curse must be lifted individually from each affected person."
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"feats": [
+				{
+					"name": "Rune Knowledge",
+					"source": "MidgardHeroes"
+				},
+				{
+					"name": "Rune Mastery",
+					"source": "MidgardHeroes"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Tewaz",
 					"source": "MidgardHeroes",
 					"featureType": [
 						"Rune"
@@ -2260,7 +3643,11 @@
 						"source": "XPHB"
 					}
 				]
-			}
+			},
+			"reprintedAs": [
+				"Acid Rain|KPDM"
+			]
+
 		},
 		{
 			"name": "Adjust Positioning",
@@ -2346,12 +3733,180 @@
 						"source": "XPHB"
 					}
 				]
-			}
+			},
+			"reprintedAs": [
+				"Adjust Position|KPDM",
+				"Adjust Position|ToH"
+			]
 		}
 	],
 	"monster": [
 		{
-			"name": "Vaettir",
+			"name": "Tupilak Golem",
+			"source": "MidgardHeroes",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 9,
+			"con": 16,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"immune": [
+				"lightning",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"understands the languages of its creator but can’t speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Aversion to Fire",
+					"entries": [
+						"If the tupilak takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The tupilak is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Whenever the tupilak is subjected to lightning damage, it takes no damage but instead regains hit points equal to the lightning damage."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The tupilak has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The tupilak’s weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Relentless Pursuit",
+					"entries": [
+						"A tupilak golem knows the direction and distance to its quarry as long as the two of them are within 2 miles on the same plane of existence."
+					]
+				},
+				{
+					"name": "Servant of Strength",
+					"entries": [
+						"A successful {@spell dispel magic} spell cast on the tupilak does not harm it but instead turns it against its originator, who becomes the tupilak's target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The tupilak makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"{@i Loping forward, eye fixed hungrily on its target, this grotesque creature sports a rictus grin on its almost skeletal face. The smell of death and brine surrounds it.}",
+					"Tupilaks are constructs created via ritual to attack a hated enemy, often a rival spellcaster. A tupilak doggedly tracks its victim until it devours the prey and steals a portion of its soul and magical power for the tupilak's master. All tupilaks are animated by a spirit of Ginnungagap, which resides in a tupilak idol embedded in the creature's body where its heart should be.",
+					{
+						"type": "section",
+						"name": "Grisly Reminders",
+						"entries": [
+							"The tupilak is a hideous creature with a bony carapace and bestial head. Wounds to its bone-and-ivory body reveal its innards of vine, seaweed, and tiny, broken limbs. Its head is made from the skulls of savage beasts—bears and wolves being favored— and it usually sports a hideous, skeletal grin. Although mindless, its eyes burn with an evil longing."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Relentless Killers",
+						"entries": [
+							"Tupilaks have no sense of loyalty but only hunger and anger, and this makes them risky to create. Once set loose, a tupilak cannot be recalled but it can be redirected; if {@spell dispel magic} is cast successfully on the construct, the golem is released from the magical restraints placed on it when it was created and its creator becomes the sole target of its homicidal impulse. The original target is forgotten, and the golem's creator can save himself or herself only by destroying the construct."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Vættir",
 			"source": "MidgardHeroes",
 			"page": 209,
 			"size": [
@@ -2412,7 +3967,7 @@
 					"name": "Innate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The vaettir's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
+						"The Vættir's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
 					],
 					"daily": {
 						"2e": [
@@ -2458,7 +4013,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The vaettir makes two greataxe attacks or two longbow attacks."
+						"The Vættir makes two greataxe attacks or two longbow attacks."
 					]
 				},
 				{
@@ -2482,7 +4037,7 @@
 				{
 					"name": "Maddening Gaze (1/Day)",
 					"entries": [
-						"The vaettir can lock eyes with a creature and drive it mad. Any creature within 30 feet of a vaettir that is the focus of its gaze must make a {@dc 12} Charisma saving throw or become {@spell confusion||confused} (as the spell) for {@dice 1d4} rounds. If the save is successful, the target is immune to the effect for 24 hours."
+						"The Vættir can lock eyes with a creature and drive it mad. Any creature within 30 feet of a Vættir that is the focus of its gaze must make a {@dc 12} Charisma saving throw or become {@spell confusion||confused} (as the spell) for {@dice 1d4} rounds. If the save is successful, the target is immune to the effect for 24 hours."
 					]
 				}
 			],
@@ -2544,7 +4099,10 @@
 					"A wrathful vættir typically rises from its mound in response to the theft of items they consider theirs (including heirlooms passed on to living descendants) or perceived disrespect (leaving the dragon prow attached to a longship coming into land is a common offense, as is failing to make offerings to them). Vættir jealously guard both honor and treasures, becoming relentless enemies over matters as small as an accidental word or a single coin.",
 					"A vættir's skin is typically blue-black in color, taut over its bones and sinews, lips drawn back in a cruel grimace. There exists a rarer, bone-white variety that cares little for material possessions, instead guarding their honor or a patch of land with equal ruthlessness. Both varieties can be called upon by descendants and those who live nearby for aid, although there's always a price. A vættir's 'help' is often more than the asker bargained for."
 				]
-			}
+			},
+			"reprintedAs": [
+				"Vaettir|ToB"
+			]
 		}
 	],
 	"itemProperty": [
