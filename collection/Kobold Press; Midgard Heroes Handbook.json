@@ -2412,7 +2412,7 @@
 						{
 							"type": "item",
 							"name": "Rune Power (7th level):",
-							"entry": "When you trace laukaz on a living creature’s chest, it grants them {@spell water breathing}. Tracing the rune takes 1 action, and the effect lasts 24 hours."
+							"entry": "When you trace laukaz on a living creature's chest, it grants them {@spell water breathing}. Tracing the rune takes 1 action, and the effect lasts 24 hours."
 						},
 						{
 							"type": "item",
@@ -2905,7 +2905,7 @@
 						{
 							"type": "item",
 							"name": "Rune Power (5th level):",
-							"entry": "Armor marked with turisaz has resistance to lightning damage and applies a +2 bonus to the wearer’s Strength score. Marking the armor takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 hour."
+							"entry": "Armor marked with turisaz has resistance to lightning damage and applies a +2 bonus to the wearer's Strength score. Marking the armor takes 1 action and the effect lasts while you {@condition concentration||concentrate}, for up to 1 hour."
 						},
 						{
 							"type": "item",
@@ -3255,7 +3255,7 @@
 			},
 			"entries": [
 				"This infamous ritual was learned from the enigmatic skraeling of the farthest reaches of the Northlands. It creates a {@creature tupilak golem|MidgardHeroes|tupilak}, a construct that tracks and kills a hated enemy, usually a rival.",
-				"First, a body must be constructed for the tupilak from the body parts of recently-dead animals and children. The body is wrapped in seaweed or vines and then encased in an outer shell made from bone treated with icy unguents and sealing salves worth 3,000 gp. The body can't be animated until a tupilak idol (with a material cost of 2,500 gp) is inserted, to serve as its heart. The verbal component is an ancient, hours-long song of revenge, sung over the construct’s body during each night's ritual. This construction process consumes nine consecutive nights with a 9-hour ritual each night.",
+				"First, a body must be constructed for the tupilak from the body parts of recently-dead animals and children. The body is wrapped in seaweed or vines and then encased in an outer shell made from bone treated with icy unguents and sealing salves worth 3,000 gp. The body can't be animated until a tupilak idol (with a material cost of 2,500 gp) is inserted, to serve as its heart. The verbal component is an ancient, hours-long song of revenge, sung over the construct's body during each night's ritual. This construction process consumes nine consecutive nights with a 9-hour ritual each night.",
 				"The final ritual captures a hungry spirit of Ginnungagap to animate the construct. These spirits are vengeful and mercenary; many intended victims of tupilaks have saved their own lives by figuring out how to turn a resentful, murderous construct against its creator."
 			],
 			"miscTags": [
@@ -3742,6 +3742,1417 @@
 	],
 	"monster": [
 		{
+			"name": "Clockwork Jewel Scarab",
+			"source": "MidgardHeroes",
+			"page": 204,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14
+				}
+			],
+			"hp": {
+				"average": 15,
+				"formula": "6d4"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 6,
+			"wis": 11,
+			"cha": 1,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"senses": [
+				"darkvision"
+			],
+			"passive": 10,
+			"languages": [
+				"understands Common", 
+				"telepathy 100 ft. (creator only)"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The clockwork jewel scarab is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The tupilak has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"TP"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"When deactivated, the clockwork jewel scarab appears to be a jeweled brooch, though a fine and expensive one. Bewildered thieves and angry merchants have had rude awakenings when a stolen or dearly-purchased brooch reactivated and flew back to its previous owner."
+				]
+			}
+		},
+		{
+			"name": "Arbonesse Star Mare",
+			"source": "MidgardHeroes",
+			"page": 204,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d10 + 2"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 7,
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Lineage",
+					"entries": [
+						"While mounted on an Arbonesse star mare, the rider has advantage on Charisma checks against intelligent creatures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"urban"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/riding-horse.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"These tall, elegant horses are normally white, silver-gray, or light slate in color. Their long manes are beautiful but tangle easily, so they must be brushed regularly to keep in a presentable state. An Arbonesse star mare typically fetches in excess of 600 gp at market.",
+					"While there's no doubt that these horses are graceful, well-mannered, and excellent riding mounts, the Arbonesse star mare is primarily a status symbol for the elfmarked of Dornig. So much so, in fact, that these mares are best kept in guarded paddocks, lest they become targets for thieves."
+				]
+			}
+		},
+		{
+			"name": "Bourgundian Destrier",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"conditionImmune": [
+				"frightened"
+			],
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Warhorse Armor",
+					"entries": [
+						"An armored warhorse has an AC based on the type of barding worn (see the Player's Handbook for more information on barding). The horse's AC includes its Dexterity modifier, where applicable. Barding doesn't alter the horse's challenge rating.",
+						{
+							"type": "table",
+							"colLabels": [
+								"AC",
+								"Barding"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"12",
+									"{@item Leather barding|phb|Leather}"
+								],
+								[
+									"13",
+									"{@item Studded leather barding|phb|Studded leather}"
+								],
+								[
+									"14",
+									"{@item Ring mail barding|phb|Ring mail}"
+								],
+								[
+									"15",
+									"{@item Scale mail barding|phb|Scale mail}"
+								],
+								[
+									"16",
+									"{@item Chain mail barding|phb|Chain mail}"
+								],
+								[
+									"17",
+									"{@item Splint barding|phb|Splint}"
+								],
+								[
+									"18",
+									"{@item Plate barding|phb|Plate}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/war-horse.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"_versions": [
+				{
+					"name": "Bourgundian Destrier (Chain Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item chain mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Bourgundian Destrier (Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 12,
+							"from": [
+								"{@item leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Bourgundian Destrier (Plate Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item plate barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Bourgundian Destrier (Ring Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"{@item ring mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Bourgundian Destrier (Scale Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item scale mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Bourgundian Destrier (Splint Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item splint barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Bourgundian Destrier (Studded Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 13,
+							"from": [
+								"{@item studded leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The fierce and muscled warhorses of Bourgund thunder fearlessly across the battlefield. The White Knights of Bourgund have bred the horses to remove variation in color, so all Bourgundian destriers are pure, alabaster white. Because of their scarcity, most of them are bred to order for ancient Bourgund families. On the rare occasion that one can be found for sale, its price will be double that of a standard warhorse.",
+					"Like most warhorses, these animals are known to buck, bite, and trample any creature other than its rider who attempts to mount it. They're also fearless; a Bourgundian destrier would charge into the mouth of a dragon if its rider spurred it forward. The sights, sounds, and smells of neither battlefields nor monsters disquiet them."
+				]
+			}
+		},
+		{
+			"name": "Capleon Quarterhorse",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d10"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 10,
+			"int": 2,
+			"wis": 11,
+			"cha": 7,
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Race (3/day)",
+					"entries": [
+						"The Capleon quarterhorse's speed becomes 90 feet for 1 minute."
+					]
+				},
+				{
+					"name": "Skittish",
+					"entries": [
+						"During combat, the horse's rider must make a successful DC 8 Wisdom ({@skill Animal Handling}) check at the start of the rider's turn or the horse becomes {@condition frightened} of the nearest enemy until the beginning of the rider's next turn. While the horse is frightened this way, the rider has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"urban"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/riding-horse.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"Known in the Seven Cities as the “baron's heels,” these horses serve as lightning-fast couriers and race horses on the dusty racing tracks of Capleon. They are most often muted brown and tan in color, with legs that appear too spindly to carry heavy loads. They fetch 125 gp when bought from traders in Capleon, and twice that abroad or for one with a winning record at the races.",
+					"There is no horse faster than the Capleon quarterhorse in all of Midgard. They are bred for speed and nothing else. They spook easily, they lack the stamina for long rides, and their riders must constantly coax them to stay on course."
+				]
+			}
+		},
+		{
+			"name": "Crag Pony",
+			"source": "MM",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 13,
+			"int": 3,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Beast of Burden",
+					"entries": [
+						"The mule is considered to be a Large animal for the purpose of determining its carrying capacity."
+					]
+				},
+				{
+					"name": "Giantbane",
+					"entries": [
+						"If a crag pony starts its turn within 50 feet of a giant, it moves toward the giant by the fastest route and attacks when close enough to do so. If a creature is riding the pony or otherwise in control of it (leading it by a rope, etc.), that creature can maintain (or reestablish) control over the pony with a successful DC 10 Wisdom ({@skill Animal Handling}) check."
+					]
+				},
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"hill",
+				"urban",
+				"desert"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/mule.mp3"
+			},
+			"traitTags": [
+				"Beast of Burden"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"The sturdy, homely crag pony is beloved by dwarves across Midgard. A clever animal with a deceptively jugheaded look and an exceptionally strong back, the crag pony is found pulling carts and carrying impossible loads for their dwarven owners. Their distinctive dark coloring and long, often braided manes are easily recognized in the dwarf cantons and across the dwarfholds of the North. Their slow pace keeps the cost of these animals low. They fetch just 40 gp at most markets; only dwarves are willing to pay more than that. They're also unreliable in the presence of giants. The animals are known to ignore commands when giants are near, instead charging and attacking into almost certain death. No one has managed to breed this trait out of them, despite generations of efforts.",
+					"Crag ponies happily carry loads that would flatten other horses. Their short, powerful legs are well suited to marching over tough and uneven terrain."
+				]
+			}
+		},
+		{
+			"name": "Dornig Heavy Warhorse",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Magical Nature",
+					"entries": [
+						"The attacks of the Dornig heavy warhorse are magical. Additionally, the horse adds 2 to its damage rolls against undead creatures."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Warhorse Armor",
+					"entries": [
+						"An armored warhorse has an AC based on the type of barding worn (see the Player's Handbook for more information on barding). The horse's AC includes its Dexterity modifier, where applicable. Barding doesn't alter the horse's challenge rating.",
+						{
+							"type": "table",
+							"colLabels": [
+								"AC",
+								"Barding"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"12",
+									"{@item Leather barding|phb|Leather}"
+								],
+								[
+									"13",
+									"{@item Studded leather barding|phb|Studded leather}"
+								],
+								[
+									"14",
+									"{@item Ring mail barding|phb|Ring mail}"
+								],
+								[
+									"15",
+									"{@item Scale mail barding|phb|Scale mail}"
+								],
+								[
+									"16",
+									"{@item Chain mail barding|phb|Chain mail}"
+								],
+								[
+									"17",
+									"{@item Splint barding|phb|Splint}"
+								],
+								[
+									"18",
+									"{@item Plate barding|phb|Plate}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/war-horse.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"_versions": [
+				{
+					"name": "Dornig Heavy Warhorse (Chain Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item chain mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Dornig Heavy Warhorse (Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 12,
+							"from": [
+								"{@item leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Dornig Heavy Warhorse (Plate Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item plate barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Dornig Heavy Warhorse (Ring Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"{@item ring mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Dornig Heavy Warhorse (Scale Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item scale mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Dornig Heavy Warhorse (Splint Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item splint barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Dornig Heavy Warhorse (Studded Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 13,
+							"from": [
+								"{@item studded leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Known as “sunhoofs” and descended from a bloodline founded by the elves, these radiant beasts are infused with magic. Their presence is anathema to undead and supernatural horrors of Midgard. Their sun-colored coats and white manes can be seen marching proudly in the imperial procession of the Imperatrix. At market, these animal fetch up to 1,000 gp, thanks to their powerful magical natures.",
+					"Dornig heavy warhorses have an unsettling effect on undead. Their sense for and revulsion to necromancy is so acute they won't even carry a rider who's cast a necromantic spell in the past month for more than a few miles."
+				]
+			}
+		},
+		{
+			"name": "Fey Walkers",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Fey Marked (3/day)",
+					"entries": [
+						"As a bonus action, the rider of a fey walker can command the horse to disappear and reappear in a nearby location, with an effect identical to the {@spell misty step} spell. The rider, horse, and everything both are carrying are transported with it."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Warhorse Armor",
+					"entries": [
+						"An armored warhorse has an AC based on the type of barding worn (see the Player's Handbook for more information on barding). The horse's AC includes its Dexterity modifier, where applicable. Barding doesn't alter the horse's challenge rating.",
+						{
+							"type": "table",
+							"colLabels": [
+								"AC",
+								"Barding"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"12",
+									"{@item Leather barding|phb|Leather}"
+								],
+								[
+									"13",
+									"{@item Studded leather barding|phb|Studded leather}"
+								],
+								[
+									"14",
+									"{@item Ring mail barding|phb|Ring mail}"
+								],
+								[
+									"15",
+									"{@item Scale mail barding|phb|Scale mail}"
+								],
+								[
+									"16",
+									"{@item Chain mail barding|phb|Chain mail}"
+								],
+								[
+									"17",
+									"{@item Splint barding|phb|Splint}"
+								],
+								[
+									"18",
+									"{@item Plate barding|phb|Plate}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/war-horse.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"_versions": [
+				{
+					"name": "Fey Walkers (Chain Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item chain mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Fey Walkers (Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 12,
+							"from": [
+								"{@item leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Fey Walkers (Plate Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item plate barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Fey Walkers (Ring Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"{@item ring mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Fey Walkers (Scale Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item scale mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Fey Walkers (Splint Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item splint barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Fey Walkers (Studded Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 13,
+							"from": [
+								"{@item studded leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				}
+			],
+			"fluff": {
+				"entries": [
+					"These horses have a deep connection with the hidden shadow roads that cross Midgard. How these animals came to know the location of shadow roads is unknown; some scholars speculate they are descended from horses that bore the elves south during the Vanir Wars. Fey walkers are still prized by both elves and shadow fey.",
+					"Their coloring ranges from light to dark brown, though the hair near their hooves is often a telling green color. Every fey walker knows the entrance to at least one shadow road, and they can always find and travel that road. Especially well-traveled fey walkers might know two or three such magical routes. Most are trained for war, and one seldom can be bought for less than 600 gp."
+				]
+			}
+		},
+		{
+			"name": "Khazzaki Steppe Pony",
+			"source": "MidgardHeroes",
+			"page": 206,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 70
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Home on the Plain",
+					"entries": [
+						"The Khazzaki Steppe pony is never lost on the Rothenian Plain. It can find a path to the City of Wheels and the territory of the Khan regardless of the condition of its rider."
+					]
+				},
+				{
+					"name": "Inspire the Herd",
+					"entries": [
+						"The Khazzaki steppe pony makes Dexterity and Constitution checks with advantage. In addition, horses within 50 feet of the pony and allied to it have advantage on Dexterity checks made to follow in the steppe pony's path and on Constitution checks."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Warhorse Armor",
+					"entries": [
+						"An armored warhorse has an AC based on the type of barding worn (see the Player's Handbook for more information on barding). The horse's AC includes its Dexterity modifier, where applicable. Barding doesn't alter the horse's challenge rating.",
+						{
+							"type": "table",
+							"colLabels": [
+								"AC",
+								"Barding"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"12",
+									"{@item Leather barding|phb|Leather}"
+								],
+								[
+									"13",
+									"{@item Studded leather barding|phb|Studded leather}"
+								],
+								[
+									"14",
+									"{@item Ring mail barding|phb|Ring mail}"
+								],
+								[
+									"15",
+									"{@item Scale mail barding|phb|Scale mail}"
+								],
+								[
+									"16",
+									"{@item Chain mail barding|phb|Chain mail}"
+								],
+								[
+									"17",
+									"{@item Splint barding|phb|Splint}"
+								],
+								[
+									"18",
+									"{@item Plate barding|phb|Plate}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/war-horse.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"_versions": [
+				{
+					"name": "Khazzaki Steppe Pony (Chain Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item chain mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Khazzaki Steppe Pony (Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 12,
+							"from": [
+								"{@item leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Khazzaki Steppe Pony (Plate Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item plate barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Khazzaki Steppe Pony (Ring Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"{@item ring mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Khazzaki Steppe Pony (Scale Mail Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item scale mail barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Khazzaki Steppe Pony (Splint Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item splint barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Khazzaki Steppe Pony (Studded Leather Barding)",
+					"source": "MidgardHeroes",
+					"ac": [
+						{
+							"ac": 13,
+							"from": [
+								"{@item studded leather barding|phb}"
+							]
+						}
+					],
+					"variant": null
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Born of war and the wild thyme that grows on the Rothenian Plain, these sturdy ponies carry the Khazzaki into battle and home from drunken celebration. The Khan himself oversees their breeding, because he understands how important the ponies are to his ambitions. They are mottled brown and white, or coal black in color. They are also the fastest warhorses in Midgard. A Khazzaki might part with one, if the prospective buyer offers at least 700 gold coins."
+				]
+			}
+		},
+		{
+			"name": "Giant Owl (Mount)",
+			"source": "MidgardHeroes",
+			"page": 206,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 60
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 12,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Giant Owl",
+				"understands Common, Elvish, and Sylvan but can't speak them"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"The owl has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"If the owl flies at least 10 feet in a straight line toward its target and its attack hits, the target must make a successful {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6 + 1}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"arctic"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-owl.mp3"
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Flyby",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"E",
+				"OTH",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Kobold Mounts",
+						"entries": [
+							"Guards in Zobeck's kobold ghetto need plenty of mobility, so they've trained dire weasels and giant owls to act as mounts. These trusty steeds allow their kobold riders to respond rapidly to reports of irksome too-talls by bounding through the streets or swooping over the rooftops of the ghetto.",
+							"Dire weasels come in a wide variety of breeds, including the sleek, black nightfoot, the dirty‑brown, brutish sport weasel, and the pure white kingsruff. Their giant owls are particularly savage because the kobolds beat them severely during their training, to instill in them a fear of kobolds that the owls naturally lack. As a result, only a kobold can ride a giant owl trained by kobolds; it attacks any other creature that tries to climb onto its back."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Giant Weasel (Mount)",
+			"source": "MidgardHeroes",
+			"page": 206,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 10,
+			"int": 4,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The weasel has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Vicious Jaws",
+					"entries": [
+						"A creature hit by the giant weasel's bite is also {@condition grappled} (escape DC 11). While it has a creature grappled, the weasel's bite attack hits that creature automatically."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-weasel.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Kobold Mounts",
+						"entries": [
+							"Guards in Zobeck's kobold ghetto need plenty of mobility, so they've trained dire weasels and giant owls to act as mounts. These trusty steeds allow their kobold riders to respond rapidly to reports of irksome too-talls by bounding through the streets or swooping over the rooftops of the ghetto.",
+							"Dire weasels come in a wide variety of breeds, including the sleek, black nightfoot, the dirty‑brown, brutish sport weasel, and the pure white kingsruff. Their giant owls are particularly savage because the kobolds beat them severely during their training, to instill in them a fear of kobolds that the owls naturally lack. As a result, only a kobold can ride a giant owl trained by kobolds; it attacks any other creature that tries to climb onto its back."
+						]
+					}
+				]
+			}
+		},
+		{
 			"name": "Tupilak Golem",
 			"source": "MidgardHeroes",
 			"page": 208,
@@ -3798,9 +5209,9 @@
 			"senses": [
 				"darkvision 60 ft."
 			],
-			"passive": 11,
+			"passive": 10,
 			"languages": [
-				"understands the languages of its creator but can’t speak"
+				"understands the languages of its creator but can't speak"
 			],
 			"cr": "4",
 			"trait": [
@@ -3831,7 +5242,7 @@
 				{
 					"name": "Magic Weapons",
 					"entries": [
-						"The tupilak’s weapon attacks are magical."
+						"The tupilak's weapon attacks are magical."
 					]
 				},
 				{
@@ -3904,6 +5315,312 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Ring Servant",
+			"source": "MidgardHeroes",
+			"page": 206,
+			"otherSources": [
+				{
+					"source": "DM09"
+				}
+			],
+			"reprintedAs": [
+				"Ring Servant|CCodex"
+			],
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d10 + 48"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"save": {
+				"str": "+8",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"understands the language of its creator but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The ring servant is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The ring servant's slam attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ring servant makes two slam attacks and uses Ring of Destruction if it is ready."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} +8 to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage. A creature hit by a slam attack must succeed on a {@dc 16} Strength saving throw or fall {@condition prone}."
+					]
+				},
+				{
+					"name": "Ring of Destruction {@recharge 5}",
+					"entries": [
+						"The ring servant magically generates a spinning ring of energy around itself that lasts until the start of its next turn. While the ring is active, any creature that starts its turn within 5 feet of the ring servant or moves to within 5 feet of it during a turn takes 22 ({@damage 5d8}) force damage, or half damage with a successful {@dc 15} Dexterity saving throw."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DM09/Ring Servant Token.webp"
+			},
+			"traitTags": [
+				"Immutable Form",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "insetReadaloud",
+										"page": 10,
+										"entries": [
+											"The head, arms, and torso of this massive figure are composed of metal plates surrounding a core of glowing energy. The whole resembles a vaguely humanoid figure, with two metal rings glowing with runes encircling its fists."
+										]
+									},
+									"Ring servants are mighty constructs created by ring magic. Though large in stature, they are deceptively light because most of their form is composed of energy. A ring servant stands 10 feet tall and weighs 300 pounds.",
+									{
+										"type": "entries",
+										"name": "Fleeting Form",
+										"page": 10,
+										"entries": [
+											"Ring servants are temporary beings, brought into existence by transmuting two simple metal rings into the weapons that surmount the creature's fists. These rings serve as the catalyst that generates the rest of the thing's form. Ring servants aren't mindless. They understand the fleeting span of their existence and don't rebel against it. Exceptions exists, where powerful ring wardens work tirelessly to imbue a ring servant with permanent existence. Such an enduring transformation is rare, however, and the resulting creature may have difficulty coming to terms with lingering in the world."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Constructed Nature",
+										"page": 10,
+										"entries": [
+											"A ring servant doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DM09/Ring Servant.webp"
+						},
+						"width": 510,
+						"height": 782
+					}
+				]
+			}
+		},
+		{
+			"name": "Snow Cat",
+			"source": "MidgardHeroes",
+			"page": 207,
+			"reprintedAs": [
+				"Snow Cat|CCodex"
+			],
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8"
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 40
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 10,
+			"int": 3,
+			"wis": 14,
+			"cha": 7,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6"
+			},
+			"passive": 14,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The snow cat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Stalker",
+					"entries": [
+						"If the snow cat successfully makes an attack from stealth, it may {@action grapple} the creature as a bonus action."
+					]
+				},
+				{
+					"name": "Snow Affinity",
+					"entries": [
+						"The snow cat gains advantage on {@skill Stealth} checks made in snowy or icy environs."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"forest"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/Snowcat.jpg"
+						}
+					}
+				],
+				"entries": [
+					"{@i These panther-sized cats have the features of a lynx, including tufts of fur at the tips of the ears. Snow cat coats range from stark white to muddy brown. They are patient hunters, ambushing prey from high places.}",
+					"Winterfolk have an affinity with these predators. It’s common for several snow cats to serve as guards and scouts for a halfling village."
+				]
+			},
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
 		},
 		{
 			"name": "Vættir",
@@ -4190,7 +5907,7 @@
 					"type": "entries",
 					"name": "Main Gauche",
 					"entries": [
-						"While wielding both a rapier and a {@item dagger|MidgardHeroes}, you may use a reaction after being attacked to roll a {@dice d4} and add the result to your Armor Class until the end of the attacker’s turn."
+						"While wielding both a rapier and a {@item dagger|MidgardHeroes}, you may use a reaction after being attacked to roll a {@dice d4} and add the result to your Armor Class until the end of the attacker's turn."
 					]
 				},
 				{
@@ -4269,7 +5986,7 @@
 					"type": "entries",
 					"name": "Crushing Blow",
 					"entries": [
-						"As an action, you can make a single attack roll with your battleaxe against an armored or naturally armored creature within 5 feet of you. If the attack hits, the target’s AC is permanently reduced by 1 until its armor is repaired, but cannot be reduced below 10 + the target’s Dexterity modifier. This attack has no effect on creatures with magical armor, unless your battleaxe is also magical."
+						"As an action, you can make a single attack roll with your battleaxe against an armored or naturally armored creature within 5 feet of you. If the attack hits, the target's AC is permanently reduced by 1 until its armor is repaired, but cannot be reduced below 10 + the target's Dexterity modifier. This attack has no effect on creatures with magical armor, unless your battleaxe is also magical."
 					]
 				}
 			]
@@ -4288,14 +6005,14 @@
 					"type": "entries",
 					"name": "Disarming Parry",
 					"entries": [
-						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your glaive’s hook and disarm them. Make an attack roll with your glaive. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your glaive's hook and disarm them. Make an attack roll with your glaive. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Trip (Large)",
 					"entries": [
-						"As an attack while you are wielding a glaive, you may sweep your opponent’s legs in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
+						"As an attack while you are wielding a glaive, you may sweep your opponent's legs in an attempt to trip them. Make an attack roll against a Large or smaller creature. If the attack hits, it must succeed on a Strength saving throw or fall {@condition prone}."
 					]
 				}
 			]
@@ -4425,14 +6142,14 @@
 					"type": "entries",
 					"name": "Pin",
 					"entries": [
-						"As an action, make an attack roll against a Medium creature you are grappling. If the attack hits, you catch one of the target’s limbs between the tines and bury the trident in the ground, {@condition restrained||restraining} the creature until the weapon is dislodged. The target may make a Strength or Dexterity saving throw (their choice) at the end of each of their turns to escape."
+						"As an action, make an attack roll against a Medium creature you are grappling. If the attack hits, you catch one of the target's limbs between the tines and bury the trident in the ground, {@condition restrained||restraining} the creature until the weapon is dislodged. The target may make a Strength or Dexterity saving throw (their choice) at the end of each of their turns to escape."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Disarming Parry",
 					"entries": [
-						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your trident’s tines and disarm them. Make an attack roll with your trident. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
+						"When a creature attacks you with a weapon, you may use your reaction to catch their weapon in your trident's tines and disarm them. Make an attack roll with your trident. If the result of this roll equals or exceeds their attack roll, their attack misses and they must succeed on a Strength saving throw or drop their weapon."
 					]
 				}
 			]
@@ -4607,7 +6324,7 @@
 					"type": "entries",
 					"name": "Piercing Point",
 					"entries": [
-						"As an action, you may pinpoint a weak point of an opponent’s armor and make a single attack with your war pick against it. This attack pierces armor, treating the target’s AC as 10 + their Dexterity modifier. On a hit, this attack does normal weapon damage."
+						"As an action, you may pinpoint a weak point of an opponent's armor and make a single attack with your war pick against it. This attack pierces armor, treating the target's AC as 10 + their Dexterity modifier. On a hit, this attack does normal weapon damage."
 					]
 				},
 				{
@@ -4737,7 +6454,7 @@
 					"type": "entries",
 					"name": "Pinning Edge",
 					"entries": [
-						"When you make a melee or ranged weapon attack with a hand axe, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the axe’s edge. This maneuver can be used against creatures without clothing at the GM’s discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target’s speed is reduced to zero until the axe is removed. The target can make another Strength saving throw as an action on its turn."
+						"When you make a melee or ranged weapon attack with a hand axe, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the axe's edge. This maneuver can be used against creatures without clothing at the GM's discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target's speed is reduced to zero until the axe is removed. The target can make another Strength saving throw as an action on its turn."
 					]
 				}
 			]
@@ -4789,7 +6506,7 @@
 					"type": "entries",
 					"name": "Sunder Joints",
 					"entries": [
-						"When you make a melee weapon attack with a light hammer against a creature in {@filter medium or heavy armor|items|source=|type=heavy armor;medium armor|category=|miscellaneous=}, you may choose to damage the joints of their armor instead of dealing damage to the creature. If the attack hits, the creature’s movement is reduced by 10 feet until the end of their next turn. This reduction is not cumulative."
+						"When you make a melee weapon attack with a light hammer against a creature in {@filter medium or heavy armor|items|source=|type=heavy armor;medium armor|category=|miscellaneous=}, you may choose to damage the joints of their armor instead of dealing damage to the creature. If the attack hits, the creature's movement is reduced by 10 feet until the end of their next turn. This reduction is not cumulative."
 					]
 				}
 			]
@@ -4812,7 +6529,7 @@
 					"type": "entries",
 					"name": "Blinding Binds",
 					"entries": [
-						"Instead of {@condition restrained||restraining} your foe, you may instead wrap the thick cords of your net around a single creature’s head. A Large or smaller creature hit by a net when you use this maneuver is {@condition blinded} but is not restrained, until the net is removed."
+						"Instead of {@condition restrained||restraining} your foe, you may instead wrap the thick cords of your net around a single creature's head. A Large or smaller creature hit by a net when you use this maneuver is {@condition blinded} but is not restrained, until the net is removed."
 					]
 				},
 				{
@@ -4833,7 +6550,7 @@
 				"source": "PHB"
 			},
 			"entries": [
-				"A blowgun has no specific maneuvers to use in combat, but a character with a {@item poisoner's kit|PHB}{@sup {@item poisoner's kit|XPHB|'24}} can spend a {@quickref resting|phb|2|0|short rest}{@sup {@variantrule Short Rest|XPHB|'24}} creating one of the following simple poisons: {@item deathtoad toxin|MidgardHeroes}, {@item chuul ichor|MidgardHeroes} and {@item Svirfneblin Wooziness Tonic|MidgardHeroes}. Applying a poison to a blowgun dart is a bonus action, and each vial of poison has 10 uses before it must be created again. A poison’s effects are in addition to the 1 piercing damage dealt by a blow dart."
+				"A blowgun has no specific maneuvers to use in combat, but a character with a {@item poisoner's kit|PHB}{@sup {@item poisoner's kit|XPHB|'24}} can spend a {@quickref resting|phb|2|0|short rest}{@sup {@variantrule Short Rest|XPHB|'24}} creating one of the following simple poisons: {@item deathtoad toxin|MidgardHeroes}, {@item chuul ichor|MidgardHeroes} and {@item Svirfneblin Wooziness Tonic|MidgardHeroes}. Applying a poison to a blowgun dart is a bonus action, and each vial of poison has 10 uses before it must be created again. A poison's effects are in addition to the 1 piercing damage dealt by a blow dart."
 			]
 		},
 		{
@@ -4910,7 +6627,7 @@
 					"type": "entries",
 					"name": "Patient Shot",
 					"entries": [
-						"You carefully align your crossbow’s sights over your target. As an action in a turn that you have not moved, you may make a single crossbow attack with advantage."
+						"You carefully align your crossbow's sights over your target. As an action in a turn that you have not moved, you may make a single crossbow attack with advantage."
 					]
 				}
 			]
@@ -4943,7 +6660,7 @@
 					"type": "entries",
 					"name": "Patient Shot",
 					"entries": [
-						"You carefully align your crossbow’s sights over your target. As an action in a turn that you have not moved, you may make a single crossbow attack with advantage."
+						"You carefully align your crossbow's sights over your target. As an action in a turn that you have not moved, you may make a single crossbow attack with advantage."
 					]
 				}
 			]
@@ -4976,7 +6693,7 @@
 					"type": "entries",
 					"name": "Patient Shot",
 					"entries": [
-						"You carefully align your rifle’s sights over your target. As an action in a turn that you have not moved, you may make a single rifle attack with advantage."
+						"You carefully align your rifle's sights over your target. As an action in a turn that you have not moved, you may make a single rifle attack with advantage."
 					]
 				}
 			]
@@ -5009,7 +6726,7 @@
 					"type": "entries",
 					"name": "Patient Shot",
 					"entries": [
-						"You carefully align your rifle’s sights over your target. As an action in a turn that you have not moved, you may make a single rifle attack with advantage."
+						"You carefully align your rifle's sights over your target. As an action in a turn that you have not moved, you may make a single rifle attack with advantage."
 					]
 				}
 			]
@@ -5106,14 +6823,14 @@
 					"type": "entries",
 					"name": "Pinning Shot",
 					"entries": [
-						"When you make an attack with a bow, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the arrow’s point. This maneuver can be used against creatures without clothing at the GM’s discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target’s speed is reduced to 0 until the arrow is removed. The target can make another Strength saving throw as an action on its turn."
+						"When you make an attack with a bow, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the arrow's point. This maneuver can be used against creatures without clothing at the GM's discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target's speed is reduced to 0 until the arrow is removed. The target can make another Strength saving throw as an action on its turn."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Distracting Shot",
 					"entries": [
-						"As an action, make a single attack with your bow. You intentionally miss your target but give an ally the chance to attack while it is distracted. The next attack roll against the target has advantage if it is made before the beginning of the target’s next turn."
+						"As an action, make a single attack with your bow. You intentionally miss your target but give an ally the chance to attack while it is distracted. The next attack roll against the target has advantage if it is made before the beginning of the target's next turn."
 					]
 				},
 				{
@@ -5139,14 +6856,14 @@
 					"type": "entries",
 					"name": "Pinning Shot",
 					"entries": [
-						"When you make an attack with a bow, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the arrow’s point. This maneuver can be used against creatures without clothing at the GM’s discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target’s speed is reduced to 0 until the arrow is removed. The target can make another Strength saving throw as an action on its turn."
+						"When you make an attack with a bow, you may attempt to pin a Large or smaller creature to a wall or surface by catching their clothing with the arrow's point. This maneuver can be used against creatures without clothing at the GM's discretion. Make an attack roll; if the attack hits, the target must make a Strength saving throw. On a failure, the target's speed is reduced to 0 until the arrow is removed. The target can make another Strength saving throw as an action on its turn."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Distracting Shot",
 					"entries": [
-						"As an action, make a single attack with your bow. You intentionally miss your target but give an ally the chance to attack while it is distracted. The next attack roll against the target has advantage if it is made before the beginning of the target’s next turn."
+						"As an action, make a single attack with your bow. You intentionally miss your target but give an ally the chance to attack while it is distracted. The next attack roll against the target has advantage if it is made before the beginning of the target's next turn."
 					]
 				},
 				{
@@ -5560,6 +7277,146 @@
 			]
 		},
 		{
+			"name": "Arbonesse Star Mare",
+			"source": "MidgardHeroes",
+			"page": 204,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 60000,
+			"carryingCapacity": 480,
+			"speed": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Lineage",
+					"entries": [
+						"While mounted on an Arbonesse star mare, the rider has advantage on Charisma checks against intelligent creatures."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bourgundian Destrier",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 80000,
+			"carryingCapacity": 540,
+			"speed": 60,
+			"entries": []
+		},
+		{
+			"name": "Capleon Quarterhorse",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 12500,
+			"carryingCapacity": 480,
+			"speed": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Race (3/day)",
+					"entries": [
+						"The Capleon quarterhorse's speed becomes 90 feet for 1 minute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skittish",
+					"entries": [
+						"During combat, the horse's rider must make a successful DC 8 Wisdom ({@skill Animal Handling}) check at the start of the rider's turn or the horse becomes {@condition frightened} of the nearest enemy until the beginning of the rider's next turn. While the horse is frightened this way, the rider has disadvantage on attack rolls and ability checks."
+					]
+				}
+			]
+		},
+		{
+			"name": "Crag Pony",
+			"source": "PHB",
+			"page": 205,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 4000,
+			"carryingCapacity": 420,
+			"speed": 40,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Giantbane",
+					"entries": [
+						"If a crag pony starts its turn within 50 feet of a giant, it moves toward the giant by the fastest route and attacks when close enough to do so. If a creature is riding the pony or otherwise in control of it (leading it by a rope, etc.), that creature can maintain (or reestablish) control over the pony with a successful {@dc 10} Wisdom ({@condition Animal Handling}) check."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dornig Heavy Warhorse",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 100000,
+			"carryingCapacity": 540,
+			"speed": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magical Nature",
+					"entries": [
+						"The attacks of the Dornig heavy warhorse are magical. Additionally, the horse adds 2 to its damage rolls against undead creatures."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fey Walkers",
+			"source": "MidgardHeroes",
+			"page": 205,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 60000,
+			"carryingCapacity": 540,
+			"speed": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Fey Marked (3/day)",
+					"entries": [
+						"The attacks of the Dornig heavy warhorse are magical. Additionally, the horse adds 2 to its damage rolls against undead creatures."
+					]
+				}
+			]
+		},
+		{
+			"name": "Khazzaki Steppe Pony",
+			"source": "MidgardHeroes",
+			"page": 206,
+			"type": "MNT",
+			"rarity": "none",
+			"value": 70000,
+			"carryingCapacity": 480,
+			"speed": 70,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Home on the Plain",
+					"entries": [
+						"The Khazzaki Steppe pony is never lost on the Rothenian Plain. It can find a path to the City of Wheels and the territory of the Khan regardless of the condition of its rider."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Inspire the Herd",
+					"entries": [
+						"The Khazzaki steppe pony makes Dexterity and Constitution checks with advantage. In addition, horses within 50 feet of the pony and allied to it have advantage on Dexterity checks made to follow in the steppe pony's path and on Constitution checks."
+					]
+				}
+
+			]
+		},
+		{
 			"name": "Elk Horn Rod",
 			"source": "MidgardHeroes",
 			"page": 210,
@@ -5588,10 +7445,10 @@
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A nithing pole is crafted to exact retribution for an act of cowardice or dishonor. It’s a sturdy wooden stave, 6 to 10 feet long, carved with runes that name the dishonored target of the stave’s curse. The carved shaft is draped in horsehide, topped with a horse’s skull, and placed where its target is expected to pass by; typically the pole is driven into the ground or wedged into a rocky cleft in a remote spot where the intended victim won’t see it until it’s too late.",
-				"A pole is created to punish a specific person for a specific crime. The exact target must be named on the pole; a generic identity such as “the person who blinded Lars Gustafson” isn’t precise enough. The moment the named target approaches within 333 feet, the pole casts {@spell bestow curse} (with range 333 feet instead of touch) on the target.",
-				"The DC for the target’s Wisdom saving throw is 15; if the saving throw succeeds, the pole recasts the spell every round until the saving throw fails, the target retreats out of range, or the nithing pole is destroyed. Anyone other than the pole’s creator who tries to destroy or knock down a nithing pole is also targeted by a bestow curse spell, but only once.",
-				"The effect of the curse is set when the pole is created. The pole becomes nonmagical once it has laid its curse on its intended target; an untriggered and forgotten nithing pole remains dangerous for centuries. The curse lasts 8 hours and doesn’t require {@condition concentration}."
+				"A nithing pole is crafted to exact retribution for an act of cowardice or dishonor. It's a sturdy wooden stave, 6 to 10 feet long, carved with runes that name the dishonored target of the stave's curse. The carved shaft is draped in horsehide, topped with a horse's skull, and placed where its target is expected to pass by; typically the pole is driven into the ground or wedged into a rocky cleft in a remote spot where the intended victim won't see it until it's too late.",
+				"A pole is created to punish a specific person for a specific crime. The exact target must be named on the pole; a generic identity such as “the person who blinded Lars Gustafson” isn't precise enough. The moment the named target approaches within 333 feet, the pole casts {@spell bestow curse} (with range 333 feet instead of touch) on the target.",
+				"The DC for the target's Wisdom saving throw is 15; if the saving throw succeeds, the pole recasts the spell every round until the saving throw fails, the target retreats out of range, or the nithing pole is destroyed. Anyone other than the pole's creator who tries to destroy or knock down a nithing pole is also targeted by a bestow curse spell, but only once.",
+				"The effect of the curse is set when the pole is created. The pole becomes nonmagical once it has laid its curse on its intended target; an untriggered and forgotten nithing pole remains dangerous for centuries. The curse lasts 8 hours and doesn't require {@condition concentration}."
 			],
 			"attachedSpells": [
 				"bestow curse"
