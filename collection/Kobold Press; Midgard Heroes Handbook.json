@@ -3489,7 +3489,7 @@
 			"level": 4,
 			"school": "T",
 			"subschools": [
-				"Clockwork"
+				"clockwork"
 			],
 			"time": [
 				{
@@ -3542,21 +3542,20 @@
 			"areaTags": [
 				"ST"
 			],
-			"miscTags": [
-				"SCL"
-			],
 			"classes": {
 				"fromClassList": [
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "XPHB"
 					}
 				]
-			}
+			},
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 8
+				}
+			]
 		},
 		{
 			"name": "Acid Rain",
@@ -3629,25 +3628,12 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "XPHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "XPHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "XPHB"
 					}
 				]
 			},
 			"reprintedAs": [
 				"Acid Rain|KPDM"
 			]
-
 		},
 		{
 			"name": "Adjust Positioning",
@@ -3692,11 +3678,10 @@
 				}
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"ST"
 			],
 			"miscTags": [
-				"SCL"
+				"SCT"
 			],
 			"classes": {
 				"fromClassList": [
@@ -3715,22 +3700,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "XPHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "XPHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "XPHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "XPHB"
 					}
 				]
 			},
@@ -3738,9 +3707,2816 @@
 				"Adjust Position|KPDM",
 				"Adjust Position|ToH"
 			]
+		},
+		{
+			"name": "Afflict Line",
+			"source": "MidgardHeroes",
+			"page": 148,
+			"level": 9,
+			"school": "N",
+			"subschools": [
+				"high elven"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a statuette carved in the likeness of the victim worth 1,250 gp",
+					"cost": 125000
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"condition": "one generation"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. Your target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. The victim has disadvantage on ability checks and saving throws made with the ability score that you choose when you cast the spell. In addition, the target's firstborn offspring is also targeted by the curse. The firstborn is allowed a saving throw of their own if they currently live, or they make one upon their birth if they're not yet born when the spell is cast. If the target's firstborn has already died, the curse passes to their next oldest offspring.",
+				{
+					"type": "entries",
+					"name": "Ritual Focus",
+					"entries": [
+						"If you expend your ritual focus, the curse becomes hereditary, passing from firstborn to firstborn for the entire length of the family's lineage until one of them successfully saves against the curse and throws off your dark magic."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Afflict Line|KPDM"
+			]
+		},
+		{
+			"name": "Amplify Ley Field",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"level": 5,
+			"school": "V",
+			"subschools": [
+				"ley line"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a faintly shimmering field of charged energy around yourself. Within that area, the intensity of ley lines you're able to draw on increases from {@table ley line effects, weak|MidgardHeroes|weak} to {@table ley line effects, strong|MidgardHeroes|strong}, or from strong to {@table ley line effects, titanic|MidgardHeroes|titanic}.",
+				"If no ley lines are near enough for you to draw on, you can treat the area of the spell itself as an unlocked, weak ley line."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM05",
+					"page": 9
+				}
+			]
+		},
+		{
+			"name": "Analyze Device",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"level": 1,
+			"school": "D",
+			"subschools": [
+				"clockwork"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a complete set of clockworker's tools"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You discover all mechanical properties, mechanisms, and functions of a single construct or clockwork device, including how to activate or deactivate those functions, if appropriate."
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "KPDM",
+					"page": 35
+				}
+			]
+		},
+		{
+			"name": "Angelic Guardian",
+			"source": "MidgardHeroes",
+			"page": 175,
+			"level": 1,
+			"school": "C",
+			"subschools": [
+				"angelic"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a minor celestial manifestation to protect a creature you can see within range. A faintly glowing figure resembling a human head and shoulders hovers within 5 feet of the target for the duration. The figure moves to interpose itself between the target and any incoming attacks, granting the target +2 to AC.",
+				"If the target fails a Dexterity saving throw while the spell is active, it can use its reaction to roll a new save. The spell then ends. "
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Angelic Guardian|KPDM"
+			]
+		},
+		{
+			"name": "Animate Construct",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"level": 1,
+			"school": "T",
+			"subschools": [
+				"clockwork"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a construct body of appropriate size"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell animates a carefully prepared construct of Tiny size. The object acts immediately, on your turn, and can attack your opponents to the best of its ability. You can direct it not to attack, to attack particular enemies, or to perform other actions. You choose the object to animate, and you can change that choice each time you cast the spell. The cost of the body to be animated is 10 gp x its hit points. The body can be reused any number of times, provided it isn't severely damaged or destroyed.",
+				"If no prepared construct body is available, you can animate a mass of loose metal or stone instead. Before casting, the loose objects must be arranged in a suitable shape (taking up to a minute), and the construct's hit points are halved.",
+				"An animated construct has a Constitution of 10, Intelligence and Wisdom 3, and Charisma 1. Other characteristics are determined by the construct's size as follows.",
+				{
+					"type": "table",
+					"caption": "Animated Construct Statistics",
+					"colLabels": [
+						"Size",
+						"HP",
+						"AC",
+						"Attack",
+						"Str",
+						"Dex",
+						"Spell Slot"
+					],
+					"colStyles": [
+						"col-3",
+						"col-1",
+						"col-1",
+						"col-3",
+						"col-1",
+						"col-1",
+						"col-2"
+					],
+					"rows": [
+						[
+							"{@creature animated construct (tiny)|MidgardHeroes|Tiny}",
+							"15",
+							"12",
+							"{@hit 3}, {@damage 1d4+4|1d4+4}",
+							"{@dice 1d20-3|4}",
+							"{@dice 1d20+3|16}",
+							"1st"
+						],
+						[
+							"{@creature animated construct (small)|MidgardHeroes|Small}",
+							"25",
+							"13",
+							"{@dice 1d20+4|+4|}, {@damage 1d8+2}",
+							"{@dice 1d20 - 2|6}",
+							"{@dice 1d20 + 2|14}",
+							"2nd"
+						],
+						[
+							"{@creature animated construct (medium)|MidgardHeroes|Medium}",
+							"40",
+							"14",
+							"{@hit +5}, {@damage 2d6+1}",
+							"{@dice 1d20 + 0|10}",
+							"{@dice 1d20 + 1|12}",
+							"3rd"
+						],
+						[
+							"{@creature animated construct (large)|MidgardHeroes|Large}",
+							"50",
+							"15",
+							"{@hit +6}, {@damage 2d10+2}",
+							"{@dice 1d20 + 2|14}",
+							"{@dice 1d20 + 0|10}",
+							"4th"
+						],
+						[
+							"{@creature animated construct (huge)|MidgardHeroes|Huge}",
+							"80",
+							"16",
+							"{@hit +8}, {@damage 2d12+4}",
+							"{@dice 1d20 + 18|18}",
+							"{@dice 1d20 - 1|8}",
+							"5th"
+						],
+						[
+							"{@creature animated construct (gargantuan)|MidgardHeroes|Gargantuan}",
+							"100",
+							"17",
+							"{@hit +10}, {@damage 4d8+6}",
+							"{@dice 1d20 + 5|20}",
+							"{@dice 1d20 - 2|6}",
+							"6th"
+						]
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Casting this spell using higher level spell slots allows you to increase the size of the construct animated, as shown on the table."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			]
+		},
+		{
+			"name": "Arcane Sight",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"level": 8,
+			"school": "D",
+			"subschools": [
+				"hieroglyph"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "round"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of clear quartz"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The recipient of this spell gains the benefits of both {@spell true seeing} and {@spell detect magic} for 1 hour, and also knows the name and effect of every spell he or she witnesses during arcane sight's duration."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Arcane Sight|KPDM"
+			]
+		},
+		{
+			"name": "Armored Heart",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"level": 1,
+			"school": "C",
+			"subschools": [
+				"clockwork"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "5 gp worth of mithral dust sprinkled on the target's skin",
+					"cost": 500,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The targeted creature gains resistance to bludgeoning, slashing, and piercing damage. This resistance can be overcome with adamantine or magical weapons."
+			],
+			"damageResist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			]
+		},
+		{
+			"name": "Armored Shell",
+			"source": "MidgardHeroes",
+			"page": 150,
+			"level": 1,
+			"school": "C",
+			"subschools": [
+				"clockwork"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rivet"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell creates a suit of magical {@item studded leather armor|phb} (AC 12). It does not grant you proficiency in its use. Casters without the appropriate armor proficiency suffer disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity and cannot cast spells."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Casting armored shell using a higher-level spell slot creates stronger armor: a {@item chain shirt|phb} (AC 13) at level 2, {@item scale mail|phb} (AC 14) at level 3, {@item chain mail|phb} (AC 16) at level 4, and {@item plate armor|phb} (AC 18) at level 5."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			]
+		},
+		{
+			"name": "Aspect of the Dragon",
+			"source": "MidgardHeroes",
+			"page": 150,
+			"level": 7,
+			"school": "T",
+			"subschools": [
+				"dragon"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dragon scale"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"By tapping into your very blood, this spell draws out the ancient nature inside, demonstrating to the world you are not like the rest; you are descended from dragons. This spell allows you to assume the form of any {@filter dragon-type creature of challenge 10 or less|bestiary|source=|Challenge Rating=[&0;&10]|type=dragon|miscellaneous=}.",
+				"You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked {@condition unconscious}.",
+				"You retain the benefits of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can speak only if the dragon can normally speak.",
+				"When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions normally, but equipment doesn't change shape or size to match the new form. Any equipment that the new form can't wear must either fall to the ground or merge into the new form. The GM has final say on whether the new form can wear or use a particular piece of equipment. Equipment that merges has no effect in that state."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Aspect of the Dragon|KPDM"
+			]
+		},
+		{
+			"name": "Auspicious Warning",
+			"source": "MidgardHeroes",
+			"page": 150,
+			"level": 1,
+			"school": "D",
+			"subschools": [
+				"chaos"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when an ally rolls an attack, ability check, or saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Just in time, you call out a fortunate warning to a creature. The target rolls a {@dice d4} and adds the number rolled to one attack roll, ability check, or saving throw that they have just made and uses the new result for determining success or failure."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Auspicious Warning|KPDM"
+			]
+		},
+		{
+			"name": "Bad Timing",
+			"source": "MidgardHeroes",
+			"page": 150,
+			"level": 2,
+			"school": "D",
+			"subschools": [
+				"chaos"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You point toward a creature that you can see and twist strands of chaotic energy around its fate. If the target fails a Charisma saving throw, the next attack roll or ability check the creature attempts within 10 minutes is made with disadvantage."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Bad Timing|KPDM"
+			]
+		},
+		{
+			"name": "Banshee Wail",
+			"source": "MidgardHeroes",
+			"page": 150,
+			"level": 6,
+			"school": "N",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a swatch from a death shroud"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You emit a soul-shattering wail. Every creature within a 30-foot cone who hears the wail must make a Wisdom saving throw. Those that fail take {@damage 6d10} psychic damage and become {@condition frightened} of you; a frightened creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. Those that succeed take {@damage 3d10} psychic damage and aren't frightened. This spell has no effect on constructs and undead."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"areaTags": [
+				"N"
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+				"plant"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Become Nightwing",
+			"source": "MidgardHeroes",
+			"page": 150,
+			"level": 6,
+			"school": "E",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a crow's eye"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"By channeling the essence of the Shadow Realm into yourself, this spell imbues you with wings of shadow. For the duration of the spell, you gain a {@quickref Flying Movement|PHB|3|0|fly speed}{@sup {@variantrule Fly Speed|XPHB|'24}} of 60 feet and a new attack action: nightwing breath.",
+				{
+					"type": "entries",
+					"name": "Nightwing Breath (recharge 4-6)",
+					"entries": [
+						"You exhale shadow-substance in a 30-foot cone. Each creature in the area takes {@damage 5d6} necrotic damage, or half damage with a successful Dexterity saving throw."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Become Nightwing|KPDM"
+			]
+		},
+		{
+			"name": "Beguiling Gift",
+			"source": "MidgardHeroes",
+			"page": 151,
+			"level": 1,
+			"school": "E",
+			"subschools": [
+				"hieroglyph"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You implant a powerful suggestion into an item as you hand it to someone. If the person you hand it to accepts it willingly, they must make a successful Wisdom saving throw or use the object as it's meant to be used at their first opportunity: writing with a pen, consuming food or drink, wearing clothing, drawing a weapon, etc. After the first use, they're under no compulsion to continue using the object or even to keep it."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Benediction",
+			"source": "MidgardHeroes",
+			"page": 151,
+			"level": 0,
+			"school": "A",
+			"subschools": [
+				"angelic"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call down a blessing in the name of an angel of protection. A creature you can see within range shimmers with a faint white light. The next time the creature takes damage, it can roll {@dice 1d4} and reduce the damage by the result. The spell then ends."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Benediction|KPDM"
+			]
+		},
+		{
+			"name": "Binding Oath",
+			"source": "MidgardHEroes",
+			"page": 151,
+			"level": 4,
+			"school": "N",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"You seal an agreement between two or more willing creatures with an oath in the name of Tyr, using ritual blessings and toasts of the symbel, during which both the oath and the consequences are clearly set out. If any of the sworn break this solemn vow, they are struck by a curse. The caster can choose either an effect appropriate for {@spell bestow curse} or another penalty, subject to the GM's approval. {@i Binding oath} can't be dismissed by {@spell dispel magic}, but it can be removed with {@spell dispel evil and good}, {@spell remove curse}, or {@spell wish}. Remove curse functions only if the spell slot used to cast it is equal to or higher than the spell slot used to cast {@i binding oath}. When the oath is broken or the effect removed from one of the participants, all targets are immediately aware that this has occurred, but no other details. Depending on the nature of the oath, this may or may not invalidate the oath for the other targets. If so, the spell ends for all other affected creatures, but curse effects already bestowed remain until dispelled."
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Binding Oath|KPDM"
+			]
+		},
+		{
+			"name": "Bitter Chains",
+			"source": "MidgardHeroes",
+			"page": 151,
+			"level": 2,
+			"school": "T",
+			"subschools": [
+				"ring"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a spiked metal ring"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The spiked ring in your hand multiplies itself into a long, barbed chain to ensnare a creature you touch. Make a melee spell attack against the target. On a hit, the target is bound in metal chains for the duration. While bound, the target can move only at half speed and has disadvantage on attack rolls, saving throws, and Dexterity checks. If it moves more than 5 feet during a turn, it takes {@damage 3d6} piercing damage from the barbs.",
+				"The creature can escape from the chains by using an action and making a successful Strength or Dexterity check against your spell save DC, or if the chains are destroyed. The chains have AC 18 and 20 hit points."
+			],
+			"spellAttack": [
+				"M"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"abilityCheck": [
+				"strength",
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Bitter Chains|KPDM"
+			]
+		},
+		{
+			"name": "Black Hand",
+			"source": "MidgardHeroes",
+			"page": 151,
+			"level": 4,
+			"school": "N",
+			"subschools": [
+				"illumination"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You gather the powers of darkness into your fist and fling paralyzing, dark flame at a target within 30 feet. With a successful ranged spell attack, this spell siphons vitality from the target into you. For the duration, the target has disadvantage and you have advantage on attacks, ability checks, and saving throws made with Strength, Dexterity, and Constitution. An affected target makes a Constitution saving throw (with disadvantage) at the end of its turn, ending the effect with a success."
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM09",
+					"page": 5
+				}
+			],
+			"reprintedAs": [
+				"Black Hand|KPMD"
+			]
+		},
+		{
+			"name": "Black Ribbons",
+			"source": "MidgardHeroes",
+			"page": 151,
+			"level": 1,
+			"school": "C",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of ribbon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You pull pieces of the Shadow Realm into your own reality, causing a 20-foot cube to fill with inky ribbons that turn the area into {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}} and wrap around nearby creatures. Any creature that ends its turn in the area becomes {@condition restrained} by the shadow ribbons until the end of its next turn unless it makes a successful Dexterity saving throw. Once a creature makes this saving throw successfully, it can't be restrained again by these black ribbons, but it's still affected by the difficult terrain."
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"areaTags": [
+				"C"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Black Ribbons|KPDM"
+			]
+		},
+		{
+			"name": "Black Swan Storm",
+			"source": "MidgardHeroes",
+			"page": 152,
+			"level": 2,
+			"school": "V",
+			"subschools": [
+				"high elven"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a feather from a black swan"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call forth a whirlwind of black feathers that fills a cube 5 feet on each side. The feathers deal {@damage 2d8} force damage to creatures inside the cube's area and radiate darkness, causing the illumination level within 20 feet of the cube to drop by one step (from {@quickref Vision and Light|PHB|2|0|bright light}{@sup {@variantrule Bright Light|XPHB|'24}} to {@quickref Vision and Light|PHB|2|0|dim light}{@sup {@variantrule Dim Light|XPHB|'24}}, from dim light to {@quickref Vision and Light|PHB|2|0|darkness}{@sup {@variantrule Darkness|XPHB|'24}}). Creatures that make a successful Dexterity saving throw suffer only half damage but are still affected by the change in light."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the feathers do an additional {@damage 2d8|2-9|1d8} force damage for each slot level above 2nd."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Focus",
+					"entries": [
+						"If you expend your ritual focus, then you can move the whirlwind up to 15 feet by using a bonus action on your turn. If the whirlwind moves more than 30 feet from you, the spell ends."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"C"
+			],
+			"miscTags": [
+				"LGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Black Swan Storm|KPDM"
+			]
+		},
+		{
+			"name": "Black Well",
+			"source": "MidgardHeroes",
+			"page": 152,
+			"level": 6,
+			"school": "N",
+			"subschools": [
+				"illumination"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a seething sphere of dark energy 5 feet in diameter. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes {@damage 6d8} necrotic damage and is {@condition stunned}; a successful Constitution saving throw halves the damage and reduces the stun to {@condition incapacitated||incapacitation}. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failure or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions that turn. Creatures take damage only upon entering the well\u2014they take no additional damage for remaining in it\u2014but if they leave the well and are pulled back in again, they take damage again. A total of nine",
+				"Medium creatures, three Large creatures, or one Huge creature can be inside the well's upper-dimensional space at one time. When the well's duration ends, all creatures inside it tumble out in a heap, landing {@condition prone}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the damage done by the well increases by {@scaledamage 6d8|6-9|1d8} and the well pulls creatures an additional 5 feet for each slot level above 6th."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength",
+				"constitution"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"stunned",
+				"incapacitated",
+				"prone"
+			],
+			"areaTags": [
+				"S"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Black Well|KPDM"
+			]
+		},
+		{
+			"name": "Blade of My Brother",
+			"source": "MidgardHeroes",
+			"page": 152,
+			"level": 4,
+			"school": "T",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "melee weapon owned by a dead ally of the target"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 4
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a melee weapon that was used by an ally who is now dead, and it leaps into the air and flies to another ally (chosen by you) within 15 feet of you. The weapon enters that ally's space and moves when the ally moves. If the weapon or the ally is forced to move more than 5 feet from the other, the spell ends.",
+				"The weapon acts on your turn by making an attack if a target presents itself. Its attack modifier equals your spellcasting level + the weapon's inherent magical bonus, if any; it receives only its own inherent magical bonus to damage. The weapon fights for up to 4 rounds or until your concentration is broken, after which the spell ends and it falls to the ground."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Blade of My Brother|KPDM"
+			]
+		},
+		{
+			"name": "Blade of Wrath",
+			"source": "MidgardHeroes",
+			"page": 175,
+			"level": 3,
+			"school": "V",
+			"subschools": [
+				"angelic"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rebuke of evil, written in Celestial"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a sword of pure white fire in your free hand. The blade is similar in size and shape to a longsword, and it lasts for the duration. If you let go of the blade it disappears, but you can call it forth again as a bonus action.",
+				"You can use your action to make a melee spell attack with the blade. On a hit, the target takes {@damage 2d8} fire damage and {@damage 2d8} radiant damage. An aberration, fey, fiend, or undead creature damaged by the blade must succeed on a Wisdom saving throw or be {@condition frightened} until the start of your next turn.",
+				"The blade sheds {@quickref Vision and Light|PHB|2|0|bright light}{@sup {@variantrule Bright Light|XPHB|'24}} in a 20-foot radius and {@quickref Vision and Light|PHB|2|0|dim light}{@sup {@variantrule Dim Light|XPHB|'24}} for an additional 20 feet."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the fire damage or the radiant damage (your choice) increases by {@scaledamage 2d8|3-9|1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Blade of Wrath|KPDM"
+			]
+		},
+		{
+			"name": "Blazing Chariot",
+			"source": "MidgardHeroes",
+			"page": 153,
+			"level": 5,
+			"school": "C",
+			"subschools": [
+				"angelic"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a small golden wheel worth 250 gp",
+					"cost": 25000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Calling upon the might of the angels, you conjure a flaming chariot made of gold and mithral in an unoccupied space you can see within range. Two horses made of fire and light pull the chariot. You and up to three other Medium or smaller creatures you designate can board the chariot (at the cost of 5 feet of movement) and are unharmed by the flames. Any other creature who touches the chariot or hits it or a creature riding in it with a melee attack while within 5 feet of the chariot takes {@damage 3d6} fire damage and {@damage 3d6} radiant damage. The chariot is AC 18, has 50 hit points, is immune to fire, poison, psychic, and radiant damage, and is resistant to all other nonmagical damage. The horses are not separate creatures but are part of the chariot. The chariot vanishes if it's reduced to 0 hit points, and any creature riding it falls. The chariot has a speed of 50 feet and a fly speed of 40 feet.",
+				"On your turn, you can guide the chariot in place of your own movement. You can direct it to {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Dodge|XPHB} by using your bonus action. As an action, you can cause the chariot to overrun creatures in its path. For the remainder of the turn, the chariot can enter a hostile creature's space. The creature takes damage as if it touched the chariot and must make a successful Strength saving throw or be knocked {@condition prone}."
+			],
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Blazing Chariot|KPDM"
+			]
+		},
+		{
+			"name": "Bless the Dead",
+			"source": "MidgardHeroes",
+			"page": 153,
+			"level": 0,
+			"school": "A",
+			"subschools": [
+				"hieroglyph"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You grant a blessing to one deceased creature, allowing it to cross over to the realm of the dead in peace. A creature that benefits from {@i bless the dead} can't become undead. The spell has no effect on either the living or the undead."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Bless the Dead|KPDM"
+			]
+		},
+		{
+			"name": "Blessed Halo",
+			"source": "MidgardHeroes",
+			"page": 153,
+			"level": 2,
+			"school": "V",
+			"subschools": [
+				"angelic"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A nimbus of golden light surrounds your head for the duration. The halo sheds {@quickref Vision and Light|PHB|2|0|bright light}{@sup {@variantrule Bright Light|XPHB|'24}} in a 20-foot radius and {@quickref Vision and Light|PHB|2|0|dim light}{@sup {@variantrule Dim Light|XPHB|'24}} for an additional 20 feet.",
+				"This spell grants you a pool of 10 points of healing. When you cast the spell and as an action on subsequent turns during the spell's duration, you can expend points from this pool to restore an equal number of lost hit points to one creature within the spell's bright light that you can see. Additionally, you have advantage on Charisma checks made against good creatures within the blessed halo's light.",
+				"If any of this spell's area overlaps an area of magical {@spell darkness} created by a spell of 2nd level or lower, the spell that created the darkness is dispelled."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the spell's pool of healing increases by 5 points for each spell slot above 2nd and this spell dispels darkness spells of a level equal to the slot used in casting blessed halo."
+					]
+				}
+			],
+			"miscTags": [
+				"ADV",
+				"HL",
+				"LGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Blessed Halo|KPDM"
+			]
+		},
+		{
+			"name": "Blizzard",
+			"source": "MidgardHeroes",
+			"page": 153,
+			"level": 7,
+			"school": "C",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A howling storm of thick snow and ice crystals appears in a cylinder 40 feet high and 40 feet in diameter. The area is {@quickref Vision and Light|PHB|2|0|heavily obscured}{@sup {@variantrule Heavily Obscured|XPHB|'24}} by the swirling snow. When the storm appears, each creature in the area takes {@damage 8d8} cold damage, or half damage with a successful Constitution saving throw. A creature also makes this saving throw and takes damage when it enters the area for the first time on a turn or ends its turn there. In addition, a creature that takes cold damage from this spell has disadvantage on Constitution saving throws to maintain {@status concentration} until the start of its next turn."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"miscTags": [
+				"OBS"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloom",
+			"source": "MidgardHeroes",
+			"page": 154,
+			"level": 8,
+			"school": "C",
+			"subschools": [
+				"high elven"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a silver acorn worth 500 gp, which is consumed in the casting",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "year",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You plant a silver acorn in solid ground and spend an hour chanting a litany of praises to the natural world, after which the land within 1 mile of the acorn becomes extremely fertile, regardless of its previous state. Any seeds planted in the area of effect grow at twice the natural rate. Food harvested regrows within a week. After one year, the land slowly reverts to its normal fertility, unable to stave off the march of nature.",
+				"Choose one of the following effects, which appears and grows immediately:",
+				{
+					"type": "list",
+					"items": [
+						"A field planted with vegetables of your choice, ready for harvest.",
+						"A thick forest of stout trees and ample undergrowth.",
+						"A grassland with wildflowers and fodder for grazing.",
+						"An orchard of fruit trees of your choice, growing in orderly rows and ready for harvest."
+					]
+				},
+				"Living creatures that take a {@quickref resting|phb|2|0|short rest}{@sup {@variantrule Short Rest|XPHB|'24}} within the area of a {@i bloom} receive the maximum hit points for hit dice expended. {@i Bloom} counters the effects of a {@spell desolation|MidgardHeroes} spell.",
+				{
+					"type": "entries",
+					"name": "Ritual Focus",
+					"entries": [
+						"If you expend your ritual focus, the duration becomes permanent."
+					]
+				}
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "KPDM",
+					"page": 211
+				}
+			]
+		},
+		{
+			"name": "Boiling Oil",
+			"source": "MidgardHeroes",
+			"page": 154,
+			"level": 2,
+			"school": "C",
+			"subschools": [
+				"battle"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of oil"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a shallow, 30-foot-diameter pool of boiling oil centered on a point within range. The pool is {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}}, and any creature entering the pool or beginning its turn in the pool takes {@damage 3d8} fire damage and falls {@condition prone}. Creatures that make a successful Dexterity saving throw take half damage and don't fall prone."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"areaTags": [
+				"R"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM09"
+				}
+			],
+			"reprintedAs": [
+				"Boiling Oil|KPDM"
+			]
+
+		},
+		{
+			"name": "Boreas's Breath",
+			"source": "MidgardHeroes",
+			"page": 154,
+			"level": 2,
+			"school": "T",
+			"subschools": [
+				"Rothenian"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You freeze standing water in a 20-foot cube or running water in a 10-foot cube centered on you. The water turns to solid ice. The surface becomes {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}}, and any creature that ends its turn on the ice must make a successful {@dc 10} Dexterity saving throw or fall {@condition prone}.",
+				"Creatures that are partially submerged in the water when it freezes become {@condition restrained}. While restrained this way, a creature takes {@damage 1d6} cold damage at the end of its turn.",
+				"It can break free by using an action to make a successful Strength check against your spell save DC.",
+				"Creatures that are fully submerged in the water when it freezes become {@condition incapacitated} and cannot breathe. While incapacitated this way, a creature takes {@damage 2d6} cold damage at the end of its turn. A trapped creature makes a {@dc 20} Strength saving throw after taking this damage at the end of its turn, breaking free from the ice on a success.",
+				"The ice has AC 10 and 15 hit points. It is vulnerable to fire damage, has resistance to nonmagical slashing and piercing damage, and is immune to cold, necrotic, poison, psychic, and thunder damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, increase the size of the cube by 10 feet for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"prone",
+				"restrained"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"areaTags": [
+				"C"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Boreas's Breath|KPDM"
+			]
+		},
+		{
+			"name": "Brittling",
+			"source": "MisgardHeroes",
+			"page": 154,
+			"level": 4,
+			"school": "T",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an icicle"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell uses biting cold to make a metal or stone item brittle and easy to shatter. The item's hit points are permanently reduced by a number equal to your spellcasting level, and Strength checks to shatter or break the item within 1 minute of the spell's casting are made with advantage. If the item isn't shattered, it can be repaired as normal."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"ADV",
+				"OBJ",
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Brittling|KPDM"
+			]
+		},
+		{
+			"name": "Broken Charge",
+			"source": "MidgardHeroes",
+			"page": 155,
+			"level": 1,
+			"school": "E",
+			"subschools": [
+				"labyrinth"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when an enemy approaches to within 6 feet of you"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When an enemy that you can see tries to approach to within 6 feet of you, you utter a perplexing word that alters the foe's path. The foe must make a successful Wisdom saving throw or take {@damage 2d4} psychic damage and use the remainder of its speed to move in a direction of your choosing. A foe that makes the saving throw successfully is unaffected."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the target takes an additional {@damage 2d4|1-9|2d4} psychic damage for each slot level above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Broken Charge|KPDM"
+			]
+		},
+		{
+			"name": "By the Light of the Moon",
+			"source": "MidgardHeroes",
+			"page": 155,
+			"level": 2,
+			"school": "D",
+			"subschools": [
+				"labyrinth"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a shaft of moonlight that fills a circular area 30 feet in diameter. The moonlight highlights that which is hidden or holds a useful clue. Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) checks are made with advantage within the area or while searching that area."
+			],
+			"abilityCheck": [
+				"intelligence",
+				"wisdom"
+			],
+			"areaTags": [
+				"R"
+			],
+			"miscTags": [
+				"ADV",
+				"LGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"By the Light of the Moon|KPDM"
+			]
+		},
+		{
+			"name": "By the Light of the Watchful Moon",
+			"source": "Midgardheroes",
+			"level": 4,
+			"school": "D",
+			"subschools": [
+				"battle"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Regardless of the time of day or location of your battle, you command the watchful gaze of the moon to illuminate threats to your allies. Shafts of bright moonlight, each 5 feet wide, shine down from the sky (or from the ceiling if you are indoors), illuminating all threats within range, whether they're enemies seen or unseen, or traps or hidden hazards. An enemy creature that makes a successful Charisma saving throw resists the effect and is not picked out by the moon's soft glow.",
+				"The glow does not make {@condition invisible} creatures visible, but it does mark the invisible creature's general location (somewhere within the 5-foot beam). The light moves with targets while the effect lasts, but targets that move out of the spell's range are no longer illuminated. New threats are not revealed as they enter the range or as you move; only those that were within 90 feet of you when the spell was cast are illuminated."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"LGT",
+				"OBJ"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM08"
+				}
+			],
+			"reprintedAs": [
+				"By the Light of the Watchful Moon|KPDM"
+			]
 		}
 	],
 	"monster": [
+		{
+			"name": "Animated Construct (Tiny)",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			],
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"special": "15"
+			},
+			"speed": {
+				"walk": {
+					"number": 1,
+					"condition": "{@note (speed unspecified)}"
+				}
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"action": [
+				{
+					"name": "Attack",
+					"entries": [
+						"{@atk} {@hit 3} to hit. {@h}{@damage 1d4 + 4} damage."
+					]
+				}
+			],
+			"footer": [
+				"{@note Some statistics and traits of the animated construct are unspecified by the source, notably its speed and the nature of its attack. Discretion is advised.}"
+			]
+		},
+		{
+			"name": "Animated Construct (Small)",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			],
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": {
+					"number": 1,
+					"condition": "{@note (speed unspecified)}"
+				}
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"action": [
+				{
+					"name": "Attack",
+					"entries": [
+						"{@atk} {@hit 4} to hit. {@h}{@damage 1d8 + 2} damage."
+					]
+				}
+			],
+			"footer": [
+				"{@note Some statistics and traits of the animated construct are unspecified by the source, notably its speed and the nature of its attack. Discretion is advised.}"
+			]
+		},
+		{
+			"name": "Animated Construct (Medium)",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			],
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": {
+					"number": 1,
+					"condition": "{@note (speed unspecified)}"
+				}
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"action": [
+				{
+					"name": "Attack",
+					"entries": [
+						"{@atk} {@hit 5} to hit. {@h}{@damage 2d6 + 1} damage."
+					]
+				}
+			],
+			"footer": [
+				"{@note Some statistics and traits of the animated construct are unspecified by the source, notably its speed and the nature of its attack. Discretion is advised.}"
+			]
+		},
+		{
+			"name": "Animated Construct (Large)",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			],
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": {
+					"number": 1,
+					"condition": "{@note (speed unspecified)}"
+				}
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"action": [
+				{
+					"name": "Attack",
+					"entries": [
+						"{@atk} {@hit 6} to hit. {@h}{@damage 2d10 + 2} damage."
+					]
+				}
+			],
+			"footer": [
+				"{@note Some statistics and traits of the animated construct are unspecified by the source, notably its speed and the nature of its attack. Discretion is advised.}"
+			]
+		},
+		{
+			"name": "Animated Construct (Huge)",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			],
+			"size": [
+				"H"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"special": "80"
+			},
+			"speed": {
+				"walk": {
+					"number": 1,
+					"condition": "{@note (speed unspecified)}"
+				}
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"action": [
+				{
+					"name": "Attack",
+					"entries": [
+						"{@atk} {@hit 8} to hit. {@h}{@damage 2d12 + 4} damage."
+					]
+				}
+			],
+			"footer": [
+				"{@note Some statistics and traits of the animated construct are unspecified by the source, notably its speed and the nature of its attack. Discretion is advised.}"
+			]
+		},
+		{
+			"name": "Animated Construct (Gargantuan)",
+			"source": "MidgardHeroes",
+			"page": 149,
+			"otherSources": [
+				{
+					"source": "DM01",
+					"page": 9
+				}
+			],
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"special": "100"
+			},
+			"speed": {
+				"walk": {
+					"number": 1,
+					"condition": "{@note (speed unspecified)}"
+				}
+			},
+			"str": 20,
+			"dex": 6,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"action": [
+				{
+					"name": "Attack",
+					"entries": [
+						"{@atk} {@hit 10} to hit. {@h}{@damage 4d8 + 6} damage."
+					]
+				}
+			],
+			"footer": [
+				"{@note Some statistics and traits of the animated construct are unspecified by the source, notably its speed and the nature of its attack. Discretion is advised.}"
+			]
+		},
 		{
 			"name": "Clockwork Jewel Scarab",
 			"source": "MidgardHeroes",
@@ -5322,7 +8098,8 @@
 			"page": 206,
 			"otherSources": [
 				{
-					"source": "DM09"
+					"source": "DM09",
+					"page": 11
 				}
 			],
 			"reprintedAs": [
@@ -6536,7 +9313,7 @@
 					"type": "entries",
 					"name": "Wing-Wrapping Net",
 					"entries": [
-						"Instead of {@condition restrained||restraining} a flying creature, you may entangle its wings in your net. A Huge or smaller winged creature hit by a net when you use this maneuver has its fly speed reduced to 0 (but is not restrained) until the net is removed."
+						"Instead of {@condition restrained||restraining} a flying creature, you may entangle its wings in your net. A Huge or smaller winged creature hit by a net when you use this maneuver has its {@quickref Flying Movement|PHB|3|0|fly speed}{@sup {@variantrule Fly Speed|XPHB|'24}} reduced to 0 (but is not restrained) until the net is removed."
 					]
 				}
 			]
@@ -7413,7 +10190,6 @@
 						"The Khazzaki steppe pony makes Dexterity and Constitution checks with advantage. In addition, horses within 50 feet of the pony and allied to it have advantage on Dexterity checks made to follow in the steppe pony's path and on Constitution checks."
 					]
 				}
-
 			]
 		},
 		{
@@ -7565,5 +10341,255 @@
 				}
 			]
 		}		
+	],
+	"table": [
+		{
+			"name": "Ley Line Effects, Weak",
+			"source": "MidgardHeroes",
+			"page": 128,
+			"otherSources": [
+				{
+					"source": "DM05",
+					"page": 5
+				}
+			],
+			"type": "table",
+			"colLabels": [
+				"d10",
+				"Effect"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"If your spell attack misses or if the target makes a successful saving throw, you can choose a new target within 10 feet of the original target and within range. Make a new attack roll with disadvantage, or the new target makes a saving throw with advantage."
+				],
+				[
+					"2",
+					"You can delay the effect of your spell for up to 5 rounds. Choose how many rounds you want the spell to delay at the moment it's cast. The spell takes effect at the start of your turn that many rounds later. All parameters regarding the spell's targeting, area, color, etc., must be set when the spell is cast, not when it takes effect."
+				],
+				[
+					"3",
+					"If your spell deals {@filter acid, cold, fire, lightning, or thunder damage|spells|source=|components & miscellaneous=|damage type=acid;cold;fire;lightning;thunder}, you can change the damage to one of the other listed types."
+				],
+				[
+					"4",
+					"If your spell {@filter affects multiple creatures|spells|source=|components & miscellaneous=|area style=mt}, choose one. That creature has disadvantage on any saving throw it makes against the spell."
+				],
+				[
+					"5",
+					"Double the range of your spell."
+				],
+				[
+					"6",
+					"A creature that takes {@filter cold damage|spells|source=|components & miscellaneous=|damage type=cold} from your spell is {@condition restrained} until the end of its next turn."
+				],
+				[
+					"7",
+					"Creatures damaged by your spell are also {@condition deafened} for 1 minute. A {@condition deafened} creature makes a Constitution saving throw at the end of its turn to end the deafness effect."
+				],
+				[
+					"8",
+					"Cast your spell without verbal components."
+				],
+				[
+					"9",
+					"A creature damaged by your spell is also knocked {@condition prone} unless it makes a successful Strength saving throw."
+				],
+				[
+					"10",
+					"Roll twice on this table (treat duplicate results as \"no additional effect\"), or roll once on the {@table Strong Ley Line Effects|DM05} table."
+				]
+			]
+		},
+		{
+			"name": "Ley Line Effects, Strong",
+			"source": "MidgardHeroes",
+			"page": 128,
+			"otherSources": [
+				{
+					"source": "DM05",
+					"page": 6
+				}
+			],
+			"type": "table",
+			"colLabels": [
+				"d10",
+				"Effect"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"You can reroll a number of damage dice up to your spellcasting ability modifier (minimum of 1)."
+				],
+				[
+					"2",
+					"Treat your spell as if it were cast with a spell slot one level higher."
+				],
+				[
+					"3",
+					"Creatures damaged by your spell are also {@condition poisoned} for 1 minute. A {@condition poisoned} creature makes a Constitution saving throw at the end of its turn to end the poisoning effect."
+				],
+				[
+					"4",
+					"You regain {@dice 1d6} hit points per level of the spell."
+				],
+				[
+					"5",
+					"Your spell ignores damage resistance."
+				],
+				[
+					"6",
+					"A creature that takes {@filter acid or fire damage|spells|source=|components & miscellaneous=|damage type=acid;fire} from your spell takes an additional {@damage 3d6} damage of the same type at the start of its next turn."
+				],
+				[
+					"7",
+					"Targets of your spell have disadvantage on their saving throws against it."
+				],
+				[
+					"8",
+					"You can choose to exclude any creature you can see from the area of your spell."
+				],
+				[
+					"9",
+					"If your spell has a range of {@filter self|spells|source=|components & miscellaneous=|range=self;self (area)}, you can cast it as a touch spell instead."
+				],
+				[
+					"10",
+					"Roll twice on this table (treat duplicate results as \"no additional effect\"), or roll once on the {@table Titanic Ley Line Effects|DM05} table."
+				]
+			]
+		},
+		{
+			"name": "Ley Line Effects, Titanic",
+			"source": "MidgardHeroes",
+			"page": 128,
+			"otherSources": [
+				{
+					"source": "DM05",
+					"page": 6
+				}
+			],
+			"type": "table",
+			"colLabels": [
+				"d10",
+				"Effect"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"If your spell affects {@filter only one target|spells|source=|components & miscellaneous=|area style=st}, it instead affects up to six targets of your choice."
+				],
+				[
+					"2",
+					"If your spell affects an {@filter area|spells|source=|components & miscellaneous=|area style=r;n;c;y;h;l;s;q;w}, double the area's size."
+				],
+				[
+					"3",
+					"Creatures affected by your spell are {@condition incapacitated} for 1 minute. An {@condition incapacitated} creature makes a Wisdom saving throw at the end of its turn to end the incapacitation effect."
+				],
+				[
+					"4",
+					"You gain a +5 bonus to your AC until the start of your next turn."
+				],
+				[
+					"5",
+					"Casting your spell this turn uses only a bonus action; you still have an action to use."
+				],
+				[
+					"6",
+					"Creatures immune to the damage of your spell take half damage instead."
+				],
+				[
+					"7",
+					"Treat your spell as if it were cast with a spell slot two levels higher."
+				],
+				[
+					"8",
+					"{@status Concentration} on your spell can't be broken by damage."
+				],
+				[
+					"9",
+					"A creature damaged by your spell is pushed 10 feet away from you and knocked {@condition prone}. Its speed is reduced to 0 until it makes a successful Constitution saving throw at the start of its turn."
+				],
+				[
+					"10",
+					"Choose one effect listed above."
+				]
+			]
+		},
+		{
+			"name": "Ley Line Backlash",
+			"source": "MidgardHeroes",
+			"page": 129,
+			"otherSources": [
+				{
+					"source": "DM05",
+					"page": 7
+				}
+			],
+			"type": "table",
+			"colLabels": [
+				"d10",
+				"Effect"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"The spell produces only a harmless display of bright color and loud noise."
+				],
+				[
+					"2",
+					"You are {@condition incapacitated} until the end of your next turn."
+				],
+				[
+					"3",
+					"You fall {@condition unconscious} for 1 minute. You awake if you take damage or if another creature uses an action to shake you awake."
+				],
+				[
+					"4",
+					"The next spell you cast fails, and the spell slot is wasted."
+				],
+				[
+					"5",
+					"Targets have advantage on saving throws against your spells for 1 hour."
+				],
+				[
+					"6",
+					"For 1 hour, you must make a {@dc 10} Constitution saving throw every time you cast a spell. If the saving throw fails, the spell fails and the spell slot is wasted."
+				],
+				[
+					"7",
+					"You take {@damage 2d6} force damage per level of the spell that caused the backlash (cantrips cause {@damage 1d6} damage)."
+				],
+				[
+					"8",
+					"You lose one spell slot of your highest available level, and all charged magic items in your possession lose {@dice 1d4} charges."
+				],
+				[
+					"9",
+					"Your spell fails, and you unleash a random burst of magic as if you'd used a {@item wand of wonder}."
+				],
+				[
+					"10",
+					"You lose all your remaining spell slots, the ley line disappears for 24 hours, and all charged magic items in your possession fully recharge. You must make a successful {@dc 20} Charisma saving throw or fall {@condition unconscious}; you awaken after 1 hour, if you take damage, or if another creature uses an action to shake you awake."
+				]
+			]
+		}
 	]
 }
