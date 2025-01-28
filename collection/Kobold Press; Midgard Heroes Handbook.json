@@ -4787,7 +4787,7 @@
 		},
 		{
 			"name": "Binding Oath",
-			"source": "MidgardHEroes",
+			"source": "MidgardHeroes",
 			"page": 151,
 			"level": 4,
 			"school": "N",
@@ -6142,7 +6142,7 @@
 		},
 		{
 			"name": "By the Light of the Watchful Moon",
-			"source": "Midgardheroes",
+			"source": "MidgardHeroes",
 			"level": 4,
 			"school": "D",
 			"subschools": [
