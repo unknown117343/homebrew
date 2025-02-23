@@ -4365,38 +4365,42 @@
 							"caption": "Mindscape Directions",
 							"colLabels": [
 								"{@dice d8}",
-								"Direction",
-								"{@dice d8}",
 								"Direction"
 							],
 							"colStyles": [
-								"col-1 text-center",
-								"col-4 text-left",
 								"col-1 text-center",
 								"col-4 text-left"
 							],
 							"rows": [
 								[
 									"1",
-									"North",
+									"North"
+								],
+								[
+									"2",
+									"Northeast"
+								],
+								[
+									"3",
+									"East"
+								],
+								[
+									"4",
+									"Southeast"
+								],
+								[
 									"5",
 									"South"
 								],
 								[
-									"2",
-									"Northeast",
 									"6",
 									"Southwest"
 								],
 								[
-									"3",
-									"East",
 									"7",
 									"West"
 								],
 								[
-									"4",
-									"Southeast",
 									"8",
 									"Northwest"
 								]
