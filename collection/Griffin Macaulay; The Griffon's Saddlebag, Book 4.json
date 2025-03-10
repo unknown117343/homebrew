@@ -14488,10 +14488,16 @@
 		},
 		{
 			"name": "Axe of the Aurora",
-			"type": "GV|DMG",
+			"type": "GV",
 			"requires": [
 				{
-					"axe": true
+					"name": "Handaxe"
+				},
+				{
+					"name": "Battleaxe"
+				},
+				{
+					"name": "Greataxe"
 				}
 			],
 			"inherits": {
@@ -14525,10 +14531,16 @@
 		},
 		{
 			"name": "Scarring Axe",
-			"type": "GV|DMG",
+			"type": "GV",
 			"requires": [
 				{
-					"axe": true
+					"name": "Handaxe"
+				},
+				{
+					"name": "Battleaxe"
+				},
+				{
+					"name": "Greataxe"
 				}
 			],
 			"inherits": {
