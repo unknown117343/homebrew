@@ -350,6 +350,48 @@
 				"Predatory Instinct|Fighter|PHB|Steel Hawk|GriffonsSaddlebag2|15",
 				"Improved Launch|Fighter|PHB|Steel Hawk|GriffonsSaddlebag2|18"
 			],
+			"foundrySystem": {
+				"advancement": [
+					{
+						"type": "ScaleValue",
+						"configuration": {
+							"identifier": "launch-damage",
+							"type": "dice",
+							"scale": {
+								"3": {
+									"faces": 8
+								},
+								"10": {
+									"faces": 10
+								},
+								"18": {
+									"faces": 12
+								}
+							}
+						},
+						"title": "Launch Damage"
+					},
+					{
+						"type": "ScaleValue",
+						"configuration": {
+							"identifier": "launch-uses",
+							"type": "number",
+							"scale": {
+								"3": {
+									"value": 3
+								},
+								"7": {
+									"value": 4
+								},
+								"15": {
+									"value": 5
+								}
+							}
+						},
+						"title": "Launch Uses"
+					}
+				]
+			},
 			"fluff": {
 				"images": [
 					{
@@ -1091,7 +1133,23 @@
 				"You can't use this feature if your speed is 0, and if you leap completely horizontally, you still leap 1 foot off the ground. Leaping in this way doesn't provoke opportunity attacks, and if you fall immediately after using this feature, you can subtract up to 30 feet from the fall when calculating falling damage.",
 				"You can use this feature three times, and you regain all expended uses of it when you finish a short or long rest. Beginning at 7th level, you can use this feature four times between rests, and beginning at 15th level, you can use it five times between rests.",
 				"Leaping in this way can also strengthen your strikes by using the force of your momentum. If you make a melee weapon attack immediately after using Launch, you have advantage on the attack roll, and if the attack hits, the target takes an extra {@damage 1d8} damage of the weapon's type. At 10th level, this extra damage becomes {@dice 1d10}, and at 18th level, it becomes {@dice 1d12}. The attack can be made immediately after you land at the end of the leap or during the leap's movement."
-			]
+			],
+			"foundrySystem": {
+				"uses": {
+					"max": "@scale.steel-hawk.launch-uses",
+					"recovery": [
+						{
+						"period": "sr",
+						"type": "recoverAll"
+						},
+						{
+						"period": "lr",
+						"type": "recoverAll"
+						}
+					]
+				}
+			},
+			"foundryImg": "icons/skills/movement/figure-running-gray.webp"
 		},
 		{
 			"name": "Nimble Lancer",
@@ -1106,7 +1164,8 @@
 			"entries": [
 				"Starting at 3rd level, you are remarkably light on your feet and capable of counterbalancing even some of the most awkward of equipment. Lances have the versatile property for you while you're not mounted, dealing {@damage 1d8} piercing damage on a hit when held with one hand and {@damage 1d12} piercing damage when wielded with two. When you use your Launch feature and immediately hit with a melee attack using a lance, it counts as if you're wielding it with two hands.",
 				"If you hit a creature within 5 feet of you using a lance, you can immediately move up to 5 feet away from it, without provoking an opportunity attack from the target. You must be standing and have movement remaining in order to move in this way."
-			]
+			],
+			"foundryImg": "icons/skills/melee/hand-grip-staff-yellow-brown.webp"
 		},
 		{
 			"name": "Steel Grace",
@@ -2148,6 +2207,307 @@
 					]
 				},
 				"In addition, you have gained a supreme mastery and understanding of wands. If you expend the last charge of a staff or wand, you needn't roll a {@dice d20}, even if it says to. Further, the gold and time you must spend to craft a magic wand is halved."
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Launch",
+			"source": "GriffonsSaddlebag2",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Steel Hawk",
+			"subclassSource": "GriffonsSaddlebag2",
+			"level": 3,
+			"activities": [
+				{
+					"name": "Expend Launch",
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					}
+				},
+				{
+					"name": "Expend Launch with Attack Bonus",
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "Launch"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "Launch",
+					"disabled": true,
+					"duration": {
+						"rounds": 1
+					},
+					"changes": [
+						{
+							"key": "flags.midi-qol.advantage.attack.mwak",
+							"mode": "OVERRIDE",
+							"value": 1
+						},
+						{
+							"key": "system.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "@scale.steel-hawk.launch-damage",
+							"priority": 20
+						},
+						{
+							"key": "flags.gambits-premades.oaImmunity",
+							"mode": "OVERRIDE",
+							"value": 1,
+							"priority": 20
+						}
+					],
+					"flags": {
+						"dae": {
+							"disableCondition": "",
+							"disableIncapacitated": false,
+							"stackable": "multi",
+							"showIcon": false,
+							"durationExpression": "",
+							"macroRepeat": "none",
+							"specialDuration": [
+								"1Attack:mwak"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Nimble Lancer",
+			"source": "GriffonsSaddlebag2",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Steel Hawk",
+			"subclassSource": "GriffonsSaddlebag2",
+			"level": 3,
+			"activities": [
+				{
+					"name": "Enchant Lance",
+					"type": "enchant",
+					"activation": {
+						"type": "special"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "object",
+							"choice": false,
+							"special": ""
+						},
+						"prompt": true,
+						"template": {
+							"contiguous": false,
+							"units": "ft",
+							"type": ""
+						},
+						"override": false
+					},
+					"restrictions": {
+						"allowMagical": true,
+						"categories": [],
+						"properties": [],
+						"type": "weapon"
+					},
+					"effects": [
+						{
+							"foundryId": "NimbleLancer"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "NimbleLancer",
+					"name": "Nimble Lancer",
+					"type": "enchantment",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+						"key": "name",
+						"mode": 5,
+						"value": "Nimble {}",
+						"priority": 20
+						},
+						{
+						"key": "system.damage.base.denomination",
+						"mode": 5,
+						"value": "8",
+						"priority": 20
+						},
+						{
+						"key": "system.properties",
+						"mode": 2,
+						"value": "ver",
+						"priority": 10
+						},
+						{
+						"key": "system.damage.versatile.custom.formula",
+						"mode": 5,
+						"value": "1d12",
+						"priority": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Steel Grace",
+			"source": "GriffonsSaddlebag2",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Steel Hawk",
+			"subclassSource": "GriffonsSaddlebag2",
+			"level": 7,
+			"entries": [
+				"Starting at 7th level, wearing armor doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks. In addition, whenever you make a Dexterity saving throw, you can use your Launch feature as a reaction. When you do so, you take no damage if you succeed on the saving throw, and only half damage if you fail."
+			],
+			"activities": [
+				{
+					"name": "Enchant Heavy Armor",
+					"type": "enchant",
+					"activation": {
+						"type": "special"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "object",
+							"choice": false,
+							"special": ""
+						},
+						"prompt": true,
+						"template": {
+							"contiguous": false,
+							"units": "ft",
+							"type": ""
+						},
+						"override": false
+					},
+					"restrictions": {
+						"allowMagical": true,
+						"categories": [],
+						"properties": []
+					},
+					"effects": [
+						{
+							"foundryId": "SteelGrace"
+						}
+					]
+				},
+				{
+					"name": "Launch Reaction",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "Steel Grace|Fighter|PHB|Steel Hawk|GriffonsSaddlebag2|7"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "LaunchReaction"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "SteelGrace",
+					"name": "Steel Grace",
+					"type": "enchantment",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "name",
+							"mode": 5,
+							"value": "Steel Graced {}",
+							"priority": 20
+						},
+						{
+							"key": "system.properties",
+							"mode": 2,
+							"value": "-stealthDisadvantage",
+							"priority": 10
+						}
+					],
+					"duration": {
+						"turns": 1
+					}
+				},
+				{
+					"foundryId": "LaunchReaction",
+					"name": "Launch",
+					"disabled": true,
+					"changes": [
+						{
+							"key": "flags.gambits-premades.oaImmunity",
+							"mode": "OVERRIDE",
+							"value": 1,
+							"priority": 20
+						},
+						{
+							"key": "flags.midi-qol.superSaver.dex",
+							"mode": "OVERRIDE",
+							"value": 1,
+							"priority": 20
+						}
+					]
+				}
 			]
 		}
 	],
