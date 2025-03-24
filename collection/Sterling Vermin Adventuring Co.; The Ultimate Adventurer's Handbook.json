@@ -7983,15 +7983,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "Curse's Conqueror",
-							"entries": [
-								"The vast majority of people who receive a permanent curse consign themselves to their fate, either finding a way to live with their curse's adverse effects or giving themselves fully to the curse's compulsions. A creature becomes an accursed by following a different path. Accurseds are rare, not due to lack of people becoming cursed, but because those who suffer these curses often lack the conviction to resist them.",
-								"An accursed dedicates their time and willpower to find a way to make the magic of their curse work for them, though each in their own way. Some accurseds experiment in a lab or scour the world for forgotten lore, trying to find a ritual or alchemical concoction. Others turn to nature or faith, using prayer, meditation, or mindfulness to synthesize the curse's magic into their own being. And others still use sheer stubbornness to bend the curse to their will.",
-								"Regardless of method, an accursed is one who has conquered their curse, drawing on its magic while managing its lingering side effects."
-							]
-						},
-						{
-							"type": "entries",
 							"name": "Creating an Accursed",
 							"entries": [
 								"When creating an accursed, the most important aspect to consider is your curse itself. What is your curse's nature, and how did you receive it? As a starting character, you'll choose the nature of your curse, but exactly how you received it is up to you. Did you or one of your ancestors anger a god or other powerful entity? Was the curse transferred to you by another afflicted individual? Or did some magic ritual go awry with you in proximity?",
@@ -54723,7 +54714,7 @@
 				]
 			},
 			"entries": [
-				"You brandish the weapon used in the spell's casting and  make a ranged weapon attack with it against one crea ture within 60 feet of you. On a hit, the target suffers the attack's normal effects, and each Large or smaller creature within 10 feet of the target must succeed on a Strength saving throw or be pulled to the nearest unoccupied space to the target.",
+				"You brandish the weapon used in the spell's casting and  make a ranged weapon attack with it against one creature within 60 feet of you. On a hit, the target suffers the attack's normal effects, and each Large or smaller creature within 10 feet of the target must succeed on a Strength saving throw or be pulled to the nearest unoccupied space to the target.",
 				"At 5th level, the ranged attack deals an extra {@damage 1d6} force damage to the target. The force damage increases by {@dice 1d6} at 11th level ({@dice 2d6}) and 17th level ({@dice 3d6})."
 			],
 			"damageInflict": [
