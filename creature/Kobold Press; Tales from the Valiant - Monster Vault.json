@@ -1,0 +1,4262 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TOVMV1",
+				"abbreviation": "TOV:MV1",
+				"full": "Tales of the Valiant: Monster Vault 1",
+				"authors": [
+					"Kobold Press"
+				],
+				"convertedBy": [
+					"Unknown"
+				],
+				"version": "1.0.0",
+				"color": "115F9C",
+				"url": "https://marketplace.dndbeyond.com/BB-3P-crookedmoon/CB8NCKVST",
+				"dateReleased": "2025-05-01"
+			}
+		],
+		"edition": "classic",
+		"dateAdded": 1722887888,
+		"dateLastModified": 1748179388
+	},
+    "monsterFluff": [
+        {
+			"name": "Aboleth",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Aboleth.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Animated Armor",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Animated%20Armor.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Solar",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Solar.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Deva",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Deva.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Planetar",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Planetar.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Azer",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Azer.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Ankheg",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Ankheg.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Balara",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Balara.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Balor",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Balor.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Basilisk",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Basilisk.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Behir",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Behir.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Black Pudding",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Black%20Pudding.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Blink Dog",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Blink%20Dog.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Bulette",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Bulette.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Centaur",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Centaur.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Chimera",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Chimera.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Chuul",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Chuul.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Cloaker",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Cloaker.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Cockatrice",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Cockatrice.webp"
+					}
+				}
+			]
+		},
+        {
+			"name": "Couatl",
+			"source": "TOVMV1",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Couatl.webp"
+					}
+				}
+			]
+		},
+        {
+            "name": "Crimson Jelly",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Crimson%20Jelly.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Czol",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Czol.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Darkmantle",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Darkmantle.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Death Dog",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Death%20Dog.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Death Knight",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Death%20Knight.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Deathless",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Deathless.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Dretch",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Dretch.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Flying Sword",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Flying%20Sword.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Glabrezu",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Glabrezu.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trillipol",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Trillipol.webp"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Uulgol",
+            "source": "TOVMV1",
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/tftv/img/TOVMV1/Uulgol.webp"
+                    }
+                }
+            ]
+        }
+    ],
+    "monster": [
+        {
+            "name": "Aboleth",
+            "source": "TOVMV1",
+            "page": 49,
+            "size": [
+                "L"
+            ],
+            "type": "aberration",
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "165"
+            },
+            "speed": {
+                "walk": 10,
+                "swim": 40
+            },
+            "str": 20,
+            "dex": 8,
+            "con": 22,
+            "int": 26,
+            "wis": 22,
+            "cha": 18,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 20,
+            "resist": [
+                "acid"
+            ],
+            "immune": [
+                "psychic"
+            ],
+            "languages": [
+                "Deep Speech; telepathy 120 ft."
+            ],
+            "cr": "10",
+            "trait": [
+                {
+                    "name": "Aberrant Resilience",
+                    "entries": [
+                        "The aboleth is resistant to the {@condition charmed}, {@condition frightened}, {@condition paralyzed}, and {@condition stunned} conditions, and it has advantage on saves against spells or effects that would alter its form."
+                    ]
+                },
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "The aboleth can breathe air and water."
+                    ]
+                },
+                {
+                    "name": "Legendary Resistance (3/Day)",
+                    "entries": [
+                        "If the aboleth fails a save, it can choose to succeed instead."
+                    ]
+                },
+                {
+                    "name": "Probing Telepathy",
+                    "entries": [
+                        "If a creature the aboleth can see communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires."
+                    ]
+                },
+                {
+                    "name": "Slime Pox",
+                    "entries": [
+                        "Characterized by the slimy pustules that erupt across the victim's body, slime pox is a disease that infects creatures attacked by an aboleth or that come into contact with an aboleth's slime. Until the disease is cured, the infected creature can breathe air and water, can't regain HP except when underwater, and takes 6 ({@damage 1d12}) acid damage for every 1 hour it remains outside of water or without moisture applied to its skin. Every 24 hours that elapse, the infected creature must make a {@dc 16} CHA save. Each time a creature fails this save, it views the infecting aboleth more and more favorably, becoming the aboleth's doting and protective thrall after three failed saves. The successes and failures don't need to be consecutive, but once a creature has acquired three of a kind, it no longer has to make this save, resulting in either the creature becoming a thrall of the aboleth or an autonomous\u2014though infected\u2014creature. Slime pox can be cured only by the {@spell heal} spell or similar magic."
+                    ]
+                },
+                {
+                    "name": "Slimy Skin",
+                    "entries": [
+                        "The aboleth is coated in an otherworldly mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must succeed on a {@dc 16} CON save or be infected with slime pox (see the Slime Pox trait)."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The aboleth makes three Tentacle or Psychic Bolt attacks. If two Tentacle attacks hit one target, the target must succeed on a {@dc 16} CON save or contract the slime pox disease (see the Slime Pox trait)."
+                    ]
+                },
+                {
+                    "name": "Tentacle",
+                    "entries": [
+                        "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Psychic Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}14 ({@damage 3d6 + 4}) psychic damage."
+                    ]
+                },
+                {
+                    "name": "Psychic Torrent {@recharge 5}",
+                    "entries": [
+                        "The aboleth floods the minds of up to three creatures it can see within 60 feet of it with random and horrific memories from its eons-long life. Each target must make a {@dc 16} WIS save. On a failure, a creature takes 49 ({@damage 14d6}) psychic damage and is {@condition incapacitated} until the end of its next turn, as its mind reels from the torrent of images, thoughts, and memories. On a success, a creature takes half the damage and isn't {@condition incapacitated}."
+                    ]
+                }
+            ],
+            "legendary": [
+                {
+                    "name": "Detect",
+                    "entries": [
+                        "The aboleth automatically detects every creature and trap within 60 feet of it, pinpointing the current location of each."
+                    ]
+                },
+                {
+                    "name": "Swim",
+                    "entries": [
+                        "The aboleth swims up to half its speed without provoking opportunity attacks."
+                    ]
+                },
+                {
+                    "name": "Slime Drain (Costs 2 Actions)",
+                    "entries": [
+                        "One creature infected with slime pox within 30 feet of the aboleth takes 10 ({@damage 3d6}) acid damage, and the aboleth regains HP equal to the damage the creature takes."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amphibious",
+                "Legendary Resistances"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Tentacles"
+            ],
+            "languageTags": [
+                "DS",
+                "TP"
+            ],
+            "damageTags": [
+                "A",
+                "B",
+                "Y"
+            ],
+            "miscTags": [
+                "DIS",
+                "MW",
+                "RA",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Animated Armor",
+            "source": "TOVMV1",
+            "page": 54,
+            "size": [
+                "M"
+            ],
+            "type": "construct",
+            "ac": [
+                {
+                    "ac": 18,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "34"
+            },
+            "speed": {
+                "walk": 25
+            },
+            "str": 14,
+            "dex": 10,
+            "con": 12,
+            "int": 1,
+            "wis": 6,
+            "cha": 1,
+            "senses": [
+                "keensense 60 ft. (can't sense beyond this radius)"
+            ],
+            "passive": 8,
+            "resist": [
+                "slashing"
+            ],
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "vulnerable": [
+                "acid"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "deafened",
+                "exhaustion",
+                "charmed",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Antimagic Susceptibility",
+                    "entries": [
+                        "The armor is incapacitated while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the armor must succeed on a CON save against the caster's spell save DC or fall unconscious for 1 minute."
+                    ]
+                },
+                {
+                    "name": "Construct Nature",
+                    "entries": [
+                        "The armor doesn't require air, food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Construct Resilience",
+                    "entries": [
+                        "The armor is immune to poison and psychic damage, and it is immune to {@condition exhaustion} and the {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, and {@condition poisoned} conditions."
+                    ]
+                },
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "While the armor remains motionless, it is indistinguishable from a normal suit of armor."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The animated armor makes two Slam attacks."
+                    ]
+                },
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Helmet Bash (19 HP or Fewer)",
+                    "entries": [
+                        "The animated armor slams its helmet into a creature it can sense within 5 feet of it. The target must succeed on a {@dc 13} STR save or take 5 ({@damage 2d4}) bludgeoning damage and be knocked {@condition prone}."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Antimagic Susceptibility",
+                "False Appearance"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "B"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Deva",
+            "source": "TOVMV1",
+            "page": 50,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "celestial",
+                "tags": [
+                    "Angel"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "165"
+            },
+            "speed": {
+                "walk": 30,
+                "fly": 90
+            },
+            "str": 18,
+            "dex": 18,
+            "con": 18,
+            "int": 16,
+            "wis": 28,
+            "cha": 28,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 19,
+            "resist": [
+                "radiant",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "charmed",
+                "frightened"
+            ],
+            "languages": [
+                "all; telepathy 120 ft."
+            ],
+            "cr": "10",
+            "trait": [
+                {
+                    "name": "Angelic Resilience",
+                    "entries": [
+                        "The deva is resistant to radiant damage and to bludgeoning, piercing, and slashing damage from nonmagical attacks. In addition, it is immune to {@condition exhaustion} and the {@condition charmed} and {@condition frightened} conditions."
+                    ]
+                },
+                {
+                    "name": "Angelic Senses",
+                    "entries": [
+                        "The deva can pinpoint the location of Aberrations, Celestials, Fiends, and Undead within 30 feet of it and knows if a place or object it can sense is consecrated or desecrated."
+                    ]
+                },
+                {
+                    "name": "Angelic Weapons",
+                    "entries": [
+                        "The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra {@damage 4d8} radiant damage (included in the attack)."
+                    ]
+                },
+                {
+                    "name": "Immortal Nature",
+                    "entries": [
+                        "The deva doesn't require food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The deva has advantage on saves against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Reviving Prayer",
+                    "entries": [
+                        "The deva spends 10 minutes praying to its deity for the safe return of the soul of a slain creature. At the end of the prayer, the deva touches a creature that has been dead no more than 24 hours and returns the creature to life with a number of HP equal to half its HP maximum. Reviving Prayer can't return to life a creature that has died of old age, nor can it restore any missing body parts. A creature restored to life in this way can't be returned to life by this deva again for 30 days."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The deva makes three Mace attacks."
+                    ]
+                },
+                {
+                    "name": "Mace",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 1d6 + 4}) bludgeoning damage plus 18 ({@damage 4d8}) radiant damage."
+                    ]
+                },
+                {
+                    "name": "Healing Touch (3/Day)",
+                    "entries": [
+                        "The deva touches another creature. The target magically regains 20 ({@dice 4d8 + 2}) HP and is freed from any curse, disease, poison, blindness, or deafness."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Change Shape",
+                    "entries": [
+                        "The deva magically transforms into a Large or smaller Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Celestial. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the deva's choice). It reverts to its true form if it dies. In a new form, the deva retains its Angelic Resilience, Angelic Senses, and Immortal Nature traits and its HP, HD, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "mace|phb"
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Shapechanger"
+            ],
+            "languageTags": [
+                "TP",
+                "XX"
+            ],
+            "damageTags": [
+                "B",
+                "R"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Planetar",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "celestial",
+                "tags": [
+                    "Angel"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 19,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "242"
+            },
+            "speed": {
+                "walk": 40,
+                "fly": 120
+            },
+            "str": 24,
+            "dex": 20,
+            "con": 34,
+            "int": 18,
+            "wis": 32,
+            "cha": 32,
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 21,
+            "resist": [
+                "radiant",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "charmed",
+                "frightened"
+            ],
+            "languages": [
+                "all; telepathy 120 ft."
+            ],
+            "cr": "16",
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "type": "spellcasting",
+                    "headerEntries": [
+                        "The planetar casts one of the following spells, requiring no material components and using CHA as the spellcasting ability (spell save {@dc 19})."
+                    ],
+                    "will": [
+                        "{@spell command}",
+                        "{@spell invisibility} (self only)"
+                    ],
+                    "daily": {
+                        "3e": [
+                            "{@spell daylight}",
+                            "{@spell raise dead} (as an action)"
+                        ]
+                    },
+                    "displayAs": "action"
+                }
+            ],
+            "trait": [
+                {
+                    "name": "Angelic Resilience",
+                    "entries": [
+                        "The planetar is resistant to radiant damage and to bludgeoning, piercing, and slashing damage from nonmagical attacks. In addition, it is immune to {@condition exhaustion} and the {@condition charmed} and {@condition frightened} conditions."
+                    ]
+                },
+                {
+                    "name": "Angelic Senses",
+                    "entries": [
+                        "The planetar can pinpoint the location of Aberrations, Celestials, Fiends, and Undead within 30 feet of it and knows if a place or object it can sense is consecrated or desecrated."
+                    ]
+                },
+                {
+                    "name": "Angelic Weapons",
+                    "entries": [
+                        "The planetar's weapon attacks are magical. When it hits with any weapon, the weapon deals an extra {@damage 7d8} radiant damage (included in the attack)."
+                    ]
+                },
+                {
+                    "name": "Divine Awareness",
+                    "entries": [
+                        "The planetar knows if it hears a lie."
+                    ]
+                },
+                {
+                    "name": "Divine Protection",
+                    "entries": [
+                        "Aberrations, Celestials, Fiends, and Undead have disadvantage on attack rolls against the planetar."
+                    ]
+                },
+                {
+                    "name": "Immortal Nature",
+                    "entries": [
+                        "The planetar doesn't require food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The planetar has advantage on saves against spells and other magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The planetar makes two Greatsword attacks, or it makes three Radiant Bolt attacks. It can replace one attack with a use of Spellcasting. If two Greatsword or Radiant Bolt attacks hit one creature, the target must succeed on a {@dc 19} CON save or be {@condition blinded} until the end of its next turn."
+                    ]
+                },
+                {
+                    "name": "Greatsword",
+                    "entries": [
+                        "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d6 + 7}) slashing damage plus 31 ({@damage 7d8}) radiant damage."
+                    ]
+                },
+                {
+                    "name": "Radiant Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 11} to hit, range 60 ft., one target. {@h}33 ({@damage 6d8 + 6}) radiant damage."
+                    ]
+                },
+                {
+                    "name": "Radiant Burst {@recharge}",
+                    "entries": [
+                        "A pulse of divine power ripples out from the planetar's golden halo. Each hostile creature within 15 feet of the planetar must make a {@dc 19} DEX save, taking 56 ({@damage 16d6}) radiant damage on a failed save, or half as much damage on a successful one. Each friendly creature within 15 feet of the planetar is empowered with divine energy and has advantage on all melee attack rolls it makes before the start of the planetar's next turn."
+                    ]
+                },
+                {
+                    "name": "Healing Touch (4/Day)",
+                    "entries": [
+                        "The planetar touches another creature. The target magically regains 30 ({@dice 6d8 + 3}) HP and is freed from any curse, disease, poison, blindness, or deafness."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "greatsword|phb"
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "TP",
+                "XX"
+            ],
+            "damageTags": [
+                "R",
+                "S"
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RA"
+            ],
+            "conditionInflictSpell": [
+                "invisible",
+                "prone"
+            ],
+            "savingThrowForcedSpell": [
+                "wisdom"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Ankheg",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "monstrosity",
+                "tags": [
+                    "Animal"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "57"
+            },
+            "speed": {
+                "walk": 30,
+                "burrow": 10
+            },
+            "str": 17,
+            "dex": 10,
+            "con": 13,
+            "int": 1,
+            "wis": 12,
+            "cha": 6,
+            "senses": [
+                "darkvision 60 ft.",
+                "tremorsense 60 ft."
+            ],
+            "passive": 11,
+            "resist": [
+                "acid"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The ankheg is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage plus 9 ({@damage 2d8}) acid damage. If the target is a Large or smaller creature, it is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the ankheg can't Bite another target."
+                    ]
+                },
+                {
+                    "name": "Acid Spray {@recharge}",
+                    "entries": [
+                        "The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided it has no creature {@condition grappled}. Each creature in that line must make a {@dc 13} DEX save, taking 18 ({@damage 4d8}) acid damage on a failed save, or half as much damage on a successful one."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Save for Later",
+                    "entries": [
+                        "The ankheg quickly digs a small hole and stuffs one creature {@condition grappled} by it into the hole, burying the creature and ending the grapple. A buried creature is {@condition restrained} and unable to breathe or stand up. A creature, including the buried creature, can take its action to free the buried creature by succeeding on a {@dc 13} STR check."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D",
+                "T"
+            ],
+            "damageTags": [
+                "A",
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "conditionInflict": [
+                "grappled",
+                "restrained"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Flying Sword",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "S"
+            ],
+            "type": "construct",
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "11"
+            },
+            "speed": {
+                "walk": 0,
+                "fly": {
+                    "number": 50,
+                    "condition": "(hover)"
+                },
+                "canHover": true
+            },
+            "str": 12,
+            "dex": 16,
+            "con": 10,
+            "int": 1,
+            "wis": 4,
+            "cha": 1,
+            "senses": [
+                "keensense 60 ft. (can't sense beyond this radius)"
+            ],
+            "passive": 7,
+            "resist": [
+                "piercing"
+            ],
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "vulnerable": [
+                "acid"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "deafened",
+                "prone",
+                "exhaustion",
+                "charmed",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "cr": "1/4",
+            "trait": [
+                {
+                    "name": "Antimagic Susceptibility",
+                    "entries": [
+                        "The sword is incapacitated while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the sword must succeed on a CON save against the caster's spell save DC or fall unconscious for 1 minute."
+                    ]
+                },
+                {
+                    "name": "Construct Nature",
+                    "entries": [
+                        "The sword doesn't require air, food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Construct Resilience",
+                    "entries": [
+                        "The sword is immune to poison and psychic damage, and it is immune to {@condition exhaustion} and the {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, and {@condition poisoned} conditions."
+                    ]
+                },
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "While the sword remains motionless and isn't flying, it is indistinguishable from a normal sword."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Slash",
+                    "entries": [
+                        "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Whirling Blade (6 HP or Fewer)",
+                    "entries": [
+                        "The flying sword makes a Slash attack against a target it can sense within 5 feet of it."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Antimagic Susceptibility",
+                "False Appearance"
+            ],
+            "damageTags": [
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Solar",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "celestial",
+                "tags": [
+                    "Angel"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 21,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "306"
+            },
+            "speed": {
+                "walk": 50,
+                "fly": 150
+            },
+            "str": 26,
+            "dex": 22,
+            "con": 26,
+            "int": 38,
+            "wis": 38,
+            "cha": 44,
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 24,
+            "resist": [
+                "radiant",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "necrotic",
+                "poison"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "charmed",
+                "frightened",
+                "poisoned"
+            ],
+            "languages": [
+                "all; telepathy 120 ft."
+            ],
+            "cr": "21",
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "type": "spellcasting",
+                    "headerEntries": [
+                        "The solar casts one of the following spells, requiring no material components and using WIS as the spellcasting ability (spell save {@dc 22}). At will: command, invisibility (self only); 3/day each: greater restoration, resurrection (as an action); 1/day: holy aura."
+                    ],
+                    "displayAs": "action"
+                }
+            ],
+            "trait": [
+                {
+                    "name": "Angelic Resilience",
+                    "entries": [
+                        "The solar is resistant to radiant damage and to bludgeoning, piercing, and slashing damage from nonmagical attacks. In addition, it is immune to {@condition exhaustion} and the {@condition charmed} and {@condition frightened} conditions."
+                    ]
+                },
+                {
+                    "name": "Angelic Senses",
+                    "entries": [
+                        "The solar can pinpoint the location of Aberrations, Celestials, Fiends, and Undead within 30 feet of it and knows if a place or object it can sense is consecrated or desecrated."
+                    ]
+                },
+                {
+                    "name": "Angelic Weapons",
+                    "entries": [
+                        "The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra {@damage 6d8} radiant damage (included in the attack)."
+                    ]
+                },
+                {
+                    "name": "Divine Awareness",
+                    "entries": [
+                        "The solar knows if it hears a lie."
+                    ]
+                },
+                {
+                    "name": "Divine Protection",
+                    "entries": [
+                        "Aberrations, Celestials, Fiends, and Undead have disadvantage on attack rolls against the solar."
+                    ]
+                },
+                {
+                    "name": "Immortal Nature",
+                    "entries": [
+                        "The solar doesn't require food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Legendary Resistance (3/Day)",
+                    "entries": [
+                        "If the solar fails a save, it can choose to succeed instead."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The solar has advantage on saves against spells and other magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The solar makes three Greatsword or Holy Fire Bolt attacks. It can replace one attack with a use of Spellcasting. If two Greatsword or Holy Fire Bolt attacks hit one creature, the target must succeed on a {@dc 22} CON save or be {@condition blinded} until the end of its next turn."
+                    ]
+                },
+                {
+                    "name": "Greatsword",
+                    "entries": [
+                        "{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage plus 27 ({@damage 6d8}) radiant damage."
+                    ]
+                },
+                {
+                    "name": "Holy Fire Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 14} to hit, range 60 ft., one target. {@h}34 ({@damage 6d8 + 7}) radiant damage plus 14 ({@damage 4d6}) fire damage."
+                    ]
+                },
+                {
+                    "name": "Healing Touch (4/Day)",
+                    "entries": [
+                        "The solar touches another creature. The target magically regains 40 ({@dice 8d8 + 4}) HP and is freed from any curse, disease, poison, blindness, or deafness."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Celestial Tactics",
+                    "entries": [
+                        "The solar uses one of the following tactics:\\n• Empower Strikes. The solar sends divine power into the weapons of up to two friendly creatures in its sight within 30 feet of it. Each target has advantage on the next weapon attack roll it makes before the start of the solar's next turn. If that attack hits, the weapon deals an extra 7 ({@damage 2d6}) radiant damage.\\n• Inspire Resolve. The creature the solar can see within 30 feet of it gains 14 ({@dice 4d6}) temporary HP and becomes immune to the {@condition charmed} and {@condition frightened} conditions until the start of the solar's next turn.\\n• Manipulate Battlefield. The solar commands up to three friendly creatures it can see to reposition themselves on the battlefield. Each target can use a reaction to move up to half its speed in a direction of the solar's choice. This movement is unaffected by difficult terrain and doesn't provoke opportunity attacks."
+                    ]
+                }
+            ],
+            "legendary": [
+                {
+                    "name": "Teleport",
+                    "entries": [
+                        "The solar magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+                    ]
+                },
+                {
+                    "name": "Searing Burst (Costs 2 Actions)",
+                    "entries": [
+                        "The solar emits divine energy. Each creature of its choice within 10 feet of it must make a {@dc 22} DEX save, taking 14 ({@damage 4d6}) fire damage and 14 ({@damage 4d6}) radiant damage on a failed save, or half as much damage on a successful one."
+                    ]
+                },
+                {
+                    "name": "Intimidating Glare (Costs 3 Actions)",
+                    "entries": [
+                        "The solar glares at up to three creatures it can see within 30 feet of it. Each target must succeed on a {@dc 22} CHA save or be cowered until the end of its next turn. While cowered, a creature's speed is halved, and it can't look at the solar."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "greatsword|phb"
+            ],
+            "traitTags": [
+                "Legendary Resistances",
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "TP",
+                "XX"
+            ],
+            "damageTags": [
+                "F",
+                "R",
+                "S"
+            ],
+            "spellcastingTags": [
+                "O"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RA"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Balara",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "undead",
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "114"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 14,
+            "con": 14,
+            "int": 6,
+            "wis": 14,
+            "cha": 8,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 14,
+            "resist": [
+                "necrotic"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "poisoned"
+            ],
+            "languages": [
+                "understands the languages of its creator but can't speak"
+            ],
+            "cr": "6",
+            "trait": [
+                {
+                    "name": "Undead Nature",
+                    "entries": [
+                        "The balara doesn't require air, food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Undead Resilience",
+                    "entries": [
+                        "The balara is immune to poison damage, to {@condition exhaustion}, and to the {@condition poisoned} condition."
+                    ]
+                },
+                {
+                    "name": "Terrifying Luminance",
+                    "entries": [
+                        "When a creature that can see the balara's glowing ribcage starts its turn within 30 feet of the balara, it must make a {@dc 14} WIS save if the balara isn't {@condition incapacitated} and can see the creature. On a failure, the creature is {@condition frightened} until the start of its next turn. While {@condition frightened}, the creature's speed is reduced to 0, and it can't use reactions. Unless {@status surprised}, a creature can avert its eyes to avoid the save at the start of its turn. If it does so, it can't see the balara until the start of its next turn. If it looks at the balara in the meantime, it must immediately make the save."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The balara makes one Bite attack and two Claw attacks, or it makes three Necrotic Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d8 + 3}) piercing damage plus 4 ({@damage 1d8}) necrotic damage, and the target can't regain HP until the start of the balara's next turn."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Necrotic Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 5} to hit, range 60 ft., one target. {@h}15 ({@damage 3d8 + 2}) necrotic damage, and the target can't regain HP until the start of the balara's next turn."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Relentless Pursuit",
+                    "entries": [
+                        "When a creature the balara can see moves away from it, the balara can move up to half its speed toward that creature. This movement doesn't provoke opportunity attacks."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "CS"
+            ],
+            "damageTags": [
+                "N",
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "MW",
+                "RA"
+            ],
+            "conditionInflict": [
+                "frightened"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Azer",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": "elemental",
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor",
+                        "{@item shield|PHB}"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "49"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 12,
+            "con": 18,
+            "int": 12,
+            "wis": 12,
+            "cha": 10,
+            "passive": 11,
+            "immune": [
+                "fire",
+                "poison"
+            ],
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "languages": [
+                "Dwarvish",
+                "Ignan"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "Heated Body",
+                    "entries": [
+                        "A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 3 ({@damage 1d6}) fire damage."
+                    ]
+                },
+                {
+                    "name": "Heated Weapons",
+                    "entries": [
+                        "When the azer hits with a metal melee weapon, the weapon deals an extra 3 ({@damage 1d6}) fire damage (included in the attack)."
+                    ]
+                },
+                {
+                    "name": "Illumination",
+                    "entries": [
+                        "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The azer makes two Warhammer attacks."
+                    ]
+                },
+                {
+                    "name": "Warhammer",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, or 8 ({@damage 1d10 + 3}) bludgeoning damage if used with two hands, plus 3 ({@damage 1d6}) fire damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Blazing Bulwark",
+                    "entries": [
+                        "The azer creates fire in a 15-foot line that is 1 foot wide, originating from a point it can see within 15 feet. This opaque wall is 3 feet tall and provides half-cover to creatures behind it. A creature that moves through the line takes damage as if it touched the azer. The line of fire lasts for 1 minute or until the azer uses this bonus action again."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "warhammer|phb"
+            ],
+            "traitTags": [
+                "Illumination"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "D",
+                "IG"
+            ],
+            "damageTags": [
+                "B",
+                "F"
+            ],
+            "miscTags": [
+                "AOE",
+                "MLW",
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Basilisk",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "68"
+            },
+            "speed": {
+                "walk": 20
+            },
+            "str": 17,
+            "dex": 9,
+            "con": 15,
+            "int": 3,
+            "wis": 9,
+            "cha": 6,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 9,
+            "resist": [
+                "poison"
+            ],
+            "cr": "3",
+            "trait": [
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The basilisk is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                },
+                {
+                    "name": "Petrifying Gaze",
+                    "entries": [
+                        "When a creature that can see the basilisk's eyes starts its turn within 30 feet of the basilisk, it must make a {@dc 12} CON save if the basilisk isn't {@condition incapacitated} and can see the creature. On a failure, the creature magically begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the save at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until freed by greater restoration or similar magic. Unless {@status surprised}, a creature can avert its eyes to avoid the save at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn. If it looks at the basilisk in the meantime, it must immediately make the save. If the basilisk sees itself reflected on a polished surface within 30 feet of it in bright light, it mistakes itself for a rival and is affected by its own gaze."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The basilisk makes two Bite or Poison Spit attacks. If both attacks hit one creature, the target is {@condition poisoned} until the end of its next turn."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+                    ]
+                },
+                {
+                    "name": "Poison Spit",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}13 ({@damage 3d6 + 3}) poison damage."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "I",
+                "P"
+            ],
+            "miscTags": [
+                "MW",
+                "RW"
+            ],
+            "conditionInflict": [
+                "poisoned",
+                "restrained"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Blink Dog",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": "fey",
+            "ac": [
+                13
+            ],
+            "hp": {
+                "special": "14"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 12,
+            "dex": 17,
+            "con": 12,
+            "int": 10,
+            "wis": 12,
+            "cha": 10,
+            "passive": 13,
+            "languages": [
+                "Blink Dog",
+                "understands Sylvan but can't speak it"
+            ],
+            "cr": "1/4",
+            "trait": [
+                {
+                    "name": "Fey Resilience",
+                    "entries": [
+                        "The blink dog is resistant to the {@condition charmed} and {@condition unconscious} conditions."
+                    ]
+                },
+                {
+                    "name": "Heightened Hearing and Smell",
+                    "entries": [
+                        "The blink dog's {@skill Perception} is 18 while perceiving by hearing or smell."
+                    ]
+                },
+                {
+                    "name": "Pack Tactics",
+                    "entries": [
+                        "The blink dog has advantage on attack rolls against a creature if at least one of the dog's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Teleport {@recharge 4}",
+                    "entries": [
+                        "The blink dog teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one Bite attack."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Pack Tactics"
+            ],
+            "actionTags": [
+                "Teleport"
+            ],
+            "languageTags": [
+                "CS",
+                "OTH",
+                "S"
+            ],
+            "damageTags": [
+                "P"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Black Pudding",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "ooze",
+            "ac": [
+                7
+            ],
+            "hp": {
+                "special": "122"
+            },
+            "speed": {
+                "walk": 20,
+                "climb": 20
+            },
+            "str": 22,
+            "dex": 5,
+            "con": 16,
+            "int": 1,
+            "wis": 6,
+            "cha": 1,
+            "senses": [
+                "keensense 60 ft. (can't sense beyond this radius)"
+            ],
+            "passive": 8,
+            "immune": [
+                "acid",
+                "lightning",
+                "slashing"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "grappled",
+                "poisoned"
+            ],
+            "cr": "4",
+            "trait": [
+                {
+                    "name": "Amorphous",
+                    "entries": [
+                        "The pudding can move through a space as narrow as 1 inch wide without squeezing."
+                    ]
+                },
+                {
+                    "name": "Corrosive Form",
+                    "entries": [
+                        "A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 ({@damage 1d8}) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative-1 penalty to damage rolls. If its penalty drops to-5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through a panel of nonmagical wood or metal in its space up to 2 inches thick in 1 round."
+                    ]
+                },
+                {
+                    "name": "Ooze Nature",
+                    "entries": [
+                        "The pudding doesn't require sleep."
+                    ]
+                },
+                {
+                    "name": "Ooze Resilience",
+                    "entries": [
+                        "The pudding is resistant to the {@condition restrained} condition, and it is immune to {@condition exhaustion} and to the {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, and {@condition prone} conditions."
+                    ]
+                },
+                {
+                    "name": "Spider Climb",
+                    "entries": [
+                        "The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The black pudding makes two Pseudopod attacks."
+                    ]
+                },
+                {
+                    "name": "Pseudopod",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage plus 9 ({@damage 2d8}) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative-1 penalty to the AC it offers. Armor reduced to an AC of 10 is destroyed."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Dampen Light",
+                    "entries": [
+                        "The black pudding dims the light around it. The radius of each light source within 60 feet of it is halved until the start of its next turn. The pudding can't use this action while in sunlight."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Split",
+                    "entries": [
+                        "When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 HP. Each new pudding has HP equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amorphous",
+                "Spider Climb"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "A",
+                "B"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Behir",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "H"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "223"
+            },
+            "speed": {
+                "walk": 50,
+                "climb": 40
+            },
+            "str": 30,
+            "dex": 16,
+            "con": 18,
+            "int": 7,
+            "wis": 22,
+            "cha": 12,
+            "senses": [
+                "darkvision 90 ft."
+            ],
+            "passive": 16,
+            "immune": [
+                "lightning"
+            ],
+            "languages": [
+                "Draconic"
+            ],
+            "cr": "11",
+            "trait": [
+                {
+                    "name": "Lightning Absorption",
+                    "entries": [
+                        "Whenever the behir is subjected to lightning damage, it takes no damage and instead regains a number of HP equal to the lightning damage dealt."
+                    ]
+                },
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The behir is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The behir makes one Bite attack and one Constrict attack. It can replace its Bite attack with a use of Swallow."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage plus 27 ({@damage 6d8}) lightning damage."
+                    ]
+                },
+                {
+                    "name": "Constrict",
+                    "entries": [
+                        "{@atk mw} {@hit 10} to hit, reach 5 ft., one Large or smaller creature. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage. If the target is Large or smaller and the behir isn't already grappling a creature, the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}, and the behir can't Constrict another target."
+                    ]
+                },
+                {
+                    "name": "Swallow",
+                    "entries": [
+                        "The behir makes one Bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the behir, and it takes 21 ({@damage 6d6}) acid damage at the start of the behir's turns. If the behir takes 30 damage or more on a single turn from the swallowed creature, it must succeed on a {@dc 14} CON save at the end of that turn or regurgitate it, which falls {@condition prone} in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer {@condition restrained} and can escape by using 15 feet of movement, exiting {@condition prone}."
+                    ]
+                },
+                {
+                    "name": "Lightning Breath {@recharge 5}",
+                    "entries": [
+                        "The behir exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} DEX save, taking 54 ({@damage 12d8}) lightning damage on a failed save, or half as much on a successful one."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Damage Absorption"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Breath Weapon",
+                "Multiattack",
+                "Swallow"
+            ],
+            "languageTags": [
+                "DR"
+            ],
+            "damageTags": [
+                "A",
+                "B",
+                "L",
+                "P"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "blinded",
+                "grappled",
+                "restrained"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Bulette",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "108"
+            },
+            "speed": {
+                "walk": 40,
+                "burrow": 40
+            },
+            "str": 21,
+            "dex": 10,
+            "con": 20,
+            "int": 2,
+            "wis": 10,
+            "cha": 5,
+            "senses": [
+                "darkvision 60 ft.",
+                "tremorsense 60 ft."
+            ],
+            "passive": 16,
+            "resist": [
+                "bludgeoning"
+            ],
+            "cr": "5",
+            "trait": [
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The bulette is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                },
+                {
+                    "name": "Standing Leap",
+                    "entries": [
+                        "The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The bulette makes two Bite attacks."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d10 + 4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Deadly Leap {@recharge 5}",
+                    "entries": [
+                        "The bulette leaps up to 30 feet, diving onto a point it can see or sense within that range and landing on its feet with a thunderous crash. Each creature within 10 feet of that point must make a {@dc 15} STR save, taking 14 ({@damage 4d6}) bludgeoning damage and 14 ({@damage 4d6}) thunder damage and is knocked {@condition prone} on a failure, or half as much damage and not {@condition prone} on a success. Any creature in the bulette's space is then pushed into an unoccupied space within 5 feet of it, falling {@condition prone} if none is available."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Seek Prey",
+                    "entries": [
+                        "The bulette sniffs around for new prey, releasing a guttural chirp when it settles on one. One creature the bulette can see within 30 ft. must make a {@dc 15} WIS save or be {@condition frightened} until the end of its next turn, and the bulette has advantage on its next attack roll against it before the end of its next turn."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D",
+                "T"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "B",
+                "P",
+                "T"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Chimera",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "126"
+            },
+            "speed": {
+                "walk": 30,
+                "fly": 60
+            },
+            "str": 19,
+            "dex": 10,
+            "con": 19,
+            "int": 4,
+            "wis": 14,
+            "cha": 11,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 18,
+            "resist": [
+                {
+                    "special": "monstrosity resilience"
+                }
+            ],
+            "immune": [
+                "fire"
+            ],
+            "languages": [
+                "Draconic"
+            ],
+            "cr": "6",
+            "trait": [
+                {
+                    "name": "Bickering Heads",
+                    "entries": [
+                        "The chimera is perpetually one step away from arguing with itself. A creature can use a bonus action on its turn to appeal to one of the heads with bribes (dragon), praise (lion), or displays of magic (goat), forcing a {@dc 15} WIS save or the chimera succumbs to that desire with consequences."
+                    ]
+                },
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The chimera is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                },
+                {
+                    "name": "Multiple Heads",
+                    "entries": [
+                        "The chimera has three heads and is resistant to the {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and {@condition unconscious} conditions."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The chimera makes one Bite attack, one Headbutt attack, and two Claws attacks, or it can make two Claws attacks and use Fire Breath if available."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Headbutt",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Fire Breath {@recharge 5}",
+                    "entries": [
+                        "The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 15} DEX save, taking 27 ({@damage 6d8}) fire damage on a failed save, or half as much damage on a successful one."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Breath Weapon",
+                "Multiattack"
+            ],
+            "languageTags": [
+                "DR"
+            ],
+            "damageTags": [
+                "B",
+                "F",
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Centaur",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                12
+            ],
+            "hp": {
+                "special": "63"
+            },
+            "speed": {
+                "walk": 50
+            },
+            "str": 18,
+            "dex": 14,
+            "con": 14,
+            "int": 9,
+            "wis": 16,
+            "cha": 11,
+            "passive": 13,
+            "languages": [
+                "Elvish",
+                "Sylvan"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The centaur is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                },
+                {
+                    "name": "Trampling Charge",
+                    "entries": [
+                        "If the centaur moves at least 30 ft straight toward a creature and then hits it with a Pike attack on the same turn, the target must succeed on a {@dc 14} STR save or be knocked {@condition prone}. If {@condition prone}, the centaur can make a Hooves attack against it as a bonus action."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The centaur makes one Hooves attack and one Pike attack, or it makes three Longbow attacks."
+                    ]
+                },
+                {
+                    "name": "Hooves",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Pike",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Longbow",
+                    "entries": [
+                        "{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Defensive Kick",
+                    "entries": [
+                        "When a creature the centaur can see within 5 feet of it hits it with an attack, it can kick the attacker. The attacker must succeed on a {@dc 14} STR save or be knocked {@condition prone} or pushed up to 5 feet away (centaur's choice)."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "longbow|phb",
+                "pike|phb"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "E",
+                "S"
+            ],
+            "damageTags": [
+                "B",
+                "P"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RCH",
+                "RNG",
+                "RW"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Trillipol",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Outsider"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "247"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 32,
+            "dex": 14,
+            "con": 30,
+            "int": 32,
+            "wis": 14,
+            "cha": 30,
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 18,
+            "resist": [
+                "cold",
+                "fire",
+                "lightning",
+                "poison",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "acid"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "frightened"
+            ],
+            "languages": [
+                "Abyssal",
+                "Common",
+                "Infernal; telepathy 120 ft."
+            ],
+            "cr": "17",
+            "trait": [
+                {
+                    "name": "Acidic Weapons",
+                    "entries": [
+                        "The trillipol's weapon deals an extra {@damage 5d8} acid damage."
+                    ]
+                },
+                {
+                    "name": "Bolstering Presence",
+                    "entries": [
+                        "Each friendly chol within 10 ft. has advantage on attack rolls and saves."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The trillipol has advantage on saves against spells and other magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The trillipol makes three Slam attacks, or it makes four Acid Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage plus 22 ({@damage 5d8}) acid damage."
+                    ]
+                },
+                {
+                    "name": "Acid Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}26 ({@damage 5d8 + 4}) acid damage."
+                    ]
+                },
+                {
+                    "name": "Acid Burst {@recharge 5}",
+                    "entries": [
+                        "Each creature within 20 ft. must make a {@dc 19} DEX save, taking 63 ({@damage 14d8}) acid damage on a fail, or half on a success. If failed by 5 or more, it takes an additional 18 ({@damage 4d8}) acid damage at the start of its next turn."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Shape Chol",
+                    "entries": [
+                        "Manipulates up to three friendly chol within 60 ft., granting one:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Elastic Limbs-+10 ft. speed, ignores opportunity attacks.",
+                                "Frightful Mien-non-chol within 5 ft. must make {@dc 19} WIS save or be {@condition frightened} until trillipol's next turn.",
+                                "Sticky Acid-next weapon hit forces {@dc 19} STR save or restrains target in acid."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Teleport",
+                    "entries": [
+                        "As the ichol."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Teleport"
+            ],
+            "languageTags": [
+                "AB",
+                "C",
+                "I",
+                "TP"
+            ],
+            "damageTags": [
+                "A",
+                "B"
+            ],
+            "miscTags": [
+                "MW",
+                "RA"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Uulgol",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Outsider"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "128"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 28,
+            "dex": 10,
+            "con": 18,
+            "int": 12,
+            "wis": 10,
+            "cha": 22,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 14,
+            "resist": [
+                "cold",
+                "fire",
+                "lightning",
+                "poison",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "acid"
+            ],
+            "conditionImmune": [
+                "charmed"
+            ],
+            "languages": [
+                "Abyssal",
+                "Common",
+                "Infernal; telepathy 60 ft."
+            ],
+            "cr": "9",
+            "trait": [
+                {
+                    "name": "Acidic Weapons",
+                    "entries": [
+                        "Deals an extra {@damage 3d8} acid damage."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The uulgol has advantage on saves against spells and magical effects."
+                    ]
+                },
+                {
+                    "name": "Weapon Bond",
+                    "entries": [
+                        "Can't be disarmed of its maul. Gains 5 ({@dice 2d4}) temp HP for each absorbed weapon at start of turn."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Makes one Claw and one Maul attack, or three Acid Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@dice 3d8 + 5}) slashing plus 13 ({@damage 3d8}) acid damage."
+                    ]
+                },
+                {
+                    "name": "Maul",
+                    "entries": [
+                        "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@dice 4d6 + 5}) bludgeoning plus 13 ({@damage 3d8}) acid damage. If Huge or smaller, {@dc 17} STR save or pushed 10 ft. or knocked {@condition prone} (uulgol's choice). On crit, disadvantage on save and gains {@condition exhaustion} 1."
+                    ]
+                },
+                {
+                    "name": "Acid Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}20 ({@damage 4d8 + 2}) acid damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Absorb Weapon",
+                    "entries": [
+                        "Absorbs one weapon within 5 ft. not being its maul. Target must {@dc 17} STR save to resist. Absorbed weapon dissolves in 1 hour if nonmagical. Can retrieve with {@dc 17} STR check."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "maul|phb"
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "C",
+                "I",
+                "TP"
+            ],
+            "damageTags": [
+                "A"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RA"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Czol",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "S"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Outsider"
+                ]
+            },
+            "ac": [
+                15
+            ],
+            "hp": {
+                "special": "97"
+            },
+            "speed": {
+                "walk": 30,
+                "fly": 60
+            },
+            "str": 10,
+            "dex": 20,
+            "con": 16,
+            "int": 7,
+            "wis": 10,
+            "cha": 20,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 13,
+            "resist": [
+                "cold",
+                "fire",
+                "lightning",
+                "poison",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "acid"
+            ],
+            "conditionImmune": [
+                "charmed"
+            ],
+            "languages": [
+                "Abyssal",
+                "Common",
+                "Infernal; telepathy 60 ft."
+            ],
+            "cr": "5",
+            "trait": [
+                {
+                    "name": "Acidic Weapons",
+                    "entries": [
+                        "Deals an extra {@damage 2d8} acid damage."
+                    ]
+                },
+                {
+                    "name": "Evasion",
+                    "entries": [
+                        "If subjected to a DEX save for half damage, takes none on success and half on failure."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "Advantage on saves against spells and magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Makes one Dagger and one Wing Slap attack, or three Acid Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Dagger",
+                    "entries": [
+                        "{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@dice 1d4 + 5}) piercing plus 9 ({@damage 2d8}) acid damage."
+                    ]
+                },
+                {
+                    "name": "Wing Slap",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@dice 2d6 + 5}) bludgeoning plus 9 ({@damage 2d8}) acid damage. Target must {@dc 16} CON save or take 4 ({@damage 1d8}) acid damage each turn until healed."
+                    ]
+                },
+                {
+                    "name": "Acid Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 5} to hit, range 60 ft., one target. {@h}12 ({@damage 2d8 + 3}) acid damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Hidden Step",
+                    "entries": [
+                        "Teleports up to 30 ft. to an unoccupied space it can see and takes the Hide action."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "dagger|phb"
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "C",
+                "I",
+                "TP"
+            ],
+            "damageTags": [
+                "A"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RA",
+                "RW",
+                "THW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Cockatrice",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "S"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                11
+            ],
+            "hp": {
+                "special": "25"
+            },
+            "speed": {
+                "walk": 20,
+                "fly": 40
+            },
+            "str": 6,
+            "dex": 12,
+            "con": 12,
+            "int": 2,
+            "wis": 12,
+            "cha": 4,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 11,
+            "cr": "1/2",
+            "trait": [
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The cockatrice is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Serrated Beak",
+                    "entries": [
+                        "{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}6 ({@damage 2d4 + 1}) slashing damage. Target must succeed on a {@dc 11} CON save or be {@condition restrained} as it begins to turn to stone. Repeats save at end of next turn, {@condition petrified} for 24 hours on failure."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Shrieking Crow",
+                    "entries": [
+                        "When a creature the cockatrice can see within 30 ft. attacks it, the cockatrice can force a {@dc 11} WIS save or attacker has disadvantage on attack roll."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "damageTags": [
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Cloaker",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "aberration",
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "105"
+            },
+            "speed": {
+                "walk": 10,
+                "fly": 40
+            },
+            "str": 18,
+            "dex": 20,
+            "con": 12,
+            "int": 12,
+            "wis": 12,
+            "cha": 14,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 11,
+            "languages": [
+                "Deep Speech",
+                "Undercommon"
+            ],
+            "cr": "8",
+            "trait": [
+                {
+                    "name": "Aberrant Resilience",
+                    "entries": [
+                        "Resistant to {@condition charmed}, {@condition frightened}, {@condition paralyzed}, and {@condition stunned}; advantage on saves against effects that alter its form."
+                    ]
+                },
+                {
+                    "name": "Damage Transfer",
+                    "entries": [
+                        "While attached to creature, takes half damage (rounded down); other half to creature."
+                    ]
+                },
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "When motionless without underside exposed, indistinguishable from dark leather cloak."
+                    ]
+                },
+                {
+                    "name": "Light Sensitivity",
+                    "entries": [
+                        "Disadvantage on attack rolls and {@skill Perception} checks relying on sight in bright light."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Makes one Bite and two Tail attacks."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}18 ({@damage 4d6 + 4}) piercing damage. If Large or smaller and cloaker has advantage, attaches and blinds target; can't Bite again while attached, but deals 18 ({@dice 4d6 + 4}) piercing at start of each turn. {@dc 15} STR check to detach."
+                    ]
+                },
+                {
+                    "name": "Tail",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}17 ({@damage 3d8 + 4}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Moan {@recharge}",
+                    "entries": [
+                        "Each creature within 30 ft. that can hear must {@dc 15} WIS save. Fail: 40 ({@damage 9d8}) psychic damage and {@condition frightened} until end of next turn. {@actSaveSuccess} half damage, not {@condition frightened}."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Cloak of Shadows (3/Day)",
+                    "entries": [
+                        "Gains Stealth 20 and creatures have disadvantage on attacks against it for 1 minute, ends early if hit."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "False Appearance",
+                "Light Sensitivity"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "DS",
+                "U"
+            ],
+            "damageTags": [
+                "P",
+                "S",
+                "Y"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Chuul",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": "aberration",
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "80"
+            },
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "str": 18,
+            "dex": 10,
+            "con": 16,
+            "int": 4,
+            "wis": 14,
+            "cha": 4,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 14,
+            "languages": [
+                "understands Deep Speech but can't speak"
+            ],
+            "cr": "4",
+            "trait": [
+                {
+                    "name": "Aberrant Resilience",
+                    "entries": [
+                        "Resistant to {@condition charmed}, {@condition frightened}, {@condition paralyzed}, and {@condition stunned}; advantage on saves against effects that alter its form."
+                    ]
+                },
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "Can breathe air and water."
+                    ]
+                },
+                {
+                    "name": "Sense Magic",
+                    "entries": [
+                        "Detects location of magic within 120 ft. and sees aura around creature or object."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Makes two Pincer attacks."
+                    ]
+                },
+                {
+                    "name": "Pincer",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}17 ({@dice 3d8 + 4}) bludgeoning. If Large or smaller, {@condition grappled} (escape {@dc 14}). Two pincers can grapple only one target."
+                    ]
+                },
+                {
+                    "name": "Wild Reach {@recharge 5}",
+                    "entries": [
+                        "Each creature within 15 ft. must {@dc 14} DEX save. Fail: 21 ({@dice 6d6}) force, necrotic if no magic item within range. {@actSaveSuccess} half damage. If necrotic, chuul takes half damage if succeeded."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Paralyzing Tentacles",
+                    "entries": [
+                        "{@condition Grappled|XPHB} creature must {@dc 14} CON save or be {@condition poisoned} for 1 minute, {@condition paralyzed} while {@condition poisoned}. Repeat save at end of each turn to end effect."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amphibious"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "CS",
+                "DS"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Darkmantle",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "S"
+            ],
+            "type": "monstrosity",
+            "ac": [
+                11
+            ],
+            "hp": {
+                "special": "25"
+            },
+            "speed": {
+                "walk": 10,
+                "fly": 30
+            },
+            "str": 16,
+            "dex": 12,
+            "con": 12,
+            "int": 2,
+            "wis": 10,
+            "cha": 4,
+            "senses": [
+                "keensense 60 ft."
+            ],
+            "passive": 10,
+            "cr": "1/2",
+            "trait": [
+                {
+                    "name": "Echolocation",
+                    "entries": [
+                        "Can't use keensense while {@condition deafened}."
+                    ]
+                },
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "Motionless, looks like stalactite/stalagmite."
+                    ]
+                },
+                {
+                    "name": "Jagged Hide",
+                    "entries": [
+                        "A creature that hits it with melee attack within 5 ft. takes 2 ({@damage 1d4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "Resistant to {@condition exhaustion} and {@condition frightened} condition."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Crush",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@dice 1d6 + 3}) bludgeoning, attaches. If Medium or smaller and has advantage, attaches to head, blinds and suffocates. While attached, can't Crush others, deals 6 ({@dice 1d6 + 3}) bludgeoning at start of turns. {@dc 13} STR check to detach."
+                    ]
+                },
+                {
+                    "name": "Topple",
+                    "entries": [
+                        "While attached, target must {@dc 13} DEX save or be knocked {@condition prone}. If {@condition prone} already, {@condition restrained}."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Darkness Aura (1/Day)",
+                    "entries": [
+                        "15-foot radius darkness aura, moves with it, lasts up to 10 min. Overlaps with 2nd-level or lower light dispels light."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "False Appearance"
+            ],
+            "damageTags": [
+                "P"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Crimson Jelly",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "T"
+            ],
+            "type": "ooze",
+            "ac": [
+                12
+            ],
+            "hp": {
+                "special": "20"
+            },
+            "speed": {
+                "walk": 0,
+                "fly": {
+                    "number": 60,
+                    "condition": "(hover)"
+                },
+                "swim": 30,
+                "canHover": true
+            },
+            "str": 3,
+            "dex": 18,
+            "con": 10,
+            "int": 1,
+            "wis": 10,
+            "cha": 8,
+            "senses": [
+                "keensense 10 ft. (can't sense beyond this radius)"
+            ],
+            "passive": 10,
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "frightened",
+                "prone"
+            ],
+            "cr": "1/2",
+            "trait": [
+                {
+                    "name": "Amorphous",
+                    "entries": [
+                        "Can move through 1-inch wide space."
+                    ]
+                },
+                {
+                    "name": "Blood Sense",
+                    "entries": [
+                        "Pinpoint creatures without full HP within 60 ft."
+                    ]
+                },
+                {
+                    "name": "Ooze Nature",
+                    "entries": [
+                        "Doesn't require sleep."
+                    ]
+                },
+                {
+                    "name": "Ooze Resilience",
+                    "entries": [
+                        "Resistant to {@condition restrained}; immune to {@condition exhaustion} and listed conditions."
+                    ]
+                },
+                {
+                    "name": "Tainted Attacks",
+                    "entries": [
+                        "Reduces target to 0 HP: {@dc 9} CHA save or gain one level of {@condition exhaustion} and lose basic self-memory temporarily."
+                    ]
+                },
+                {
+                    "name": "Transparent",
+                    "entries": [
+                        "{@condition Invisible|XPHB} in dim or bright light, faint crimson glow in darkness."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Feeding Paddles",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) necrotic damage. Gains temp HP equal to damage and attaches. While attached, only uses Feeding Paddles. {@dc 12} STR to detach."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Reproduce (Requires Temporary HP)",
+                    "entries": [
+                        "If has temp HP, splits into clone with equal HP, loses its temp HP. {@spell Clone|PHB} can't gain temp HP from Feeding Paddles until long rest."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amorphous"
+            ],
+            "damageTags": [
+                "N"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Couatl",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": "celestial",
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "77"
+            },
+            "speed": {
+                "walk": 30,
+                "fly": 90
+            },
+            "str": 16,
+            "dex": 20,
+            "con": 16,
+            "int": 18,
+            "wis": 24,
+            "cha": 22,
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 17,
+            "resist": [
+                "radiant",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "languages": [
+                "all; telepathy 120 ft."
+            ],
+            "cr": "4",
+            "trait": [
+                {
+                    "name": "Celestial Resilience",
+                    "entries": [
+                        "Resistant to radiant and nonmagical damage."
+                    ]
+                },
+                {
+                    "name": "Inscrutable",
+                    "entries": [
+                        "Immune to divination that reads thoughts or reveals location, WIS ({@skill Insight}) has disadvantage."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "Advantage on saves vs spells and magical effects."
+                    ]
+                },
+                {
+                    "name": "Magic Weapons",
+                    "entries": [
+                        "Weapon attacks are magical."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Makes one Bite and one Constrict."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@dice 1d6 + 5}) piercing plus 14 ({@dice 4d6}) poison. If reduced to 0 HP by poison, can choose target to be stable but {@condition unconscious} for 1 hour."
+                    ]
+                },
+                {
+                    "name": "Constrict",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}12 ({@dice 2d6 + 5}) bludgeoning, {@condition grappled} (escape {@dc 15}), {@condition restrained}."
+                    ]
+                },
+                {
+                    "name": "Healing Hiss (3/Day)",
+                    "entries": [
+                        "Regain 10 ({@dice 3d6}) HP and cure disease or poison."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Change Shape",
+                    "entries": [
+                        "Transforms into Large or smaller Beast or Humanoid CR ≤ own CR or back to true form, retains features, proficiencies, and HP."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Rainbow Shield",
+                    "entries": [
+                        "Imposes rainbow shield between self and attacker within 30 ft., disadvantage on attack roll or auto-miss if attacker didn't attack another creature last minute."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Magic Resistance",
+                "Magic Weapons"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Shapechanger"
+            ],
+            "languageTags": [
+                "TP",
+                "XX"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Deathless",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": "fey",
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "144"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 18,
+            "dex": 12,
+            "con": 18,
+            "int": 20,
+            "wis": 24,
+            "cha": 12,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "resist": [
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "languages": [
+                "Common",
+                "Sylvan"
+            ],
+            "cr": "9",
+            "trait": [
+                {
+                    "name": "Fey Resilience",
+                    "entries": [
+                        "The deathless is resistant to the {@condition charmed} and {@condition unconscious} conditions."
+                    ]
+                },
+                {
+                    "name": "Regeneration",
+                    "entries": [
+                        "The deathless regains 10 HP at the start of its turn if it has at least 1 HP and at least 1 of its nesting dolls is intact."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The deathless makes three Death Blow or Death Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Death Blow",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage plus 7 ({@damage 2d6}) necrotic damage. The target must succeed on a {@dc 16} CON save or its HP maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a short or long rest. The target dies if this effect reduces its HP maximum to 0."
+                    ]
+                },
+                {
+                    "name": "Death Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 7} to hit, range 60 ft., one target. {@h}20 ({@damage 5d6 + 3}) necrotic damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Call of Death",
+                    "entries": [
+                        "One creature that doesn't have all its HP and that the deathless can see within 30 feet must make a {@dc 16} CON save, taking 7 ({@damage 2d6}) necrotic damage on a failed save, or half as much on a successful one."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Regeneration"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "C",
+                "S"
+            ],
+            "damageTags": [
+                "B",
+                "N"
+            ],
+            "miscTags": [
+                "MW",
+                "RA"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Death Knight",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "ac": [
+                {
+                    "ac": 18,
+                    "from": [
+                        "{@item plate armor|PHB|plate}"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "140"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 18,
+            "dex": 10,
+            "con": 16,
+            "int": 12,
+            "wis": 20,
+            "cha": 18,
+            "senses": [
+                "darkvision 90 ft."
+            ],
+            "immune": [
+                "necrotic"
+            ],
+            "vulnerable": [
+                "radiant"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "poisoned"
+            ],
+            "languages": [
+                "Common"
+            ],
+            "cr": "8",
+            "trait": [
+                {
+                    "name": "Disgraced Rejuvenation",
+                    "entries": [
+                        "Unless redeemed, a destroyed death knight returns in {@dice 1d4} days, regaining all its HP and becoming active again within 10 feet of where it died."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The death knight has advantage on saves against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Undead Nature",
+                    "entries": [
+                        "The death knight doesn't require air, food, drink, or sleep."
+                    ]
+                },
+                {
+                    "name": "Undead Resilience",
+                    "entries": [
+                        "The death knight is immune to poison damage, {@condition exhaustion}, and the {@condition poisoned} condition."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The death knight makes three Greatsword or Necrotic Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Greatsword",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+                    ]
+                },
+                {
+                    "name": "Necrotic Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 7} to hit, range 60 ft., one target. {@h}18 ({@damage 4d6 + 4}) necrotic damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Champion's Challenge",
+                    "entries": [
+                        "The death knight challenges one creature it can see within 30 ft. It must succeed on a {@dc 15} CHA save or have disadvantage on attack rolls against creatures other than the knight until the end of its next turn."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Parry",
+                    "entries": [
+                        "The death knight adds 3 to its AC against one melee attack it can see."
+                    ]
+                },
+                {
+                    "name": "Soul Drain",
+                    "entries": [
+                        "When the death knight reduces a Humanoid to 0 HP, it can absorb the creature's soul. The target must succeed on a {@dc 15} WIS save or immediately die, its soul becoming trapped in the knight's sword. The death knight has advantage on attack rolls for 1 minute after absorbing a soul. The creature can't be restored to life until the death knight is permanently destroyed."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "greatsword|phb"
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Parry"
+            ],
+            "languageTags": [
+                "C"
+            ],
+            "damageTags": [
+                "N",
+                "S"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RA"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Death Dog",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "monstrosity",
+                "tags": [
+                    "Animal"
+                ]
+            },
+            "ac": [
+                12
+            ],
+            "hp": {
+                "special": "40"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 14,
+            "dex": 14,
+            "con": 14,
+            "int": 2,
+            "wis": 12,
+            "cha": 6,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Monstrosity Resilience",
+                    "entries": [
+                        "The death dog is resistant to {@condition exhaustion} and to the {@condition frightened} condition."
+                    ]
+                },
+                {
+                    "name": "Multiple Heads",
+                    "entries": [
+                        "The death dog has two heads and is resistant to the {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and {@condition unconscious} conditions."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The death dog makes two Bite attacks."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 12} CON save or contract a disease. Until the disease is cured, the target is {@condition poisoned}. Every 24 hours that elapse, the infected creature must repeat the save, reducing its HP maximum by 5 ({@dice 2d4}) on a failure. This reduction lasts until the creature finishes a long rest after the disease is cured. The creature dies if the disease reduces its HP maximum to 0."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Dual Bark",
+                    "entries": [
+                        "The death dog's two heads bark at creatures in two 15-foot cones. Each creature in the area of a cone must succeed on a {@dc 12} CON save or be {@condition deafened} until the end of its next turn. If the cones overlap each other, each creature in overlapping cones must make only one save with disadvantage rather than one save for each cone."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "P"
+            ],
+            "miscTags": [
+                "AOE",
+                "DIS",
+                "MW"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Glabrezu",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Demon"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "154"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 28,
+            "dex": 14,
+            "con": 28,
+            "int": 18,
+            "wis": 24,
+            "cha": 24,
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 17,
+            "resist": [
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                },
+                "cold",
+                "fire",
+                "lightning"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal; telepathy 120 ft."
+            ],
+            "cr": "9",
+            "trait": [
+                {
+                    "name": "Demonic Resilience",
+                    "entries": [
+                        "The glabrezu is resistant to cold, fire, and lightning damage. In addition, it is immune to poison damage and to the {@condition poisoned} condition."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The glabrezu has advantage on saves against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Point Blank Grappler",
+                    "entries": [
+                        "When the glabrezu makes a Crackling Flame Bolt attack, it doesn't have disadvantage on the attack roll from being within 5 feet of a hostile creature, provided it is grappling that creature."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The glabrezu makes two Claw attacks and two Pincer attacks, or it makes four Crackling Flame Bolt attacks. It can replace both Claw attacks with two Crackling Flame Bolt attacks."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage plus 3 ({@damage 1d6}) fire damage and 3 ({@damage 1d6}) lightning damage."
+                    ]
+                },
+                {
+                    "name": "Pincer",
+                    "entries": [
+                        "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 17}). The glabrezu has two pincers, each of which can grapple only one target."
+                    ]
+                },
+                {
+                    "name": "Crackling Flame Bolt",
+                    "entries": [
+                        "{@atk rs} {@hit 7} to hit, range 60 ft., one target. {@h}6 ({@damage 1d6 + 3}) fire damage plus 10 ({@damage 3d6}) lightning damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Manipulating Whispers",
+                    "entries": [
+                        "The glabrezu whispers in the mind of a creature it can see within 120 feet of it, encouraging the creature to commit wicked acts. The target must succeed on a {@dc 17} CHA save or succumb to one of the following urges: Boastful Stance. The target is overcome with surety of its own battle prowess, momentarily letting down its guard. Creatures have advantage on attack rolls against the target until the start of the glabrezu's next turn. Confirmation of Wealth. The target is briefly overcome with the desire to confirm the amount and status of its valuables. It uses either an action or bonus action on its next turn (the glabrezu's choice) to count and take stock of its valuables. Wrathful Strike. Anger fills the target, and it immediately lashes out at those nearby. The target uses its reaction to make one melee weapon attack against a creature of the glabrezu's choice within 5 feet of the target."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "TP"
+            ],
+            "damageTags": [
+                "B",
+                "F",
+                "L",
+                "S"
+            ],
+            "miscTags": [
+                "MW",
+                "RA",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "grappled"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Dretch",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "S"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Demon"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 11,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "13"
+            },
+            "speed": {
+                "walk": 20
+            },
+            "str": 14,
+            "dex": 10,
+            "con": 12,
+            "int": 4,
+            "wis": 8,
+            "cha": 3,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 9,
+            "resist": [
+                "cold",
+                "fire",
+                "lightning"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal"
+            ],
+            "cr": "1/4",
+            "trait": [
+                {
+                    "name": "Abyssal Rejuvenation",
+                    "entries": [
+                        "Unlike other outsiders, a dretch that dies in its home plane of the Abyss is restored in a new body in {@dice 1d10} days, regaining all its HP and becoming active again. The new body appears in a random location in the Abyss. Only sprinkling holy water on the dretch's remains can prevent this trait from functioning."
+                    ]
+                },
+                {
+                    "name": "Demonic Resilience",
+                    "entries": [
+                        "The dretch is resistant to cold, fire, and lightning damage. In addition, it is immune to poison damage and to the {@condition poisoned} condition."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage plus 2 ({@damage 1d4}) poison damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Fetid Cloud (1/Day)",
+                    "entries": [
+                        "A 10-foot radius cloud of disgusting green gas extends out from the dretch, moves with it, and spreads around corners. The cloud's area is lightly obscured and lasts 1 minute or until a strong wind disperses it. A creature that starts its turn in the cloud must succeed on a {@dc 11} CON save or be {@condition poisoned} until the start of its next turn. While {@condition poisoned} in this way, a creature can take either an action or a bonus action on its turn, not both, and can't take reactions."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "languageTags": [
+                "AB"
+            ],
+            "damageTags": [
+                "I",
+                "S"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Balor",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "H"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Demon"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 19,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "292"
+            },
+            "speed": {
+                "walk": 40,
+                "fly": 80
+            },
+            "str": 38,
+            "dex": 14,
+            "con": 34,
+            "int": 20,
+            "wis": 28,
+            "cha": 34,
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 19,
+            "resist": [
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                },
+                "cold",
+                "lightning"
+            ],
+            "immune": [
+                "fire",
+                "poison"
+            ],
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal; telepathy 120 ft."
+            ],
+            "cr": "19",
+            "trait": [
+                {
+                    "name": "Demonic Flames",
+                    "entries": [
+                        "Creatures resistant to fire damage aren't resistant to fire damage dealt by the balor. Creatures immune to fire damage are still immune to the balor's fire damage."
+                    ]
+                },
+                {
+                    "name": "Demonic Resilience",
+                    "entries": [
+                        "The balor is resistant to cold and lightning damage. In addition, it is immune to poison damage and to the {@condition poisoned} condition."
+                    ]
+                },
+                {
+                    "name": "Diving Assault",
+                    "entries": [
+                        "If the balor is flying and moves at least 30 feet straight toward a creature and then hits it with a Gore attack on the same turn, that target must succeed on a {@dc 20} STR save or be knocked {@condition prone}. If the target is {@condition prone}, the balor can make one Longsword attack against it as a bonus action."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The balor makes one Gore attack, one Longsword attack, and one Whip attack."
+                    ]
+                },
+                {
+                    "name": "Gore",
+                    "entries": [
+                        "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}25 ({@damage 2d6 + 8}) piercing damage plus 13 ({@damage 3d8}) fire damage."
+                    ]
+                },
+                {
+                    "name": "Longsword",
+                    "entries": [
+                        "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) slashing damage, or 24 ({@damage 3d10 + 8}) slashing damage if used with two hands, plus 13 ({@damage 3d8}) fire damage. If the balor scores a critical hit, it rolls damage dice three times, instead of twice."
+                    ]
+                },
+                {
+                    "name": "Whip",
+                    "entries": [
+                        "{@atk mw} {@hit 14} to hit, reach 30 ft., one target. {@h}15 ({@damage 3d4 + 8}) slashing damage plus 13 ({@damage 3d8}) fire damage, and the target must succeed on a {@dc 20} STR save or be pulled up to 25 feet toward the balor."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Teleport",
+                    "entries": [
+                        "The balor magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "longsword|phb",
+                "whip|phb"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Teleport"
+            ],
+            "languageTags": [
+                "AB",
+                "TP"
+            ],
+            "damageTags": [
+                "F",
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        }
+    ]
+}
