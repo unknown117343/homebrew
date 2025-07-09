@@ -4257,6 +4257,444 @@
             ],
 			"hasFluff": true,
 			"hasFluffImages": true
+        },
+        {
+            "name": "Husk Demon",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Demon"
+                ]
+            },
+            "ac": [
+                15
+            ],
+            "hp": {
+                "special": "82"
+            },
+            "speed": {
+                "walk": 40,
+                "fly": 25
+            },
+            "str": 12,
+            "dex": 20,
+            "con": 16,
+            "int": 6,
+            "wis": 8,
+            "cha": 4,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "resist": [
+                {
+                    "resist": [
+                        "cold",
+                        "fire",
+                        "lightning"
+                    ],
+                    "preNote": "Demonic"
+                }
+            ],
+            "immune": [
+                "necrotic"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "prone",
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal",
+                "Void Speech; telepathy 60 ft."
+            ],
+            "cr": "4",
+            "trait": [
+                {
+                    "name": "Amorphous",
+                    "entries": [
+                        "The husk demon can move through a space as narrow as 1 inch wide without squeezing."
+                    ]
+                },
+                {
+                    "name": "Demonic Resilience",
+                    "entries": [
+                        "The husk demon is resistant to cold, fire, and lightning damage. In addition, it is immune to poison damage and to the {@condition poisoned} condition."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The husk demon has advantage on saving throws against spells and other magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The husk demon makes two Life Drain attacks."
+                    ]
+                },
+                {
+                    "name": "Life Drain",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) slashing damage plus 9 ({@damage 2d8}) necrotic damage, and the husk demon regains HP equal to half the necrotic damage dealt. The target must succeed on a {@dc 15} CON save or its HP maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its HP maximum to 0."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Soul Feed",
+                    "entries": [
+                        "The husk demon feasts on the light in the soul of up to two creatures it can see within 20 ft. Each target must succeed on a {@dc 15} CHA save or suffer the chosen effect until the end of its next turn. A creature that fails two rounds in a row suffers one level of {@condition exhaustion}. Happiness Feast: disadvantage on attack rolls. Hope Feast: disadvantage on saves. Motivation Feast: speed is halved."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amorphous",
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "TP"
+            ],
+            "damageTags": [
+                "N",
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Hezrou",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Demon"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "138"
+            },
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "str": 24,
+            "dex": 16,
+            "con": 26,
+            "int": 4,
+            "wis": 18,
+            "cha": 12,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "resist": [
+                "cold",
+                "fire",
+                "lightning",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal; telepathy 120 ft."
+            ],
+            "cr": "8",
+            "trait": [
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "The hezrou can breathe air and water."
+                    ]
+                },
+                {
+                    "name": "Demonic Resilience",
+                    "entries": [
+                        "The hezrou is resistant to cold, fire, and lightning damage. In addition, it is immune to poison damage and to the {@condition poisoned} condition."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The hezrou has advantage on saving throws against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Speak with Frogs and Toads",
+                    "entries": [
+                        "The hezrou can communicate with frogs and toads as if they shared a language."
+                    ]
+                },
+                {
+                    "name": "Standing Leap",
+                    "entries": [
+                        "Long jump up to 20 ft. and high jump up to 10 ft., with or without a running start."
+                    ]
+                },
+                {
+                    "name": "Stench",
+                    "entries": [
+                        "Any creature that starts its turn within 10 ft. must succeed on a {@dc 16} CON save or be {@condition poisoned} until the start of its next turn. On success, immune for 24 hours."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The hezrou makes one Sticky Tongue attack, one Bite attack, and two Claw attacks."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Sticky Tongue",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 20 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, and the target must succeed on a {@dc 16} STR save or be pulled up to 15 ft. toward the hezrou."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Quick Leap",
+                    "entries": [
+                        "The hezrou jumps horizontally up to 20 ft. to an unoccupied space it can see without provoking opportunity attacks."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amphibious",
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "TP"
+            ],
+            "damageTags": [
+                "B",
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Golmana",
+            "source": "TOVMV1",
+            "page": 51,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "Demon"
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "118"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 18,
+            "dex": 16,
+            "con": 14,
+            "int": 9,
+            "wis": 12,
+            "cha": 14,
+            "senses": [
+                "keensense 60 ft. (can't sense beyond this radius)"
+            ],
+            "resist": [
+                {
+                    "resist": [
+                        "cold",
+                        "fire",
+                        "lightning"
+                    ],
+                    "preNote": "Damage"
+                }
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "frightened",
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal",
+                "Void Speech; telepathy 60 ft."
+            ],
+            "cr": "7",
+            "trait": [
+                {
+                    "name": "Demonic Resilience",
+                    "entries": [
+                        "The golmana is resistant to cold, fire, and lightning damage. In addition, it is immune to poison damage and to the {@condition poisoned} condition."
+                    ]
+                },
+                {
+                    "name": "Heightened Hearing",
+                    "entries": [
+                        "{@skill Perception} is 19 when perceiving by hearing."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "Advantage on saving throws against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Spider Climb",
+                    "entries": [
+                        "Can climb difficult surfaces, including upside down on ceilings, without an ability check."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The golmana makes two Claw attacks and one Tail attack. If both Claw attacks hit a Medium or smaller creature, the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the golmana can't make Claw attacks against other targets."
+                    ]
+                },
+                {
+                    "name": "Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Tail",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Void Screech {@recharge 5}",
+                    "entries": [
+                        "Screech in a 30 ft. cone. Each creature that isn't a Fiend must make a {@dc 15} CON save, taking 14 ({@damage 4d6}) necrotic damage and 18 ({@damage 4d8}) thunder damage on a failed save, or half as much on a success. On failure, also has disadvantage on next attack roll before end of golmana's next turn."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Consuming Rend",
+                    "entries": [
+                        "If grappling a creature, the target must make a {@dc 15} DEX save, taking 7 ({@damage 2d6}) slashing damage on failure, or half on success. The golmana regains HP equal to damage dealt."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Magic Resistance",
+                "Spider Climb"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "TP"
+            ],
+            "damageTags": [
+                "N",
+                "P",
+                "S",
+                "T"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "grappled",
+                "restrained"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        }
+    ],
+    "sense": [
+        {
+            "name": "Keensense",
+            "source": "TOVMV1",
+            "page": 23,
+            "entries": [
+                "A creature with keensense can precisely perceive its surroundings using some other sense than vision. Creatures without vision, such as morlocks and gelatinous cubes, typically have this special sense, as do creatures with echolocation or other extraordinary sense, such as bats and true dragons.",
+                "If a creature has no other form of sensing, it has a parenthetical note to this effect, indicating that the radius of its keensense defines the maximum range of its perception."
+            ]
         }
     ]
 }
