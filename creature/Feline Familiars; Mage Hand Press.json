@@ -1,0 +1,573 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FantasticalFelines",
+				"abbreviation": "FF",
+				"full": "Fantastical Felines",
+				"authors": [
+					"Mage Hand Press"
+				],
+				"convertedBy": [
+					"Unknown"
+				],
+				"version": "1.0",
+				"color": "CA8464",
+				"url": "https://magehandpress.com/product/fantastical-felines-softcover/",
+				"dateReleased": "2025-06-10"
+			}
+		],
+		"dateAdded": 1749673328,
+		"dateLastModified": 1749673328,
+		"edition": "classic"
+	},
+    "monster": [
+        {
+            "name": "Catapillar",
+            "source": "FantasticalFelines",
+            "page": 3,
+            "size": [
+                "T"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 13,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 4,
+                "formula": "1d4 + 2"
+            },
+            "speed": {
+                "walk": 20,
+                "climb": 20
+            },
+            "str": 10,
+            "dex": 14,
+            "con": 14,
+            "int": 1,
+            "wis": 7,
+            "cha": 3,
+            "skill": {
+                "perception": "+0",
+                "stealth": "+4"
+            },
+            "passive": 10,
+            "immune": [
+                "poison"
+            ],
+            "cr": "1/8",
+            "trait": [
+                {
+                    "name": "Death Burst",
+                    "entries": [
+                        "When the catapillar dies, it explodes in a burst of poison gas. Each creature within 5 feet of it must then succeed on a {@dc 12} Constitution saving throw, taking 7 ({@damage 2d6}) poison damage, or half as much on a successful save."
+                    ]
+                },
+                {
+                    "name": "Keen Smell",
+                    "entries": [
+                        "The catapillar has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Mandibles",
+                    "entries": [
+                        "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Death Burst",
+                "Keen Senses"
+            ],
+            "damageTags": [
+                "I",
+                "P"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+            "savingThrowForced": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Catbat",
+            "source": "FantasticalFelines",
+            "page": 4,
+            "size": [
+                "T"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                11
+            ],
+            "hp": {
+                "average": 1,
+                "formula": "1d4 - 1"
+            },
+            "speed": {
+                "walk": 15,
+                "climb": 10,
+                "fly": 30
+            },
+            "str": 3,
+            "dex": 15,
+            "con": 8,
+            "int": 2,
+            "wis": 12,
+            "cha": 5,
+            "skill": {
+                "perception": "+3"
+            },
+            "passive": 13,
+            "cr": "0",
+            "trait": [
+                {
+                    "name": "Greedy Eyes",
+                    "entries": [
+                        "The catbat has advantage on Wisdom ({@skill Perception}) checks and Intelligence ({@skill Investigation}) checks to search a creature for items being carried or worn."
+                    ]
+                },
+                {
+                    "name": "Keen Hearing",
+                    "entries": [
+                        "The catbat has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Thieving Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 slashing damage and the target makes a {@dc 12} Dexterity saving throw. If the target fails, the catbat can take one item weighing no more than 5 pounds from the target that is not currently being held or wielded by the target. It can carry only one item taken this way at a time."
+                    ]
+                }
+            ],
+            "familiar": true,
+            "traitTags": [
+                "Keen Senses"
+            ],
+            "damageTags": [
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "savingThrowForced": [
+                "dexterity"
+            ]
+        },
+        {
+            "name": "Swarm of Catbats",
+            "source": "FantasticalFelines",
+            "page": 5,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "beast",
+                "swarmSize": "T"
+            },
+            "alignment": [
+                "C",
+                "N"
+            ],
+            "ac": [
+                11
+            ],
+            "hp": {
+                "average": 21,
+                "formula": "6d8 - 6"
+            },
+            "speed": {
+                "walk": 0,
+                "climb": 10,
+                "fly": 30
+            },
+            "str": 6,
+            "dex": 15,
+            "con": 9,
+            "int": 2,
+            "wis": 12,
+            "cha": 5,
+            "skill": {
+                "perception": "+3"
+            },
+            "passive": 13,
+            "resist": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "frightened",
+                "grappled",
+                "paralyzed",
+                "petrified",
+                "prone",
+                "restrained",
+                "stunned"
+            ],
+            "cr": "1/4",
+            "trait": [
+                {
+                    "name": "Greedy Eyes",
+                    "entries": [
+                        "The swarm has advantage on Wisdom ({@skill Perception}) checks and Intelligence ({@skill Investigation}) checks to search a creature for items being carried or worn."
+                    ]
+                },
+                {
+                    "name": "Keen Hearing",
+                    "entries": [
+                        "The swarm has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+                    ]
+                },
+                {
+                    "name": "Swarm",
+                    "entries": [
+                        "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny catbat. The swarm can't regain hit points or gain temporary hit points."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Thieving Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 0 ft., one target in the swarm's space. {@h}7 ({@damage 2d6}) slashing damage, or 3 ({@damage 1d6}) slashing damage if the swarm has half its hit points or fewer, and the target makes a {@dc 12} Dexterity saving throw. If the target fails, the swarm may take one item weighing no more than 15 pounds from the target that is not currently being held or wielded by the target. The swarm can carry up to 5 items taken this way at a time."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Keen Senses"
+            ],
+            "damageTags": [
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "savingThrowForced": [
+                "dexterity"
+            ]
+        },
+        {
+            "name": "Cactus Cat",
+            "source": "FantasticalFelines",
+            "page": 6,
+            "size": [
+                "T"
+            ],
+            "type": "plant",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 12,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 15,
+                "formula": "6d4"
+            },
+            "speed": {
+                "walk": 35,
+                "climb": 30
+            },
+            "str": 14,
+            "dex": 13,
+            "con": 10,
+            "int": 3,
+            "wis": 12,
+            "cha": 7,
+            "skill": {
+                "perception": "+3"
+            },
+            "passive": 13,
+            "cr": "1/4",
+            "trait": [
+                {
+                    "name": "Barbed Hide",
+                    "entries": [
+                        "At the start of each of its turns, the cactus cat deals 2 ({@damage 1d4}) piercing damage to any creature grappling it."
+                    ]
+                },
+                {
+                    "name": "Dowsing Senses",
+                    "entries": [
+                        "The cactus cat knows the location of any water source within one mile of itself."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Needled Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage plus 1 piercing damage."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Pinburst {@recharge 5}",
+                    "entries": [
+                        "When a creature hits the cactus cat with an attack, the cactus cat releases a shower of needles. Each creature within 5 feet of the cactus cat must succeed a {@dc 11} Dexterity saving throw or take 5 ({@damage 2d4}) piercing damage."
+                    ]
+                }
+            ],
+            "damageTags": [
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+            "savingThrowForced": [
+                "dexterity"
+            ]
+        },
+        {
+            "name": "Cathulhu",
+            "source": "FantasticalFelines",
+            "page": 7,
+            "size": [
+                "M"
+            ],
+            "type": "aberration",
+            "alignment": [
+                "N",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 104,
+                "formula": "16d8 + 32"
+            },
+            "speed": {
+                "walk": 40,
+                "swim": 30
+            },
+            "str": 18,
+            "dex": 15,
+            "con": 14,
+            "int": 17,
+            "wis": 12,
+            "cha": 11,
+            "save": {
+                "int": "+6",
+                "wis": "+4"
+            },
+            "skill": {
+                "perception": "+4",
+                "stealth": "+5"
+            },
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 14,
+            "cr": "7",
+            "trait": [
+                {
+                    "name": "Ambusher",
+                    "entries": [
+                        "In the first round of a combat, the cathulhu has advantage on attack rolls against any creature it has {@status surprised}."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "The cathulhu has advantage on saving throws against spells and other magical effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The cathulhu makes three attacks: two with its claws and one with its tentacles, or it uses its Psionic Lag and attacks once with its claws."
+                    ]
+                },
+                {
+                    "name": "Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+                    ]
+                },
+                {
+                    "name": "Tentacles",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 15}). Only one creature can be {@condition grappled} by a cathulhu's tentacles at a time."
+                    ]
+                },
+                {
+                    "name": "Consume Brain",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one {@condition incapacitated} creature {@condition grappled} by the cathulhu. {@h}The target takes 44 ({@damage 8d10}) piercing damage. If this damage reduces the target to 0 hit points, the cathulhu crushes its target's head and devours its brain."
+                    ]
+                },
+                {
+                    "name": "Psionic Lag {@recharge 5}",
+                    "entries": [
+                        "The cathulhu projects a blast of psionic magic in a 60-foot cone. Each creature in that area must succeed on a {@dc 14} Wisdom saving throw or be affected by the {@spell slow} spell for up to 1 minute. The cathulhu does not concentrate on this spell. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Ambusher",
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Tentacles"
+            ],
+            "damageTags": [
+                "B",
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+            "conditionInflict": [
+                "grappled"
+            ],
+            "savingThrowForced": [
+                "wisdom"
+            ]
+        },
+        {
+            "name": "Cat of War",
+            "source": "FantasticalFelines",
+            "page": 8,
+            "size": [
+                "M"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "studded leather barding"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 71,
+                "formula": "11d8 + 22"
+            },
+            "speed": {
+                "walk": 40,
+                "climb": 30,
+                "swim": 20
+            },
+            "str": 18,
+            "dex": 17,
+            "con": 14,
+            "int": 2,
+            "wis": 12,
+            "cha": 7,
+            "skill": {
+                "perception": "+3",
+                "stealth": "+4"
+            },
+            "passive": 13,
+            "cr": "4",
+            "trait": [
+                {
+                    "name": "Evasion",
+                    "entries": [
+                        "If the cat is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the cat instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+                    ]
+                },
+                {
+                    "name": "Keen Smell",
+                    "entries": [
+                        "The cat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                    ]
+                },
+                {
+                    "name": "Magical Claws",
+                    "entries": [
+                        "The cat's claw attacks are magical."
+                    ]
+                },
+                {
+                    "name": "Pack Tactics",
+                    "entries": [
+                        "The cat has advantage on attack rolls against a creature if at least one of the cat's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The cat of war makes three melee weapon attacks: one bite attack and two attacks with its claws."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage and, if the cat of war has advantage on the attack, the target takes an additional 3 ({@damage 1d6}) necrotic damage."
+                    ]
+                },
+                {
+                    "name": "Claws",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Keen Senses",
+                "Pack Tactics"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "N",
+                "P",
+                "S"
+            ],
+            "miscTags": [
+                "MW"
+            ]
+        }
+
+    ]
+}
