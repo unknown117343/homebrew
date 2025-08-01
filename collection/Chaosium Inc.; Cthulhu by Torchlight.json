@@ -994,7 +994,7 @@
 				}
 			],
 			"entries": [
-				"Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone|XPHB} condition, taking another {@damage 2d6} Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity {@variantrule Saving Throw|XPHB}, ending the spell on itself on a success."
+				"Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have {@variantrule Disadvantage|XPHB} on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone|XPHB} condition, taking another {@damage 2d6} Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity {@variantrule Saving Throw|XPHB}, ending the spell on itself on a success."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1345,14 +1345,14 @@
 							"type": "item",
 							"name": "The Darkness Hides Terrors",
 							"entries": [
-								"Creatures of your choice in the area must make Dexterity saving throws. A target takes {@damage 4d8} psychic damage on a failed save and must use a reaction to move as far away as it can from the point you chose, using the safest route. On a successful save, the target takes half as much damage only."
+								"Creatures of your choice in the area must make Dexterity saving throws. A target takes {@damage 4d8} Psychic damage on a failed save and must use a reaction to move as far away as it can from the point you chose, using the safest route. On a successful save, the target takes half as much damage only."
 							]
 						},
 						{
 							"type": "item",
 							"name": "Tomb of Shadows",
 							"entries": [
-								"Creatures of your choice in the area must make Constitution saving throws. A target takes {@damage 4d8} necrotic damage on a failed save and its speed is reduced by 20 feet. On a successful save, the target takes half as much damage only."
+								"Creatures of your choice in the area must make Constitution saving throws. A target takes {@damage 4d8} Necrotic damage on a failed save and its {@variantrule Speed|XPHB} is reduced by 20 feet. On a successful save, the target takes half as much damage only."
 							]
 						}
 					]
@@ -1424,7 +1424,7 @@
 				}
 			],
 			"entries": [
-				"You unleash a wave of swirling shadows that fills an area next to you. Each creature in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of {@variantrule Darkness|XPHB} originating from you when you cast the spell makes a Wisdom saving throw. On a failed save, a creature takes {@damage 2d8} psychic damage and is {@condition Blinded|XPHB} until it is no longer in the area of {@variantrule Darkness|XPHB}. On a successful save, it takes half as much damage and isn't {@condition Blinded|XPHB}. The {@variantrule Darkness|XPHB} lasts until the end of your next turn."
+				"You unleash a wave of swirling shadows that fills an area next to you. Each creature in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of {@variantrule Darkness|XPHB} originating from you when you cast the spell makes a Wisdom saving throw. On a failed save, a creature takes {@damage 2d8} Psychic damage and is {@condition Blinded|XPHB} until it is no longer in the area of {@variantrule Darkness|XPHB}. On a successful save, it takes half as much damage and isn't {@condition Blinded|XPHB}. The {@variantrule Darkness|XPHB} lasts until the end of your next turn."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1663,7 +1663,7 @@
 				}
 			],
 			"entries": [
-				"You call forth a spirit of shadow. It manifests as a silhouette of pure blackness in an unoccupied space you can see within range. This corporeal form uses the {@creature Shadow Spirit|cthulhutorchlight} stat block. When you cast this spell, choose Infiltrator or Assassin. Your choice determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+				"You call forth a spirit of shadow. It manifests as a silhouette of pure blackness in an unoccupied space you can see within range. This corporeal form uses the {@creature Shadow Spirit|cthulhutorchlight} stat block. When you cast this spell, choose Infiltrator or Assassin. Your choice determines certain traits in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
 				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its move to avoid danger."
 			],
 			"entriesHigherLevel": [
@@ -1770,8 +1770,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The colour out of space has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The colour out of space has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				}
 			],
 			"action": [
@@ -1804,7 +1806,7 @@
 				{
 					"name": "Horrid Burrowing",
 					"entries": [
-						"The colour out of space destroys an unattended, non-magical object that it can touch that has hit points less than or equal to the colour's maximum hit points."
+						"The colour out of space destroys an unattended, non-magical object that it can touch that has {@variantrule Hit Points|XPHB} less than or equal to the colour's maximum {@variantrule Hit Points|XPHB}."
 					]
 				}
 			],
@@ -1828,7 +1830,10 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Lesser Crawling One",
@@ -1924,7 +1929,7 @@
 				{
 					"name": "Relentless Evil",
 					"entries": [
-						"When a lesser crawling one is reduced to 0 Hit Points, it falls into a pile of rotting flesh, worms, and maggots. If it takes at least 15 Fire damage before the end of its next turn, the lesser crawling one is permanently destroyed. It can still be targeted by spells and effects that target creatures. Otherwise, the lesser crawling one reforms in {@dice 2d6} days. The new body appears in an unoccupied space within the tomb it was originally buried in."
+						"When a lesser crawling one is reduced to 0 {@variantrule Hit Points|XPHB}, it falls into a pile of rotting flesh, worms, and maggots. If it takes at least 15 Fire damage before the end of its next turn, the lesser crawling one is permanently destroyed. It can still be targeted by spells and effects that target creatures. Otherwise, the lesser crawling one reforms in {@dice 2d6} days. The new body appears in an unoccupied space within the tomb it was originally buried in."
 					]
 				}
 			],
@@ -1982,7 +1987,10 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"wisdom"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Greater Crawling One",
@@ -2084,7 +2092,7 @@
 				{
 					"name": "Implacable Evil",
 					"entries": [
-						"When a greater crawling one is reduced to 0 Hit Points, it falls into a pile of rotting flesh, worms, and maggots. If it takes at least 40 Fire damage before the end of its next turn, the greater crawling one is permanently destroyed. It can still be targeted by spells and effects that target creatures. Otherwise, the greater crawling one reforms in {@dice 2d6} days. The new body appears in an unoccupied space within the tomb it was originally buried in."
+						"When a greater crawling one is reduced to 0 {@variantrule Hit Points|XPHB}, it falls into a pile of rotting flesh, worms, and maggots. If it takes at least 40 Fire damage before the end of its next turn, the greater crawling one is permanently destroyed. It can still be targeted by spells and effects that target creatures. Otherwise, the greater crawling one reforms in {@dice 2d6} days. The new body appears in an unoccupied space within the tomb it was originally buried in."
 					]
 				}
 			],
@@ -2143,7 +2151,10 @@
 				"constitution",
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Dagon",
@@ -2231,7 +2242,7 @@
 				{
 					"name": "One With the Sea",
 					"entries": [
-						"When Dagon drops to 0 hit points or would be killed outright, it instead transforms into a swirling body of water. At the start of each of Dagon's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum hit points return to normal if they have been reduced and it regains all lost hit points. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
+						"When Dagon drops to 0 {@variantrule Hit Points|XPHB} or would be killed outright, it instead transforms into a swirling body of water. At the start of each of Dagon's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum {@variantrule Hit Points|XPHB} return to normal if they have been reduced and it regains all lost {@variantrule Hit Points|XPHB}. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
 						"If Dagon is the target of a {@spell Banishment|PHB} spell cast with a 9th-level spell slot while in this cloud form, it automatically fails its saving throw and is instead sent to the deepest corner of the ocean where it slumbers for {@dice 6d10} years."
 					]
 				},
@@ -2244,7 +2255,7 @@
 				{
 					"name": "Spectral Waves",
 					"entries": [
-						"Storm-tossed waves formed of magical force swirl around Dagon in a 120-foot Emanation originating from him. Creatures without a Swim speed treat this area as Difficult Terrain and take 10 force damage if they end their turn in this area. Flying creatures that end their turn in this area must make {@dc 24} Strength saving throws, gaining the {@condition Prone|XPHB} condition on a failed save."
+						"Storm-tossed waves formed of magical force swirl around Dagon in a 120-foot Emanation originating from him. Creatures without a {@variantrule Swim Speed|XPHB} treat this area as Difficult Terrain and take 10 Force damage if they end their turn in this area. Flying creatures that end their turn in this area must make {@dc 24} Strength saving throws, gaining the {@condition Prone|XPHB} condition on a failed save."
 					]
 				}
 			],
@@ -2264,7 +2275,7 @@
 				{
 					"name": "Hungry Tide {@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 24}, creatures of Dagon's choice within 120 ft. of it; {@actSaveFail 1} The target takes 11 ({@damage 2d10}) force damage, and gains the {@condition Restrained|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target takes {@dice 4d20} (22) force damage its speed is reduced to 0 and cannot be increased until it uses an action to make a successful {@dc 24} Strength ({@skill Athletics}) check."
+						"{@actSave con} {@dc 24}, creatures of Dagon's choice within 120 ft. of it; {@actSaveFail 1} The target takes 11 ({@damage 2d10}) Force damage, and gains the {@condition Restrained|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target takes {@dice 4d20} (22) Force damage its {@variantrule Speed|XPHB} is reduced to 0 and cannot be increased until it uses an action to make a successful {@dc 24} Strength ({@skill Athletics}) check."
 					]
 				}
 			],
@@ -2319,7 +2330,10 @@
 			"savingThrowForced": [
 				"constitution",
 				"strength"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Lesser Dark Young of Shub-Niggurath",
@@ -2462,7 +2476,10 @@
 			],
 			"savingThrowForcedSpell": [
 				"strength"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Greater Dark Young of Shub-Niggurath",
@@ -2620,7 +2637,10 @@
 				"constitution",
 				"dexterity",
 				"strength"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Deep One Hybrid",
@@ -2686,7 +2706,7 @@
 				{
 					"name": "Mythos Fanaticism",
 					"entries": [
-						"If the deep one hybrid can see a Mythos creature of size Large or larger, it gains a +5 bonus to Initiative rolls and gains 2 Temporary Hit Points at the start of its turn."
+						"If the deep one hybrid can see a Mythos creature of size Large or larger, it gains a +5 bonus to Initiative rolls and gains 2 {@variantrule Temporary Hit Points|XPHB} at the start of its turn."
 					]
 				}
 			],
@@ -2723,7 +2743,10 @@
 				"MLW",
 				"RA",
 				"RNG"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Deep One",
@@ -2837,7 +2860,10 @@
 			],
 			"miscTags": [
 				"MA"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Dimensional Shambler",
@@ -3006,7 +3032,10 @@
 			],
 			"savingThrowForced": [
 				"wisdom"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Elder Thing",
@@ -3131,7 +3160,7 @@
 				{
 					"name": "Sudden Movement",
 					"entries": [
-						"The elder thing moves up to its speed."
+						"The elder thing moves up to its {@variantrule Speed|XPHB}."
 					]
 				}
 			],
@@ -3153,7 +3182,10 @@
 			"conditionInflict": [
 				"grappled",
 				"restrained"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Shadow Spirit",
@@ -3388,7 +3420,10 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Formless Spawn",
@@ -3545,7 +3580,10 @@
 			"savingThrowForced": [
 				"dexterity",
 				"strength"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Gnoph-Keh",
@@ -3657,7 +3695,10 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Great Cthulhu",
@@ -3734,14 +3775,14 @@
 				{
 					"name": "Even Death May Die",
 					"entries": [
-						"When Great Cthulhu drops to 0 hit points or would be killed outright, it instead transforms into a cloud of green mist that fills its space. At the start of each of Great Cthulhu's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum hit points return to normal if they have been reduced and it regains all lost hit points. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
+						"When Great Cthulhu drops to 0 {@variantrule Hit Points|XPHB} or would be killed outright, it instead transforms into a cloud of green mist that fills its space. At the start of each of Great Cthulhu's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum {@variantrule Hit Points|XPHB} return to normal if they have been reduced and it regains all lost {@variantrule Hit Points|XPHB}. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
 						"If Great Cthulhu is the target of a {@spell Banishment|XPHB} spell while in this cloud form cast with a 9th-level spell slot, it automatically fails its saving throw and is instead sent to R'lyeh where it slumbers for {@dice 10d10} years."
 					]
 				},
 				{
 					"name": "Horrid Aura",
 					"entries": [
-						"A non-mythos entity that starts its turn within 30 feet of Great Cthulhu takes 10 psychic damage."
+						"A non-mythos entity that starts its turn within 30 feet of Great Cthulhu takes 10 Psychic damage."
 					]
 				},
 				{
@@ -3789,7 +3830,7 @@
 				{
 					"name": "Sudden Movement",
 					"entries": [
-						"The flying polyp moves up to its speed."
+						"The flying polyp moves up to its {@variantrule Speed|XPHB}."
 					]
 				}
 			],
@@ -3819,7 +3860,10 @@
 			],
 			"savingThrowForced": [
 				"wisdom"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Great Race of Yith",
@@ -3963,7 +4007,10 @@
 			],
 			"miscTags": [
 				"MA"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Hunting Horror",
@@ -4142,7 +4189,10 @@
 			],
 			"savingThrowForcedSpell": [
 				"dexterity"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Mi-Go",
@@ -4292,7 +4342,10 @@
 				"constitution",
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Nyarlathotep",
@@ -4383,7 +4436,7 @@
 				{
 					"name": "Defeat from Victory",
 					"entries": [
-						"When Nyarlathotep drops to 0 hit points or would be killed outright, he is not slain. Instead, his body ripples with energy as it undergoes a horrific transformation. He returns to whatever strange realm he dwells in as his defeated form is torn apart by unseen forces. Mythos creatures with a combined CR of up to 20 emerge from the pile of gore, occupying the nearest, empty space. These creatures attack those who were hostile to Nyarlathotep and fight to the death."
+						"When Nyarlathotep drops to 0 {@variantrule Hit Points|XPHB} or would be killed outright, he is not slain. Instead, his body ripples with energy as it undergoes a horrific transformation. He returns to whatever strange realm he dwells in as his defeated form is torn apart by unseen forces. Mythos creatures with a combined CR of up to 20 emerge from the pile of gore, occupying the nearest, empty space. These creatures attack those who were hostile to Nyarlathotep and fight to the death."
 					]
 				},
 				{
@@ -4401,7 +4454,7 @@
 				{
 					"name": "Poisoned Words, Rotten Soul",
 					"entries": [
-						"A creature that succeeds in a Wisdom ({@skill Insight|XPHB}) check to detect one of Nyarlathotep's lies takes 66 ({@damage 12d10}) psychic damage and cannot communicate with other creatures for {@dice 3d6} minutes. A creature killed by this trait appears to have died of a heart attack or similar cause."
+						"A creature that succeeds in a Wisdom ({@skill Insight|XPHB}) check to detect one of Nyarlathotep's lies takes 66 ({@damage 12d10}) Psychic damage and cannot communicate with other creatures for {@dice 3d6} minutes. A creature killed by this trait appears to have died of a heart attack or similar cause."
 					]
 				}
 			],
@@ -4495,7 +4548,10 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Rat-Thing",
@@ -4579,7 +4635,10 @@
 			],
 			"miscTags": [
 				"MA"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Shoggoth",
@@ -4739,7 +4798,10 @@
 			"savingThrowForced": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Shub-Niggurath",
@@ -4814,7 +4876,7 @@
 				{
 					"name": "Boundless Horror",
 					"entries": [
-						"When Shub-Niggurath drops to 0 hit points or would be killed outright, it instead transforms into a swarm of insects that fill its space. At the start of each of Shub-Niggurath's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum hit points return to normal if they have been reduced and it regains all lost hit points. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
+						"When Shub-Niggurath drops to 0 {@variantrule Hit Points|XPHB} or would be killed outright, it instead transforms into a swarm of insects that fill its space. At the start of each of Shub-Niggurath's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum {@variantrule Hit Points|XPHB} return to normal if they have been reduced and it regains all lost {@variantrule Hit Points|XPHB}. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
 						"If Shub-Niggurath's space is filled with magical fire it is banished from the world and prevented from returning for {@dice 4d10} years."
 					]
 				},
@@ -4937,7 +4999,10 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Lesser Star-Spawn of Cthulhu",
@@ -5083,7 +5148,10 @@
 			],
 			"miscTags": [
 				"MA"
-			]
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
 		},
 		{
 			"name": "Greater Star-Spawn of Cthulhu",
@@ -5233,6 +5301,318 @@
 			],
 			"miscTags": [
 				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"hasToken": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Color Out of Space",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"The shaft of phosphorescence from the well brought a sense of doom and abnormality which far outraced any image their conscious minds could form. It was no longer shining out, it was pouring out; and as the shapeless stream of unplaceable colour left the well it seemed to flow directly into the sky."
+							],
+							"from": "H.P. Lovecraft, The Colour Out of Space"
+						}
+					]
+				},
+				"A colour out of space is a sentient organism that is an insubstantial, amorphous patch of color. It glistens in the light, displaying a variety of mind-bending colors that have no analog in the spectrum familiar to living folk. It pours across the ground or seeps through the air, always seeking new victims to devour.",
+				{
+					"type": "entries",
+					"name": "Unholy Colonists",
+					"entries": [
+						"A colour out of space emerges from the depths of the dark void between the stars. It falls to the ground and begins to subvert and corrupt the environment around it. Its voracious hunger and baleful presence causes the ecosystem to wither and rot. Plants grow wild, but they are covered with tumors and warped growths. Animals and insects are born with twisted limbs, strange coloration, and hideous fangs and claws. These creatures prey upon those who stumble into the infested region, turning the area into a wasteland. These beasts and other living creatures that dwell in the area, including humans, take on the colour's strange hue and work to keep the colour safe from outside interference."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "A Legacy of Ruin",
+					"entries": [
+						"The colour out of space drains the life from the region it infests, the growing corruption and ecological ruin mirroring its ability to drain the area's life and vitality. Eventually, the region is rendered utterly barren. Even the warped plants and creatures that result from the colour's influence die out. The colour, having sated its hunger, then departs into space."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Homefield Advantage",
+					"entries": [
+						"The area infested by the colour offers a variety of benefits to the creatures that aid it. Creatures under the colour's influence gain the Mythos tag and the following benefits while active in the region it feeds upon:",
+						{
+							"type": "list",
+							"items": [
+								"They ignore the effects of {@variantrule Difficult Terrain|XPHB}.",
+								"They have {@variantrule Advantage|XPHB} on all Wisdom ({@skill Perception|XPHB}) and Dexterity ({@skill Stealth|XPHB}) checks.",
+								"They have {@sense Tremorsense|XPHB} with a range of 10 feet."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Crawling One",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Wisely did Ibn Schacabac say, that happy the town at night whose wizards are all ashes. For it is of old rumor that the soul of the devil-bought hastes not from his charnel clay, but fats and instructs the very worm that gnaws; till out of corruption horrid life springs, and the dull scavengers of earth wax crafty to vex it and swell monstrous to plague it. Great holes secretly are digged where earth's pores ought to suffice, and things have learnt to walk that ought to crawl."
+							],
+							"from": "H.P. Lovecraft, The Festival"
+						}
+					]
+				},
+				"A crawling one is composed of thousands of worms and maggots. Each worm is individually alive and constantly squirms, though, together, they generally hold the shape of a human body. The collective mass of wriggling creatures possesses the mind of a dead spellcaster, long since devoured by the maggoty horde. The ingested “will” of the mage effectively drives the mass to continue the mage’s foul deeds.",
+				{
+					"type": "entries",
+					"name": "Ambition Beyond the Grave",
+					"entries": [
+						"A crawling one arises from the baleful will of a dead cultist. When a powerful spellcaster, usually one pledged to the Cthulhu Mythos, dies, the mage’s ambition, evil, and thirst for power linger on. This aura of evil acts as a beacon, drawing hungry worms and maggots to the moldering corpse. As the vermin devour the body, the spellcaster’s evil presence spreads throughout the devourers. They become a collective entity that allows the cultist to arise once more."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Relentless Malevolence",
+					"entries": [
+						"A crawling one’s true threat lies in its ability to live on despite horrid wounds. If a small mass of the worms and maggots that comprise its form escapes, it can incorporate more vermin into its body and regain its full power."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Generational Threat",
+					"entries": [
+						"This horrid regrowth allows a crawling one to pursue its awful plans over generations. These creatures often recruit allies and cultists from among mortals, offering them great power in return for service. A clever crawling one keeps to the background, forming a secret conspiracy with but a few of its closest followers. If the cult faces defeat, the crawling one fades into the background and waits for the opportunity to rise again. Even when seemingly destroyed by adventurers, it relies on its ability to reform its body to outlast its enemies."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dagon",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Vast, Polyphemous-like, and loathsome, it darted like a stupendous monster of nightmares to the monolith, about which it flung its gigantic scaly arms."
+							],
+							"from": "H.P. Lovecraft, Dagon"
+						}
+					]
+				},
+				"Dagon is a deep one who has grown to enormous size. Perhaps millions of years old, this cruel tyrant of the undersea realm strives to free Cthulhu from his deep slumber in the sunken city of R’lyeh. Dagon is the high priest of Cthulhu among the Deep Ones. Under his direction, that loathsome species seeks to infiltrate and overwhelm the terrestrial realms.",
+				{
+					"type": "entries",
+					"name": "Unwitting Servitors",
+					"entries": [
+						"Dagon sits at the head of the cults established among human villages by the deep ones. Careful to avoid calling too much attention to their true aims, these cults ultimately serve Cthulhu but few in their ranks know this. The cult, under the direction of their deep one leaders, offers aid to Cthulhu cults and works to foil those who would hunt down and destroy them. To most of the humans caught in this scheme, Dagon is a benevolent sea deity who offers excellent fishing and good weather."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hidden Horrors",
+					"entries": [
+						"While Dagon is considered the most powerful of the deep ones, other, similarly ancient creatures have gained similar levels of power. Deep one writings refer to Mother Hydra, an entity said to be Dagon’s equal. Who can say what other terrors may lurk in the ocean’s depths."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Storm of the Century",
+					"entries": [
+						"Dagon rarely interacts with mortals, but does intervene when a particularly bothersome foe arises or to preserve a critical aspect of his cult. Dagon’s magic manifests as a halo of arcane, stormy sea waters that swirl around him. This destructive energy allows him to emerge on shore and walk through a village, town, or fortress that troubles his cult. This magic lashes out at the place, battering to ruin and slaying those within. When authorities come to investigate, they find a ruin that seems to have been devastated by a terrible storm. Dagon and the deep ones always ensure that no survivors remain to contradict this assumption."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flying Polyp",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"A horrible elder race of half polypous, utterly alien entities... They were only partly material and had the power of aerial motion, despite the absence of wings... Suggestions of a monstrous plasticity and of temporary lapses of visibility... singular whistling noises and colossal foot-prints made up of five circular toe marks seemed also to be associated with them."
+							],
+							"from": "H.P. Lovecraft, The Shadow Out of Time"
+						}
+					]
+				},
+				"Almost nothing is known of the dreaded flying polyp. The details of their culture, the motivations behind their actions, and even the name they use to refer to themselves are complete mysteries.",
+				{
+					"type": "entries",
+					"name": "Abandoned Domains",
+					"entries": [
+						"The flying polyps once gathered in great cities. They constructed vaults deep within the earth. Stone wells bored through the rock and dirt allowed the polyps access to their strongholds. When they departed the world, they sealed these wells with stone caps. Only a patient climber, or a creature capable of flight, can navigate the long, deep wells to reach the polyp ruins below."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Masters of the Air",
+					"entries": [
+						"While flying polyps are powerful combatants, their most potent attacks is their ability to control the weather. When three or more of these creatures gather, they can conjure howling wind storms that scour an entire region of life. It takes an hour for three or more polyps working together to create a storm. When they finish their ritual, a terrible storm rips through the area in a 5-mile radius around the ritual site. The storm lasts for an hour and flattens all buildings that lack fortifications. Creatures caught in the open take 1d4 Bludgeoning damage per minute until they find shelter."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elder Thing",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"They represented some ridged barrel-shaped object with thin horizontal arms radiating spoke-like from a central ring and with vertical knobs or bulbs projecting from the head and base of the barrel. Each of these knobs was the hub of a system of five long, flat, triangularly tapering arms arranged around it like the arms of a starfish."
+							],
+							"from": "H.P. Lovecraft, Dreams in the Witch House"
+						}
+					]
+				},
+				"The bizarre elder things predate all other known forms of life, or so sages believe. Ancient ruins, archaeological evidence, and even entreaties to the gods seem to indicate that the elder things existed in the universe even before the gods arose.",
+				{
+					"type": "entries",
+					"name": "Ancient Remnants",
+					"entries": [
+						"In their heyday, the elder things dug deep into the lore around the Cthulhu Mythos. They crafted the first shoggoths and used them to erect great, cyclopean cities. They warred against the mi-go and the star-spawn of Cthulhu for dominance over the primordial world, and were eventually defeated when the shoggoths grew too cunning and overthrew them."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Scattered Remnants",
+					"entries": [
+						"A few elder things remain, though they are scattered and isolated. Now and again a mortal sage or spellcaster may come into contact with one. They can offer strange insights to those who learn their bizarre, piping, whistling language."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slumbering Threats",
+					"entries": [
+						"In some cold corners of the world, ancient ruins built by the elder things remain undisturbed. These creatures slumber there, having plunged into a hibernation in the ancient days in order to outlast the threats they faced. When outsiders uncover these ruins, the elder things awaken and set to work. Driven by a scientific approach to the world, they may catch, study, and dissect any humanoids they encounter. They use their magic and cunning to cultivate worship and obedience, turning neighboring creatures into cultists to help them achieve their inscrutable aims."
+					]
+				}
+			]
+		},
+		{
+			"name": "Deep Ones",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"It was a thin, stoop-shouldered man not much under six feet tall...\n\nHis age was perhaps thirty-five, but the odd, deep creases in the sides of his neck made him seem older when one did not study his dull, expressionless face. He had a narrow head, bulging, watery blue eyes that seemed never to wink, a flat nose, a receding forehead and chin, and singularly undeveloped ears."
+							],
+							"from": "H.P. Lovecraft, The Shadow over Innsmouth"
+						}
+					]
+				},
+				"Along lonely coasts, where few live and even fewer travel, the ghastly cult of Cthulhu and his servitors takes root. The deep ones are aquatic creatures that live in undersea colonies located in the darkest depths. Within these cities, they conduct loathsome rites to their chief deities, Dagon, Mother Hydra, and Cthulhu.",
+				{
+					"type": "entries",
+					"name": "Insidious Corruptors",
+					"entries": [
+						"The deep ones spy upon isolated coastal communities, keeping watch for signs of weakness or decay. If a village falls upon hard times, the deep ones make their move. They come ashore and approach the villagers peacefully, promising bountiful fishing, protection from monsters, and shelter from storms. Like a shepherd tending to wayward sheep, the deep ones tend to the humans while slowly making them wholly dependent upon their care."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Generational Evil",
+					"entries": [
+						"If the human community proves malleable, especially after culling a few dissidents, the deep ones further their corruption. In a grand ceremonial feast, they declare that the land folk have proven their worth and can now truly join with their aquatic protectors. The final step involves the deep ones marrying into prominent human clans to bind the villagers by blood. The children of these grotesque arrangements are deep one hybrids. While they are born human, they slowly and torturously transform into hybrids once they reach adulthood."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "A Slow Corruption",
+					"entries": [
+						"In time, the village becomes fully integrated into deep one culture. The hybrid villagers maintain the façade of normalcy, venturing into civilization as needed or dealing with outsiders as appropriate. Meanwhile, the deep ones expand their influence to nearby settlements and lure more into their twisted cult."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dimensional Shambler",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Shuffling toward him in the darkness was the gigantic, blasphemous form of a black thing not wholly ape and not wholly insect. Its hide hung loosely upon its frame, and its rugose, dead-eyed rudiment of a head swayed drunkenly from side to side. Its fore paws were extended, with talons spread wide, and its whole body was taut with murderous malignity despite its utter lack of facial expression."
+							],
+							"from": "H.P. Lovecraft and Hazel Heald, The Horror in the Museum"
+						}
+					]
+				},
+				"Little is known about these beings save for their name and a vague description provided by the scant few who have survived these horrors. They are capable of walking between the realms of the universe, and they constantly move, spending little time at a location.",
+				{
+					"type": "entries",
+					"name": "Horrid Travelers",
+					"entries": [
+						"Dimension shamblers enlisted by Mythos cults use their unerring teleportation to retrieve lost artifacts or helpless victims. Usually, the shambler deposits its quarry with its nominal allies, but, other times, it carries off its victim to an unknown destination for an unknown reason."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cosmic Detritus",
+					"entries": [
+						"Before her disappearance, the sage Lemetra of the Endless Hourglass conducted chronomantic research into the origin of the dimensional shamblers. She wrote letters to each of her closest friends, pleading with them to visit her tower to review her findings. When they arrived, they found the tower scoured of almost everything. The only remnant was a fragment of a scroll hidden in a secret cache. It described a multiverse that existed before ours, and of strange refugees from it that sought to unwind time and replace this reality with their own."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dark Young",
+			"source": "cthulhutorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"An enormous writhing mass formed of ropy black, earthwormlike tentacles. Something like twenty feet tall. Here and there, across the surface were great puckered mouths that dripped green goo. Beneath its central mass, two or three thicker tentacles terminated in enormous black hooves, on which it stamped forward. It carried the visage of some ancient gnarled tree when its shape was cast against the moon. The smell was appalling, like the stench of open graves."
+							],
+							"from": "Malleus Monstrorum Volume I: Monsters of the Mythos"
+						}
+					]
+				},
+				"These horrid abominations are the “young” referred to in Shub-Niggurath’s epithet: “Black Goat of the Woods with a Thousand Young.” They are closely connected to her and are found only in areas where she is worshiped. The dark young act as proxies for Shub-Niggurath, crawling from the darkness to accept sacrifices and devour the unwary.",
+				{
+					"type": "entries",
+					"name": "Noxious Heralds",
+					"entries": [
+						"The dark young are the first of Shub-Niggurath’s servitors to contact a cult. Those who worship the Black Goat of the Woods engage in primal rituals that require gratuitous bloodletting and fleshy offerings. In return, the dark young heed their call. They provide a cult with brute force, smashing its enemies and protecting it from outsiders. However, if the cult fails to provide a steady stream of sacrifices, the dark young may cull its weakest members, devouring them to slake its hunger and 'encourage' the cult to become more aggressive toward outsiders."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Corrupting Influence",
+					"entries": [
+						"The presence of a dark young shifts and warps the natural world. The plants in a 5-mile radius centered on its lair grow thick and verdant, creating natural barriers to dissuade explorers and intruders. Cultists learn the hidden paths that crisscross the area, allowing them to move in relative ease while intruders struggle. Animals become overly aggressive and vicious, attacking non-cultists on sight. In game terms, treat the area as {@variantrule Difficult Terrain|XPHB}. A DC 20 Wisdom ({@skill Survival|XPHB}) check and 1d4 hours of searching allows a traveler to uncover the pathways. A DC 25 Wisdom ({@skill Survival|XPHB}) check is needed to use the trail to reach the cult’s lair."
+					]
+				}
 			]
 		}
 	],
@@ -5446,6 +5826,21 @@
                     }
                 ]
             }
+        },
+		{
+            "name": "Bibliomancy",
+            "shortName": "Bibliomancy",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "page": 0,
+            "edition": "one",
+            "subclassFeatures": [
+                "Bibliomancy|Wizard|XPHB|Bibliomancy|cthulhutorchlight|3",
+                "Weaver of Words|Wizard|XPHB|Bibliomancy|cthulhutorchlight|6",
+                "Customized Spell|Wizard|XPHB|Bibliomancy|cthulhutorchlight|10",
+                "Master of Words|Wizard|XPHB|Bibliomancy|cthulhutorchlight|14"
+            ]
         }
     ],
     "subclassFeature": [
@@ -5664,6 +6059,123 @@
             "entries": [
                 "Having served the Feline Assembly with grace, tact, and good taste, you have earned their favor. When you take damage from a creature that is within 60 feet of you, you can take a {@variantrule Reaction|XPHB} to call upon the Assembly's wrath. A horde of hissing, spectral cats emerges from the planar firmament and descends upon the creature that damaged you. That creature takes {@damage 5d10} Force damage and has the {@condition Blinded|XPHB} and {@condition Prone|XPHB} conditions until the end of your next turn.",
 				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you spend a Pact Magic spell slot (no action required) to restore your use of it."
+            ]
+        },
+		{
+            "name": "Bibliomancy",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "subclassShortName": "Bibliomancy",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "page": 0,
+            "entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Books are a uniquely portable magic."
+							],
+							"from": "Stephen King"
+						}
+					]
+				},
+                "A spellbook is a Wizard's prized possession. Even the least experienced apprentice knows that each spell's formula must be carefully recorded, understood, and memorized to cast a spell properly. For the typical Wizard, the symbols, words, and equations in a spellbook are a means to an end.",
+				"For Bibliomancers, the language of magic is the key to the building blocks of the universe. This tradition believes that a spell's formula holds more than the gathering and shaping magical energy, that the underlying properties of reality itself are illustrated through a spell. By unlocking the mechanisms that construct spells, these Wizards can slowly unlock the riddle of the universe.",
+				{
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Book Learning|Wizard|XPHB|Bibliomancy|cthulhutorchlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Edit Spell|Wizard|XPHB|Bibliomancy|cthulhutorchlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Book Learning",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "subclassShortName": "Bibliomancy",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "header": 1,
+            "page": 0,
+            "entries": [
+                "You have an arcane connection to all books, be they tablets or tomes, allowing you to unravel their secrets. If you touch an object containing a script for 1 minute, you learn a basic, working knowledge of the script's contents unless that information is hidden by a code or cypher. If the book or script is a magic item or magical object, you learn its properties and how to use it, whether it requires {@variantrule Attunement|XPHB}, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name."
+            ]
+        },
+        {
+            "name": "Edit Spell",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "subclassShortName": "Bibliomancy",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "header": 1,
+            "page": 0,
+            "entries": [
+                "Choose a spell in your spellbook that is level 1 or higher. When you prepare that spell, you can give it one or more the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The spell save DC of your spells increases by 1.",
+						"If that spell deals damage, you can change that damage's type to a different one of your choice.",
+						"If that spell requires a saving throw, you can change that saving throw to Intelligence."
+					]
+				},
+				"You can prepare the chosen spell multiple times, choosing different benefits for each preparation. Each modified version of the spell counts against your prepared spells.",
+				"When you make these changes, you can alter the spell's name. For example, {@spell Burning Hands|XPHB} changed to deal Cold damage and require an Intelligence saving throw might be named Mind Freeze.",
+				"When you finish a {@variantrule Long Rest|XPHB}, you can change your chosen spell. When you change the chosen spell, the benefits to the previous chosen spell end and you no longer have the altered versions prepared."
+            ]
+        },
+        {
+            "name": "Weaver of Words",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "subclassShortName": "Bibliomancy",
+            "subclassSource": "cthulhutorchlight",
+            "level": 6,
+            "header": 2,
+            "page": 0,
+            "entries": [
+                "You become a master of all words. You learn all languages available to characters in the campaign."
+            ]
+        },
+        {
+            "name": "Customized Spell",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "subclassShortName": "Bibliomancy",
+            "subclassSource": "cthulhutorchlight",
+            "level": 10,
+            "header": 2,
+            "page": 0,
+            "entries": [
+                "You can alter the structure of a spell to incorporate a creature's name. Pick a spell in your spell book that has a Verbal component, requires {@status Concentration|XPHB}, and is level 1+. When you prepare that spell, you can name a specific, willing creature other than yourself. If that creature is the only target of the spell, you can cast the spell on it without needing to maintain {@status Concentration|XPHB}."
+            ]
+        },
+        {
+            "name": "Master of Words",
+            "source": "cthulhutorchlight",
+            "className": "Wizard",
+            "classSource": "XPHB",
+            "subclassShortName": "Bibliomancy",
+            "subclassSource": "cthulhutorchlight",
+            "level": 14,
+            "header": 2,
+            "page": 0,
+            "entries": [
+                "When you prepare spells, pick two spells from levels 1 to 5 to weave into a linked, powerful spell you can prepare as a single spell. The level of the linked spell is equal to the combined level of the two spells chosen and can't exceed 6.",
+                "The chosen spells must have a Verbal component and must have a casting time of one action.",
+                "As a {@action Magic|XPHB} action, you can cast the linked spell, and the effects of both spells occur at the same time."
             ]
         }
     ],
