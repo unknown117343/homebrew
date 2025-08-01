@@ -1,0 +1,3256 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "cthulhutorchlight",
+				"abbreviation": "CBT",
+				"full": "Cthulhu by Torchlight",
+				"authors": [
+					"Chaosium Inc."
+				],
+				"convertedBy": [
+					"Unknown"
+				],
+                "partnered": true,
+				"version": "1.0.0",
+				"color": "FCC80F",
+				"url": "https://marketplace.dndbeyond.com/category/DBIRFDZMU"
+			}
+		],
+		"dateAdded": 1754051400,
+		"dateLastModified": 1754051400,
+		"edition": "one"
+	},
+	"spell": [
+		{
+			"name": "Body Warping of Gorgoroth",
+			"source": "RaidersSerpentSea",
+			"page": 0,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose a Humanoid of your size that you can see in range. You physically transform to become an exact duplicate of that creature for the duration. Even a thorough physical examination fails to find any differences between you and the target.",
+				"Your voice and equipment don't change."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Breath of the Deep",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure sea water from the deepest trench to surround a creature that you can see within range. The water seeps into the target's mouth and around its body, slowly crushing it with the unfathomable weight of the sea. The target takes {@damage 3d6} Bludgeoning damage and is unable to talk for the duration or use the verbal components of spells."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Call Deity",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You can cast this spell only during the duration of a Contact Deity spell you also cast. You cause the deity you contacted to manifest in the nearest unoccupied space. For 1 hour, it acts as it wishes but treats you as an ally if you don't take actions against it. It doesn't extend this courtesy to your allies and interprets your attempts to protect others as acting against it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cat's Spring",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You jump up to 10 feet to an unoccupied space you can see and deliver a spectral claw attack that deals Slashing or Force damage (you choose when you cast the spell). Make a melee spell attack against a target. On a hit, the target takes {@damage 1d8} damage of the chosen type, and the next attack roll you make against it before the end of your next turn has {@variantrule Advantage|XPHB}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 (38), and 17 ({@dice 4d8})."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"ADV",
+				"SCL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Chant of Thoth",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"The first time you fail an Intelligence check during the spell's duration, you may automatically succeed on the check if the DC is less than your spell save DC. Otherwise, you gain a +2 bonus to that check. Once you use this benefit, you cannot use it again until you finish a {@variantrule Short Rest|XPHB}."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Confounding Shadows",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You create an orb of writhing shadows and hurl it at a creature within range. The target must succeed on a Wisdom saving throw or take {@damage 1d6} Psychic damage and it is unable to see you until the end of your next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"The damage increases by {@dice 1d6} when you reach levels 5 ({@dice 2d6}), 11 ({@dice 3d6}), and 17 ({@dice 4d6})."
+					]
+				}
+			],
+			"scalingLevelDice": {
+				"label": "Psychic damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Clutch of Darkness",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a terrible force that slowly crushes the target from the inside. Choose a creature that you can see within range and roll {@dice 2d6} and record the total rolled. At the start of each of your turns, roll another {@dice 2d6} and add the number rolled to the total.",
+				"If the total is greater than the target's Strength, it has {@variantrule Disadvantage|XPHB} on Strength-based attacks.",
+				"If the total is greater than the target's Dexterity, its {@variantrule Speed|XPHB} is halved and attack rolls against it have {@variantrule Advantage|XPHB}.",
+				"If the total is greater than its current {@variantrule Hit Points|XPHB}, the target immediately implodes and dies."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Contact Deity",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You contact a deity of the Cthulhu Mythos. You can ask the entity {@dice 1d6} questions that can be answered with yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. Old Ones aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the Old One's knowledge. In a case where a one-word answer could be misleading or contrary to the Old One's interests, the GM might offer a short phrase as an answer instead.",
+				"When you cast this spell, roll a {@dice d20}. If you roll a 1, the deity appears in the nearest unoccupied space and attacks creatures (including you) in the area for the spell's duration before returning to its realm."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Create Mist of R'lyeh",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"R'lyeh is an ancient city cloaked in a horror-filled mist. You tap into that dreadful mist to create a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of fog centered on a point within range. The {@variantrule Sphere [Area of Effect]|XPHB|Sphere} is {@variantrule Lightly Obscured|XPHB}. Strange, fleeting shapes are visible within it. A creature that ends its turn in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} takes {@damage 1d4} Psychic damage. Beast creatures with an Intelligence of 3 or less refuse to enter the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} willingly."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"OBS"
+			]
+		},
+		{
+			"name": "Curse of the Putrid Husk",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a horrid illusion in the target's mind, convincing it that its body is slowly decaying. One creature that you can see in range is overcome with a sense of impending doom as it watches itself rot. Choose one of the following effects.",
+				"A creature selflessly tries to prevent the disease from spreading to its allies. Whenever it starts its turn within 30 feet of an ally, it takes the {@action Dash|XPHB} action and moves away from its nearest ally by the safest route unless there is nowhere to move.",
+				"A creature becomes filled with spite as it tries to spread the disease to its enemies. It takes the {@action Dash|XPHB} action and moves toward its nearest enemy by the safest route on each of its turns unless there is nowhere to move. When an enemy is within 5 feet of it, it makes an {@variantrule Unarmed Strike|XPHB} against that target."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Dismiss Deity",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You exert the natural order of the cosmos and force a Mythos entity back from whence it came. Choose a {@variantrule Bloodied|XPHB} Mythos or Deity creature that you can see within range. The target is transported to a random location on a plane (GM's choice) associated with its creature type."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Doom",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You whisper a prophecy of imminent death, and these words slip into the threads of a creature's fate and cause it to pull toward the moment of its death. One creature that you can see within range makes a Charisma saving throw. On a failed save, you can take a {@variantrule Reaction|XPHB} when the creature takes damage from an attack. Don't roll the attack's damage dice for the damage. Instead use the highest number possible for each damage die. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					}
+				]
+			},
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Dust of Suleiman",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a cloud of fine dust that harms supernatural creatures. You create a 30-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of dust centered on a point within range. Choose a creature type other than Beast or Humanoid. Each creature of the chosen type within the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} take 20 Force damage. A creature also takes this damage when the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} moves into its space and when it enters the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} or ends its turn there. A creature can take this damage only once per turn."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			]
+		},
+		{
+			"name": "Dread Curse of Azathoth",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You utter the secret name of Azathoth and doom a creature to an inevitable death unless it breaks the spell. The creature gains a curse point at the end of each of its turns. When the creature gains its third curse point, it dies. It loses all curse points when the spell ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Evil Eye",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You glare at a creature that you can see within range, imposing a baleful hex on it. The target takes {@damage 1d4 + 2} Psychic damage, and attack rolls and Unarmed Strikes against it can score a {@variantrule Critical Hit|XPHB} on a roll of 19 or 20 on the {@dice d20}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Cantrip Upgrade",
+					"entries": [
+						"The damage increases by {@dice 1d4 + 2} when you reach levels 5 ({@dice 2d4 + 4}), 11 ({@dice 3d4 + 6}), and 17 ({@dice 4d4 + 8})."
+					]
+				}
+			],
+			"scalingLevelDice": {
+				"label": "Psychic damage",
+				"scaling": {
+					"1": "1d4 + 2",
+					"5": "2d4 + 4",
+					"11": "3d4 + 6",
+					"17": "4d4 + 8"
+				}
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Feline Chaos",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} slashing damage at the start of each of their turns, and they have disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone|XPHB} condition, taking another {@damage 2d6} slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity {@variantrule Saving Throw|XPHB}, ending the spell on itself on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage at the start of an affected target's turns increases by {@dice 2d6} for each slot level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Feline Grace",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You gain the unerring reflexes and balance of a cat. Until the spell ends, you gain the following benefits:",
+				"You are immune to the {@condition Prone|XPHB} condition while you don't have the {@condition Incapacitated|XPHB} condition, as you always land on your feet.",
+				"You can take a {@variantrule Reaction|XPHB} when you fall to reduce any damage you take from the fall by an amount equal to five times your level.",
+				"You gain {@variantrule Advantage|XPHB} on Dexterity checks and saving throws.",
+				"Your jump distance is doubled."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Fist of Yog-Sothoth",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure a horrid tendril of Yog-Sothoth into reality to batter your foe. One creature of your choice that you can see within range makes a Strength saving throw. On a failed save, it takes {@damage 8d6} Necrotic damage, has the {@condition Prone|XPHB} condition, and you move it up to 40 feet in any direction within the spell's range. On a successful save, it takes {@damage 8d6} Necrotic damage only."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Phantom Panther",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a spectral panther that pounces on a creature you can see within range, mauling and pinning it for your allies close in for the kill.",
+				"The target makes a Strength saving throw. On a failed save, the target takes {@damage 8d6} Force damage and has the {@condition Restrained|XPHB} condition until the spell ends. On a successful save, the target takes half as much damage only, and the spell ends. While {@condition Restrained|XPHB}, the target takes {@damage 2d6} Force damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a Strength ({@skill Athletics|XPHB}) check against your spell save DC. On a success, the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 3."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Red Sign",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You reach above your head and conjure the dreaded Red Sign, a sigil of immense power that is inimical to all creatures. At the end of each of your turns for the duration, each creature (including yourself) within 30 feet of you that can see you takes {@damage 5d8} Necrotic damage. This damage can't break your {@status Concentration|XPHB}. If this damage reduces a creature to 0 {@variantrule Hit Points|XPHB}, it and everything nonmagical it is wearing and carrying collapses into a pile of slime and viscera. The target can be revived only by a True Resurrection or a Wish spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			]
+		},
+		{
+			"name": "Shadowy Eruption",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A 20-foot radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of gloom erupts from a point you choose within range as fell energies from the dimension of shadow flood the area. You select an entity to push through into this reality for a horrifying moment. When you cast this spell, choose one of the following options:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "The Darkness Hides Terrors",
+							"entries": [
+								"Creatures of your choice in the area must make Dexterity saving throws. A target takes {@damage 4d8} psychic damage on a failed save and must use a reaction to move as far away as it can from the point you chose, using the safest route. On a successful save, the target takes half as much damage only."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Tomb of Shadows",
+							"entries": [
+								"Creatures of your choice in the area must make Constitution saving throws. A target takes {@damage 4d8} necrotic damage on a failed save and its speed is reduced by 20 feet. On a successful save, the target takes half as much damage only."
+							]
+						}
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d8} for each spell slot level above 3."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic",
+				"psychic"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Tide of Darkness",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You unleash a wave of swirling shadows that fills an area next to you. Each creature in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of {@variantrule Darkness|XPHB} originating from you when you cast the spell makes a Wisdom saving throw. On a failed save, a creature takes {@damage 2d8} psychic damage and is {@condition Blinded|XPHB} until it is no longer in the area of {@variantrule Darkness|XPHB}. On a successful save, it takes half as much damage and isn't {@condition Blinded|XPHB}. The {@variantrule Darkness|XPHB} lasts until the end of your next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The size of the cube increases by 5 feet for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Umbral Tendril",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a long tendril of life-stealing shadow that lashes out at a creature in range that you can see.",
+				"Make a ranged spell attack against the target. On a hit the target takes {@damage 2d8} Necrotic damage and you gain {@variantrule Temporary Hit Points|XPHB} equal to the damage dealt."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d8} for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT",
+				"THP"
+			]
+		},
+		{
+			"name": "Voorish Sign",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You have mastered the Voorish sign, a sigil from an ancient era said to predate the world's creation. Choose a creature that you can see within range. When you would normally roll one or more dice to deal damage to that creature with a spell, don't roll those dice for the damage; instead use the highest number possible for each die. In addition, you can choose a spell of level 5 or lower that you can cast, that has a casting time of an action. You can cast that spell as part of casting Voorish Sign, expending spell slots for both."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Wave of Oblivion",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} of oblivion. Each {@variantrule Bloodied|XPHB} creature in the {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a Constitution saving throw. On a failed save a creature dies, and it and everything nonmagical it is wearing and carrying are turned to dust. The target can be revived only by a True Resurrection or a Wish spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Summon Shadow",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call forth a spirit of shadow. It manifests as a silhouette of pure blackness in an unoccupied space you can see within range. This corporeal form uses the {@creature Shadow Spirit|cthulhutorchlight} stat block. When you cast this spell, choose Infiltrator or Assassin. Your choice determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its move to avoid danger."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Color Out of Space",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d10 + 36"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 5,
+			"dex": 22,
+			"con": 14,
+			"int": 15,
+			"wis": 14,
+			"cha": 13,
+			"save": {
+				"dex": "+9",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The colour out of space casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 12}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The colour out of space has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The colour out of space makes two Draining Lash attacks."
+					]
+				},
+				{
+					"name": "Draining Lash",
+					"entries": [
+						"{@atkr m} {@hit 9}, Reach 15 ft. {@h}20 ({@damage 3d8 + 6}) Necrotic damage."
+					]
+				},
+				{
+					"name": "Absorb Life {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 17}, non-Mythos creatures in a 30-foot Emanation centered on the colour out of space. {@actSaveFail} 44 ({@damage 8d10}) Necrotic damage. {@actSaveSuccess} Half damage. If three or more creatures fail their saving throw against this effect, the colour out of space gains an additional action on its next turn."
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Dispel Magic|PHB}, {@spell Dominate Monster|PHB}, {@spell Tongues|PHB}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Horrid Burrowing",
+					"entries": [
+						"The colour out of space destroys an unattended, non-magical object that it can touch that has hit points less than or equal to the colour's maximum hit points."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Lesser Crawling One",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 59,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 13,
+			"con": 15,
+			"int": 19,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"con": "+4",
+				"int": "+6",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+6",
+				"insight": "+3",
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The lesser crawling one casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell Darkness}",
+						"{@spell Hold Person}",
+						"{@spell Invisibility}",
+						"{@spell Magic Missile}",
+						"{@spell Ray of Sickness}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Bestow Curse}",
+							"{@spell Dispel Magic}",
+							"{@spell Fear}",
+							"{@spell Shatter}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The lesser crawling one has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				},
+				{
+					"name": "Relentless Evil",
+					"entries": [
+						"When a lesser crawling one is reduced to 0 Hit Points, it falls into a pile of rotting flesh, worms, and maggots. If it takes at least 15 Fire damage before the end of its next turn, the lesser crawling one is permanently destroyed. It can still be targeted by spells and effects that target creatures. Otherwise, the lesser crawling one reforms in {@dice 2d6} days. The new body appears in an unoccupied space within the tomb it was originally buried in."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slimy Grasp",
+					"entries": [
+						"{@atkr m} {@hit 3}, Reach 5 ft. {@h}6 ({@damage 1d8 + 1}) Necrotic damage, and a Medium or smaller creature has its Speed reduced by 10 feet until the end of its next turn as it is covered in slime and maggots."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "By My Command",
+					"entries": [
+						"The lesser crawling one chooses up to three willing Undead or Mythos creatures it can see. Each of the chosen creatures can take a Reaction to move up to its Speed, and each creature gains Advantage on the next attack roll it makes before the lesser crawling one's next turn."
+					]
+				},
+				{
+					"name": "Squirming Escape",
+					"entries": [
+						"The lesser crawling one teleports up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"invisible",
+				"paralyzed",
+				"poisoned"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Greater Crawling One",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d8 + 72"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"initiative": 1
+			},
+			"str": 8,
+			"dex": 17,
+			"con": 19,
+			"int": 23,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"con": "+8",
+				"int": "+10",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+10",
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The lesser crawling one casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 18})."
+					],
+					"will": [
+						"{@spell Cone of Cold}",
+						"{@spell Darkness}",
+						"{@spell Greater Invisibility}",
+						"{@spell Hold Monster}",
+						"{@spell Invisibility}",
+						"{@spell Wall of Force}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Bestow Curse}",
+							"{@spell Delayed Blast Fireball}",
+							"{@spell Finger of Death}",
+							"{@spell Forcecage}",
+							"{@spell Teleport}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The greater crawling one has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				},
+				{
+					"name": "Implacable Evil",
+					"entries": [
+						"When a greater crawling one is reduced to 0 Hit Points, it falls into a pile of rotting flesh, worms, and maggots. If it takes at least 40 Fire damage before the end of its next turn, the greater crawling one is permanently destroyed. It can still be targeted by spells and effects that target creatures. Otherwise, the greater crawling one reforms in {@dice 2d6} days. The new body appears in an unoccupied space within the tomb it was originally buried in."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slimy Grasp",
+					"entries": [
+						"{@atkr m} {@hit 7}, Reach 5 ft. {@h}8 ({@damage 1d8 + 3}) Necrotic damage."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "By My Command",
+					"entries": [
+						"The greater crawling one chooses up to three willing Undead or Mythos creatures it can see. Each of the chosen creatures can take a Reaction to move up to its Speed, and each creature gains Advantage on the next attack roll it makes before the greater crawling one's next turn."
+					]
+				},
+				{
+					"name": "Squirming Escape",
+					"entries": [
+						"The greater crawling one teleports up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"paralyzed"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dagon",
+			"isNamedCreature": true,
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mythos Deity"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				23
+			],
+			"hp": {
+				"average": 468,
+				"formula": "24d20 + 216"
+			},
+			"speed": {
+				"walk": 60,
+				"swim": 60
+			},
+			"initiative": {
+				"initiative": 16
+			},
+			"str": 30,
+			"dex": 12,
+			"con": 29,
+			"int": 22,
+			"wis": 19,
+			"cha": 27,
+			"save": {
+				"str": "+17",
+				"dex": "+8",
+				"con": "+16",
+				"int": "+13",
+				"wis": "+11",
+				"cha": "+15"
+			},
+			"skill": {
+				"arcana": "+13",
+				"insight": "+11",
+				"nature": "+13",
+				"perception": "+11"
+			},
+			"senses": [
+				"blindsight 120 ft.",
+				"darkvision 240 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "22",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Dagon can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If Dagon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "One With the Sea",
+					"entries": [
+						"When Dagon drops to 0 hit points or would be killed outright, it instead transforms into a swirling body of water. At the start of each of Dagon's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum hit points return to normal if they have been reduced and it regains all lost hit points. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
+						"If Dagon is the target of a {@spell Banishment|PHB} spell cast with a 9th-level spell slot while in this cloud form, it automatically fails its saving throw and is instead sent to the deepest corner of the ocean where it slumbers for {@dice 6d10} years."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Dagon deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Spectral Waves",
+					"entries": [
+						"Storm-tossed waves formed of magical force swirl around Dagon in a 120-foot Emanation originating from him. Creatures without a Swim speed treat this area as Difficult Terrain and take 10 force damage if they end their turn in this area. Flying creatures that end their turn in this area must make {@dc 24} Strength saving throws, gaining the {@condition Prone|XPHB} condition on a failed save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dagon makes four Slashing Claw attacks."
+					]
+				},
+				{
+					"name": "Slashing Claw",
+					"entries": [
+						"{@atkr m} {@hit 17}, Reach 20 ft. {@h}21 ({@damage 2d10 + 10}) Slashing damage and the target is pushed up to 10 feet away from Dagon and gains the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Hungry Tide {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 24}, creatures of Dagon's choice within 120 ft. of it; {@actSaveFail 1} The target takes 11 ({@damage 2d10}) force damage, and gains the {@condition Restrained|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target takes {@dice 4d20} (22) force damage its speed is reduced to 0 and cannot be increased until it uses an action to make a successful {@dc 24} Strength ({@skill Athletics}) check."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Disdainful Swipe",
+					"entries": [
+						"Dagon makes a Slashing Claw attack."
+					]
+				},
+				{
+					"name": "Storm Tossed Seas",
+					"entries": [
+						"{@actSave str} {@dc 25}, creatures within 120 ft. of Dagon of its choice; {@actSaveFail} Dagon moves the target up to 30 feet and the target gains the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Relentless Horror {@recharge 5}",
+					"entries": [
+						"Dagon chooses one of the following options: It teleports up to 200 ft. to an unoccupied space.",
+						"It immediately ends one spell or condition affecting it.",
+						"It ends one spell or magical effect of its choice within 120 ft. of it."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Lesser Dark Young of Shub-Niggurath",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d10 + 50"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 17,
+			"dex": 9,
+			"con": 21,
+			"int": 12,
+			"wis": 17,
+			"cha": 10,
+			"save": {
+				"str": "+5",
+				"con": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d3 other languages"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The lesser dark young of Shub-Niggurath casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"will": [
+						"{@spell Dispel Magic}",
+						"{@spell Entangle}",
+						"{@spell Pass without Trace}",
+						"{@spell Plant Growth}"
+					],
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The lesser dark young of Shub-Niggurath has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The lesser dark young of Shub-Niggurath makes four Flailing Tentacle attacks. It can replace two attacks with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Flailing Tentacle",
+					"entries": [
+						"{@atkr m} {@hit 5}, Reach 20 ft. {@h}8 ({@damage 1d8 + 3}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13})."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Swarming Tentacles",
+					"entries": [
+						"The lesser dark young of Shub-Niggurath makes two Flailing Tentacle attacks."
+					]
+				},
+				{
+					"name": "Clamor of Hooves",
+					"entries": [
+						"The lesser dark young of Shub-Niggurath moves up to its Speed."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
+		},
+		{
+			"name": "Greater Dark Young of Shub-Niggurath",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 261,
+				"formula": "18d12 + 144"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 26,
+			"int": 12,
+			"wis": 23,
+			"cha": 10,
+			"save": {
+				"str": "+10",
+				"con": "+12",
+				"wis": "+10"
+			},
+			"skill": {
+				"perception": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": 20,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d3 other languages"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The greater dark young of Shub-Niggurath casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 18}):"
+					],
+					"will": [
+						"{@spell Dispel Magic}",
+						"{@spell Entangle}",
+						"{@spell Pass without Trace}",
+						"{@spell Plant Growth}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Call Lightning}",
+							"{@spell Cone of Cold}",
+							"{@spell Insect Plague}",
+							"{@spell Tree Stride}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The greater dark young of Shub-Niggurath has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The greater dark young of Shub-Niggurath makes four Flailing Tentacle attacks. It can replace two attacks with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Flailing Tentacle",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 30 ft. {@h}15 ({@damage 2d8 + 6}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 18})."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Swarming Tentacles",
+					"entries": [
+						"The greater dark young of Shub-Niggurath makes two Flailing Tentacle attacks."
+					]
+				},
+				{
+					"name": "Clamor of Hooves",
+					"entries": [
+						"The greater dark young of Shub-Niggurath moves up to its Speed."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L",
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Deep One Hybrid",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 28,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"initiative": 0
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 12,
+			"int": 10,
+			"wis": 13,
+			"cha": 7,
+			"save": {
+				"str": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"athletics": "+4",
+				"deception": "+0",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"gear": [
+				"trident|xphb",
+				"hide armor|xphb",
+				"shield|xphb",
+				"light crossbow|xphb",
+				{
+					"item": "bolt|xphb",
+					"quantity": 10
+				}
+			],
+			"trait": [
+				{
+					"name": "Mythos Fanaticism",
+					"entries": [
+						"If the deep one hybrid can see a Mythos creature of size Large or larger, it gains a +5 bonus to Initiative rolls and gains 2 Temporary Hit Points at the start of its turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Trident",
+					"entries": [
+						"{@atkr m} {@hit 4}, Reach 5 ft. {@h}7 ({@damage 1d8 + 2}) Piercing damage."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atkr r} {@hit 2}, range 80/320 ft. {@h}5 ({@damage 1d8}) Piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "My Life for Yours",
+					"entries": [
+						"{@actTrigger} A Mythos creature without this Reaction is hit by a melee attack. {@actResponse} This creature becomes the target of the triggering attack if it is in range of the original attack."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			]
+		},
+		{
+			"name": "Deep One",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 12,
+			"int": 15,
+			"wis": 11,
+			"cha": 13,
+			"save": {
+				"str": "+5",
+				"int": "+4"
+			},
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The deep one casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 12}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The deep one can breathe air and water.",
+						"Magic Resistance The deep one has Advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The deep one makes two claw and one bite attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atkr m} {@hit 5}, Reach 10 ft. {@h}6 ({@damage 1d4 + 3}) Slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 5}, Reach 5 ft. {@h}7 ({@damage 1d6 + 3}) Piercing damage."
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Charm Person|PHB}, {@spell Disguise Self|PHB}, {@spell Message|PHB}.",
+						"1/Day: {@spell Thunderwave|PHB}."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			]
+		},
+		{
+			"name": "Dimensional Shambler",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d10 + 54"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 20,
+			"dex": 17,
+			"con": 17,
+			"int": 8,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"str": "+8",
+				"dex": "+6",
+				"con": "+6",
+				"int": "+2",
+				"wis": "+3",
+				"cha": "+3"
+			},
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"all",
+				"but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Dimensional Attunement",
+					"entries": [
+						"A dimensional shambler gains 1 Dimension Point at the end of its turn during combat or when it is otherwise threatened. It begins an encounter with 0 points and can have up to 4."
+					]
+				},
+				{
+					"name": "Dimensional Warping",
+					"entries": [
+						"{@actSave wis} {@dc 14}, if a creature within 30 feet of the dimensional shambler attempts to teleport. {@actSaveFail} The creature doesn't teleport. {@actSaveSuccess} The creature teleports as normal.",
+						"Magic Resistance The dimensional shambler has Advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dimensional shambler makes up to four Dimensional Claw attacks and uses Disdainful Banishment. It can't attack the same creature more than twice with Dimensional Claw when it uses Multiattack."
+					]
+				},
+				{
+					"name": "Dimensional Claw",
+					"entries": [
+						"{@atkr m} {@hit 8}, Reach 10 ft. {@h}11 ({@damage 1d10 + 5}) Slashing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 16}). It can Grapple up to two Medium or smaller creatures at a time."
+					]
+				},
+				{
+					"name": "Disdainful Banishment",
+					"entries": [
+						"{@actSave wis} {@dc 14}, one creature {@condition Grappled|XPHB} by the dimensional shambler. {@actSaveFail} The target is teleported up to 30 feet to an unoccupied space the dimensional shambler can see."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Dimensional Flurry",
+					"entries": [
+						"A dimensional shambler can spend 3 Dimension Points to gain an extra use of Legendary Action. It must use the additional use before its next turn."
+					]
+				},
+				{
+					"name": "Dimensional Rend",
+					"entries": [
+						"A dimensional shambler can spend 1 Dimension Point to extend its claws through space and time, increasing its Reach with Dimensional Claw to 30 feet and allowing it to ignore all cover with those attacks until the end of its turn."
+					]
+				},
+				{
+					"name": "Dimensional Step",
+					"entries": [
+						"A dimensional shambler can spend 3 Dimension Points to teleport itself and all creatures it has {@condition Grappled|XPHB} to a chosen destination it has visited within the past month."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The dimensional shambler teleports up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The dimensional shambler makes up to two Dimensional Claw attacks."
+					]
+				},
+				{
+					"name": "Shift",
+					"entries": [
+						"The dimensional shambler uses Dimensional Step."
+					]
+				},
+				{
+					"name": "Step",
+					"entries": [
+						"The dimensional shambler uses Teleport."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"CS",
+				"XX"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Elder Thing",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 161,
+				"formula": "14d10 + 84"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 22,
+			"int": 17,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"int": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+7",
+				"medicine": "+6",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Elder Thing plus 1d6 others"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The elder thing casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The elder thing has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elder thing makes up to two Grasping Tentacle attacks and uses Spellcasting."
+					]
+				},
+				{
+					"name": "Grasping Tentacle",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 20 ft. {@h}11 ({@damage 1d8 + 6}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 18}). While {@condition Grappled|XPHB} the target has the {@condition Restrained|XPHB} condition."
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Charm Person|PHB}, {@spell Scorching Ray|PHB}, {@spell Thunderwave|PHB}.",
+						"1/day: {@spell Cone of Cold|PHB}, {@spell Fear|PHB}, {@spell Ice Storm|PHB}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Surgical Eye",
+					"entries": [
+						"The elder thing assesses the anatomy of a creature it can see within 30 ft. and makes a {@dc 15} Intelligence ({@skill Medicine}) check. If it succeeds, its attacks against the target are critical hits on die rolls of 18 or higher for the next minute or until it uses Surgical Eye against a different target. If the elder thing succeeds on this check a second time against the same creature, its attacks against the target are instead critical hits on die rolls of 16 or higher for the next minute or until it uses Surgical Eye against a different target."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The elder thing makes a Grasping Tentacle attack."
+					]
+				},
+				{
+					"name": "Ghoulish Study",
+					"entries": [
+						"The elder thing uses Surgical Eye."
+					]
+				},
+				{
+					"name": "Sudden Movement",
+					"entries": [
+						"The elder thing moves up to its speed."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Shadow Spirit",
+			"source": "cthulhutorchlight",
+			"summonedBySpell": "Summon Shadow|cthulhutorchlight",
+			"summonedBySpellLevel": 5,
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "11 + the spell's level"
+				}
+			],
+			"hp": {
+				"special": "50 (Assassin only) or 40 (Infiltrator only) + 10 for each spell level above 5"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 40,
+					"condition": "(Infiltrator only)"
+				}
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 15,
+			"int": 10,
+			"wis": 10,
+			"cha": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"cold"
+			],
+			"pbNote": "equals your Proficiency Bonus",
+			"trait": [
+				{
+					"name": "Incorporeal Passage",
+					"entries": [
+						"The spirit can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes {@damage 1d10} Force damage for every 5 feet traveled."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"The spirit may take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB} when in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spirit makes a number of attacks equal to half this spell's level (round down)."
+					]
+				},
+				{
+					"name": "Chill Touch (Infiltrator Only)",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, Reach 5 ft. {@h}{@damage 1d8 + 3 + summonSpellLevel} Cold damage."
+					]
+				},
+				{
+					"name": "Deathly Bolt (Assassin Only)",
+					"entries": [
+						"{@atkr r} {@hitYourSpellAttack Bonus equals your spell attack modifier}, range 150 ft. {@h}{@damage 2d4 + 3 + summonSpellLevel} Cold damage. If the spirit was hidden when it made the attack, the attack deals an additional {@damage 2d4} Cold damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			]
+		}
+	]
+}
