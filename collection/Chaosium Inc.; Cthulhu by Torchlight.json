@@ -3251,6 +3251,2486 @@
 				"MA",
 				"RA"
 			]
+		},
+		{
+			"name": "Flying Polyp",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 189,
+				"formula": "18d12 + 72"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60
+			},
+			"initiative": {
+				"initiative": 6
+			},
+			"str": 30,
+			"dex": 11,
+			"con": 19,
+			"int": 15,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"dex": "+4",
+				"con": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+12",
+				"intimidation": "+4",
+				"perception": "+7"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 others"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Magic Resistance The flying polyp has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The flying polyp makes up to four Grasping Tentacle attacks and uses Wind Blast (if available)."
+					]
+				},
+				{
+					"name": "Writhing Tentacles",
+					"entries": [
+						"{@atkr m} {@hit 14}, Reach 20 ft. {@h}16 ({@damage 1d10 + 10}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 24}). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition."
+					]
+				},
+				{
+					"name": "Wind Blast {@recharge 5}",
+					"entries": [
+						"{@actSave str} {@dc 24}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the flying polyp can see within 120 feet. {@actSaveFail} 18 ({@damage 4d8}) Cold damage and the target is pushed up to 30 feet away from the flying polyp in a straight line. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Grasping Wind",
+					"entries": [
+						"{@actSave str} {@dc 24}, on creature within 2,000 feet. The flying polyp must have an unblocked line between it and its target, but the line does not need to be straight. The polyp does not need to see the target. {@actSaveFail} The target's {@variantrule Speed|XPHB} is reduced to 0 and cannot be increased until the end of the flying polyp's next turn. {@actSaveSuccess} No effect."
+					]
+				},
+				{
+					"name": "Invisibility {@recharge 5}",
+					"entries": [
+						"The flying polyp gains the {@condition Invisible|XPHB} condition until the end of its next turn."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The flying polyp makes a Writhing Tentacles."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"miscTags": [
+				"AOE",
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Formless Spawn",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "ooze",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d10 + 72"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 23,
+			"dex": 15,
+			"con": 22,
+			"int": 11,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"str": "+10",
+				"dex": "+6",
+				"con": "+10",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+4",
+				"perception": "+5"
+			},
+			"senses": [
+				"Blindsight 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"acid",
+				"cold",
+				"lightning",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The formless spawn casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 12}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The formless spawn can move through a space as narrow as 1 inch without expending extra movement to do so.",
+						"Magic {@variantrule Resistance|XPHB} The formless spawn has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The formless spawn makes up to four attacks, using Bludgeoning Pseudopod or Grasping Tentacle in any combination. It can replace any number of attacks with uses of Crushing Grip or Throw Victim."
+					]
+				},
+				{
+					"name": "Bludgeoning Pseudopod",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 10 ft. {@h}17 ({@damage 2d10 + 6}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Crushing Grip",
+					"entries": [
+						"{@actSave str} {@dc 18}, one creature {@condition Grappled|XPHB} by the formless spawn. {@actSaveFail} 14 ({@damage 4d6}) Bludgeoning damage. {@actSaveSuccess} Half damage."
+					]
+				},
+				{
+					"name": "Grasping Tentacle",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 20 ft. {@h}17 ({@damage 2d10 + 6}) Slashing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 18}), and it has the {@condition Restrained|XPHB} condition until the grapple ends."
+					]
+				},
+				{
+					"name": "Throw Victim",
+					"entries": [
+						"The formless spawn throws a Medium or smaller creature {@condition Grappled|XPHB} by it to a space it can see within 30 feet of itself that isn't in the air. {@actSave dex} {@dc 18}, the creature thrown and each creature in the destination space. {@actSaveFail} 14 ({@damage 4d6}) Bludgeoning damage, and the target has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only"
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Darkness|XPHB}, {@spell Locate Object|XPHB}, {@spell Silence|XPHB}."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Gnoph-Keh",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 150,
+				"formula": "12d12 + 72"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"initiative": {
+				"initiative": 2
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 23,
+			"int": 12,
+			"wis": 17,
+			"cha": 10,
+			"save": {
+				"str": "+10",
+				"con": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"Tremorsense 120 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance The gnoph-keh has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The gnoph-keh makes six Rending Claw attacks."
+					]
+				},
+				{
+					"name": "Rending Claw",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 10 ft. {@h}12 ({@damage 1d8 + 7}) Slashing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Heart of the Storm",
+					"entries": [
+						"The gnoph-keh can generate a supernatural storm that fills the area around it in a howling blizzard. Driving snow and wind fill the area in a 300-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centered on the gnoph-keh. The area is {@variantrule Heavily Obscured|XPHB}, and exposed flames in the area are doused. This effect ends if the gnoph-keh has the {@condition Incapacitated|XPHB} condition or dies. It can also dismiss the effect as a {@variantrule Bonus Action|XPHB}.",
+						"A creature that ends its turn in this {@variantrule Emanation [Area of Effect]|XPHB|Emanation} takes 3 ({@damage 1d6}) Cold damage."
+					]
+				}
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Great Cthulhu",
+			"isNamedCreature": true,
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos Deity"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				24
+			],
+			"hp": {
+				"average": 779,
+				"formula": "38d12 + 380"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 120,
+				"swim": 60
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 30,
+			"dex": 15,
+			"con": 30,
+			"int": 22,
+			"wis": 26,
+			"cha": 17,
+			"save": {
+				"str": "+19",
+				"dex": "+11",
+				"con": "+19",
+				"int": "+15",
+				"wis": "+17",
+				"cha": "+12"
+			},
+			"skill": {
+				"arcana": "+15",
+				"history": "+15",
+				"insight": "+17",
+				"perception": "+17"
+			},
+			"senses": [
+				"Blindsight 60 ft.",
+				"Darkvision 120 ft."
+			],
+			"passive": 27,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "30",
+			"trait": [
+				{
+					"name": "Even Death May Die",
+					"entries": [
+						"When Great Cthulhu drops to 0 hit points or would be killed outright, it instead transforms into a cloud of green mist that fills its space. At the start of each of Great Cthulhu's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum hit points return to normal if they have been reduced and it regains all lost hit points. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
+						"If Great Cthulhu is the target of a {@spell Banishment|XPHB} spell while in this cloud form cast with a 9th-level spell slot, it automatically fails its saving throw and is instead sent to R'lyeh where it slumbers for {@dice 10d10} years."
+					]
+				},
+				{
+					"name": "Horrid Aura",
+					"entries": [
+						"A non-mythos entity that starts its turn within 30 feet of Great Cthulhu takes 10 psychic damage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (6/Day)",
+					"entries": [
+						"If Great Cthulhu fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Great Cthulhu makes six Crushing Claw attacks."
+					]
+				},
+				{
+					"name": "Crushing Claw",
+					"entries": [
+						"{@atkr m} {@hit 19}, Reach 25 ft. {@h}28 ({@damage 4d8 + 10}) Bludgeoning damage and the target is either knocked {@condition Prone|XPHB} or moved up to 20 ft. in a straight line from Great Cthulhu."
+					]
+				},
+				{
+					"name": "Apocalyptic Majesty {@recharge 5}",
+					"entries": [
+						"{@actSave wis} {@dc 23}, creatures of Great Cthulhu's choice that can see or hear it within 500 ft. {@actSaveFail 1} The target takes 110 ({@damage 20d10}) Psychic damage, and is {@condition Frightened|XPHB} of Great Cthulhu until the end of its next turn, when it repeats the save. {@actSaveFail 2} On its next turn, Great Cthulhu controls the target. This effect ends at the end of that turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Disdainful Swipe",
+					"entries": [
+						"Great Cthulhu makes two Crushing Claw attacks."
+					]
+				},
+				{
+					"name": "Relentless Horror {@recharge 5}",
+					"entries": [
+						"Great Cthulhu chooses one of the following options: It teleports up to 200 ft. to an unoccupied space.",
+						"It immediately ends one spell or condition affecting it.",
+						"It ends one spell or magical effect of its choice within 120 ft. of it."
+					]
+				},
+				{
+					"name": "Sudden Movement",
+					"entries": [
+						"The flying polyp moves up to its speed."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Great Race of Yith",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 210,
+				"formula": "20d12 + 80"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"initiative": {
+				"initiative": 2
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 19,
+			"int": 20,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"con": "+8",
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+9",
+				"deception": "+4",
+				"history": "+9",
+				"nature": "+9",
+				"perception": "+6",
+				"religion": "+9"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 + 2 other languages"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The Yithian casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The Yithian has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				},
+				{
+					"name": "Time Master",
+					"entries": [
+						"When the Yithian rolls {@variantrule Initiative|XPHB}, it may choose to treat the result of its {@dice d20} roll as a 5 or 15. It may also apply this effect to up to six willing creatures it can see."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Yithian makes two Snapping Claw attacks."
+					]
+				},
+				{
+					"name": "Snapping Claw",
+					"entries": [
+						"{@atkr m} {@hit 11}, Reach 15 ft. {@h}29 ({@damage 4d10 + 7}) Slashing damage."
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Charm Person|XPHB}, {@spell Banishment|XPHB}, {@spell Dispel Magic|XPHB}, {@spell Fly|XPHB}, {@spell Lightning Bolt|XPHB}, {@spell Misty Step|XPHB}.",
+						"1/Day: {@spell Dominate Monster|XPHB}, {@spell Foresight|XPHB}, {@spell Meteor Swarm|XPHB}"
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Yithian makes a Snapping Claw attack."
+					]
+				},
+				{
+					"name": "Spell",
+					"entries": [
+						"The Yithian uses Spellcasting, but can only cast spells it can use at will."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			]
+		},
+		{
+			"name": "Hunting Horror",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 184,
+				"formula": "16d12 + 80"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 120
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 20,
+			"int": 15,
+			"wis": 17,
+			"cha": 12,
+			"save": {
+				"str": "+10",
+				"dex": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+6",
+				"investigation": "+6",
+				"perception": "+7",
+				"survival": "+11"
+			},
+			"senses": [
+				"Blindsight 90 ft.",
+				"Darkvision 120 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d6 other languages"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The hunting horror casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Feather Fall|XPHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Arcane Eye|XPHB}",
+							"{@spell Dimension Door|XPHB}",
+							"{@spell Lightning Bolt|XPHB}",
+							"{@spell Locate Creature|XPHB}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"While in {@variantrule Bright Light|XPHB}, the hunting horror has {@variantrule Disadvantage|XPHB} on attack rolls and checks.",
+						"Magic {@variantrule Resistance|XPHB} The hunting horror has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hunting horror makes one Bite attack and one Tail attack, It can replace one attack with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 20 ft. {@h}17 ({@damage 2d10 + 6}) Piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atkr m} {@hit 10}, Reach 20 ft. {@h}15 ({@damage 2d8 + 6}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 18})."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Prey's Doom",
+					"entries": [
+						"The horror unravels a target's life force with a bite. The hunting horror studies one creature it can see within 30 feet of itself. For 1 minute, once on each of the hunting horror's turns when it hits the target with an attack roll using its Bite attack, it can cause the target to take an extra 18 ({@damage 4d8}) Necrotic damage, and the target can't regain {@variantrule Hit Points|XPHB} until the end of hunting horror's next turn. On each of the hunting horror's subsequent turns, it can take a {@variantrule Bonus Action|XPHB} to deal 18 ({@damage 4d8}) Necrotic damage to the target automatically.",
+						"This effect ends if the target is ever outside the range, if it has {@variantrule Cover|XPHB|Total Cover} from the hunting horror, if it is on a different plane of existence, or if hunting horror uses this {@variantrule Bonus Action|XPHB} on a different creature."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Gnashing Teeth",
+					"entries": [
+						"The hunting horror makes one Bite attack."
+					]
+				},
+				{
+					"name": "Crushing Horror",
+					"entries": [
+						"A creature {@condition Grappled|XPHB} by the hunting horror takes 22 ({@damage 4d10}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Pursuit of Prey",
+					"entries": [
+						"The hunting horror moves up to its {@variantrule Speed|XPHB}."
+					]
+				}
+			],
+			"traitTags": [
+				"Light Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P"
+			],
+			"damageTagsSpell": [
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Mi-Go",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 50
+			},
+			"str": 11,
+			"dex": 15,
+			"con": 15,
+			"int": 18,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"con": "+5",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"medicine": "+7",
+				"perception": "+5"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The mi-go casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell Darkness|XPHB}",
+						"{@spell Hypnotic Pattern|XPHB}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Cone of Cold|XPHB}",
+							"{@spell Disintegrate|XPHB}",
+							"{@spell Wall of Force|XPHB}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance The mi-go has Advantage on saving throws against spells and other magical effects",
+					"entries": []
+				},
+				{
+					"name": "Space Traveler",
+					"entries": [
+						"The mi-go does not need to breathe air."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mi-go makes two Claw attacks and uses Spellcasting."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atkr m} {@hit 5}, Reach 5 ft. {@h}7 ({@damage 1d8 + 2}) Piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Hideous Counsel",
+					"entries": [
+						"The mi-go confers with a human brain it has sealed away in a jar. The specimen is specifically chosen for the knowledge it can provide to the mi-go, allowing it to adapt to a variety of situations. The mi-go chooses one of the following benefits: It gains {@variantrule Advantage|XPHB} on attack rolls until the end of its turn.",
+						"It uses the Dodge action as part of this {@variantrule Bonus Action|XPHB}.",
+						"It gains a +2 bonus to its spell save DC until the end of its turn."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Nyarlathotep",
+			"isNamedCreature": true,
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mythos Deity"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 273,
+				"formula": "26d12 + 104"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 26,
+			"dex": 17,
+			"con": 19,
+			"int": 22,
+			"wis": 19,
+			"cha": 24,
+			"save": {
+				"int": "+12",
+				"wis": "+10",
+				"cha": "+13"
+			},
+			"skill": {
+				"arcana": "+12",
+				"deception": "+16",
+				"insight": "+10",
+				"investigation": "+12",
+				"perception": "+10"
+			},
+			"senses": [
+				"Blindsight 120 ft.",
+				"Darkvision 240 ft."
+			],
+			"passive": 20,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Nyarlathotep casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 20}):"
+					],
+					"will": [
+						"{@spell Charm Monster|XPHB}",
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Invisibility|XPHB}",
+						"{@spell Misty Step|XPHB}",
+						"{@spell Pass without Trace|XPHB}"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Defeat from Victory",
+					"entries": [
+						"When Nyarlathotep drops to 0 hit points or would be killed outright, he is not slain. Instead, his body ripples with energy as it undergoes a horrific transformation. He returns to whatever strange realm he dwells in as his defeated form is torn apart by unseen forces. Mythos creatures with a combined CR of up to 20 emerge from the pile of gore, occupying the nearest, empty space. These creatures attack those who were hostile to Nyarlathotep and fight to the death."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If Nyarlathotep fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Nyarlathotep has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Poisoned Words, Rotten Soul",
+					"entries": [
+						"A creature that succeeds in a Wisdom ({@skill Insight|XPHB}) check to detect one of Nyarlathotep's lies takes 66 ({@damage 12d10}) psychic damage and cannot communicate with other creatures for {@dice 3d6} minutes. A creature killed by this trait appears to have died of a heart attack or similar cause."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Nyarlathotep makes two Rending Claw attacks and two Piercing Talon attacks."
+					]
+				},
+				{
+					"name": "Rending Claw",
+					"entries": [
+						"{@atkr m} {@hit 14}, Reach 15 ft. {@h}22 ({@damage 3d8 + 8}) Slashing damage and the target gains the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Piercing Talon",
+					"entries": [
+						"{@atkr m} {@hit 14}, Reach 5 ft. {@h}14 ({@damage 1d10 + 8}) Piercing damage. {@condition Prone|XPHB} creatures have {@variantrule Vulnerability|XPHB} to this attack's damage."
+					]
+				},
+				{
+					"name": "Horrid Tongue Lash {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 24}, creatures of Nyarlathotep's choice within 20 ft. of it; {@actSaveFail} The target takes 66 ({@damage 12d10}) acid damage. {@actSaveSuccess} Half damage."
+					]
+				},
+				{
+					"name": "Shape-Shift",
+					"entries": [
+						"Nyarlathotep shape-shifts into a Small or Medium Humanoid, or it returns to this form. Other than his size, his game statistics are the same in each form. Any equipment he is wearing or carrying isn't transformed."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Swift Claw",
+					"entries": [
+						"Nyarlathotep makes a Rending Claw attack."
+					]
+				},
+				{
+					"name": "Incite Delirium",
+					"entries": [
+						"{@actSave wis} {@dc 20}, one creature within 120 ft. of Nyarlathotep of its choice; {@actSaveFail} The target uses its {@variantrule Reaction|XPHB} to make a weapon attack against a target of Nyarlathotep's choice."
+					]
+				},
+				{
+					"name": "Relentless Horror {@recharge 5}",
+					"entries": [
+						"Nyarlathotep chooses one of the following options: It teleports up to 200 ft. to an unoccupied space.",
+						"It immediately ends one spell or condition affecting it.",
+						"It ends one spell or magical effect of its choice within 120 ft. of it."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Rat-Thing",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 14,
+				"formula": "4d4 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 5,
+			"dex": 15,
+			"con": 13,
+			"int": 14,
+			"wis": 17,
+			"cha": 11,
+			"save": {
+				"dex": "+4",
+				"int": "+4",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+4",
+				"history": "+4",
+				"insight": "+5",
+				"investigation": "+4",
+				"religion": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"Darkvision 30 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Hexing Aura",
+					"entries": [
+						"Each creature of the rat-thing's choice in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the rat-thing gains a +1 bonus to its spell save DC.",
+						"Magic {@variantrule Resistance|XPHB} The rat-thing has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 4}, Reach 5 ft. {@h}4 ({@damage 1d3 + 2}) Piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MA"
+			]
+		},
+		{
+			"name": "Shoggoth",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 276,
+				"formula": "24d12 + 60"
+			},
+			"speed": {
+				"walk": 60,
+				"swim": 40
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 20,
+			"int": 8,
+			"wis": 12,
+			"cha": 7,
+			"save": {
+				"str": "+15",
+				"dex": "+5",
+				"con": "+10",
+				"int": "+4",
+				"wis": "+6",
+				"cha": "+3"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"acid",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The shoggoth can move through a space as narrow as 1 foot without expending extra movement to do so."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The shoggoth can breathe air and water.",
+						"Magic {@variantrule Resistance|XPHB} The shoggoth has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shoggoth makes four attacks, usingHorrid Tendril or Hurled Mucous in any combination. It can't attack the same target more than once."
+					]
+				},
+				{
+					"name": "Horrid Tendril",
+					"entries": [
+						"{@atkr m} {@hit 15}, Reach 20 ft. {@h}({@dice 2d10 + 10}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 20}), and it has the {@condition Restrained|XPHB} condition until the grapple ends. It can Grapple up to four Large or smaller creatures at a time."
+					]
+				},
+				{
+					"name": "Hurled Mucous",
+					"entries": [
+						"{@atkr r} {@hit 15}, range 200 ft. {@h}21 ({@damage 2d10 + 10}) Acid damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Slime Wave {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 20}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 44 ({@damage 8d10}) Acid damage. {@actSaveSuccess} Half damage. For 1 minute, the area within the {@variantrule Cone [Area of Effect]|XPHB|Cone} is drenched with slimy acid. When a creature enters the area for the first time on a turn or ends its turn there, it takes 22 ({@damage 4d10}) Acid damage. A creature can take this damage only once per turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Horrid Digestion",
+					"entries": [
+						"{@actSave con} {@dc 23}, one creature {@condition Grappled|XPHB} by the shoggoth. {@actSaveFail} The target takes 32 ({@damage 4d10 + 10}) Acid damage."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Thrash of Shifting Forms",
+					"entries": [
+						"The shoggoth makes a Horrid Tendril or Hurled Mucous attack."
+					]
+				},
+				{
+					"name": "Bear Down Upon",
+					"entries": [
+						"The shoggoth moves up to its {@variantrule Speed|XPHB}."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Shub-Niggurath",
+			"isNamedCreature": true,
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"C"
+			],
+			"type": {
+				"type": "plant",
+				"tags": [
+					"Mythos Deity"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				21
+			],
+			"hp": {
+				"average": 615,
+				"formula": "30d20 + 300"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"initiative": {
+				"initiative": 16
+			},
+			"str": 30,
+			"dex": 12,
+			"con": 30,
+			"int": 19,
+			"wis": 22,
+			"cha": 29,
+			"save": {
+				"str": "+17",
+				"dex": "+8",
+				"con": "+17",
+				"int": "+11",
+				"wis": "+13",
+				"cha": "+16"
+			},
+			"skill": {
+				"insight": "+13",
+				"nature": "+11",
+				"perception": "+13",
+				"survival": "+13"
+			},
+			"senses": [
+				"Blindsight 60 ft.",
+				"Darkvision 120 ft."
+			],
+			"passive": 23,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"name": "Boundless Horror",
+					"entries": [
+						"When Shub-Niggurath drops to 0 hit points or would be killed outright, it instead transforms into a swarm of insects that fill its space. At the start of each of Shub-Niggurath's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum hit points return to normal if they have been reduced and it regains all lost hit points. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
+						"If Shub-Niggurath's space is filled with magical fire it is banished from the world and prevented from returning for {@dice 4d10} years."
+					]
+				},
+				{
+					"name": "Horrid Garden",
+					"entries": [
+						"Horrid vines, slick acidic dew and covering in flesh, gnawing mouths erupt from the ground in a 120-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Shub-Niggurath. The effect of this trait depends on its level. When Shub-Niggurath rolls initiative, set this trait's level to 0. The trait's level increase by 1 after each of Shub-Niggurath's turns to a maximum of 3. Use the highest AC bonus granted by this trait. Shub-Niggurath gains the benefits of this trait's current level and all lower ones. These benefits end when Shub-Niggurath is no longer threatened by hostile creatures."
+					]
+				},
+				{
+					"name": "Level 0",
+					"entries": [
+						"No effect."
+					]
+				},
+				{
+					"name": "Level 1",
+					"entries": [
+						"The ground in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is {@variantrule Difficult Terrain|XPHB} for non-Plants. At the end of Shub-Niggurath's turns, including the turn in which this trait reached level 1, two awakened trees appear in open spots in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of Shub-Niggurath's choice. They immediately roll initiative and aid their Dark Mother."
+					]
+				},
+				{
+					"name": "Level 2",
+					"entries": [
+						"A non-plant takes 15 Acid damage, or 30 Acid damage if it has the {@condition Prone|XPHB} condition, when it ends its turn in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}."
+					]
+				},
+				{
+					"name": "Level 3",
+					"entries": [
+						"Plants have {@variantrule Advantage|XPHB} on all attack rolls made against non-Plants in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. A creature hit by a Plant's melee attack gains the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If Shub-Niggurath fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Shub-Niggurath makes four total Grasping Tendril and Stomping Hoff attacks."
+					]
+				},
+				{
+					"name": "Grasping Tendril",
+					"entries": [
+						"{@atkr m} {@hit 17}, Reach 30 ft. {@h}21 ({@damage 2d10 + 10}) Bludgeoning damage and the target is moved to the open space closest to Shub-Niggurath."
+					]
+				},
+				{
+					"name": "Stomping Hoof",
+					"entries": [
+						"{@atkr m} {@hit 17}, Reach 10 ft. {@h}32 ({@damage 4d10 + 10}) Bludgeoning damage and the target gains the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "The Earth Hungers {@recharge}",
+					"entries": [
+						"{@actSave str} {@dc 25}, creatures of Shub-Niggurath's choice within 200 ft. of Shub-Niggurath and the ground. {@actSaveFail} The target takes 110 ({@damage 20d10}) Bludgeoning damage, is pulled to the ground beneath it if it is flying, and gains the {@condition Prone|XPHB} and {@condition Restrained|XPHB} conditions as fibrous plant tendrils erupt from the ground. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. {@actSaveSuccess} Half damage, and the target is pulled to the ground beneath it if it is flying."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Tree Walk",
+					"entries": [
+						"Shub-Niggurath may teleport to any open space, provided she ends that teleportation within 10 feet of a friendly Plant creature she can see."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Hungry Tendril",
+					"entries": [
+						"Shub-Niggurath makes a Grasping Tendril Attack"
+					]
+				},
+				{
+					"name": "Rapid Maneuver",
+					"entries": [
+						"Shub-Niggurath uses its Tree Walk bonus action. It can't take this action again until the start of its next turn."
+					]
+				},
+				{
+					"name": "Relentless Horror {@recharge 5}",
+					"entries": [
+						"Shub-Niggurath chooses one of the following options: It teleports up to 200 ft. to an unoccupied space.",
+						"It immediately ends one spell or condition affecting it.",
+						"It ends one spell or magical effect of its choice within 120 ft. of it."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Lesser Star-Spawn of Cthulhu",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d10 + 54"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 40,
+				"swim": 60
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 17,
+			"int": 15,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"str": "+8",
+				"con": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5",
+				"intimidation": "+3",
+				"perception": "+4"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The lesser star-spawn of Cthulhu casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The lesser star-spawn of Cthulhu can breathe air and water.",
+						"Magic {@variantrule Resistance|XPHB} The lesser star-spawn of Cthulhu has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The lesser star-spawn of Cthulhu makes two Crushing Fist attacks."
+					]
+				},
+				{
+					"name": "Crushing Fist",
+					"entries": [
+						"{@atkr m} {@hit 8}, Reach 15 ft. {@h}22 ({@damage 3d10 + 5}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Dispel Magic|XPHB}, {@spell Fear|XPHB}, {@spell Misty Step|XPHB}, {@spell Shatter|XPHB}, {@spell Suggestion|XPHB}."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Flabby Claws",
+					"entries": [
+						"The lesser star-spawn of Cthulhu makes one Crushing Fist attack."
+					]
+				},
+				{
+					"name": "Eldritch Contradictions",
+					"entries": [
+						"The lesser star-spawn of Cthulhu uses Spellcasting."
+					]
+				},
+				{
+					"name": "Ravening for Delight",
+					"entries": [
+						"The lesser star-spawn of Cthulhu moves up to its {@variantrule Speed|XPHB}."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			]
+		},
+		{
+			"name": "Greater Star-Spawn of Cthulhu",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Mythos"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 252,
+				"formula": "24d12 + 96"
+			},
+			"speed": {
+				"walk": 80,
+				"fly": 60,
+				"swim": 60
+			},
+			"initiative": {
+				"initiative": 1
+			},
+			"str": 22,
+			"dex": 8,
+			"con": 19,
+			"int": 18,
+			"wis": 15,
+			"cha": 13,
+			"save": {
+				"str": "+11",
+				"con": "+9",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"history": "+9",
+				"intimidation": "+6",
+				"perception": "+7"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus 1d4 other languages"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The greater star-spawn of Cthulhu casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The greater star-spawn of Cthulhu can breathe air and water.",
+						"Magic {@variantrule Resistance|XPHB} The greater star-spawn of Cthulhu has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The greater star-spawn of Cthulhu makes two Crushing Fist attacks."
+					]
+				},
+				{
+					"name": "Crushing Fist",
+					"entries": [
+						"{@atkr m} {@hit 11}, Reach 20 ft. {@h}28 ({@damage 4d10 + 6}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "At Will:",
+					"entries": [
+						"{@spell Dispel Magic|XPHB}, {@spell Fear|XPHB}, {@spell Misty Step|XPHB}, {@spell Shatter|XPHB}, {@spell Suggestion|XPHB}.",
+						"1/Day Each: {@spell Cone of Cold|XPHB}, {@spell Forcecage|XPHB}, {@spell Hold Monster|XPHB}, {@spell Wall of Force|XPHB}"
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Flabby Claws",
+					"entries": [
+						"The greater star-spawn of Cthulhu makes a Crushing Fist attack."
+					]
+				},
+				{
+					"name": "Eldritch Contradictions",
+					"entries": [
+						"The greater star-spawn of Cthulhu uses Spellcasting."
+					]
+				},
+				{
+					"name": "Ravening for Delight",
+					"entries": [
+						"The greater star-spawn of Cthulhu moves up to its {@variantrule Speed|XPHB}."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "I Fought, I Lived",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"category": "O",
+			"entries": [
+				"You confronted a horror from beyond this world or spawned by terrible magic. It disregarded you as a puny mortal, but it learned its mistake the hard way when you sent it back to wherever it came from with good, old-fashioned muscle, courage, and a really, really large axe.",
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Defiant Strike",
+					"entries": [
+						"While you are {@variantrule Bloodied|XPHB} and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Indomitable Heart",
+					"entries": [
+						"If you have the {@condition Frightened|XPHB} condition at the start of your turn, roll a {@dice d20}. On a 10 or higher, you no longer have that condition."
+					]
+				}
+			]
+		},
+		{
+			"name": "I Hid from the Terror",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"category": "O",
+			"entries": [
+				"That night is a blur. A strange presence, an overwhelming terror, and a confused jumble of screams mixed with faint memories of something terrible and hungry. You hid from it, finding a place too small for it to reach. The sounds of that night, and the awful aftermath you found that morning, will remain with you to the end of your days and beyond.",
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Shadowed Strike",
+					"entries": [
+						"If attacking would end the {@condition Invisible|XPHB} condition on you, you can make an attack and keep that condition. You can use this benefit a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. You regain expended uses when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beneath Notice",
+					"entries": [
+						"When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 feet away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Merge into Shadows",
+					"entries": [
+						"Wisdom ({@skill Perception|XPHB}) checks made to detect you while you have the {@condition Invisible|XPHB} condition have {@variantrule Disadvantage|XPHB}."
+					]
+				}
+			]
+		},
+		{
+			"name": "I Pierced the Illusion",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"category": "O",
+			"entries": [
+				"You came across something strange and awful, made all the more terrible by its hidden nature. A town might have seemed innocent until it dragged unwitting visitors to their carefully tended sacrificial garden, or the family that took you in on a dark, stormy night were actually hungry cannibals. You survived because you saw their disguise and escaped or struck first.",
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Clear Senses",
+					"entries": [
+						"If you have the {@condition Charmed|XPHB} condition at the start of your turn, roll a {@dice d20}. On a 10 or higher, you no longer have that condition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ear for Falsehood",
+					"entries": [
+						"When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement. You can use this benefit a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. You regain expended uses when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Subtle Interrogation",
+					"entries": [
+						"You have {@variantrule Advantage|XPHB} on Insight checks made against creatures that you are speaking with."
+					]
+				}
+			]
+		},
+		{
+			"name": "I Opened the Gate",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"category": "O",
+			"entries": [
+				"You didn't mean for things to turn out this way. You were curious and perhaps ignored a few signs, but it's hard to take ancient curses seriously. Musty old books say a lot of things, and most of them turn out to be mere fables. Most of them. The one book you read turned out to be the key to unleashing some ancient evil. Now it's in the world, and it's up to you to find it and send it back.",
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Delver into Forgotten Lore",
+					"entries": [
+						"You learn three languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Foul Arcana",
+					"entries": [
+						"You can tap into a brief glimpse of the mythos to empower a spell, at the cost of overwhelming your mind with a horrifying, cosmic insight. When you cast a spell, you can give that spell's save DC a +2 bonus but you have the {@condition Paralyzed|XPHB} condition until the start of your next turn. You can use this benefit a number of times equal to your proficiency bonus. You regain expended uses when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				}
+			]
+		},
+		{
+			"name": "I Survived to Tell the Tale",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"category": "O",
+			"entries": [
+				"You encountered something dreadful, a horrible creature or bizarre ritual that set you down the path to becoming an investigator of the strange. Your quick feet and instinct for survival carried you through that day and are your best assets.",
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Instinct to Survive",
+					"entries": [
+						"When you take damage that would reduce you to 0 {@variantrule Hit Points|XPHB}, you can immediately regain {@variantrule Hit Points|XPHB} equal to your level. When you use this benefit, you cannot use it again until you finish a {@variantrule Long Rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superior Speed",
+					"entries": [
+						"You gain a +10 bonus to {@variantrule Speed|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wriggle Free",
+					"entries": [
+						"If you would gain the {@condition Grappled|XPHB} condition, roll a {@dice d20}. On a 10 or higher, you instead do not gain it."
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+        {
+            "name": "Exalted Assembly of the Feline Court",
+            "shortName": "Feline Court",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "page": 0,
+            "edition": "one",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "Animal Friendship|XPHB",
+                            "Cat’s Spring|cthulhutorchlight",
+                            "Feather Fall|XPHB",
+                            "Feline Grace|cthulhutorchlight",
+                            "Misty Step|XPHB",
+                            "Speak with Animals|XPHB"
+                        ],
+                        "5": [
+                            "Haste|XPHB",
+                            "Phantom Panther|cthulhutorchlight"
+                        ],
+                        "7": [
+                            "Freedom of Movement|XPHB",
+                            "Dimension Door|XPHB"
+                        ],
+                        "9": [
+                            "Feline Chaos|cthulhutorchlight",
+                            "Telekinesis|XPHB"
+                        ]
+                    }
+                }
+            ],
+            "subclassSpells": [
+                "Animal Friendship|XPHB",
+                "Cat's Spring|cthulhutorchlight",
+                "Feather Fall|XPHB",
+                "Feline Grace|cthulhutorchlight",
+                "Misty Step|XPHB",
+                "Speak with Animals|XPHB",
+                "Haste|XPHB",
+                "Phantom Panther|cthulhutorchlight",
+                "Freedom of Movement|XPHB",
+                "Dimension Door|XPHB",
+                "Feline Chaos|cthulhutorchlight",
+                "Telekinesis|XPHB"
+            ],
+            "subclassFeatures": [
+                "Exalted Assembly of the Feline Court|Warlock|XPHB|Feline Court|cthulhutorchlight|3",
+                "Vexing Distraction|Warlock|XPHB|Feline Court|cthulhutorchlight|6",
+                "Nine Lives|Warlock|XPHB|Feline Court|cthulhutorchlight|10",
+                "Summon the Courtiers|Warlock|XPHB|Feline Court|cthulhutorchlight|14"
+            ],
+            "fluff": {
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/main/img/cthulhutorchlight/Subclasses/Warlock_Exalted_Assembly.webp"
+                        },
+                        "credit": "cthulhutorchlight"
+                    }
+                ]
+            }
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Exalted Assembly of the Feline Court",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "page": 0,
+            "entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"If man could be crossed with a cat, it would improve man but deteriorate the cat."
+							],
+							"from": "Mark Twain"
+						}
+					]
+				},
+                "The entities of the Cthulhu Mythos have many enemies. Not all who learn of these terrible creatures fall victim to their promises of forbidden power. Across the cosmos, a grand conspiracy consisting of the most unlikely of creatures.",
+				"A court of intelligent house cats seek to protect the world from the Mythos. Hailing from across planes, worlds, and planets, they use magic and manipulation to ensure that their centuries of work domesticating humans remains uninterrupted. For all their skill at providing food, warmth, and shelter, humans are all too prone to corruption, meddling in powers far beyond their grasp. All it takes is one fool with a forbidden book and generations of work crumbles as yet another human civilization falls to dust.",
+				"The Exalted Assembly of the Feline Court coordinates efforts to sustain and protect their servants. They forge magical pact with those who show the right mix of cunning, bravery, and etiquette.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Feline Spells|Warlock|XPHB|Feline Court|cthulhutorchlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Feline Affinity|Warlock|XPHB|Feline Court|cthulhutorchlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Feline Form|Warlock|XPHB|Feline Court|cthulhutorchlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Feline Spells",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "page": 0,
+            "header": 1,
+            "entries": [
+                "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Feline Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Feline Spells",
+                    "colLabels": [
+                        "Warlock Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3",
+                            "{@spell Animal Friendship|XPHB}, {@spell Cat's Spring|cthulhutorchlight}, {@spell Feather Fall|XPHB}, {@spell Feline Grace|cthulhutorchlight}, {@spell Misty Step|XPHB}, {@spell Speak with Animals|XPHB}"
+                        ],
+                        [
+                            "5",
+                            "{@spell Haste|XPHB}, {@spell Phantom Panther|cthulhutorchlight}"
+                        ],
+                        [
+                            "7",
+                            "{@spell Freedom of Movement|XPHB}, {@spell Dimension Door|XPHB}"
+                        ],
+                        [
+                            "9",
+                            "{@spell Feline Chaos|cthulhutorchlight}, {@spell Telekinesis|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Feline Affinity",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "page": 0,
+            "header": 1,
+            "entries": [
+                "You gain the ability to speak with the world's true nobility. You can cast {@spell Speak with Animals|XPHB} without expending a spell slot. When you cast the spell this way, the only Beasts you can verbally communicate with are cats, though most cats are reluctant to converse with a creature as simple as you."
+            ]
+        },
+        {
+            "name": "Feline Form",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 3,
+            "page": 0,
+            "header": 1,
+            "entries": [
+                "Your patron takes pity on you and gives you the ability to adopt a superior, more pleasing form. As a {@variantrule Bonus Action|XPHB}, you shape-shift into a Cat, a Tiny Beast. You stay in that form for a number of hours equal to half your Warlock level (rounded down) or until you use this feature again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}. While in this form, you retain your personality, memories, and ability to speak, and the following rules apply:",
+				{
+					"type": "entries",
+					"name": "Game Statistics",
+					"entries": [
+						"Your game statistics are replaced by the Beast's stat block, but you retain your creature type; {@variantrule Hit Points|XPHB}; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"While in your cat form, you can only casts spells that are on your Feline Spells feature. You can cast these spells without needing Material components. In addition, if you have the {@condition Invisible|XPHB} condition from the {@action Hide|XPHB} action and cast a spell that doesn't target a {@variantrule Hostile [Attitude]|XPHB|Hostile} creature, you retain the {@condition Invisible|XPHB} condition. Shapeshifting doesn't break your {@status Concentration|XPHB} or otherwise interfere with a spell you've already cast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Equipment",
+					"entries": [
+						"You choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for your Tiny Beast form to wear a piece of equipment. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.",
+						"You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Vexing Distraction",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 6,
+            "page": 0,
+            "header": 2,
+            "entries": [
+                "While in your cat form, you can pass off the most destructive, distracting, and irritating behavior as cute or even adorable.",
+				"As a {@variantrule Bonus Action|XPHB} while in your cat form, choose a creature within 5 feet of you that can see and hear you. The target must succeed on a Wisdom save against your spell save DC or be affected by one of the following effects of your choice:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Annoy",
+							"entries": [
+								"The target has {@variantrule Disadvantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests} until the end of your next turn."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Confound",
+							"entries": [
+								"The target's {@variantrule Speed|XPHB} is reduced to 0 until the end of your next turn."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Distract",
+							"entries": [
+								"A creature of your choice has {@variantrule Cover|XPHB|Total Cover} against the target until the end of the chosen creature's next turn.",
+								"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+							]
+						}
+					]
+				}
+            ]
+        },
+        {
+            "name": "Nine Lives",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 10,
+            "page": 0,
+            "header": 2,
+            "entries": [
+                "You are gifted with an almost inexplicable ability to survive dangerous situations. You have Nine Lives, which can be expended in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"If you take damage while you have 0 {@variantrule Hit Points|XPHB}, you can expend 1 life to not suffer a {@variantrule Death Saving Throw|XPHB} failure. If the damage is from a {@variantrule Critical Hit|XPHB}, you must expend 2 lives to not suffer {@variantrule Death Saving Throw|XPHB} failures.",
+						"If you are forced to make a {@variantrule Death Saving Throw|XPHB}, you can expend 1 life to cause yourself to succeed instead.",
+						"If you are forced to make a {@variantrule Death Saving Throw|XPHB}, you can expend 5 lives to turn the roll into a 20.",
+						"If you would die from massive damage, you can expend 1 life to be reduced to 0 {@variantrule Hit Points|XPHB} instead of being killed outright.",
+						"When you are reduced to 0 {@variantrule Hit Points|XPHB} and not killed outright, you can expend 1 life to drop to 1 {@variantrule Hit Points|XPHB|Hit Point} instead.",
+						"If you are targeted with an effect that causes instant death, such as a {@spell Power Word Kill|XPHB} spell, you can expend 9 lives to ignore the effect."
+					]
+				},
+				"You regain all expended lives when you finish a {@variantrule Long Rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Summon the Courtiers",
+            "source": "cthulhutorchlight",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Feline Court",
+            "subclassSource": "cthulhutorchlight",
+            "level": 14,
+            "page": 0,
+            "header": 2,
+            "entries": [
+                "Having served the Feline Assembly with grace, tact, and good taste, you have earned their favor. When you take damage from a creature that is within 60 feet of you, you can take a {@variantrule Reaction|XPHB} to call upon the Assembly's wrath. A horde of hissing, spectral cats emerges from the planar firmament and descends upon the creature that damaged you. That creature takes {@damage 5d10} Force damage and has the {@condition Blinded|XPHB} and {@condition Prone|XPHB} conditions until the end of your next turn.",
+				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you spend a Pact Magic spell slot (no action required) to restore your use of it."
+            ]
+        }
+    ],
+	"item": [
+		{
+			"name": "Fingerprint Kit",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"type": "T|XPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 2500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Ability:",
+							"type": "item",
+							"entries": [
+								"Intelligence"
+							]
+						},
+						{
+							"name": "Utilize:",
+							"type": "item",
+							"entries": [
+								"Reveal the fingerprint left behind on an object and sketch a copy (DC 20), or match a copied fingerprint against a humanoid creature's (DC 15)."
+							]
+						}
+					]
+				},
+				"This item allows you to capture the details of a fingerprint that has been left on an object and match them against another creature. It consists of an inkpad, parchment, and talcum powder."
+			]
+		},
+		{
+			"name": "Witchboard",
+			"source": "cthulhutorchlight",
+			"page": 0,
+			"type": "T|XPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Ability:",
+							"type": "item",
+							"entries": [
+								"Charisma"
+							]
+						},
+						{
+							"name": "Utilize:",
+							"type": "item",
+							"entries": [
+								"Exchange messages of up to 10 words with an Ethereal creature within 30 feet (DC 15)."
+							]
+						}
+					]
+				},
+				"A witchboard is a slat of wood covered with letters, usually the Common alphabet though versions for different scripts are available. You can use it to contact Ethereal creatures, allowing limited conversations with them."
+			]
 		}
 	]
 }
