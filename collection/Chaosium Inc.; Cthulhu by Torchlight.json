@@ -994,7 +994,7 @@
 				}
 			],
 			"entries": [
-				"Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} slashing damage at the start of each of their turns, and they have disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone|XPHB} condition, taking another {@damage 2d6} slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity {@variantrule Saving Throw|XPHB}, ending the spell on itself on a success."
+				"Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes {@damage 4d6} Slashing damage at the start of each of their turns, and they have disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the {@condition Prone|XPHB} condition, taking another {@damage 2d6} Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity {@variantrule Saving Throw|XPHB}, ending the spell on itself on a success."
 			],
 			"entriesHigherLevel": [
 				{
@@ -5576,10 +5576,10 @@
 					"type": "entries",
 					"name": "Equipment",
 					"entries": [
-						"You choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for your Tiny Beast form to wear a piece of equipment. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.",
-						"You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+						"You choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for your Tiny Beast form to wear a piece of equipment. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form."
 					]
-				}
+				},
+				"You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
             ]
         },
         {
@@ -5617,12 +5617,12 @@
 							"type": "item",
 							"name": "Distract",
 							"entries": [
-								"A creature of your choice has {@variantrule Cover|XPHB|Total Cover} against the target until the end of the chosen creature's next turn.",
-								"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+								"A creature of your choice has {@variantrule Cover|XPHB|Total Cover} against the target until the end of the chosen creature's next turn."
 							]
 						}
 					]
-				}
+				},
+				"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
             ]
         },
         {
