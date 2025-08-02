@@ -2,7 +2,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "cthulhutorchlight",
+				"json": "CthulhuTorchlight",
 				"abbreviation": "CBT",
 				"full": "Cthulhu by Torchlight",
 				"authors": [
@@ -79,7 +79,7 @@
 		},
 		{
 			"name": "Breath of the Deep",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 2,
 			"school": "C",
@@ -138,7 +138,7 @@
 		},
 		{
 			"name": "Call Deity",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 8,
 			"school": "C",
@@ -201,7 +201,7 @@
 		},
 		{
 			"name": "Cat's Spring",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 0,
 			"school": "C",
@@ -273,7 +273,7 @@
 		},
 		{
 			"name": "Chant of Thoth",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 0,
 			"school": "D",
@@ -327,7 +327,7 @@
 		},
 		{
 			"name": "Confounding Shadows",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 0,
 			"school": "C",
@@ -410,7 +410,7 @@
 		},
 		{
 			"name": "Clutch of Darkness",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 2,
 			"school": "C",
@@ -469,7 +469,7 @@
 		},
 		{
 			"name": "Contact Deity",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 5,
 			"school": "D",
@@ -537,7 +537,7 @@
 		},
 		{
 			"name": "Create Mist of R'lyeh",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 1,
 			"school": "C",
@@ -596,7 +596,7 @@
 		},
 		{
 			"name": "Curse of the Putrid Husk",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 3,
 			"school": "I",
@@ -654,7 +654,7 @@
 		},
 		{
 			"name": "Dismiss Deity",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 5,
 			"school": "A",
@@ -717,7 +717,7 @@
 		},
 		{
 			"name": "Doom",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 3,
 			"school": "N",
@@ -767,7 +767,7 @@
 		},
 		{
 			"name": "Dust of Suleiman",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 4,
 			"school": "C",
@@ -831,7 +831,7 @@
 		},
 		{
 			"name": "Dread Curse of Azathoth",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 7,
 			"school": "V",
@@ -883,7 +883,7 @@
 		},
 		{
 			"name": "Evil Eye",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 0,
 			"school": "E",
@@ -963,7 +963,7 @@
 		},
 		{
 			"name": "Feline Chaos",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 5,
 			"school": "C",
@@ -1039,7 +1039,7 @@
 		},
 		{
 			"name": "Feline Grace",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 2,
 			"school": "T",
@@ -1108,7 +1108,7 @@
 		},
 		{
 			"name": "Fist of Yog-Sothoth",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 4,
 			"school": "C",
@@ -1168,7 +1168,7 @@
 		},
 		{
 			"name": "Phantom Panther",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 3,
 			"school": "C",
@@ -1254,7 +1254,7 @@
 		},
 		{
 			"name": "Red Sign",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 6,
 			"school": "C",
@@ -1309,7 +1309,7 @@
 		},
 		{
 			"name": "Shadowy Eruption",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 3,
 			"school": "C",
@@ -1394,7 +1394,7 @@
 		},
 		{
 			"name": "Tide of Darkness",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 1,
 			"school": "C",
@@ -1463,7 +1463,7 @@
 		},
 		{
 			"name": "Umbral Tendril",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 1,
 			"school": "V",
@@ -1531,7 +1531,7 @@
 		},
 		{
 			"name": "Voorish Sign",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 3,
 			"school": "A",
@@ -1581,7 +1581,7 @@
 		},
 		{
 			"name": "Wave of Oblivion",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 9,
 			"school": "V",
@@ -1630,7 +1630,7 @@
 		},
 		{
 			"name": "Summon Shadow",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"level": 5,
 			"school": "C",
@@ -1663,7 +1663,7 @@
 				}
 			],
 			"entries": [
-				"You call forth a spirit of shadow. It manifests as a silhouette of pure blackness in an unoccupied space you can see within range. This corporeal form uses the {@creature Shadow Spirit|cthulhutorchlight} stat block. When you cast this spell, choose Infiltrator or Assassin. Your choice determines certain traits in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"You call forth a spirit of shadow. It manifests as a silhouette of pure blackness in an unoccupied space you can see within range. This corporeal form uses the {@creature Shadow Spirit|CthulhuTorchlight} stat block. When you cast this spell, choose Infiltrator or Assassin. Your choice determines certain traits in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
 				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its move to avoid danger."
 			],
 			"entriesHigherLevel": [
@@ -1700,7 +1700,7 @@
 	"monster": [
 		{
 			"name": "Color Out of Space",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"L"
@@ -1810,6 +1810,9 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Magic Resistance"
+			],
 			"senseTags": [
 				"SD"
 			],
@@ -1837,7 +1840,7 @@
 		},
 		{
 			"name": "Lesser Crawling One",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"M"
@@ -1923,8 +1926,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The lesser crawling one has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The lesser crawling one has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				},
 				{
 					"name": "Relentless Evil",
@@ -1955,6 +1960,9 @@
 						"The lesser crawling one teleports up to 60 feet to an unoccupied space it can see."
 					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D"
@@ -1994,7 +2002,7 @@
 		},
 		{
 			"name": "Greater Crawling One",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"M"
@@ -2086,8 +2094,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The greater crawling one has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The greater crawling one has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				},
 				{
 					"name": "Implacable Evil",
@@ -2118,6 +2128,9 @@
 						"The greater crawling one teleports up to 60 feet to an unoccupied space it can see."
 					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D",
@@ -2159,7 +2172,7 @@
 		{
 			"name": "Dagon",
 			"isNamedCreature": true,
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"G"
@@ -2243,7 +2256,7 @@
 					"name": "One With the Sea",
 					"entries": [
 						"When Dagon drops to 0 {@variantrule Hit Points|XPHB} or would be killed outright, it instead transforms into a swirling body of water. At the start of each of Dagon's turns, it gains one recovery point but otherwise cannot use actions or legendary actions other than Relentless Horror. When it gains its fourth recovery point, its maximum {@variantrule Hit Points|XPHB} return to normal if they have been reduced and it regains all lost {@variantrule Hit Points|XPHB}. It reforms its physical body in a space of its choice within 10 miles of its location. It then loses all recovery points.",
-						"If Dagon is the target of a {@spell Banishment|PHB} spell cast with a 9th-level spell slot while in this cloud form, it automatically fails its saving throw and is instead sent to the deepest corner of the ocean where it slumbers for {@dice 6d10} years."
+						"If Dagon is the target of a {@spell Banishment|XPHB} spell cast with a 9th-level spell slot while in this cloud form, it automatically fails its saving throw and is instead sent to the deepest corner of the ocean where it slumbers for {@dice 6d10} years."
 					]
 				},
 				{
@@ -2295,9 +2308,15 @@
 				{
 					"name": "Relentless Horror {@recharge 5}",
 					"entries": [
-						"Dagon chooses one of the following options: It teleports up to 200 ft. to an unoccupied space.",
-						"It immediately ends one spell or condition affecting it.",
-						"It ends one spell or magical effect of its choice within 120 ft. of it."
+						"Dagon chooses one of the following options:",
+						{
+							"type": "list",
+							"items": [
+								"It teleports up to 200 ft. to an unoccupied space.",
+								"It immediately ends one spell or condition affecting it.",
+								"It ends one spell or magical effect of its choice within 120 ft. of it."
+							]
+						}
 					]
 				}
 			],
@@ -2337,7 +2356,7 @@
 		},
 		{
 			"name": "Lesser Dark Young of Shub-Niggurath",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"L"
@@ -2416,8 +2435,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The lesser dark young of Shub-Niggurath has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The lesser dark young of Shub-Niggurath has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				}
 			],
 			"action": [
@@ -2448,6 +2469,9 @@
 						"The lesser dark young of Shub-Niggurath moves up to its Speed."
 					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D",
@@ -2483,7 +2507,7 @@
 		},
 		{
 			"name": "Greater Dark Young of Shub-Niggurath",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -2570,8 +2594,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The greater dark young of Shub-Niggurath has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The greater dark young of Shub-Niggurath has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				}
 			],
 			"action": [
@@ -2602,6 +2628,9 @@
 						"The greater dark young of Shub-Niggurath moves up to its Speed."
 					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D",
@@ -2644,7 +2673,7 @@
 		},
 		{
 			"name": "Deep One Hybrid",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"M"
@@ -2750,7 +2779,7 @@
 		},
 		{
 			"name": "Deep One",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"M"
@@ -2810,8 +2839,13 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"The deep one can breathe air and water.",
-						"Magic Resistance The deep one has Advantage on saving throws against spells and other magical effects."
+						"The deep one can breathe air and water."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The deep one has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -2843,7 +2877,8 @@
 				}
 			],
 			"traitTags": [
-				"Amphibious"
+				"Amphibious",
+				"Magic Resistance"
 			],
 			"actionTags": [
 				"Multiattack"
@@ -2867,7 +2902,7 @@
 		},
 		{
 			"name": "Dimensional Shambler",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"L"
@@ -2938,8 +2973,13 @@
 				{
 					"name": "Dimensional Warping",
 					"entries": [
-						"{@actSave wis} {@dc 14}, if a creature within 30 feet of the dimensional shambler attempts to teleport. {@actSaveFail} The creature doesn't teleport. {@actSaveSuccess} The creature teleports as normal.",
-						"Magic Resistance The dimensional shambler has Advantage on saving throws against spells and other magical effects."
+						"{@actSave wis} {@dc 14}, if a creature within 30 feet of the dimensional shambler attempts to teleport. {@actSaveFail} The creature doesn't teleport. {@actSaveSuccess} The creature teleports as normal."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dimensional shambler has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -3010,6 +3050,9 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Magic Resistance"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -3039,7 +3082,7 @@
 		},
 		{
 			"name": "Elder Thing",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"L"
@@ -3110,8 +3153,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The elder thing has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The elder thing has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				}
 			],
 			"action": [
@@ -3164,6 +3209,9 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Magic Resistance"
+			],
 			"senseTags": [
 				"SD"
 			],
@@ -3189,8 +3237,8 @@
 		},
 		{
 			"name": "Shadow Spirit",
-			"source": "cthulhutorchlight",
-			"summonedBySpell": "Summon Shadow|cthulhutorchlight",
+			"source": "CthulhuTorchlight",
+			"summonedBySpell": "Summon Shadow|CthulhuTorchlight",
 			"summonedBySpellLevel": 5,
 			"page": 0,
 			"size": [
@@ -3286,7 +3334,7 @@
 		},
 		{
 			"name": "Flying Polyp",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -3350,8 +3398,10 @@
 			"cr": "10",
 			"trait": [
 				{
-					"name": "Magic Resistance The flying polyp has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The flying polyp has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				}
 			],
 			"action": [
@@ -3395,7 +3445,16 @@
 					"entries": [
 						"The flying polyp makes a Writhing Tentacles."
 					]
+				},
+				{
+					"name": "Sudden Movement",
+					"entries": [
+						"The flying polyp moves up to its {@variantrule Speed|XPHB}."
+					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
@@ -3427,7 +3486,7 @@
 		},
 		{
 			"name": "Formless Spawn",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"L"
@@ -3587,7 +3646,7 @@
 		},
 		{
 			"name": "Gnoph-Keh",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -3650,8 +3709,10 @@
 			"cr": "8",
 			"trait": [
 				{
-					"name": "Magic Resistance The gnoph-keh has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The gnoph-keh has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				}
 			],
 			"action": [
@@ -3676,6 +3737,9 @@
 						"A creature that ends its turn in this {@variantrule Emanation [Area of Effect]|XPHB|Emanation} takes 3 ({@damage 1d6}) Cold damage."
 					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"T"
@@ -3703,7 +3767,7 @@
 		{
 			"name": "Great Cthulhu",
 			"isNamedCreature": true,
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"G"
@@ -3826,12 +3890,6 @@
 						"It immediately ends one spell or condition affecting it.",
 						"It ends one spell or magical effect of its choice within 120 ft. of it."
 					]
-				},
-				{
-					"name": "Sudden Movement",
-					"entries": [
-						"The flying polyp moves up to its {@variantrule Speed|XPHB}."
-					]
 				}
 			],
 			"traitTags": [
@@ -3867,7 +3925,7 @@
 		},
 		{
 			"name": "Great Race of Yith",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -3944,8 +4002,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The Yithian has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The Yithian has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				},
 				{
 					"name": "Time Master",
@@ -3990,6 +4050,9 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Magic Resistance"
+			],
 			"senseTags": [
 				"SD"
 			],
@@ -4014,7 +4077,7 @@
 		},
 		{
 			"name": "Hunting Horror",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -4196,7 +4259,7 @@
 		},
 		{
 			"name": "Mi-Go",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"M"
@@ -4278,8 +4341,10 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance The mi-go has Advantage on saving throws against spells and other magical effects",
-					"entries": []
+					"name": "Magic Resistance",
+					"entries": [
+						"The mi-go has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
 				},
 				{
 					"name": "Space Traveler",
@@ -4311,6 +4376,9 @@
 						"It gains a +2 bonus to its spell save DC until the end of its turn."
 					]
 				}
+			],
+			"traitTags": [
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
@@ -4350,7 +4418,7 @@
 		{
 			"name": "Nyarlathotep",
 			"isNamedCreature": true,
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -4555,7 +4623,7 @@
 		},
 		{
 			"name": "Rat-Thing",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"T"
@@ -4642,7 +4710,7 @@
 		},
 		{
 			"name": "Shoggoth",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -4806,7 +4874,7 @@
 		{
 			"name": "Shub-Niggurath",
 			"isNamedCreature": true,
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"C"
@@ -5006,7 +5074,7 @@
 		},
 		{
 			"name": "Lesser Star-Spawn of Cthulhu",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"L"
@@ -5155,7 +5223,7 @@
 		},
 		{
 			"name": "Greater Star-Spawn of Cthulhu",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"size": [
 				"H"
@@ -5310,7 +5378,7 @@
 	"monsterFluff": [
 		{
 			"name": "Color Out of Space",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5354,11 +5422,20 @@
 						}
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-020.color-out-space.webp"
+					}
+				}
 			]
 		},
 		{
 			"name": "Crawling One",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5372,19 +5449,19 @@
 						}
 					]
 				},
-				"A crawling one is composed of thousands of worms and maggots. Each worm is individually alive and constantly squirms, though, together, they generally hold the shape of a human body. The collective mass of wriggling creatures possesses the mind of a dead spellcaster, long since devoured by the maggoty horde. The ingested “will” of the mage effectively drives the mass to continue the mage’s foul deeds.",
+				"A crawling one is composed of thousands of worms and maggots. Each worm is individually alive and constantly squirms, though, together, they generally hold the shape of a human body. The collective mass of wriggling creatures possesses the mind of a dead spellcaster, long since devoured by the maggoty horde. The ingested “will” of the mage effectively drives the mass to continue the mage's foul deeds.",
 				{
 					"type": "entries",
 					"name": "Ambition Beyond the Grave",
 					"entries": [
-						"A crawling one arises from the baleful will of a dead cultist. When a powerful spellcaster, usually one pledged to the Cthulhu Mythos, dies, the mage’s ambition, evil, and thirst for power linger on. This aura of evil acts as a beacon, drawing hungry worms and maggots to the moldering corpse. As the vermin devour the body, the spellcaster’s evil presence spreads throughout the devourers. They become a collective entity that allows the cultist to arise once more."
+						"A crawling one arises from the baleful will of a dead cultist. When a powerful spellcaster, usually one pledged to the Cthulhu Mythos, dies, the mage's ambition, evil, and thirst for power linger on. This aura of evil acts as a beacon, drawing hungry worms and maggots to the moldering corpse. As the vermin devour the body, the spellcaster's evil presence spreads throughout the devourers. They become a collective entity that allows the cultist to arise once more."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Relentless Malevolence",
 					"entries": [
-						"A crawling one’s true threat lies in its ability to live on despite horrid wounds. If a small mass of the worms and maggots that comprise its form escapes, it can incorporate more vermin into its body and regain its full power."
+						"A crawling one's true threat lies in its ability to live on despite horrid wounds. If a small mass of the worms and maggots that comprise its form escapes, it can incorporate more vermin into its body and regain its full power."
 					]
 				},
 				{
@@ -5394,11 +5471,36 @@
 						"This horrid regrowth allows a crawling one to pursue its awful plans over generations. These creatures often recruit allies and cultists from among mortals, offering them great power in return for service. A clever crawling one keeps to the background, forming a secret conspiracy with but a few of its closest followers. If the cult faces defeat, the crawling one fades into the background and waits for the opportunity to rise again. Even when seemingly destroyed by adventurers, it relies on its ability to reform its body to outlast its enemies."
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-021.crawling-one.webp"
+					}
+				}
 			]
 		},
 		{
+			"name": "Lesser Crawling One",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Crawling One",
+				"source": "CthulhuTorchlight"
+			}
+		},
+		{
+			"name": "Greater Crawling One",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Crawling One",
+				"source": "CthulhuTorchlight"
+			}
+		},
+		{
 			"name": "Dagon",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5412,7 +5514,7 @@
 						}
 					]
 				},
-				"Dagon is a deep one who has grown to enormous size. Perhaps millions of years old, this cruel tyrant of the undersea realm strives to free Cthulhu from his deep slumber in the sunken city of R’lyeh. Dagon is the high priest of Cthulhu among the Deep Ones. Under his direction, that loathsome species seeks to infiltrate and overwhelm the terrestrial realms.",
+				"Dagon is a deep one who has grown to enormous size. Perhaps millions of years old, this cruel tyrant of the undersea realm strives to free Cthulhu from his deep slumber in the sunken city of R'lyeh. Dagon is the high priest of Cthulhu among the Deep Ones. Under his direction, that loathsome species seeks to infiltrate and overwhelm the terrestrial realms.",
 				{
 					"type": "entries",
 					"name": "Unwitting Servitors",
@@ -5424,21 +5526,30 @@
 					"type": "entries",
 					"name": "Hidden Horrors",
 					"entries": [
-						"While Dagon is considered the most powerful of the deep ones, other, similarly ancient creatures have gained similar levels of power. Deep one writings refer to Mother Hydra, an entity said to be Dagon’s equal. Who can say what other terrors may lurk in the ocean’s depths."
+						"While Dagon is considered the most powerful of the deep ones, other, similarly ancient creatures have gained similar levels of power. Deep one writings refer to Mother Hydra, an entity said to be Dagon's equal. Who can say what other terrors may lurk in the ocean's depths."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Storm of the Century",
 					"entries": [
-						"Dagon rarely interacts with mortals, but does intervene when a particularly bothersome foe arises or to preserve a critical aspect of his cult. Dagon’s magic manifests as a halo of arcane, stormy sea waters that swirl around him. This destructive energy allows him to emerge on shore and walk through a village, town, or fortress that troubles his cult. This magic lashes out at the place, battering to ruin and slaying those within. When authorities come to investigate, they find a ruin that seems to have been devastated by a terrible storm. Dagon and the deep ones always ensure that no survivors remain to contradict this assumption."
+						"Dagon rarely interacts with mortals, but does intervene when a particularly bothersome foe arises or to preserve a critical aspect of his cult. Dagon's magic manifests as a halo of arcane, stormy sea waters that swirl around him. This destructive energy allows him to emerge on shore and walk through a village, town, or fortress that troubles his cult. This magic lashes out at the place, battering to ruin and slaying those within. When authorities come to investigate, they find a ruin that seems to have been devastated by a terrible storm. Dagon and the deep ones always ensure that no survivors remain to contradict this assumption."
 					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-024.dagon.webp"
+					}
 				}
 			]
 		},
 		{
 			"name": "Flying Polyp",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5467,11 +5578,20 @@
 						"While flying polyps are powerful combatants, their most potent attacks is their ability to control the weather. When three or more of these creatures gather, they can conjure howling wind storms that scour an entire region of life. It takes an hour for three or more polyps working together to create a storm. When they finish their ritual, a terrible storm rips through the area in a 5-mile radius around the ritual site. The storm lasts for an hour and flattens all buildings that lack fortifications. Creatures caught in the open take 1d4 Bludgeoning damage per minute until they find shelter."
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-029.flying-polyp.webp"
+					}
+				}
 			]
 		},
 		{
 			"name": "Elder Thing",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5507,11 +5627,20 @@
 						"In some cold corners of the world, ancient ruins built by the elder things remain undisturbed. These creatures slumber there, having plunged into a hibernation in the ancient days in order to outlast the threats they faced. When outsiders uncover these ruins, the elder things awaken and set to work. Driven by a scientific approach to the world, they may catch, study, and dissect any humanoids they encounter. They use their magic and cunning to cultivate worship and obedience, turning neighboring creatures into cultists to help them achieve their inscrutable aims."
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-028.elder-thing.webp"
+					}
+				}
 			]
 		},
 		{
-			"name": "Deep Ones",
-			"source": "cthulhutorchlight",
+			"name": "Deep One",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5547,11 +5676,37 @@
 						"In time, the village becomes fully integrated into deep one culture. The hybrid villagers maintain the façade of normalcy, venturing into civilization as needed or dealing with outsiders as appropriate. Meanwhile, the deep ones expand their influence to nearby settlements and lure more into their twisted cult."
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-025.deep-ones.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Deep One Hybrid",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Deep One",
+				"source": "CthulhuTorchlight"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-026.deep-ones-hybrid.webp"
+					}
+				}
 			]
 		},
 		{
 			"name": "Dimensional Shambler",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5580,11 +5735,20 @@
 						"Before her disappearance, the sage Lemetra of the Endless Hourglass conducted chronomantic research into the origin of the dimensional shamblers. She wrote letters to each of her closest friends, pleading with them to visit her tower to review her findings. When they arrived, they found the tower scoured of almost everything. The only remnant was a fragment of a scroll hidden in a secret cache. It described a multiverse that existed before ours, and of strange refugees from it that sought to unwind time and replace this reality with their own."
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-027.dimensional-shambler.webp"
+					}
+				}
 			]
 		},
 		{
 			"name": "Dark Young",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"entries": [
 				{
 					"type": "inset",
@@ -5598,20 +5762,576 @@
 						}
 					]
 				},
-				"These horrid abominations are the “young” referred to in Shub-Niggurath’s epithet: “Black Goat of the Woods with a Thousand Young.” They are closely connected to her and are found only in areas where she is worshiped. The dark young act as proxies for Shub-Niggurath, crawling from the darkness to accept sacrifices and devour the unwary.",
+				"These horrid abominations are the “young” referred to in Shub-Niggurath's epithet: “Black Goat of the Woods with a Thousand Young.” They are closely connected to her and are found only in areas where she is worshiped. The dark young act as proxies for Shub-Niggurath, crawling from the darkness to accept sacrifices and devour the unwary.",
 				{
 					"type": "entries",
 					"name": "Noxious Heralds",
 					"entries": [
-						"The dark young are the first of Shub-Niggurath’s servitors to contact a cult. Those who worship the Black Goat of the Woods engage in primal rituals that require gratuitous bloodletting and fleshy offerings. In return, the dark young heed their call. They provide a cult with brute force, smashing its enemies and protecting it from outsiders. However, if the cult fails to provide a steady stream of sacrifices, the dark young may cull its weakest members, devouring them to slake its hunger and 'encourage' the cult to become more aggressive toward outsiders."
+						"The dark young are the first of Shub-Niggurath's servitors to contact a cult. Those who worship the Black Goat of the Woods engage in primal rituals that require gratuitous bloodletting and fleshy offerings. In return, the dark young heed their call. They provide a cult with brute force, smashing its enemies and protecting it from outsiders. However, if the cult fails to provide a steady stream of sacrifices, the dark young may cull its weakest members, devouring them to slake its hunger and 'encourage' the cult to become more aggressive toward outsiders."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Corrupting Influence",
 					"entries": [
-						"The presence of a dark young shifts and warps the natural world. The plants in a 5-mile radius centered on its lair grow thick and verdant, creating natural barriers to dissuade explorers and intruders. Cultists learn the hidden paths that crisscross the area, allowing them to move in relative ease while intruders struggle. Animals become overly aggressive and vicious, attacking non-cultists on sight. In game terms, treat the area as {@variantrule Difficult Terrain|XPHB}. A DC 20 Wisdom ({@skill Survival|XPHB}) check and 1d4 hours of searching allows a traveler to uncover the pathways. A DC 25 Wisdom ({@skill Survival|XPHB}) check is needed to use the trail to reach the cult’s lair."
+						"The presence of a dark young shifts and warps the natural world. The plants in a 5-mile radius centered on its lair grow thick and verdant, creating natural barriers to dissuade explorers and intruders. Cultists learn the hidden paths that crisscross the area, allowing them to move in relative ease while intruders struggle. Animals become overly aggressive and vicious, attacking non-cultists on sight. In game terms, treat the area as {@variantrule Difficult Terrain|XPHB}. A DC 20 Wisdom ({@skill Survival|XPHB}) check and 1d4 hours of searching allows a traveler to uncover the pathways. A DC 25 Wisdom ({@skill Survival|XPHB}) check is needed to use the trail to reach the cult's lair."
 					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-040.shub-niggurath-dark-young.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Lesser Dark Young of Shub-Niggurath",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Dark Young",
+				"source": "CthulhuTorchlight"
+			}
+		},
+		{
+			"name": "Greater Dark Young of Shub-Niggurath",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Dark Young",
+				"source": "CthulhuTorchlight"
+			}
+		},
+		{
+			"name": "Great Cthulhu",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"A monster of vaguely anthropoid outline, but with an octopus-like head whose face was a mass of feelers, a scaly, rubbery-looking body, prodigious claws on hind and fore feet, and long, narrow wings behind. This thing... was of a somewhat bloated corpulence... It lumbered slobberingly into sight and gropingly squeezed its gelatinous green immensity through the black doorway... A mountain walked or stumbled."
+							],
+							"from": "H.P. Lovecraft, The Call of Cthulhu"
+						}
+					]
+				},
+				"Cthulhu dwells in the corpse city of black R'lyeh, sunken deep beneath the surface of the ocean. He is in a living death while there, but someday the city will rise and he will wake, freed to roam and slay across the world. In the city are also entombed other members of Cthulhu's species. Cthulhu is evidently the high priest and ruler of them all and is by far the most potent.",
+				{
+					"type": "entries",
+					"name": "A Fitful Slumber",
+					"entries": [
+						"Cthulhu's cultists are often drawn to his worship by strange dreams triggered by his stirring within R'lyeh. As ages pass and the stars shift in the sky, Cthulhu shifts from a deep slumber to fitful dreaming. In the later state, his dreams echo across the world and coalesce into frightful visions that plague those with a gift for psychic or magical ability."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Doomsday Cult",
+					"entries": [
+						"The cults of Cthulhu are dangerous because of their splintered, disorganized nature. They arise in all cultures and among all sentient humanoids. Fighting the cult is like trying to stomp out a forest fire. You might douse an ember, but for each one you extinguish three more take root and erupt into flames. No method has yet been found to permanently defeat this foul creature."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-023.cthulhu.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Gnoph-Keh",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"The storm sprang upon us in a moment... When I heard the distant growls erupt like approaching thunder, I had no choice but to follow the guides. We lost half our number to the blizzard, but not a one of us would have survived had we stayed to face the creature that brought that storm."
+							],
+							"from": "Barabos Tollnek"
+						}
+					]
+				},
+				"The gnoph-keh is a six-limbed horror that dwells high in the cold mountains. These creatures have an unclear, but indisputable, tie to the Mythos. What is plain is that gnoph-kehs rule as vicious, hateful gods among the mountain tribes they enslave.",
+				{
+					"type": "entries",
+					"name": "Terrible Deities",
+					"entries": [
+						"A gnoph-keh craves worship and obedience. When it arrives in a mountainous region, it besieges the land with conjured blizzards, forcing local tribes into submission. It culls its new servants, slaying those who defy it and making the most obsequious its priests. It demands sacrifices in return for magical protections."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Herald of a Greater Power",
+					"entries": [
+						"The gnoph-keh instructs its followers to conduct bizarre rites in honor of Mythos deities such as Ithaqua. Its ultimate goal is to prepare its tribes to summon these greater powers."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-031.gnoph-keh.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Formless Spawn",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"When the men of K'n-Yan went down into N'Kai's black abyss... they found living things... amorphous lumps of viscous black slime... They did not pause for detailed observations, and those who escaped alive sealed the passage."
+							],
+							"from": "H.P. Lovecraft and Zealia Bishop, The Mound"
+						}
+					]
+				},
+				"These black, protean beings change shape in an instant, from toad-like lumps to elongated things with hundreds of rudimentary legs. They ooze through small cracks or enlarge to block entire passages.",
+				{
+					"type": "entries",
+					"name": "Alarmingly Intelligent",
+					"entries": [
+						"Despite their ooze-like form, formless spawn are cunning, malevolent entities spawned by the Cthulhu Mythos. They lurk in forgotten shrines and ruins, guarding ritual relics and reacting swiftly to any intrusion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Relentless Guardians",
+					"entries": [
+						"Formless spawn often guard sacred Mythos objects. If an intruder steals such a relic, the spawn relentlessly tracks them to reclaim it, never stopping until the object is recovered."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-030.formless-spawn.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Hunting Horror",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"And in the air about him were great viperine creatures, which had curiously distorted heads, and grotesquely great clawed appendages, supporting themselves with ease by the aid of black rubbery wings of singularly monstrous dimensions."
+							],
+							"from": "August Derleth, The Lurker at the Threshold"
+						}
+					]
+				},
+				"Hunting horrors serve Nyarlathotep's bidding across the cosmos, and even into the unknown outer realms. Cultists who venerate the Crawling Chaos sometimes contact these creatures, receiving dictates, omens, and secrets in the profane rituals dedicated to the Stalker Among the Stars.",
+				{
+					"type": "entries",
+					"name": "Relentless Pursuers",
+					"entries": [
+						"As their name implies, these otherworldly terrors hunt. Spellcasters who bind them use them as assassins, bat-winged killers who hunt with inhuman intensity. Once a hunting horror is directed toward a target, the horror stalks its quarry until it's slain or the horror is destroyed. Their bite corrupts and necrotizes flesh from within in moments."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sinister Truths",
+					"entries": [
+						"As servitors of Nyarlathotep, hunting horrors rarely share their motivations or goals. They are loyal only to their master and serve mortals only when it benefits the Crawling Chaos."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creatures of the Night",
+					"entries": [
+						"Hunting horrors loathe bright light, especially sunlight. They are active only at night, and by day dwell within cavernous lairs."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-033.hunting-horror.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Mi-Go",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"They were pinkish things about five feet long; with crustaceous bodies bearing vast pairs of dorsal fins or membranous wings and several sets of articulate limbs, and with a sort of convoluted ellipsoid, covered with multitudes of very short antenna, where a head would ordinarily be..."
+							],
+							"from": "H.P. Lovecraft, The Whisperer in Darkness"
+						}
+					]
+				},
+				"The mi-go, also known as the fungi from Yuggoth, are a species that dwell in the dark spaces between the stars. They survive in vacuum and travel through space, typically establishing colonies on high mountain peaks to mine rare minerals.",
+				{
+					"type": "entries",
+					"name": "Cult Leaders",
+					"entries": [
+						"The mi-go sometimes need minions for labor. They draw humanoids into servitude through magic, promises of power, and Mythos worship. These cults help the mi-go better control their operations."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Strange Scientists",
+					"entries": [
+						"Intelligent and inquisitive, mi-go approach the world scientifically. They gather information and relics without concern for human life, viewing mortals as no more than animals."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bizarre Technologies",
+					"entries": [
+						"Mi-go sometimes remove the brains of useful humans and preserve them in special cylinders, allowing continued communication. These brains may number in the dozens in a mi-go colony."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-034.migo.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Nyarlathotep",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"A tall, slim figure with the young face of an antique pharaoh, gay with prismatic robes and crowned with a pshent that glowed with inherent light... the fascination of a dark god or fallen archangel, and around whose eyes there lurked the languid sparkle of capricious humor."
+							],
+							"from": "H.P. Lovecraft, The Dream-Quest of Unknown Kadath"
+						}
+					]
+				},
+				"Nyarlathotep is the messenger of the Cthulhu Mythos, a dreaded entity who appears in humanoid form to interact with mortals. He mocks the gods he serves and spreads madness, fear, and paranoia.",
+				{
+					"type": "entries",
+					"name": "A God Among Mortals",
+					"entries": [
+						"Prophecies say Nyarlathotep will bring about the world's end. He delights in mortal affairs, adopting disguises to manipulate, corrupt, and destroy societies from within."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Herald of the Mythos",
+					"entries": [
+						"Nyarlathotep is invoked in nearly all Mythos rituals. When deities enter the world, he may be nearby, relishing the chaos they bring."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Scourge of a Thousand Forms",
+					"entries": [
+						"He takes many forms, often appearing as members of different humanoid species. He spreads Mythos worship, corrupts mortals with promises of power, and thrives on societal collapse."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-036.nyarlahotep.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rat-Thing",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"The bones of the tiny paws, it is rumoured, imply prehensile characteristics more typical of a diminutive monkey than of a rat; while the small skull with its savage yellow fangs is of the utmost anomalousness, appearing from certain angles like a miniature, monstrously degraded parody of a human skull."
+							],
+							"from": "H.P. Lovecraft, The Dreams in the Witch House"
+						}
+					]
+				},
+				"From a distance, a rat-thing looks like a normal rodent. However, a close inspection reveals hideous details. Its head is a twisted caricature of a human's and its forepaws are tiny hands.",
+				{
+					"type": "entries",
+					"name": "Chittering Advisors",
+					"entries": [
+						"Rat-things provide insight into arcane lore and lost history for the desperate and the mad, but each bit of knowledge comes tainted with the secrets of the Mythos. They offer advice freely, but always in service of a dark agenda."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Horrid Familiars",
+					"entries": [
+						"Owing to their otherworldly nature, rat-things cause the tides of magic to ebb and flow. Their presence strengthens the spells of Mythos creatures, making them harder to resist."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-037.rat-thing.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Shoggoth",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"It was a terrible, indescribable thing vaster than any subway train—a shapeless congeries of protoplasmic bubbles, faintly self-luminous, and with myriads of temporary eyes forming and un-forming... Still came that eldritch, mocking cry—\"Tekeli-li! Tekeli-li!\""
+							],
+							"from": "H.P. Lovecraft, At the Mountains of Madness"
+						}
+					]
+				},
+				"Shoggoths are vast sacks of protoplasm capable of forming limbs, eyes, and mouths at will. They are amphibious and exhibit strength that defies reality.",
+				{
+					"type": "entries",
+					"name": "Dangerous Allies",
+					"entries": [
+						"Shoggoths grow more intelligent with age. Young ones are obedient brutes, but older ones may overthrow their masters and take over cults."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Immortal Terrors",
+					"entries": [
+						"Effectively immortal, some shoggoths labor in ruins long after their summoners perish, or sleep in sealed vaults awaiting release."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-038.shoggoth.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Shub-Niggurath",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"\"Iä! Shub-Niggurath! The Black Goat of the Woods with a Thousand Young!\""
+							],
+							"from": "H.P. Lovecraft, The Whisperer in Darkness"
+						}
+					]
+				},
+				"Shub-Niggurath is a primordial entity of fertility and unrestrained life. Her cults embrace primal existence and renounce civilization, favoring growth and survival above all else.",
+				{
+					"type": "entries",
+					"name": "Twisted Promises",
+					"entries": [
+						"Cults often begin in desperation, discovering ancient rituals that yield supernatural bounty in exchange for bloody sacrifices. The land flourishes, but at a horrific cost."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Growing Demands",
+					"entries": [
+						"As the cult grows, it demands more frequent and brutal sacrifices. Outsiders are lured in with kindness only to be slaughtered for Shub-Niggurath's hunger."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Land Revolts",
+					"entries": [
+						"The land twists to defend the cult. Paths mislead strangers, beasts turn hostile, and locals must choose between allying with the cult or being destroyed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Corruption Runs Deep",
+					"entries": [
+						"Eventually, her twisted offspring—the Dark Young—walk the earth. If not opposed, the cult spreads like a cancer, devouring kingdoms in vines and blood."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-039.shub-niggurath.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Star-Spawn of Cthulhu",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"They all lay in stone houses in their great city of R'lyeh, preserved by the spells of mighty Cthulhu for a glorious resurrection when the stars and the earth might once more be ready..."
+							],
+							"from": "H.P. Lovecraft, The Call of Cthulhu"
+						}
+					]
+				},
+				"These gigantic octopoid beings resemble tiny versions of Cthulhu itself, yet their smaller stature still towers well over mortal creatures. Not all the inhabitants of R'lyeh were trapped in its watery angles when it sank. Some still live in the deep trenches beneath the ocean, where they are tended by the deep ones.",
+				{
+					"type": "entries",
+					"name": "Avatars of Doom",
+					"entries": [
+						"The star-spawn serve as Cthulhu's agents in the world. They venture forth from the ocean depths when called by a cult of Cthulhu, protecting the cult from its enemies and lending the Mythos lore needed to enact the cult's aims. Invariably, when one of those horrors appears, the Cthulhu cult is on the rise in a region."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Scattered Prisoners",
+					"entries": [
+						"When Cthulhu was trapped within R'lyeh, the star-spawn were scattered across the world. Many of them were also sealed within prisons, sometimes by heroic adventurers. These star-spawn struggle against their bonds. If freed, they bear no sympathy or debt to their helpers. One never knows when a sealed chamber deep within an ancient dungeon might contain vast riches, or a patient star-spawn waiting."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Horrid Inspiration",
+					"entries": [
+						"Humans living within the area of an entombed and sleeping star-spawn may be subject to its psychic residue, a form of dream sending that can \"speak\" to susceptible subjects. Much like Cthulhu itself, the star-spawn seeks to create a subtle but relentless change in a person's behavior, compelling the victim to seek lore regarding Cthulhu and work to free both the star-spawn and its master. A Cthulhu cult might arise when an ambitious and morally flexible person receives these dreams and decides to follow them to their terrible conclusion."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-022.cthulhu-star-spawn.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Lesser Star-Spawn of Cthulhu",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Star-Spawn of Cthulhu",
+				"source": "CthulhuTorchlight"
+			}
+		},
+		{
+			"name": "Greater Star-Spawn of Cthulhu",
+			"source": "CthulhuTorchlight",
+			"_copy": {
+				"name": "Star-Spawn of Cthulhu",
+				"source": "CthulhuTorchlight"
+			}
+		},
+		{
+			"name": "Great Race of Yith",
+			"source": "CthulhuTorchlight",
+			"entries": [
+				{
+					"type": "inset",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Enormous, iridescent cones, about ten feet high and ten feet wide at the base, and made up of some ridgy, scaly, semi-elastic matter. From their apexes projected four flexible, cylindrical members, each a foot thick, and of a ridgy substance like that of the cones themselves. These members were sometimes contracted almost to nothing, and sometimes extended to any distance up to about ten feet. Terminating two of them were enormous claws or nippers. At the end of a third were four red trumpet-like appendages. The fourth terminated in an irregular yellowish globe some two feet in diameter and having three great dark eyes ranged along its central circumference... Surmounting this head were four slender grey stalks bearing flowerlike appendages, whilst from its nether side dangled eight greenish antennae or tentacles. The great base of the central cone was ringed with a rubbery grey substance which moved the whole entity through expansion and contraction."
+							],
+							"from": "H.P. Lovecraft, The Shadow Out of Time"
+						}
+					]
+				},
+				"The great race of Yith are creatures of the distant past, existing in a strange era before the gods forged the cosmos. In this bizarre time, they existed in an uneasy truce with other, strange creatures of the Cthulhu Mythos. Eventually, they were among the creatures swept away by the arrival of the dreaded flying polyps. The Yithians' story would have ended there, except these creatures had long studied and meddled with the flow of time. Observing that they were doomed to be destroyed by the flying polyps, they enacted a grand plan to cast their minds forward to scout the future, find a suitable home, and eventually cast their minds to that era.",
+				{
+					"type": "entries",
+					"name": "Temporal Explorers",
+					"entries": [
+						"The Yithians have developed the ability to cast their minds through space and forward in time. They use this talent to explore the future in search of a new home. When a Yithian time travels, its mind enters the body of a creature it has chosen to displace. The creature's mind falls back in time, entering the Yithian's strange form.",
+						"The Yithians interrogate the creature that now inhabits the body of the time traveler, asking extensive questions about the creature's world, history, theology, and other topics. Endlessly curious and driven by a commitment to rigorous, academic research, the Yithians take care to document their captive's answers and verify the information they gather. Once the Yithians are satisfied, their captive is allowed relative freedom to dwell among the Yithians and other time-displaced captives.",
+						"Meanwhile, the time-traveling Yithian adopts the creature's identity. It conducts extensive study of the historical era, traveling far and wide in order to learn as much as it can of the time period. A Yithian typically spends five years exploring an era."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Colonists of the Time Stream",
+					"entries": [
+						"If the location seems promising for colonization, the Yithian explorer creates a cult among the locals. Promising them great magic and technology, it primes them to support the wave of Yithian explorers who are set to arrive after it logs its report in the distant past. These newcomers are other time travelers, sent forward to prepare for the arrival of the rest of the Yithians. The cult is designed to provide muscle, logistical support, and other assistance. Time travel is difficult for the Yithians. They must build up ritual sites in the future to increase their capacity to travel to an era. They rely on the cult to keep their work secret and protect them from nosy outsiders."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Insidious Infiltration",
+					"entries": [
+						"Yithian cults provide advice and guidance to their masters, helping them determine the best folk to replace with migrating Yithians. By displacing nobles, religious leaders, and others, the Yithians can ensure that their culture becomes the dominant force in a region before the entire civilization jumps forward in time.",
+						"While the Yithians are cunning and care nothing for the fate of those creatures they send back in time, they are also patient. A determined resistance to their scheme can, if it proves troublesome enough, force the Yithians to give up their plans and seek easier pickings.",
+						"However, if a the Yithian plot has moved far along they are loath to give up on their progress. In a dire situation, they may expend the resources needed to travel through time in their true forms, bringing to bear one last show of force to destroy any who would thwart them."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Creatures/00-041.yithian.webp"
+					}
 				}
 			]
 		}
@@ -5619,7 +6339,7 @@
 	"feat": [
 		{
 			"name": "I Fought, I Lived",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"category": "O",
 			"entries": [
@@ -5643,7 +6363,7 @@
 		},
 		{
 			"name": "I Hid from the Terror",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"category": "O",
 			"entries": [
@@ -5674,7 +6394,7 @@
 		},
 		{
 			"name": "I Pierced the Illusion",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"category": "O",
 			"entries": [
@@ -5705,7 +6425,7 @@
 		},
 		{
 			"name": "I Opened the Gate",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"category": "O",
 			"entries": [
@@ -5729,7 +6449,7 @@
 		},
 		{
 			"name": "I Survived to Tell the Tale",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"category": "O",
 			"entries": [
@@ -5763,7 +6483,7 @@
         {
             "name": "Exalted Assembly of the Feline Court",
             "shortName": "Feline Court",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "page": 0,
@@ -5773,22 +6493,22 @@
                     "prepared": {
                         "3": [
                             "Animal Friendship|XPHB",
-                            "Cat’s Spring|cthulhutorchlight",
+                            "Cat's Spring|CthulhuTorchlight",
                             "Feather Fall|XPHB",
-                            "Feline Grace|cthulhutorchlight",
+                            "Feline Grace|CthulhuTorchlight",
                             "Misty Step|XPHB",
                             "Speak with Animals|XPHB"
                         ],
                         "5": [
                             "Haste|XPHB",
-                            "Phantom Panther|cthulhutorchlight"
+                            "Phantom Panther|CthulhuTorchlight"
                         ],
                         "7": [
                             "Freedom of Movement|XPHB",
                             "Dimension Door|XPHB"
                         ],
                         "9": [
-                            "Feline Chaos|cthulhutorchlight",
+                            "Feline Chaos|CthulhuTorchlight",
                             "Telekinesis|XPHB"
                         ]
                     }
@@ -5796,23 +6516,23 @@
             ],
             "subclassSpells": [
                 "Animal Friendship|XPHB",
-                "Cat's Spring|cthulhutorchlight",
+                "Cat's Spring|CthulhuTorchlight",
                 "Feather Fall|XPHB",
-                "Feline Grace|cthulhutorchlight",
+                "Feline Grace|CthulhuTorchlight",
                 "Misty Step|XPHB",
                 "Speak with Animals|XPHB",
                 "Haste|XPHB",
-                "Phantom Panther|cthulhutorchlight",
+                "Phantom Panther|CthulhuTorchlight",
                 "Freedom of Movement|XPHB",
                 "Dimension Door|XPHB",
-                "Feline Chaos|cthulhutorchlight",
+                "Feline Chaos|CthulhuTorchlight",
                 "Telekinesis|XPHB"
             ],
             "subclassFeatures": [
-                "Exalted Assembly of the Feline Court|Warlock|XPHB|Feline Court|cthulhutorchlight|3",
-                "Vexing Distraction|Warlock|XPHB|Feline Court|cthulhutorchlight|6",
-                "Nine Lives|Warlock|XPHB|Feline Court|cthulhutorchlight|10",
-                "Summon the Courtiers|Warlock|XPHB|Feline Court|cthulhutorchlight|14"
+                "Exalted Assembly of the Feline Court|Warlock|XPHB|Feline Court|CthulhuTorchlight|3",
+                "Vexing Distraction|Warlock|XPHB|Feline Court|CthulhuTorchlight|6",
+                "Nine Lives|Warlock|XPHB|Feline Court|CthulhuTorchlight|10",
+                "Summon the Courtiers|Warlock|XPHB|Feline Court|CthulhuTorchlight|14"
             ],
             "fluff": {
                 "images": [
@@ -5820,9 +6540,8 @@
                         "type": "image",
                         "href": {
                             "type": "external",
-                            "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/main/img/cthulhutorchlight/Subclasses/Warlock_Exalted_Assembly.webp"
-                        },
-                        "credit": "cthulhutorchlight"
+                            "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Subclasses/00-013.catwarlock.webp"
+                        }
                     }
                 ]
             }
@@ -5830,27 +6549,38 @@
 		{
             "name": "Bibliomancy",
             "shortName": "Bibliomancy",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "page": 0,
             "edition": "one",
             "subclassFeatures": [
-                "Bibliomancy|Wizard|XPHB|Bibliomancy|cthulhutorchlight|3",
-                "Weaver of Words|Wizard|XPHB|Bibliomancy|cthulhutorchlight|6",
-                "Customized Spell|Wizard|XPHB|Bibliomancy|cthulhutorchlight|10",
-                "Master of Words|Wizard|XPHB|Bibliomancy|cthulhutorchlight|14"
-            ]
+                "Bibliomancy|Wizard|XPHB|Bibliomancy|CthulhuTorchlight|3",
+                "Weaver of Words|Wizard|XPHB|Bibliomancy|CthulhuTorchlight|6",
+                "Customized Spell|Wizard|XPHB|Bibliomancy|CthulhuTorchlight|10",
+                "Master of Words|Wizard|XPHB|Bibliomancy|CthulhuTorchlight|14"
+            ],
+			"fluff": {
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/cthu/img/CthulhuTorchlight/Subclasses/00-015.bibliomancer.webp"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "subclassFeature": [
         {
             "name": "Exalted Assembly of the Feline Court",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "page": 0,
             "entries": [
@@ -5871,25 +6601,25 @@
 				"The Exalted Assembly of the Feline Court coordinates efforts to sustain and protect their servants. They forge magical pact with those who show the right mix of cunning, bravery, and etiquette.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Feline Spells|Warlock|XPHB|Feline Court|cthulhutorchlight|3"
+                    "subclassFeature": "Feline Spells|Warlock|XPHB|Feline Court|CthulhuTorchlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Feline Affinity|Warlock|XPHB|Feline Court|cthulhutorchlight|3"
+                    "subclassFeature": "Feline Affinity|Warlock|XPHB|Feline Court|CthulhuTorchlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Feline Form|Warlock|XPHB|Feline Court|cthulhutorchlight|3"
+                    "subclassFeature": "Feline Form|Warlock|XPHB|Feline Court|CthulhuTorchlight|3"
                 }
             ]
         },
         {
             "name": "Feline Spells",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "page": 0,
             "header": 1,
@@ -5909,11 +6639,11 @@
                     "rows": [
                         [
                             "3",
-                            "{@spell Animal Friendship|XPHB}, {@spell Cat's Spring|cthulhutorchlight}, {@spell Feather Fall|XPHB}, {@spell Feline Grace|cthulhutorchlight}, {@spell Misty Step|XPHB}, {@spell Speak with Animals|XPHB}"
+                            "{@spell Animal Friendship|XPHB}, {@spell Cat's Spring|CthulhuTorchlight}, {@spell Feather Fall|XPHB}, {@spell Feline Grace|CthulhuTorchlight}, {@spell Misty Step|XPHB}, {@spell Speak with Animals|XPHB}"
                         ],
                         [
                             "5",
-                            "{@spell Haste|XPHB}, {@spell Phantom Panther|cthulhutorchlight}"
+                            "{@spell Haste|XPHB}, {@spell Phantom Panther|CthulhuTorchlight}"
                         ],
                         [
                             "7",
@@ -5921,7 +6651,7 @@
                         ],
                         [
                             "9",
-                            "{@spell Feline Chaos|cthulhutorchlight}, {@spell Telekinesis|XPHB}"
+                            "{@spell Feline Chaos|CthulhuTorchlight}, {@spell Telekinesis|XPHB}"
                         ]
                     ]
                 }
@@ -5929,11 +6659,11 @@
         },
         {
             "name": "Feline Affinity",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "page": 0,
             "header": 1,
@@ -5943,11 +6673,11 @@
         },
         {
             "name": "Feline Form",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "page": 0,
             "header": 1,
@@ -5979,11 +6709,11 @@
         },
         {
             "name": "Vexing Distraction",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 6,
             "page": 0,
             "header": 2,
@@ -6022,11 +6752,11 @@
         },
         {
             "name": "Nine Lives",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 10,
             "page": 0,
             "header": 2,
@@ -6048,11 +6778,11 @@
         },
         {
             "name": "Summon the Courtiers",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Warlock",
             "classSource": "XPHB",
             "subclassShortName": "Feline Court",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 14,
             "page": 0,
             "header": 2,
@@ -6063,11 +6793,11 @@
         },
 		{
             "name": "Bibliomancy",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "subclassShortName": "Bibliomancy",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "page": 0,
             "entries": [
@@ -6087,21 +6817,21 @@
 				"For Bibliomancers, the language of magic is the key to the building blocks of the universe. This tradition believes that a spell's formula holds more than the gathering and shaping magical energy, that the underlying properties of reality itself are illustrated through a spell. By unlocking the mechanisms that construct spells, these Wizards can slowly unlock the riddle of the universe.",
 				{
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Book Learning|Wizard|XPHB|Bibliomancy|cthulhutorchlight|3"
+                    "subclassFeature": "Book Learning|Wizard|XPHB|Bibliomancy|CthulhuTorchlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Edit Spell|Wizard|XPHB|Bibliomancy|cthulhutorchlight|3"
+                    "subclassFeature": "Edit Spell|Wizard|XPHB|Bibliomancy|CthulhuTorchlight|3"
                 }
             ]
         },
         {
             "name": "Book Learning",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "subclassShortName": "Bibliomancy",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "header": 1,
             "page": 0,
@@ -6111,11 +6841,11 @@
         },
         {
             "name": "Edit Spell",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "subclassShortName": "Bibliomancy",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 3,
             "header": 1,
             "page": 0,
@@ -6136,11 +6866,11 @@
         },
         {
             "name": "Weaver of Words",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "subclassShortName": "Bibliomancy",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 6,
             "header": 2,
             "page": 0,
@@ -6150,11 +6880,11 @@
         },
         {
             "name": "Customized Spell",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "subclassShortName": "Bibliomancy",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 10,
             "header": 2,
             "page": 0,
@@ -6164,11 +6894,11 @@
         },
         {
             "name": "Master of Words",
-            "source": "cthulhutorchlight",
+            "source": "CthulhuTorchlight",
             "className": "Wizard",
             "classSource": "XPHB",
             "subclassShortName": "Bibliomancy",
-            "subclassSource": "cthulhutorchlight",
+            "subclassSource": "CthulhuTorchlight",
             "level": 14,
             "header": 2,
             "page": 0,
@@ -6182,7 +6912,7 @@
 	"item": [
 		{
 			"name": "Fingerprint Kit",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"type": "T|XPHB",
 			"rarity": "none",
@@ -6214,7 +6944,7 @@
 		},
 		{
 			"name": "Witchboard",
-			"source": "cthulhutorchlight",
+			"source": "CthulhuTorchlight",
 			"page": 0,
 			"type": "T|XPHB",
 			"rarity": "none",
