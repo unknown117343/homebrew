@@ -5798,7 +5798,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d8|2-9|1d8} for each slot level above 2nd."
 					]
 				}
 			],
@@ -6226,7 +6226,1156 @@
 			"reprintedAs": [
 				"By the Light of the Watchful Moon|KPDM"
 			]
+		},
+		{
+			"name": "Call Shadow Mastiff",
+			"source": "MidgardHeroes",
+			"page": 155,
+			"level": 3,
+			"school": "C",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dog's tooth"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a {@creature shadow mastiff|ToB} (see Tome of Beasts) from the Shadow Realm. This creature obeys your verbal commands to aid you in battle or to seek out a specific creature.",
+				"The mastiff is friendly to you and your companions. Roll initiative for the mastiff; it acts on its own turn. It obeys simple, verbal commands from you (giving a command takes no action on your part), within its ability to act.",
+				"The mastiff disappears when it drops to 0 hit points or when the spell ends."
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Call Shadow Mastiff|KPDM"
+			]
+		},
+		{
+			"name": "Calm of the Storm",
+			"source": "MidgardHeroes",
+			"page": 155,
+			"level": 3,
+			"school": "A",
+			"subschools": [
+				"chaos"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an amethyst worth 250 gp which the spell consumes",
+					"cost": 25000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"While visualizing the world as you wish it was, you lay your hands upon a creature other than yourself and undo the effect of a {@table chaos magic surge|MidgardHeroes} that affected the creature within the last minute. Reality reshapes itself as if the surge never happened, but only for that creature."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the time since the wild surge can be 1 minute longer for each slot level above 3rd."
+					]
+				}
+			],
+			"areaTags":[
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Catapult",
+			"source": "MidgardHeroes",
+			"page": 155,
+			"level": 6,
+			"school": "T",
+			"subschools": [
+				"clockwork"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 400
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a small platinum lever and fulcrum worth 400 gp",
+					"cost": 40000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You magically hurl an object or creature weighing 500 lb. or less 40 feet through the air in a direction of your choosing (including straight up). Objects hurled at specific targets require a spell attack roll to hit. A thrown creature takes {@damage 6d10} bludgeoning damage from the force of the throw plus any appropriate falling damage, and lands {@condition prone}. If the target of the spell is thrown against another creature, the total damage is divided evenly between them and both creatures are knocked prone."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a higher level spell slot, each additional level increases the damage by {@scaledamage 6d10|6-9|1d10}, the distance thrown by 10 feet, and the weight thrown by 100 lb."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Catapult|KPDM"
+			]
+		},
+		{
+			"name": "Catch the Breath",
+			"source": "MidgardHeroes",
+			"page": 156,
+			"level": 3,
+			"school": "T",
+			"subschools": [
+				"dragon"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you make a saving throw against a breath weapon attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You can cast this spell as a reaction when you're targeted by a breath weapon. Doing so gives you advantage on your saving throw against the breath weapon. If your saving throw succeeds, you take no damage from the attack even if a successful save normally only halves the damage.",
+				"Whether your saving throw succeeded or failed, you absorb and store energy from the attack. On your next turn, you can make a ranged spell attack against a target within 60 feet. On a hit, the target takes {@damage 3d10} force damage. If you opt not to make this attack, the stored energy dissipates harmlessly."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage done by your attack increases by {@scaledamage 3d10|3-9|1d10} for each slot level above 3rd."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Catch the Breath|KPDM"
+			]
+		},
+		{
+			"name": "Caustic Torrent",
+			"source": "MidgardHeroes",
+			"page": 156,
+			"level": 8,
+			"school": "C",
+			"subschools": [
+				"elemental"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a chip of bone pitted by acid"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A swirling jet of acid sprays from you in a direction you choose. The acid fills a line 60 feet long and 5 feet wide. Each creature in the line takes {@damage 14d6} acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature reduced to 0 hit points by this spell is killed, and its body is liquefied. In addition, each creature other than you that's in the line or within 5 feet of it is {@condition poisoned} for 1 minute by toxic fumes. Creatures that don't breathe or that are immune to acid damage aren't poisoned. A poisoned creature can repeat the Constitution saving throw at the end of each of its turns, ending the effect on itself on a success."
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "KPDM",
+					"page": 166
+				}
+			]
+		},
+		{
+			"name": "Celebration",
+			"source": "MidgardHeroes",
+			"page": 156,
+			"level": 7,
+			"school": "E",
+			"subschools": [
+				"high elven"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small party favor"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You create a 30-foot-radius area around a point that you choose within range. Intelligent creatures that enter the area or begin their turn there and fail a Wisdom saving throw engage in revelry: drinking, singing, laughing, and dancing. Affected creatures are reluctant to leave the area until the spell expires, preferring to enjoy the festivities. Affected creatures forsake appointments, cease caring about their woes, and generally behave in a cordial (if not hedonistic) manner. This preoccupation with merrymaking extends regardless of an affected creature's agenda or alignment. Assassins procrastinate, servants join in the celebration rather than serve, guards abandon their posts. The effect ends on creatures that are attacked, that take damage, or that are forced to leave the area.",
+				"Those whose saving throw succeeds can enter or leave the area without danger of being enchanted. A creature that failed the saving throw and is removed from the area must repeat the saving throw if they return to the area."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level or higher, the spell lasts for an additional hour for each slot level above 7th."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Focus",
+					"entries": [
+						"If you expend your ritual focus, unaffected intelligent creatures must make a new saving throw every time they begin their turn in the area of effect, even if they've previously saved against the spell."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Celebration|KPDM"
+			]
+		},
+		{
+			"name": "Chains of the Goddess",
+			"source": "MidgardHeroes",
+			"page": 156,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "1 foot of iron chain"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose a creature you can see within 90 feet. The target must make a successful Wisdom saving throw or be {@condition restrained} by chains of psychic force and take {@damage 6d8} bludgeoning damage. A restrained creature repeats the saving throw at the end of its turns, ending the effect on itself with a successful save. While restrained this way, the creature also takes {@damage 6d8} bludgeoning damage at the start of each of your turns."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Chains of the Goddess|KPDM"
+			]
+		},
+		{
+			"name": "Chaotic Form",
+			"source": "MidgardHeroes",
+			"page": 156,
+			"level": 4,
+			"school": "T",
+			"subschools": [
+				"chaos"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You cause the form of a willing creature to become malleable, dripping and flowing according to the target's will as if the creature were a vaguely humanoid-shaped ooze. The creature is not affected by {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}}, it has advantage on Dexterity ({@skill Acrobatics}) checks made to escape a {@action grapple}, and it suffers no penalties when squeezing through spaces one size category smaller than itself. The target's movement is halved while it's affected by chaotic form."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the duration increases by 10 minutes for each slot level above 4th."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"otherSources": [
+				{
+					"source": "DM07",
+					"page": 7
+				}
+			],
+			"reprintedAs": [
+				"Chaotic Form|KPDM"
+			]
+		},
+		{
+			"name": "Chaotic Vitality",
+			"source": "MidgardHeroes",
+			"page": 157,
+			"level": 2,
+			"school": "C",
+			"subschools": [
+				"chaos"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Make a melee spell attack against a creature with a number of hit dice no greater than your level and at least 1 HP. On a hit, you conjure pulsating waves of chaotic energy within the creature and yourself. After a brief moment that seems to last forever, you and the creature's current hit point totals change. Roll {@dice d100} and increase or decrease the number rolled by any number up to your spellcasting level, then find the result on the Hit Point Flux table. Apply that result to both yourself and the target creature. Any hit points gained beyond a creature's normal maximum are temporary hit points that last for 1 round/caster level.",
+				"For example, assume a 3rd-level spellcaster who currently has 17 of her maximum 30 HP casts chaotic vitality on a creature with 58 HP and rolls a 75 on the Hit Point Flux table. The two creatures have a combined total of (17 + 54 =) 71 HP. A result of 75 indicates that both creatures get 50% of the total, so the spellcaster and the target end up with 35 HP each. In the spellcaster's case, 5 of those HP are temporary and will last 3 rounds.",
+				{
+					"type": "table",
+					"name": "Hit Point Flux",
+					"colLabels": [
+						"Size",
+						"HP"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"01–09",
+							"0"
+						],
+						[
+							"10–39",
+							"1"
+						],
+						[
+							"40–69",
+							"25% of combined total"
+						],
+						[
+							"70–84",
+							"50% of combined total"
+						],
+						[
+							"85–94",
+							"75% of combined total"
+						],
+						[
+							"95–99",
+							"100% of combined total"
+						],
+						[
+							"100",
+							"200% of combined total and both creatures gain the effect of a {@spell haste} spell lasting 1 round/caster level"
+						]						
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the maximum hit dice of the affected creature increases by 2 for each slot above 2nd."
+					]
+				}
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL",
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Chaotic Vitality|KPDM"
+			]
+		},
+		{
+			"name": "Chaotic World",
+			"source": "MidgardHeroes",
+			"page": 157,
+			"level": 6,
+			"school": "I",
+			"subschools": [
+				"chaos"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "seven irregular pieces of colored cloth that you throw into the air"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You throw a handful of colored cloth into the air while screaming a litany of disjointed phrases. A moment later, a 30-foot cube centered on a point within range fills with multicolored light, cacophonous sound, overpowering scents, and other confusing sensory information. The effect is dizzying and overwhelming. All enemies within the cube must make successful Intelligence saving throws or be {@condition blinded}, {@condition deafened}, and fall {@condition prone}. They cannot stand up or recover from this blindness or deafness while within the area of effect, but the conditions and the restriction on standing end immediately for a creature who leaves the spell's area of effect."
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"prone"
+			],
+			"areaTags": [
+				"C"
+			],
+			"miscTags": [
+				"LGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Chaotic World|KPDM"
+			]
+		},
+		{
+			"name": "Circle of Devastation",
+			"source": "MidgardHeroes",
+			"page": 157,
+			"level": 9,
+			"school": "V",
+			"subschools": [
+				"ring"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a metal ring"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a 10-foot tall, 20-foot radius ring of destructive energy around a point you can see within range. The area inside the ring is {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}}. When you cast the spell and as a bonus action on each of your turns, you can choose one of the following damage types: cold, fire, lightning, necrotic, or radiant. Creatures and objects that touch the ring, that are inside it when it's created, or that end their turn inside the ring take {@damage 6d6} damage of the chosen type, or half damage with a successful Constitution saving throw. A creature or object reduced to 0 hit points by the spell is reduced to fine ash.",
+				"At the start of each of your subsequent turns, the ring's radius expands by 20 feet. Any creatures or objects touched by the expanding ring are subject to its effects immediately."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"R"
+			],
+			"miscTags": [
+				"DFT",
+				"OBJ",
+				"SGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Circle of Devastation|KPDM"
+			]
+		},
+		{
+			"name": "Circle of Wind",
+			"source": "MidgardHeroes",
+			"page": 157,
+			"level": 1,
+			"school": "A",
+			"subschools": [
+				"ring"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a crystal ring"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"Light wind encircles you, leaving you in the center of a mild vortex. You gain a +2 bonus to your AC against ranged attacks. You also have advantage on saving throws against extreme environmental heat and against harmful gases, vapors, and inhaled poisons"
+			],
+			"miscTags": [
+				"ADV",
+				"MAC"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Circle of Wind|KPDM"
+			]
+		},
+		{
+			"name": "Claws of Darkness",
+			"source": "MidgardHeroes",
+			"page": 157,
+			"level": 0,
+			"school": "V",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You shape shadows into claws that grow from your fingers and drip inky blackness. You can make a melee spell attack with these claws that does {@damage 1d10} cold damage, and the claws have a reach of 10 feet."
+			],
+			"spellAttack": [
+				"M"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Claws of Darkness|KPDM"
+			]
+		},
+		{
+			"name": "Claws of the Earth Dragon",
+			"source": "MidgardHeroes",
+			"page": 158,
+			"level": 5,
+			"school": "V",
+			"subschools": [
+				"dragon"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You summon the power of the earth dragon and shoot a ray at one target within 60 feet. The target falls {@condition prone} and takes {@damage 6d8} bludgeoning damage from being slammed to the ground. If the target was flying or levitating, it takes an additional {@damage 1d6} bludgeoning damage per 10 feet it falls.",
+				"If the target makes a successful Strength saving throw, damage is halved, it doesn't fall, and it isn't knocked prone."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage done by the attack increases by {@scaledamage 6d8|5-9|1d8} and the range increases by 10 feet for each slot level above 5th."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Dragon Domain",
+							"shortName": "Dragon",
+							"source": "MidgardHeroes"
+						}
+					}
+				]
+			},
+			"reprintedAs": [
+				"Claws of the Earth Dragon|KPDM"
+			]
+		},
+		{
+			"name": "Clearing the Field",
+			"source": "MidgardHeroes",
+			"page": 158,
+			"level": 2,
+			"school": "T",
+			"subschools": [
+				"high elven"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"With a harsh word and a vicious chopping motion, every tree, shrub, and stump within 40 feet of you sinks into the ground, leaving the vacated area clear of plant life that might otherwise hamper movement or obscure sight. Overgrown areas that counted as {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}} become clear ground and no longer hamper movement. The original plant life rises from the ground instantly when the spell ends or is dispelled.",
+				"Plant creatures are not affected by {@i clearing the field}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the spell lasts for an additional hour for each slot level above 2nd."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Focus",
+					"entries": [
+						"If you expend your ritual focus, plant creatures within the area of effect must make a successful Constitution saving throw or be affected as though by a {@spell enlarge/reduce||reduce} spell."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Clearing the Field|KPDM"
+			]
 		}
+		
+		
+				
+				
 	],
 	"monster": [
 		{
@@ -8382,7 +9531,7 @@
 				],
 				"entries": [
 					"{@i These panther-sized cats have the features of a lynx, including tufts of fur at the tips of the ears. Snow cat coats range from stark white to muddy brown. They are patient hunters, ambushing prey from high places.}",
-					"Winterfolk have an affinity with these predators. It’s common for several snow cats to serve as guards and scouts for a halfling village."
+					"Winterfolk have an affinity with these predators. It's common for several snow cats to serve as guards and scouts for a halfling village."
 				]
 			},
 			"miscTags": [
@@ -10343,6 +11492,297 @@
 		}		
 	],
 	"table": [
+		{
+			"name": "Damage Type",
+			"source": "MidgardHeroes",
+			"page": "86 (errata)",
+			"otherSources": [
+				{
+					"source": "DM07",
+					"page": 4
+				},
+				{
+					"source": "KPDM",
+					"page": 191
+				}
+			],
+			"type": "table",
+			"colLabels": [
+				"d10",
+				"Damage Type"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"Acid"
+				],
+				[
+					"2",
+					"Cold"
+				],
+				[
+					"3",
+					"Fire"
+				],
+				[
+					"4",
+					"Force"
+				],
+				[
+					"5",
+					"Lightning"
+				],
+				[
+					"6",
+					"Necrotic"
+				],
+				[
+					"7",
+					"Poison"
+				],
+				[
+					"8",
+					"Psychic"
+				],
+				[
+					"9",
+					"Radiant"
+				],
+				[
+					"10",
+					"Thunder"
+				]
+			]
+		},
+		{
+			"name": "Chaos Magic Surge",
+			"source": "MidgardHeroes",
+			"page": 86,
+			"otherSources": [
+				{
+					"source": "DM07",
+					"page": 5
+				}
+			],
+			"reprintedAs": [
+				"Chaos Magic Surge|KPDM"
+			],
+			"type": "table",
+			"colLabels": [
+				"d100",
+				"Effect"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1-2",
+					"You cast {@spell hypnotic pattern} centered on yourself."
+				],
+				[
+					"3-4",
+					"The target of your spell or ability is also targeted by an {@spell enlarge/reduce||enlarge} spell. If there is no target, the enlarge affects you."
+				],
+				[
+					"5-6",
+					"An angry {@creature constrictor snake} controlled by the GM appears wrapped around your waist."
+				],
+				[
+					"7-8",
+					"For 10 rounds, a {@spell gust of wind} blows out from you in all directions."
+				],
+				[
+					"9-10",
+					"Three targets you can see within 60 feet chosen by you are targeted by a {@spell ray of frost}."
+				],
+				[
+					"11-12",
+					"You rise 30 feet into the air, where you hover until the start of your next turn, when you fall."
+				],
+				[
+					"13-14",
+					"You grow a purple mustache {@dice 3d6} inches in length."
+				],
+				[
+					"15-16",
+					"You are cloaked in shadow and reek of brimstone for 1 hour. During that time, you have advantage on Charisma ({@skill Intimidation}) checks and disadvantage on Charisma ({@skill Persuasion}) checks."
+				],
+				[
+					"17-18",
+					"You summon a {@creature mule} 100 feet above the target of your spell or ability. If you do not have a target, the mule appears above you. Both the mule and the creature it lands on take {@damage 10d6} bludgeoning damage from the inevitable fall, or the creature under the mule takes no damage with a successful Dexterity saving throw; the DC equals your spell save DC."
+				],
+				[
+					"19-20",
+					"You cast {@spell contact other plane}."
+				],
+				[
+					"21-22",
+					"Rum rains from the sky in a 30-foot radius around you for 10 rounds."
+				],
+				[
+					"23-24",
+					"You regain your highest-level expended spell slot."
+				],
+				[
+					"25-26",
+					"You cast a hemispherical {@spell wall of force}, centered on yourself."
+				],
+				[
+					"27-28",
+					"All of your hair falls out. It grows back at the normal rate."
+				],
+				[
+					"29-30",
+					"You gain resistance to one type of damage, {@table damage type|MidgardHeroes|determined randomly}, for 1 hour."
+				],
+				[
+					"31-32",
+					"Loud horns that can be heard for a mile sound for 1 hour. The sound moves with you."
+				],
+				[
+					"33-34",
+					"Until you complete a {@quickref resting||2|0|long rest}{@sup {@variantrule Long Rest|XPHB|'24}}, every word you utter sounds normal to you but is heard by others as incomprehensible babbling. This doesn't impair your ability to cast spells."
+				],
+				[
+					"35-36",
+					"Three targets within 30 feet that you can see are targeted by a bolt of light that does {@damage 1d8} radiant damage. Each individual target can negate the damage with a successful Constitution saving throw."
+				],
+				[
+					"37-38",
+					"Every creature within 60 feet of you, except you, teleports 10 feet in a random direction. If the destination is a solid object or hazardous terrain, the creature doesn't move."
+				],
+				[
+					"39-40",
+					"The sun (or moon if it is night) is eclipsed for 10 minutes."
+				],
+				[
+					"41-42",
+					"You become immune to all damage for 1 round."
+				],
+				[
+					"43-44",
+					"Until you complete a {@quickref resting||2|0|long rest}{@sup {@variantrule Long Rest|XPHB|'24}}, you leave burning footprints that smolder in your wake for 5 rounds. The flames are hot enough to ignite easily flammable material (leaves, paper, cloth)."
+				],
+				[
+					"45-46",
+					"You turn into a succulent cooked ham for 10 rounds. While a ham, you are {@condition incapacitated} and are vulnerable to all damage. The gold plate that you appear upon can be sold for 5 gp."
+				],
+				[
+					"47-48",
+					"For 30 feet around you, the ground turns into broken, uneven, {@quickref difficult terrain|PHB|4}{@sup {@variantrule Difficult Terrain|XPHB|'24}}."
+				],
+				[
+					"49-50",
+					"For 1 hour, you gain a bonus to weapon damage equal to your spellcasting ability."
+				],
+				[
+					"51-52",
+					"You open a portal to the Abyss that stays open for 10 rounds. Each round there is a 1 in 20 chance that a {@filter fiend|bestiary|source=|type=fiend|miscellaneous=!adventure npc} or other Abyssal creature of the GM's choice walks through."
+				],
+				[
+					"53-54",
+					"You cast {@spell healing word} on a target of your choice."
+				],
+				[
+					"55-56",
+					"Your eyes turn into potatoes and fall from their sockets. You are {@condition blinded} until you receive a {@spell remove curse} or {@spell regenerate} spell."
+				],
+				[
+					"57-58",
+					"You hear a thunderous sound and are {@condition stunned} until the end of your next turn."
+				],
+				[
+					"59-60",
+					"You cast {@spell moonbeam}."
+				],
+				[
+					"61-62",
+					"An item you hold is covered in {@spell continual flame}. If you are not holding an item, the GM chooses an item within 30 feet of you to be the target."
+				],
+				[
+					"63-64",
+					"You and two targets that you can see within 30 feet of you are affected by a {@spell bane} spell."
+				],
+				[
+					"65-66",
+					"You gain advantage on your next attack roll, ability check, or saving throw within 24 hours."
+				],
+				[
+					"67-68",
+					"You suffer disadvantage on your next attack roll, ability check, or saving throw within 24 hours."
+				],
+				[
+					"69-70",
+					"Choose a target that you can see within 60 feet other than yourself to gain {@quickref temporary hit points||3|0}{@sup {@variantrule Temporary Hit Points|XPHB|'24}} equal to your level."
+				],
+				[
+					"71-72",
+					"A barrel of lamp oil appears adjacent to you."
+				],
+				[
+					"73-74",
+					"You are targeted by a {@spell disguise self} spell making you appear as a dirt-covered human child of the opposite gender."
+				],
+				[
+					"75-76",
+					"{@quickref Vision and Light|PHB|2|0|Dim pink light}{@sup {@variantrule Dim Light|XPHB|'24}} fills an area 30 feet around your target. If your spell or ability has no target, the light is centered on you."
+				],
+				[
+					"77-78",
+					"You summon a {@creature boar} to a space you can see within 30 feet. The boar follows your commands for 1 minute and then disappears. It is wearing a green dress."
+				],
+				[
+					"79-80",
+					"You cast {@spell flame strike} centered on yourself."
+				],
+				[
+					"81-82",
+					"You gain {@dice 1d4 x 10} pounds of weight."
+				],
+				[
+					"83-84",
+					"You gain a +2 bonus to your AC for a number of rounds equal to your spellcasting ability."
+				],
+				[
+					"85-86",
+					"The ground beneath your target, or beneath you if your spell or ability has no target, sinks 1 foot. It also falls {@condition prone} unless it makes a successful Dexterity saving throw."
+				],
+				[
+					"87-88",
+					"Red silk scarves and origami cranes swirl through the air within 500 feet of you, causing {@quickref Vision and Light|PHB|2|0|light obscurement}{@sup {@variantrule Lightly Obscured|XPHB|'24}}. The scarves are worth 100 gp in total if collected."
+				],
+				[
+					"89-90",
+					"A table with a {@spell heroes' feast} appears within 10 feet of you."
+				],
+				[
+					"91-92",
+					"Three {@creature skeleton||skeletons} under the control of the GM claw their way out of the ground and attack random living creatures until they are destroyed."
+				],
+				[
+					"93-94",
+					"You cast {@spell barkskin} upon yourself. Your hair is permanently replaced with green leaves until you receive a {@spell remove curse} or comparable magic."
+				],
+				[
+					"95-96",
+					"Your teeth turn into moths and fly away."
+				],
+				[
+					"97-98",
+					"You sprout insect wings, giving you a {@quickref Flying Movement|PHB|3|0|fly speed}{@sup {@variantrule Fly Speed|XPHB|'24}} of 30 feet. The wings last for 1 minute."
+				],
+				[
+					"99-100",
+					"A weapon you can see within 30 feet glows and becomes a magic weapon for 1 minute."
+				]
+			]
+		},
 		{
 			"name": "Ley Line Effects, Weak",
 			"source": "MidgardHeroes",
