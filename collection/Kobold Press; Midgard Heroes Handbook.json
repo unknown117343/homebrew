@@ -5837,7 +5837,6 @@
 			"reprintedAs": [
 				"Boiling Oil|KPDM"
 			]
-
 		},
 		{
 			"name": "Boreas's Breath",
@@ -5935,7 +5934,7 @@
 		},
 		{
 			"name": "Brittling",
-			"source": "MisgardHeroes",
+			"source": "MidgardHeroes",
 			"page": 154,
 			"level": 4,
 			"school": "T",
@@ -7371,6 +7370,780 @@
 			"reprintedAs": [
 				"Clearing the Field|KPDM"
 			]
+		},
+		{
+			"name": "Cloak of Shadow",
+			"source": "MidgardHeroes",
+			"page": 158,
+			"level": 1,
+			"school": "I",
+			"subschools": [
+				"illumination"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You draw upon the endless Void to cloak yourself in shadow, giving you advantage on Dexterity ({@skill Stealth}) checks against creatures that rely on sight."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"reprintedAs": [
+				"Cloak of Shadows|KPDM"
+			]
+		},
+		{
+			"name": "Cloying Darkness",
+			"source": "MidgardHeroes",
+			"page": 158,
+			"level": 1,
+			"school": "N",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You reach out with a hand of decaying shadows. Make a ranged spell attack. If it hits, the target takes {@damage 2d8} necrotic damage and must make a Constitution saving throw. If it fails, its visual organs are enveloped in shadow until the start of your next turn, causing it to treat all lighting as if it's one step lower in intensity (it treats {@quickref Vision and Light||2||bright light} as dim, {@quickref Vision and Light||2||dim light} as darkness, and darkness as magical darkness)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],		
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Compelling Fate",
+			"source": "MidgardHeroes",
+			"page": 159,
+			"reprintedAs": [
+				"Compelling Fate|KPDM"
+			],
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a sprinkling of silver dust worth 20 gp",
+					"cost": 2000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You view the actions of a single creature you can see through the influences of the stars, and you read what is written there. If the target creature fails a Charisma saving throw, you can predict that creature's actions. This has the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on attack rolls against the creature.",
+						"For every 5 feet the creature moves, you can move 5 feet (up to your normal movement) on the creature's turn when it has completed its movement. This is deducted from your next turn's movement.",
+						"As a reaction at the start of the target's turn, you can warn yourself and allies that can hear you of the target's offensive intentions; any creature targeted by the target's next attack gains a +2 bonus to AC or on its saving throw against that attack."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the duration is extended by 1 round for each slot level above 3rd."
+					],
+					"type": "entries"
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Confound Senses",
+			"source": "MidgardHeroes",
+			"page": 159,
+			"reprintedAs": [
+				"Confound Senses|KPDM"
+			],
+			"level": 3,
+			"school": "E",
+			"subschools": [
+				"labyrinth"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a broken compass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell befuddles the minds of up to six targets that you can see within 30 feet of you with images of shifting terrain. Creatures that fail an Intelligence saving throw are reduced to half speed by confusion over their surroundings. In addition, targets that fail their saving throw make ranged attack rolls with disadvantage.",
+				"Affected creatures also find it impossible to keep track of their location. They automatically fail Wisdom ({@skill Survival}) checks to avoid getting lost and can't remember where they've been in the last 10 minutes, in relation to where they are now. Whenever an affected creature must choose between one or more paths, it chooses at random and immediately forgets which path or direction it came from. When the spell ends, affected creatures are lost unless they're in an area they know well."
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Scarab Swarm",
+			"source": "MidgardHeroes",
+			"page": 159,
+			"reprintedAs": [
+				"Conjure Scarab Swarm|KPDM"
+			],
+			"level": 2,
+			"school": "C",
+			"subschools": [
+				"hieroglyph"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a beetle carapace"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon swarms of scarab beetles to attack your foes. Two swarms of beetles appear in unoccupied spaces that you can see within range.",
+				"Each swarm disappears when it drops to 0 hit points or when the spell ends. The swarms are friendly to you and your allies. Make one initiative roll for both swarms, which have their own turns. They obey verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures but otherwise take no actions."
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Shadow Titan",
+			"source": "MidgardHeroes",
+			"page": 159,
+			"level": 7,
+			"school": "C",
+			"subschools": [
+				"shadow"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a shadow titan, which appears in an unoccupied space that you can see within range. The shadow titan's statistics are identical to a {@creature stone giant}'s, with two differences: its camouflage ability works in dim light instead of rocky terrain, and the \"rocks\" it hurls are composed of shadow-stuff and cause cold damage.",
+				"The shadow titan is friendly to you and your companions. Roll initiative for the shadow titan; it acts on its own turn. It obeys verbal or telepathic commands that you issue to it (giving a command takes no action on your part). If you don't issue any commands to the shadow titan, it defends itself from hostile creatures but otherwise takes no actions.",
+				"The shadow titan disappears when it drops to 0 hit points or when the spell ends."
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Converse with Dragon",
+			"source": "MidgardHeroes",
+			"page": 159,
+			"level": 1,
+			"school": "D",
+			"subschools": [
+				"dragon"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You gain limited telepathy, allowing you to communicate with any creature within 120 feet of you that has the dragon type, regardless of the creature's languages. A dragon can choose to make a Charisma saving throw to prevent telepathic contact with itself.",
+				"This spell doesn't change a dragon's disposition toward you or your allies, it only opens a channel of communication. In some cases, unwanted telepathic contact can worsen the dragon's attitude toward you."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cosmic Alignment",
+			"source": "MidgardHeroes",
+			"page": 160,
+			"reprintedAs": [
+				"Cosmic Alignment|KPDM"
+			],
+			"level": 9,
+			"school": "C",
+			"subschools": [
+				"illumination",
+				"high elven"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of quartz"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You arrange the forces of the cosmos to your benefit. Choose a cosmic event from the Comprehension of the Starry Sky ability that affects spellcasting (conjunction, eclipse, or nova; see the illumination school in chapter 4 for details). You cast spells as if under the effect of the cosmic event until the next sunrise or 24 hours have passed. When the ability requires you to expend your insight, you expend your ritual focus instead. This spell must be cast outdoors, and the casting of this spell is obvious to everyone within 100 miles of its casting when an appropriate symbol, such as a flaming comet, appears in the sky above your location while you are casting the spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Costly Victory",
+			"source": "MidgardHeroes",
+			"page": 160,
+			"reprintedAs": [
+				"Costly Victory|KPDM"
+			],
+			"level": 8,
+			"school": "V",
+			"subschools": [
+				"battle"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You target up to ten enemies you can see that are within range. Each targeted enemy must make a Wisdom saving throw. If it fails, that creature is cursed to burst into flames if it reduces one of your allies to 0 hit points while this spell is in effect. The affected creature takes {@damage 6d8} fire damage and {@damage 6d8} radiant damage immediately when it bursts into flame. If the affected creature is wearing (or is made of) flammable material, it also catches on fire and continues burning; it takes fire damage equal to your spellcasting ability modifier at the end of each of its turns until the burning creature or one of its allies within 5 feet of it uses an action to extinguish the fire."
+			],
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Create Ring Servant",
+			"source": "MidgardHeroes",
+			"page": 160,
+			"reprintedAs": [
+				"Create Ring Servant|KPDM"
+			],
+			"level": 8,
+			"school": "T",
+			"subschools": [
+				"ring"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "two metal rings"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch two metal rings and infuse them with life, creating a short-lived but sentient construct known as a {@creature ring servant|MidgardHeroes} {@homebrew |(see the appendix)}.",
+				"The ring servant appears adjacent to you. It reverts to the rings used to cast the spell when it drops to 0 hit points or when the spell ends.",
+				"The ring servant is friendly to you and your companions for the duration. Roll initiative for the ring servant, which acts on its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the ring servant, it defends itself and you from hostile creatures but otherwise takes no actions."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Crushing Trample",
+			"source": "KPDM",
+			"page": 160,
+			"reprintedAs": [
+				"Crushing Trample|KPDM"
+			],
+			"level": 2,
+			"school": "T",
+			"subschools": [
+				"labyrinth"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Upon casting this spell, you are filled with a desire to overrun and trample your foes. You immediately move up to twice your speed in a straight line, trampling every foe of your size or smaller in your path. If you try to move through an enemy that is larger than your size, your movement ends. Each enemy whose space you move through must make a successful Strength saving throw or be knocked {@condition prone} and take {@damage 4d6} bludgeoning damage. If you have hooves, add your Strength modifier (minimum of +1) to the damage.",
+				"You pass through foes whether or not they succeed on their Strength saving throw. You do not provoke {@action opportunity attack|PHB|opportunity attacks} while moving under the effect of crushing trample."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Curse of Boreas",
+			"source": "MidgardHeroes",
+			"page": 160,
+			"reprintedAs": [
+				"Curse of Boreas|KPDM"
+			],
+			"level": 6,
+			"school": "T",
+			"subschools": [
+				"rune"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"entries": [
+				"If the target fails a Charisma saving throw, it and its equipment are frozen solid, becoming a physically inert statue of ice. The creature is effectively {@condition paralyzed}, but mental activity does not cease and signs of life are detectable; the creature still breathes and its heart continues to beat, though both happen so slowly as to be almost imperceptible. If the ice statue is broken or damaged while frozen, the creature will have matching damage or injury when returned to its original state. {@spell Dispel magic} can't end this spell, but it can allow the target to speak (but not move or cast spells) for 1 round per the spell slot used. {@spell Greater restoration} or more potent magic is needed to free a creature from the ice. Boreas and certain of his followers can use scrying to spy through the target's senses, and the target receives no saving throw against this effect. Those touching a frozen target can request an audience with Boreas, and if they make a successful DC 15 Charisma check, he'll respond to their request through the ice."
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"abilityCheck": [
+				"charisma"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 		
 		
@@ -11567,9 +12340,6 @@
 					"source": "DM07",
 					"page": 5
 				}
-			],
-			"reprintedAs": [
-				"Chaos Magic Surge|KPDM"
 			],
 			"type": "table",
 			"colLabels": [
