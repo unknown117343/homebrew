@@ -37512,4 +37512,2382 @@
 				]
 			]
 		}
-	]}
+	],
+	"background": [
+		{
+			"name": "Amazon of Perunalia",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"history": true,
+					"intimidation": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "set of woodworker's tools"
+						},
+						{
+							"item": "quiver|phb",
+							"displayName": "quiver with 20 arrows"
+						},
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill History}, {@skill Intimidation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Woodworker's tools, one {@item gaming set|PHB} of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of woodworker's tools, a {@item quiver|PHB} with 20 arrows, a set of {@item traveler's clothes|PHB}, and a {@item pouch|PHB} containing 15 gp"
+						}
+					]
+				},
+				"A strong daughter of a mighty nation, you are among the most elite warriors of matriarchal Perunalia. All amazons of Perunalia are female, and all train in the art of archery first and foremost. Regardless of your chief profession, you are trusted to defend the nation in time of need and you enjoy the respect and esteem you earn through service to the Duchy.",
+				{
+					"type": "entries",
+					"name": "Feature: Bred to the Bow",
+					"entries": [
+						"The care you show to your bow and arrows is unsurpassed. If you spend 1 hour maintaining your weapons and ammunition, for the next 24 hours you can recover all arrows that miss their target by spending 1 minute searching at the end of an encounter. Further, you decorate your arrows with colored fletching that denotes your rank among the amazons. You begin at the lowest rank with white fletching. Every 4 levels, you advance to the next color: green, blue, black, and finally red. You can expect deference and respect from any amazon you outrank, just as you are expected to defer to an amazon who outranks you."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Amazons of Perunalia are universally confident and well-educated, but they hold a default assumption of men as the weaker sex with manifest mental and behavioral faults. Amazons are disdainful of men in power because of the long, sad history of patriarchal nations and armies. Beyond their particular assumptions, amazons tend to be shrewd and proud of their skill.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I live for the thrill of victory."
+								],
+								[
+									"2",
+									"I admire other cultures with traditions of archery."
+								],
+								[
+									"3",
+									"Anyone who fights with skill deserves my respect, men and women alike."
+								],
+								[
+									"4",
+									"The care I take in maintaining my bow and fashioning my arrows is an important part of archery, and archery is the core of who I am."
+								],
+								[
+									"5",
+									"When I display my bow skill well, I always offer thanks to Perun for his teachings."
+								],
+								[
+									"6",
+									"Men in positions of authority must work hard to earn my trust."
+								],
+								[
+									"7",
+									"I dislike frivolity and nonsense."
+								],
+								[
+									"8",
+									"My nerve is as steady as an arrow's flight."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I secretly resent the Duchess's policies, and I'm sympathetic to others that might seek to take control of the Duchy."
+								],
+								[
+									"2",
+									"There is a piece of lore forbidden to me, but I'm obsessed with obtaining it."
+								],
+								[
+									"3",
+									"I can't let them know how much I resent all the years I've sacrificed on my archery training instead of doing what I love."
+								],
+								[
+									"4",
+									"I look down on anyone who lacks skill with a bow."
+								],
+								[
+									"5",
+									"I'm unswerving in my devotion to upholding the Duchess' law, no matter who broke it."
+								],
+								[
+									"6",
+									"I'll never admit a fault to a man, and only rarely to another woman."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Service. The greatest expression of skill is defending the good of one's fellows. (Good)"
+								],
+								[
+									"2",
+									"Fairness. I treat everyone in an even-handed manner until they prove themselves unworthy. (Neutral)"
+								],
+								[
+									"3",
+									"Dedication. I adhere to my duty above all. (Any)"
+								],
+								[
+									"4",
+									"Glory. I'll show everyone that I'm the best there ever was. (Chaotic)"
+								],
+								[
+									"5",
+									"Rulership. The strongest are meant to rule, and no one is stronger than I. (Evil)"
+								],
+								[
+									"6",
+									"Tradition. Our nation thrives because of our strict ways. (Lawful)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I will win the tournament at the Duchess's Fair to make my mark on the nation."
+								],
+								[
+									"2",
+									"When I best a worthy foe, I retrieve an arrowhead from the battle and wear it as a trophy."
+								],
+								[
+									"3",
+									"My bow is a family heirloom and a symbol of my house."
+								],
+								[
+									"4",
+									"All knowledge is power, and I'll go out of my way to preserve it."
+								],
+								[
+									"5",
+									"I never would have passed my training if not for my closest friend in school."
+								],
+								[
+									"6",
+									"My family fled to Perunalia to escape a powerful enemy. One day I will see that enemy defeated."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Arbonesse Exile",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"one set of artisan's tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "cook's utensils|phb",
+							"displayName": "set of cook's utensils"
+						},
+						{
+							"item": "totem|phb",
+							"displayName": "carved humanoid bone totem"
+						},
+						"traveler's clothes|phb",
+						"hunting trap|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One set of {@item artisan's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item cook's utensils|PHB}, a carved humanoid bone {@item totem|PHB}, a set of {@item traveler's clothes|PHB}, a {@item hunting trap|PHB}, and a {@item pouch|PHB} containing 5 gp"
+						}
+					]
+				},
+				"You are from the River Court of Arbonesse or one of its far-flung thorpes. Most exiles are elf-blooded or gnomes, but the occasional foundling of another race taken in by exiles is not unheard of. You are fiercely proud of your home and its legacy, despite its declining prominence. At the same time, the exiles are a canny people whose elders pass down lore of the mysterious fey and shadow roads. They are always wary of those strange places where the boundary between worlds grows thin.",
+				{
+					"type": "entries",
+					"name": "Feature: Arbonesse Heritage",
+					"entries": [
+						"An elder of Arbonesse passed some of their secret knowledge down to you. You know of one relatively safe fey road that begins in the Arbonesse and leads elsewhere in Midgard, as well as the means to open the way. Work with your GM to determine the road's destination and possible obstacles."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Arbonesse exiles refuse to give up their identity, even in areas where the wider influence of the River Court is nonexistent. Proud and hardy, exiles maintain the traditions passed by their elders and take grave offense to any who try to stifle them.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I can always keep a cheerful disposition, no matter what's going on."
+								],
+								[
+									"2",
+									"Magic of all kinds is a source of constant fascination to me."
+								],
+								[
+									"3",
+									"I'm most at home near large bodies of water, or under the cover of dense tree canopy."
+								],
+								[
+									"4",
+									"I work hard to do any job right the first time."
+								],
+								[
+									"5",
+									"Outsiders aren't to be trusted."
+								],
+								[
+									"6",
+									"I prefer to do for myself rather than relying on others."
+								],
+								[
+									"7",
+									"I'm leery of places steeped in shadow or darkness."
+								],
+								[
+									"8",
+									"I grow resentful of people who come from thriving settlements."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Revenge. My people will rise again, climbing the bodies of our enemies if necessary. (Evil)"
+								],
+								[
+									"2",
+									"Survival. As long as I live to fight another day, there's hope. (Any)"
+								],
+								[
+									"3",
+									"Ancient Law. The law of the River Court endures, even if others fail to recognize it. (Lawful)"
+								],
+								[
+									"4",
+									"Community. My survival depends on the efforts of my fellows, and their survival depends on me. (Good)"
+								],
+								[
+									"5",
+									"Tradition. We should be guided by the knowledge and experience of our forebears whenever practical. (Neutral)"
+								],
+								[
+									"6",
+									"Independence. Remain loyal to oneself before all else. (Chaotic)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"An ancient Arbonesse elf looks after me and my family. There's no one I respect more."
+								],
+								[
+									"2",
+									"I'm searching for a specific ruin with ancient power."
+								],
+								[
+									"3",
+									"I love learning new stories of shadow roads and other magical tales."
+								],
+								[
+									"4",
+									"I hold the fey folk in high regard and avoid offending them."
+								],
+								[
+									"5",
+									"I'll protect my homestead from any threat."
+								],
+								[
+									"6",
+									"I want to amass wealth and influence, and to rise above my beginnings."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Raiders destroyed my home, and I harbor deep hatred for their kind."
+								],
+								[
+									"2",
+									"My village protected an ancient secret, and that secret has been stolen."
+								],
+								[
+									"3",
+									"I'm quick to think sophisticated people are talking down to me. Nothing angers me faster."
+								],
+								[
+									"4",
+									"I'll do anything to unlock an ancient or magical secret."
+								],
+								[
+									"5",
+									"I have no respect for people who don't pull their own weight."
+								],
+								[
+									"6",
+									"Places that might border on other worlds terrify me, and I hate spending time near them."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bemmean Scholar",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"investigation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "book|phb",
+							"displayName": "book of lore"
+						},
+						"fine clothes|phb",
+						{
+							"special": "sheets of parchment",
+							"quantity": 5
+						},
+						{
+							"special": "quill and inkwell"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Investigation}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item book|PHB} of lore, a set of {@item fine clothes|PHB}, five sheets of parchment, a quill and inkwell, and a {@item pouch|PHB} containing 15 gp"
+						}
+					]
+				},
+				"Bemmea, capital city of the Magocracy of Allain, is the jewel of magical study in Midgard. You walked its ley\u2011infused streets and studied among the gleaming spires that touch the sky. During your time in the arcane city, you ate, drank, slept, and breathed magic, and now you carry that legacy into the world. Students with no arcane aptitude are rare, but nonmagical scholars do arise from Bemmea's crackling skyline.",
+				{
+					"type": "entries",
+					"name": "Focus of Study",
+					"entries": [
+						"Years of study at one of the many prestigious academies in Bemmea has earned you specialized knowledge of one exotic subject. You can work with your GM to determine the exact nature of your focus or choose one from the table below."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Esoteric Education",
+					"entries": [
+						"When you encounter an example of your focus, you automatically recall some useful fact about it. Even subtle phenomena or hidden creatures don't escape your notice for long. If you spend 8 hours in the vicinity of your focus of study, you pick up on telltale clues and signs that reveal its general presence. This doesn't pierce disguises or reveal its exact location, and you must investigate by normal or magical means to pinpoint it."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The citizens of Bemmea are fiercely proud of their accumulated knowledge, and many are reluctant to share their hard-won prize with outsiders. Bemmeans are keenly aware of laws and often exhibit strange quirks of behavior or speech that seem almost superstitious but have an actual, legal basis in their home.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Focus of Study"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"A creature type or tag (such as aberration or shapeshanger)"
+								],
+								[
+									"2",
+									"Magic items"
+								],
+								[
+									"3",
+									"A school of magic"
+								],
+								[
+									"4",
+									"Shadow Realm"
+								],
+								[
+									"5",
+									"Fey roads"
+								],
+								[
+									"6",
+									"Ley lines"
+								],
+								[
+									"7",
+									"Runes and glyphs"
+								],
+								[
+									"8",
+									"Gods and masks"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I won't drink healing potions at dusk unless it's a matter of life or death."
+								],
+								[
+									"2",
+									"Those with no magical talent aren't worth my time, and divine spellcasters only slightly less so."
+								],
+								[
+									"3",
+									"I'm most at home while studying or lecturing others, and I'm horribly uncomfortable anywhere else."
+								],
+								[
+									"4",
+									"I never pass up the chance to share some scrap of trivia regarding my focused studies. If a good opportunity doesn't present itself, I'll make one."
+								],
+								[
+									"5",
+									"I take time every day to cleanse foreign influences from spellbooks, holy symbols, or magical items."
+								],
+								[
+									"6",
+									"I constantly note the surrounding terrain or the layout of construction, looking for magical significance."
+								],
+								[
+									"7",
+									"When I encounter a new creature, I get lost in gathering information and noting observations."
+								],
+								[
+									"8",
+									"I sometimes take strange, roundabout routes when I travel from place to place."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Compliance. Rules exist for a reason. We must follow them, and punish those that don't. (Lawful)"
+								],
+								[
+									"2",
+									"Greater Good. Sometimes we must sacrifice personal convenience for the good of others. (Good)"
+								],
+								[
+									"3",
+									"Stability. The world constantly veers toward extremes; the knowledge exists to keep it on an even keel. (Neutral)"
+								],
+								[
+									"4",
+									"Preservation. We enjoy great knowledge because those who came before passed it down. We must follow their example. (Any)"
+								],
+								[
+									"5",
+									"Forbidden Knowledge. Proscribed lore hides the key to true power. (Evil)"
+								],
+								[
+									"6",
+									"Free Information. Secrets are destructive; knowledge is the birthright of all. (Chaotic)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I unleashed something during my time studying, and I know I must face it some day."
+								],
+								[
+									"2",
+									"The academy is the only real home I've ever known."
+								],
+								[
+									"3",
+									"I learned a terrible secret while studying, and I'm searching for a way to defeat it before it's too late."
+								],
+								[
+									"4",
+									"One day the mighty mages of Bemmea will look up to me in awe."
+								],
+								[
+									"5",
+									"One teacher at the academy where I studied saw my potential and gave me a second chance. Someday I'll repay the favor."
+								],
+								[
+									"6",
+									"When I'm ready, I'll take students of my own and pass on what I've learned."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Blood Sister",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"medicine": true,
+					"religion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "holy symbol|phb",
+							"displayName": "Holy symbol of Marena"
+						},
+						{
+							"special": "blood red vestments"
+						},
+						{
+							"special": "human skull stained with ochre"
+						},
+						"common clothes|phb",
+						{
+							"special": "sacrificial knife"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				},
+				{
+					"a": [
+						{
+							"item": "book|phb",
+							"displayName": "copy of the Book of Holy Lust"
+						}
+					],
+					"b": [
+						{
+							"special": "the Scarlet Commandments"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Medicine}, {@skill Religion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Disguise Kit|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "{@item Holy symbol|PHB} of Marena, a copy of the {@item Book|PHB} of Holy Lust or the Scarlet Commandments, blood red vestments, a human skull stained with ochre, a set of {@item common clothes|PHB}, a sacrificial knife, and a belt {@item pouch|PHB} containing 15 gp."
+						}
+					]
+				},
+				"You were brought up in the service of the Red Goddess Marena in one of her temples, likely from a young age. As a member of the Blood Sisters, you were accorded respect and often fear on account of your status if your temple was located within the Principalities. Beyond Morgau's borders, however, the goddess' worship would have been forbidden and you would have honored her in secret.",
+				"You are not necessarily a cleric\u2014the Red Sisterhood contains plenty of lay worshippers too\u2014but you are adept at performing bloody sacrifices in Marena's honor and are well-versed in her Scarlet Commandments and other holy texts. You are no stranger to orgiastic rites honoring her as the goddess of lust, and if you served in Cantri Abbey, you may have learned the art of midwifery from working in the Cradle. From time to time you may have been called upon to mete out punishment to those who transgressed against the goddess' rules or the laws of the Blood Kingdom.",
+				"Now you have left your temple to strike out on your own. Perhaps you have tired of the endless bloodshed the Red Goddess demands and have abandoned her worship? Or maybe you were sent forth by your temple's high priestess to evangelise in Marena's name and bring new converts into the fold?",
+				{
+					"type": "entries",
+					"name": "Feature: Fearful Respect",
+					"entries": [
+						"When you travel openly as a Blood Sister within the Principalities, you will be afforded hospitality by the local people who both fear and respect you. You will be offered a decent meal, wine or beer, and a warm bed for the night at the village inn, and you will be granted an audience with the local ruler if you need one. Outside Morgau, you can give the secret hand signals and pass phrases needed to be granted safe haven and free healing at the Red Goddess' hidden temple in the city."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Blood Sisters have a dark past as servants of the Red Goddess and this is often reflected in their personalities. Ideals and bonds will be shaped by whether or not a Sister is still a member of the cult, or has renounced the Red Goddess' teachings. A Blood Sister's flaws are sometimes linked to the tenets and practices of Marena's worship; sometimes a ritual act becomes a vice in which she takes twisted pleasure, or an obsession over which she has little control.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"When you have seen as many terrible things as I have, you make the most of every happy moment."
+								],
+								[
+									"2",
+									"I am afforded respect wherever I go, and rightly so."
+								],
+								[
+									"3",
+									"Being part of the Sisterhood has made it hard for me to connect with people in the outside world."
+								],
+								[
+									"4",
+									"I flirt with others shamelessly to get what I want."
+								],
+								[
+									"5",
+									"It is hard to win my trust, but once you have it, I will stick by you through thick and thin."
+								],
+								[
+									"6",
+									"I take pleasure in inflicting pain on others."
+								],
+								[
+									"7",
+									"Creatures of the night hold no fear for me. It's people I am wary of."
+								],
+								[
+									"8",
+									"I often prefer my own company to that of others."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Might. The Elders are our rightful rulers. The common folk are but cattle to feed our dark masters. (Evil)"
+								],
+								[
+									"2",
+									"Greater Good. I will do whatever I can to stop more innocent blood being spilt. (Good)"
+								],
+								[
+									"3",
+									"Tradition. The Scarlet Commandments show us the one true path. (Lawful)"
+								],
+								[
+									"4",
+									"Free Will. My time of taking orders is over\u2014I'm in control of my own life now. (Chaotic)"
+								],
+								[
+									"5",
+									"People. I care more about my friends and family than the teachings of the Goddess. (Neutral)"
+								],
+								[
+									"6",
+									"Faith. The Red Goddess guides my actions and grants me ever-increasing strength and magical power. (Evil)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Someday I will return home to be with my vampire lover."
+								],
+								[
+									"2",
+									"I have turned my back on the Red Sisterhood and seek redemption."
+								],
+								[
+									"3",
+									"I will do anything to keep my family safe from harm."
+								],
+								[
+									"4",
+									"I owe a debt to Lord Fandorin, Baron of Doresh, which must be repaid by the Winter Solstice."
+								],
+								[
+									"5",
+									"I have a duty to the high priestess of my temple to spread the word of the Red Goddess wherever I go."
+								],
+								[
+									"6",
+									"I have an ancient copy of the Song of Blood and Winter that reveals the true words of Marena before they were corrupted by heretical priestesses. I must keep it safe."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"The sight of blood is abhorrent to me."
+								],
+								[
+									"2",
+									"I am addicted to sex and get easily distracted when I'm with people I find physically attractive."
+								],
+								[
+									"3",
+									"I yearn to feel a vampire's teeth sink into my neck."
+								],
+								[
+									"4",
+									"I am a sinner and must punish myself constantly. My back is covered with a lattice of scars."
+								],
+								[
+									"5",
+									"I worry that I cannot hold my dark urges back forever."
+								],
+								[
+									"6",
+									"I live in fear that one day the Mother Abbess will track me down and punish me."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dancing Bear Guide",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"persuasion": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"vehicles (land)": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"traveler's clothes|phb",
+						{
+							"special": "map of the region around your home marked with shortcuts and secluded hideaways"
+						},
+						"hunting trap|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Persuasion}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "vehicles (land)"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item traveler's clothes|PHB}, a map of the region around your home marked with shortcuts and secluded hideaways, a {@item hunting trap|PHB}, and a {@item pouch|PHB} containing 10 gp."
+						}
+					]
+				},
+				"The Lodge of the Dancing Bear is a loose, widespread organization that stretches from Bjeornheim to the northern coast of the Grand Duchy. Members of the lodge\u2014known as guides\u2014are a rough and tumble lot. As a dancing bear guide, you are at home in the wilds of Midgard, but you make forays into civilization for the express purpose of exposing city-dwellers to the freedom of the wilds. Closed-off streets strewn with garbage and filth mask the truth the wider world has to offer. You'll show them what they've forgotten, and when they see, they'll understand. Wilderness guides, trappers, teamsters, and smugglers, the guides take any job that involves dragging civilized folk through the brambles to expand their horizons.",
+				{
+					"type": "entries",
+					"name": "Feature: Two-World Stride",
+					"entries": [
+						"You walk between the wilderness and settlements with carefree ease. As a dancing bear guide, the value of your services is known to all. You can pass freely through city gates where travelers are typically scrutinized or taxed, and you can cross disputed land or through the territory of warring tribes without harassment by making your affiliation known; no one wants to alienate the guides without a compelling reason. You lose this consideration in a given city if you earn a reputation there as a criminal or as a trouble-maker, at the GM's discretion."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Dancing bear guides might appear gruff and unapproachable when they're in towns, but that has more to do with their discomfort in urban settings than with their personalities. In the wilderness they love, most dancing bear guides are personable and friendly, and they even have an endearing if rough sense of humor. They'll form connections with anyone who displays a love for the wilderness or a sincere desire to learn its ways. Guides offer their services readily."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dhampir of Morgau",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"persuasion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyMusicalInstrument": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"signet ring|phb",
+						"musical instrument|phb",
+						"riding horse|phb",
+						"fine clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Intimidation}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One {@item musical instrument|PHB} of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item signet ring|PHB}, a {@item musical instrument|PHB}, a {@item riding horse|PHB}, a set of {@item fine clothes|PHB}, and a {@item pouch|PHB} containing 10 gp."
+						}
+					]
+				},
+				"The Principalities of Morgau and Doresh burst at the seams with miserable specimens of humanity, or deluded wretches who seek undeath to elevate their station. Your lot is greater, thanks to your noble blood\u2014you were born to one of the vampire houses, the spawn of a vampire lord and a mortal mother. Unlike dhampir who desperately eke out a living from a world that rejects them, you were raised with opportunity and privilege.",
+				{
+					"type": "entries",
+					"name": "Feature: Lord of the Night",
+					"entries": [
+						"You give off a mien of lordship that undead, and those who venerate them, can't ignore. Within the Principalities you are treated according to your high station; your presence is rarely challenged, and you can demand lodging and hospitality for yourself and your companions (equivalent to a common lifestyle for yourself, and a poor lifestyle for non-dhampir companions). Outside Morgau and Doresh, undead creatures are disposed to hear your words instead of leaping directly to battle. Mindless or simple undead such as skeletons and zombies don't recognize you for what you are, but more intelligent undead may be willing to treat instead of fight, if you approach them correctly."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The highborn blood of Morgau are often vain, haughty, and cruel. Most revel in their dominion over the lesser breathing races that comprise the peasantry, but not all. Some recognize the darkness and decay that surrounds their station, and develop a conscience and empathy."
+					]
+				}
+			]
+		},
+		{
+			"name": "Exile of the Black City",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"survival": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"thieves' tools": true,
+					"vehicles (land)": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"traveler's clothes|phb",
+						"mule|phb",
+						{
+							"item": "thieves' tools|phb",
+							"quantity": 2
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Deception}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Thieves' tools|PHB}, vehicles (land)"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "a set of {@item traveler's clothes|PHB}, a {@item mule|PHB}, two sacks containing a set of {@item thieves' tools|PHB} and 10 gp"
+						}
+					]
+				},
+				"Misto Cherno, also known as the Black City, is the traveling fortress that serves as capital to the villains and bandits of the plains. The size of the city changes to match the overall health of the Rothenian lands. In times of strife, turmoil, and war, the city grows, adding wagons and walls to accommodate the increase. During times of peace, the city's population shrinks. It is said that once Misto Cherno consisted of just four walled wagons. As long as there are those with few scruples, the Black City rolls.",
+				"You are from this villainous place. Your story before finding a home among the Khazzak and Kariv bandits is yours to decide. What events led you to take a place by the fires of Misto Cherno? What choice did you have? Were you born inside the wooden walls? Perhaps you were a captive, taken in a raid by foul-tempered centaurs who thought to sell you to slavers\u2014or worse.",
+				"Now, and perhaps just this very hour, you have been exiled from Misto Cherno. Whether your exile was self-imposed or decreed by the lord herself, you are no longer welcome in the city of bandits. Perhaps you felt called to some other purpose. Perhaps you found a god in the smoke and the callous laughter of thieves. What has changed your heart, such that banditry no longer suits it?",
+				"This road will be long. Many will not trust you. The dark and twisting tendrils from your time in Misto Cherno will always seek you.",
+				{
+					"type": "entries",
+					"name": "Feature: Know Evil",
+					"entries": [
+						"Your time in the Black City left a mark on your spirit and your flesh. Dark deeds lie in your past, and you have a keen insight into the motivations of evil-aligned beings. Unless a creature's alignment is obscured by magical means, you know whether a creature's alignment is evil after interacting with it or for a minute or more. Also, you must choose the location on your body where the five-spoked wheel was branded into your flesh. Showing the mark to bandits, criminals, burglars, thieves, and other unsavory types (GM's discretion) grants you advantage on Charisma checks when dealing with them, but good folk are likely to turn against you if your past is revealed."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Exiles of the Black City have rejected their nefarious past. They strive toward redemption or anonymity in the general population."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ghost Knight",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"intimidation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyGamingSet": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "tabard displaying the Order's insignia (a skull on a red background)"
+						},
+						{
+							"special": "battle trophy (perhaps a Krakovan banner or a broken shield)"
+						},
+						{
+							"item": "gaming set|phb",
+							"displayName": "gaming set of your choice"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill Intimidation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One type of {@item gaming set|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A tabard displaying the Order's insignia (a skull on a red background), a battle trophy (perhaps a Krakovan banner or a broken shield), a {@item gaming set|PHB} of your choice, and a {@item pouch|PHB} containing 10 gp."
+						}
+					]
+				},
+				"You joined the Ghost Knights of Morgau, also known as the Order of the Knights Incorporeal, either willingly or as a result of being conscripted, and were bound in service to an officer in the order\u2014most likely a vampire, darakhul, or priestess of the Red Goddess. As a humble foot soldier, you almost certainly took part in the brief and bloody war to seize the Electoral Kingdom of Krakova for the Principalities, fighting alongside both undead troops and living warrior-priests of Mavros and Marena.",
+				"Your bravery in battle and loyal service mean you are next in line to enter the ranks of the undead, joining the Order of the Red Shield as an Initiate Brother or Sister. But unlife as a ghoul or vampire spawn doesn't appeal to you, so you've decided to strike out on your own and leave the Order behind. Perhaps you were given an honorable discharge in recognition of your diligent service and released from your obligations, or maybe you simply deserted. Either way, your time in the ghost knights taught you much about the undead and the art of war in Morgau.",
+				{
+					"type": "entries",
+					"name": "Feature: When the Going Gets Tough",
+					"entries": [
+						"Keeping up with fast-moving ghoul soldiers taught you how to march at a brisk pace without losing awareness of your surroundings and to keep going for longer. You can move at a fast travel pace outdoors without suffering a penalty to your passive Wisdom ({@skill Perception}) score, and you can travel for up to 10 hours per day before risking {@condition exhaustion}."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Ghost knights have been through a lot while serving in the armies of Morgau\u2014the horror of what they see while fighting among the undead leaves a lasting impression on their personalities. It's hard not to become scarred by what they've experienced, but many ghost knights go on to develop strong ideals or form long-lasting bonds as a result of their time in the order."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gnoll Caravan Rider",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"acrobatics": true,
+					"intimidation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"alchemist's supplies": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "flask|phb",
+							"displayName": "flask of alchemist's fire"
+						},
+						{
+							"special": "annotated map of the desert showing the most popular caravan routes"
+						},
+						{
+							"special": "trophy from a successful raid"
+						},
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Acrobatics}, {@skill Intimidation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Alchemist's supplies|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item flask|PHB} of alchemist's fire, an annotated map of the desert showing the most popular caravan routes, a trophy from a successful raid, a set of {@item traveler's clothes|PHB}, and a belt {@item pouch|PHB} containing 10 gp"
+						}
+					]
+				},
+				"Gnolls are found in large numbers throughout the Southlands. While many are civilized (more or less) and join local armies to fight as shock troops, their savage cousins roam the deserts and wilderness preying on caravans. Gnolls are accomplished raiders, attacking with stealth, creating chaos and panic, and then slipping away with the plunder before the merchants and their guards know what's hit them. While some gnoll raiders follow Bastet or her jackal-headed husband Anu-Akma, the worst of them have turned to the dark god Laughing Nkishi or have joined the vile Doomspeakers cult.",
+				"Gnoll raiders like throwing alchemist's fire, smoke bombs, and other homemade concoctions to wreak havoc when they raid a caravan. They favor giant hyenas as mounts.",
+				{
+					"type": "entries",
+					"name": "Feature: Desert Rat",
+					"entries": [
+						"You know the caravan routes and oases of the Southlands like the back of your hand and can move at a fast travel pace through the desert without taking the usual-5 penalty to your passive Wisdom ({@skill Perception}) score. Your experience in stealing from caravans allows you to quickly search through trade goods and other plunder. You gain advantage on Intelligence ({@skill Investigation}) checks to work out which are the most valuable items."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"While gnoll raiders are all robbers and few could be considered kind-hearted, some are more savage and bloodthirsty than others, who may possess one\u2014maybe even two\u2014redeeming features. Gnolls are bullies, preying on those weaker than themselves and grudgingly obeying those that are stronger. Ideals and bonds are often shaped by the god the raider follows."
+					]
+				}
+			]
+		},
+		{
+			"name": "Haunted Villager",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"nature": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "artisan's tools|phb",
+							"displayName": "set of artisan's tools (one of your choice)"
+						},
+						{
+							"special": "token from a deceased family member"
+						},
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Nature}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One type of {@item artisan's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item artisan's tools|PHB} (one of your choice), a token from a deceased family member, a set of {@item common clothes|PHB}, and a belt {@item pouch|PHB} containing 10 gp."
+						}
+					]
+				},
+				"Life is bleak and relentless under vampire rule for the common folk of the Blood Kingdom. You were a hardworking peasant or craftsman living in one of the villages or small towns in Morgau, Doresh, or Krakova. The days were long and only fleeting moments of joy punctuated your miserable existence. What little money you made was barely enough to keep your family clothed and fed, and the menacing presence of the elders and the priestesses of the Red Goddess made true happiness elusive.",
+				"Then one day, things took a sudden turn for the worse when a traumatic incident changed your life forever. In the aftermath of the tragedy, you turned your back on your village and headed out into the wider world to begin your adventuring career. Perhaps you felt your destiny lay elsewhere, or maybe you needed to escape from a place filled with bad memories.",
+				{
+					"type": "entries",
+					"name": "Terrible Incident",
+					"entries": [
+						"What was the tragic event that led you to leave home and take up a life of adventure? Come up with your own or roll on the table below."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Born of the Soil",
+					"entries": [
+						"You are familiar with the fields, forests, and mountains of the Blood Kingdom and have no problem finding your way in the countryside, with or without a map. When you arrive at a village in the Principalities, you receive a warm welcome from the local peasants and can readily find someone willing to give you a good meal and a bed for the night."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Haunted villagers are shaped by dark events in their past, and the loved ones they lost still haunt their dreams every night. Sometimes the tragedy they experienced leads them to seek revenge on the vampires and other dark forces that cause so much misery, and to fight for freedom and for the common people against oppression. Family, friends, home, and village are most often important bonds to haunted villagers."
+					]
+				}
+			]
+		},
+		{
+			"name": "Krakovan Rebel",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"stealth": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"forgery kit": true,
+					"thieves' tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "bag of ball bearings"
+						},
+						{
+							"special": "feet of silk rope",
+							"quantity": 50
+						},
+						{
+							"item": "common clothes|phb",
+							"displayName": "dark common clothes including a hood"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Deception}, {@skill Stealth}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Forgery kit|PHB}, {@item Thieves' tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A bag of ball bearings, 50 feet of silk rope, a set of dark {@item common clothes|PHB} including a hood, and a belt {@item pouch|PHB} containing 10 gp."
+						}
+					]
+				},
+				"You were a loyal citizen and supporter of King Eynryk, rightful ruler of the Electoral Kingdom of Krakova, when the undead army of the Principalities invaded. Still living within the borders of the Province of Krakovar, your loyalties now lie with the exiled Queen Urzula, and you despise the vampires who conquered your homeland.",
+				"You have joined the ranks of the resistance to Morgau's rule, taking part in ambushes and small acts of sabotage against the undead. You may have rescued innocents enslaved as thralls or due to be sacrificed on the altars of the Blood Goddess, and smuggled them over the border into New Wolfheim or Dornig. Perhaps you denounced the government during a service to Mavros or stole coins from the tax man's coffers to buy weapons for the struggle.",
+				"You know the undead rulers are outnumbered nearly eight to one and are beset by enemies on all sides, so you are hopeful that they can be overthrown.",
+				{
+					"type": "entries",
+					"name": "Origin",
+					"entries": [
+						"All sorts of Krakovans have joined the resistance and thrown their lot in with Queen Urzula. Choose your origin or roll on the table below."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Rebel Network",
+					"entries": [
+						"You have secret resistance connections throughout Krakovar that you can call upon for assistance when you identify yourself to them with the correct code word. These agents and sympathisers will do their best to provide you with a safe house or other place to hide, keep you out of trouble with the authorities, and give you useful information, but they won't risk their own lives for you."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The rebel numbers include a mixed bag of diverse personalities and character traits. Some fighters experienced the horror of seeing their families killed by the undead and have sworn to carry out swift and violent revenge. Others adopt a more considered approach, acting with subtlety and only after careful planning. Resistance fighters are dedicated to the overthrow of the vampires and the restoration of the Electoral Kingdom, and this is nearly always reflected in their ideals and bonds."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mharoti Emissary",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"history": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "text of \"accurate\" history"
+						},
+						{
+							"special": "propaganda pamphlets"
+						},
+						"fine clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Deception}, {@skill History}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A text of \"accurate\" history, propaganda pamphlets, a set of {@item fine clothes|PHB}, and a {@item pouch|PHB} containing 10 gp."
+						}
+					]
+				},
+				"You are an agent of the Dragon Empire abroad in the nations of Midgard. You might be traveling as a legitimate ambassador, or without displaying your allegiance. Wherever you go, you present a \"true\" version of history regarding the Mharoti empire and the kingdom you happen to be in. The details of this tale encourage sympathy toward the empire and dissent toward the local government.",
+				{
+					"type": "entries",
+					"name": "Feature: Underground Network",
+					"entries": [
+						"You have access to a network of safe houses set up by other Mharoti agents throughout Midgard. You can recognize a safe house by key phrases or symbols, and you know the password to gain entry. All major cities and most settlements of any significant size have at least one such safe house. Local agents and Mharoti sympathizers swayed by propaganda can have any number of useful rumors and tips."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Mharoti emissaries are split into two main groups: overt and subtle. Overt emissaries hide in plain sight and are often in some official guise, such as a merchant or diplomat. Subtle emissaries insinuate themselves into the local populace without attracting attention. In either case they are delicate in their approach, lest the local authorities discover them too quickly."
+					]
+				}
+			]
+		},
+		{
+			"name": "Miner",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"nature": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"miner's pick|phb",
+						"shovel|phb",
+						"lamp|phb",
+						{
+							"special": "piece of chalk"
+						},
+						{
+							"special": "caged canary"
+						},
+						"common clothes|phb"
+					]
+				},
+				{
+					"a": [
+						{
+							"item": "gold|phb",
+							"displayName": "gold nugget"
+						}
+					],
+					"b": [
+						{
+							"special": "uncut gemstone",
+							"worthValue": 2500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill Nature}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One type of {@item artisan's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item miner's pick|PHB}, a {@item shovel|PHB}, a {@item lamp|PHB}, a piece of chalk, a caged canary, a set of {@item common clothes|PHB}, and a {@item gold|PHB} nugget or uncut gemstone worth 25 gp"
+						}
+					]
+				},
+				"You grew up in the Free Cantons of the Ironcrags, the kobold city of Lillefor, or the human mining communities of the Seven Cities. You learned how to dig deep beneath the surface of Midgard in search of iron, copper, silver, gold and rarer metals, or valuable minerals and gemstones. Whether you used clever technological innovations and magic to get at these prized ores and precious stones, or relied on your brute strength and dogged determination, it was an exciting and dangerous life. Hazards such as flooding, pockets of flammable and poisonous gas, caveins and red-hot magma were commonplace, and you sometimes needed to defend yourself against the hostile creatures of the realms below as you worked.",
+				{
+					"type": "entries",
+					"name": "Feature: Underground Adept",
+					"entries": [
+						"Your experience in the mines has taught you how to survive in underground environments. You are accustomed to {@quickref Vision and Light||2||dim light} and can make Wisdom ({@skill Perception}) checks without disadvantage in shadowy areas. You also have a good memory for the twists and turns of underground tunnels and passages, allowing you to retrace your steps unerringly through tunnels you've traversed before and to estimate how deep below ground you are."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Miners come from tight-knit communities, so clan, family, and tradition are important to them. They value industriousness and persistence and have little time for feckless layabouts. Some are still driven by the pursuit of material wealth; others turn their backs on gold and greed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mountain's Witness",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"persuasion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"infernal": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "varies (see the Bargain feature)"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Deception}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Infernal"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "varies (see the Bargain feature)"
+						}
+					]
+				},
+				"Dontrona Mountain, Sable Mountain, Demon Mountain; call it what you will, this spire of mystery and infernal plots looms large on both the horizon and in the dreams of Rothenians. You know more than most of this place, for you have made a bargain with its masters.",
+				"Once a dangerous wasteland occupied by long extinct people, the mountain at the southern edge of the Wormwood now hosts a scheming malevolence. The sorcerer known as the Master is a legendary figure on the plains. His children, born from unions both unholy and unspoken, spread themselves across Midgard. They work in favor of their father, that demon-binder and selfproclaimed descendent of Vael Turog. What machinations do his children fuel? The slate and stone of the mountain know; perhaps you do, too.",
+				"You have made a bargain with agents of the mountain. How did this bargain come to be? Did you seek the servants of the Master yourself in a bid for power or knowledge? Did they find you one night as you camped near the road, tempting you with promises and gold? Do you wish an audience with the Master? What did they ask you to burn in the fel-flames to seal the agreement? Their devilish faces grinned luridly and coaxed you, here is the fire, come make your mark. What must you do, having breathed the sulphuric smoke of the hells?",
+				"You walk the plains unmarked by your agreement. Others see you for what you appear to be: adventurer, scholar, devout, bandit, merchant. But the children of the Master and their servants know you by another name. They call you a witness. One day, you hope they call you knyaz, a lord of the infernal spire. Today, however, you have a missive to send. No detail is inconsequential.",
+				{
+					"type": "entries",
+					"name": "Feature: Bargain",
+					"entries": [
+						"You have made a contract with one of the demonic children of the Master. They may see and hear through you as though you were a familiar. This observation comes and goes depending on the patron. You are aware of when your actions are being monitored, but others are not. Your patron's observation of your life is magical and can be detected by spells such as detect magic while it's occurring.",
+						"The observation only functions on the Material Plane. As a reward for being a witness, you are paid 25 gp per month for each level of experience you've gained. You start your adventuring career with either:",
+						{
+							"type": "list",
+							"items": [
+								"A sustained comfortable lifestyle, a furnished home, two sets of noble's clothes, and 50 gp stored in a chest.",
+								"A riding horse with saddle, an explorer's pack, a set of traveler's clothes, and a belt pouch containing 25 gp."
+							]
+						}
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Those who strike bargains with agents of the Master don't consider themselves reckless; they see themselves only as ambitious. If they take great chances, it's only to win great rewards in pursuit of that ambition\u2014and in service to the Master."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mystic of Baba Yaga",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"insight": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "staff|phb",
+							"displayName": "staff with an old lantern affixed to it"
+						},
+						"herbalism kit|phb",
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item staff|PHB} with an old lantern affixed to it, an {@item herbalism kit|PHB}, a set of {@item traveler's clothes|PHB}, a belt {@item pouch|PHB} with 10 gp."
+						}
+					]
+				},
+				"The buzz of bees drunk on pollen, the cracks left by footsteps on a frozen puddle, the whispering of pines on windless nights: the signs of Grandmother are everywhere. You see them, you see them all.",
+				"Baba Yaga, as changing as the Sands of Sorrows, as steady as the placement of the stars. Grandmother she is called, though she has only daughters. The legends of this powerful witch are known far beyond the Rothenian Plain. You carry the stories of her in your heart, memorized and trotted out too often in conversation. You have been called odd, ill-fated, and worse, but you take comfort in your surety that she is watching you.",
+				"You have spent time in study of her. What was it that drew you to her? Did you have a vision while riding to Bjornshafen? Did you hear a raspy voice inside Kariv singing that only you could hear? The fog condensed on the window from the breath of tavern-goers in Vidim; did it show you the shape of your future? {@action Magic|XPHB} has always drawn you. The ley lines call to you, ask for you. You see the cairns built upon the Rothenian Plain, where the ley lines cross and knot. You know it is perilous to invoke her and deadly to seek her company, but there, just now, you saw the way the sparrow took flight. Its flapping was portentous. She watches, she knows, she is here.",
+				{
+					"type": "entries",
+					"name": "Language Proficiencies:",
+					"entries": [
+						"Two of your choice"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Grandmother's Touch",
+					"entries": [
+						"Your obsession with Grandmother Yaga has, for better or worse, drawn her attention to you. You may spend a day locating and interpreting the signs of the great witch (counts as downtime). After doing so, you may choose one of the following:"
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Locate Veela:",
+					"entries": [
+						"The location of the nearest Veela appears to you in a vision."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Baleful Eye:",
+					"entries": [
+						"One of your eyes becomes yellow and milky for a day. The eye allows you to see into the souls of nearby creatures and detect any lies they tell. Goodhearted folk who see the clouded eye treat you with suspicion or outright hostility."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sustained by Dust:",
+					"entries": [
+						"Your food and water requirement for the next day are met by eating one pound of any organic matter."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Mystics of Baba Yaga are never free of her whispering in their minds. Even when they can't hear the voice, when its faint gibbering is drowned out by groans of pain or cries of terror\u2014even then, they know the whispers are still there."
+					]
+				}
+			]
+		},
+		{
+			"name": "Neimheim Gnome",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"deception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"infernal": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "artisan's tools|phb",
+							"displayName": "set of artisan's tools (matching your chosen proficiency)"
+						},
+						{
+							"special": "roll of remarkably fine vellum"
+						},
+						"traveler's clothes|phb",
+						{
+							"special": "candles",
+							"quantity": 5
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Deception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One set of {@item artisan's tools|PHB} of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Infernal"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item artisan's tools|PHB} (matching your chosen proficiency), a roll of remarkably fine vellum, a set of {@item traveler's clothes|PHB}, five candles, and a {@item pouch|PHB} containing 5 gp"
+						}
+					]
+				},
+				"You hail from the gnomish kingdom of Neimheim: a place of skilled craftsmen, close families, and blood stains so deep they'll never wash out. Your homeland labors under a generations-old curse laid by Baba Yaga. Today, your people exist because of a pact struck with a great devil from the Eleven Hells. The pine forests of your home survive because of blood sacrifice paid to the forces of Hell, so the devils hold Baba Yaga's wrath at bay. You are no stranger to the necessity of keeping up appearances to cover your desperate situation.",
+				{
+					"type": "entries",
+					"name": "Feature: \"Special\" Leather",
+					"entries": [
+						"Growing up in Neimheim, you have learned not to waste any useful resources. After all, there's always a market for fine leather, new candles, carved bone jewelry, or soap. You can spend 2 hours salvaging useful materials from a dead humanoid. A Medium humanoid yields enough materials to make 5 pieces of soap, 10 candles, 1 sheet of parchment, or a delicious meat pie that can sustain up to a Medium creature for one day (1 sp worth of goods). With your GM's permission, you can also create small goods such as belts, pouches, and shoes."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Gnomes of Neimheim are jovial, gregarious, and hospitable\u2014at least on the surface. While many are genuinely bright individuals, their cultural darkness runs deep. Even the best among them know they must spill blood to survive. Some embrace this harsh truth, putting on a friendly face only to lure strangers under the knife to spare their families. Others reject the infernal darkness clouding their home."
+					]
+				}
+			]
+		},
+		{
+			"name": "Northlands Reaver",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"giant": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"vehicles (water)": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "plundered memento from a past raid"
+						},
+						{
+							"special": "coil of hemp rope"
+						},
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Intimidation}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Vehicles (water)"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Giant"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A plundered memento from a past raid, a coil of hemp rope, a set of {@item traveler's clothes|PHB}, and a {@item pouch|PHB} containing 5 gp."
+						}
+					]
+				},
+				"The Northland's brutal winters breed harsh people; perhaps none more so than the reavers. Your life is a series of challenges to be overcome, spoils to be taken, and honor to be earned. You have sailed the icy northern seas in the dead of winter and the black of night, and you have put your enemies to the blade and the flame. Your name is fear on the lips of your foes and glory in the songs of your comrades.",
+				{
+					"type": "entries",
+					"name": "Feature: Reaver's Journey",
+					"entries": [
+						"Many sailors fear to sail far from charted water and familiar shores. Some balk at steering into the teeth of a gale in the dead of night. They are not you. As long as you aren't traveling at a fast pace, you can't lose your way under normal conditions. Inclement weather, lack of tools, or magic might impose penalties or steer you awry at the GMs discretion. Additionally, if you don't undertake any other activity while traveling on a rowed vessel, you can drive the rowers to push beyond their ordinary limits. The rowers can crew the ship for 1 additional hour before risking {@condition exhaustion}."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Northlands reavers live by a strict code of behavior and honor that seems paradoxical to outsiders. Though you are brutal in battle, you are also fearless, honorable, and hospitable. This even applies to your enemies outside of battle, so long as they return the courtesy. Bloodthirsty reavers are common, though, and those who reject honor and become outlaws are among the most feared brigands in all of Midgard."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nurian Theurge",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"religion": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"calligrapher's supplies": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"Ancient Nurian",
+							"Celestial"
+						],
+						"count": 1
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "roll of linen strips"
+						},
+						{
+							"special": "sacred texts and diagrams"
+						},
+						"common clothes|phb",
+						{
+							"special": "small packet of spices"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Religion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Calligrapher's tools"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice between Ancient Nurian and Celestial"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A roll of linen strips, sacred texts and diagrams, a set of {@item common clothes|PHB}, a small packet of spices, and a {@item pouch|PHB} containing 5 gp."
+						}
+					]
+				},
+				"The Southlands kingdom of Nuria-Natal is steeped in the magic of life and death. The greatest keeper of this knowledge is the theurge. As a theurge, you study the flow of the River Nuria that gives life to the desert, both physically as a source of fresh water, and magically as one of the largest ley lines in the world. You are the keeper of life and preserver of the dead for the next world. Most theurges are either clerics or wizards, but all have a working knowledge of both divine and arcane magic.",
+				{
+					"type": "entries",
+					"name": "Feature: Preservation",
+					"entries": [
+						"The first theurges venerated Anu-Akma and learned the secrets of mummification. By applying those teachings, you can prepare a body for the final journey or even for the return to life. With 8 hours of work and access to proper materials such as linen and spices (25 gp cost), you can preserve a dead creature's body. This preservation slows decay, allowing a body to remain intact for potentially thousands of years if undisturbed. A preserved body counts as 1 day dead for every month that passes for purposes of spells or other magical effects."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Theurges are somber, solemn individuals. Many of them serve a god such as Aten or Anu-Akma. All are studious individuals who hold knowledge of the past in high regard. Theurges range from compassionate keepers of the dead, to dour souls who seek the darkness of preservation through undeath."
+					]
+				}
+			]
+		},
+		{
+			"name": "Prophet",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"persuasion": true,
+					"religion": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"a": [
+						"holy symbol|phb"
+					],
+					"b": [
+						{
+							"special": "idol representing the higher power that grants your revelations"
+						}
+					]
+				},
+				{
+					"_": [
+						"common clothes|phb",
+						{
+							"special": "collection of your recorded thoughts and philosophy"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"calligrapher's supplies",
+							"painter's supplies"
+						],
+						"count": 1
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"abyssal",
+							"celestial",
+							"deep speech",
+							"draconic",
+							"infernal",
+							"sylvan"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Persuasion}, {@skill Religion}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice from the following list appropriate to the power that grants your revelations: Abyssal, Celestial, Deep Speech, Draconic, Elemental (one dialect), Infernal, or Sylvan"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiency:",
+							"entry": "One of your choice between {@item calligrapher's supplies|PHB} or {@item painter's supplies|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item holy symbol|PHB} or idol representing the higher power that grants your revelations, a set of {@item common clothes|PHB}, a collection of your recorded thoughts and philosophy, and a belt {@item pouch|PHB} containing 5 gp"
+						}
+					]
+				},
+				"Truth rings throughout the multiverse, and sometimes it finds a place to resonate loud and clear. You are one such point. There is a greater power at work in the world, and you can see pieces of its design. Unlike the faint glimpses of a fortuneteller or the twisted lies of a charlatan, your words stir something in those who hear your message. From the doomsday ravings of a filthy derelict on the street corner to the polished words of an urbane and refined cult mistress, a prophet is the servant of a higher power, setting the truth of that power into motion.",
+				{
+					"type": "entries",
+					"name": "Feature: Words from on High",
+					"entries": [
+						"You have seen the truth, and your word brings that truth into the world. More important, that truth stirs others to action. People who hear and accept your words are moved to action. Such individuals will lend aid and offer their services toward your cause, whether that involves building a new temple, clearing storm damage, or feeding the hungry. They won't take undue risk, however. Temples and other religious organizations commonly accept prophets of their faith, but noble houses, merchants, trade guilds, and any other organization might share their resources. Additionally, you can secure audiences with powerful individuals or invitations to events that normally exist above your station. From those who fear or oppose your vision you can expect social hostility, though some might fear to act directly against you.",
+						"Work with the GM to determine the source and subject of your revelations, and what sorts of people they appeal to or offend."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Prophets all have one trait in common\u2014conviction. Whether they gleefully spread the good word of a benevolent deity or dire tidings of a coming darkness, the prophet knows in her bones that what she sees, and says, is true. Some may fear this internal certainty. They might attempt to hide their light beneath a bushel and deny the calling. It may take years for a prophet to accept herself, but in the end she can't deny the truth."
+					]
+				}
+			]
+		},
+		{
+			"name": "Seer",
+			"source": "MidgardHeroes",
+			"page": 0,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyGamingSet": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "gaming set|phb",
+							"displayName": "gaming set of your choice"
+						},
+						{
+							"special": "token of appreciation from a past client"
+						},
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Perception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One {@item gaming set|PHB} of your choice (cards, dice, or some other divination tool)"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item gaming set|PHB} of your choice, a token of appreciation from a past client, a set of {@item common clothes|PHB}, and a belt {@item pouch|PHB} containing 5 gp"
+						}
+					]
+				},
+				"The stars guide all footsteps on the path. Seers are rare individuals endowed with the gift to see beyond the mundane veil cloaking the world to the truth illuminated by those stars. Cause and effect run in scattered lines to a seer's eyes, linking individuals and events seemingly unrelated to the casual observer. Only a fool discounts the word of one who sees the twists of fate.",
+				{
+					"type": "entries",
+					"name": "Feature: Glimpse of Fortune",
+					"entries": [
+						"Using a minor method of divination, you are able to see glimpses of a target's future. You must spend one hour in conversation with the subject and consultation with your divination method. At the end of this time you can offer insight into the subject's possible future. These details are always vague, but the reading affords you the chance to gain insight into your subject and possibly enter their good graces. After giving a reading, you can expect a client to be more relaxed and willing to favorably consider any proposal you make (treat them as one category more favorable for purposes of social interaction). Additionally, you can receive minor favors or consideration from past subjects in a variety of locations. Assume you can find at least one friendly contact in a city that you have spent at least some time in the past."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Seers are a disparate lot. Some embrace their gift and seek to share their knowledge, while others fear the unbidden insights they receive. Seers are resigned to the whim of happenstance, and they see design where others would see coincidence."
+					]
+				}
+			]
+		}
+	]
+}
