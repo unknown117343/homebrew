@@ -28,6 +28,11 @@
 		"dateLastModified": 1776926873,
 		"_dateLastModifiedHash": "1344ba9c92"
 	},
+	"_test": {
+		"additionalImageSources": [
+			"tgs1"
+		]
+	},
 	"race": [
 		{
 			"name": "Feathren",
