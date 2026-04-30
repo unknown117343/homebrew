@@ -2764,7 +2764,7 @@
                 "Summoner|SummonerClass24"
             ],
             "entries": [
-                "These fine chains can be worn as a necklace or a bracelet, and they dimly glow while your Eidolon is near. You can use the chains as a spellcasting focus for your spells while wearing it, and you gain a +1 bonus to spell attack rolls ands to the saving throw DCs of your Summoner spells.",
+                "These fine chains can be worn as a necklace or a bracelet, and they dimly glow while your Eidolon is near. You can use the chains as a {@variantrule Spellcasting Focus|XPHB} for your spells while wearing it, and you gain a +1 bonus to spell attack rolls ands to the saving throw DCs of your Summoner spells.",
                 "In addition, when you sacrifice your action or {@variantrule Bonus Action|XPHB} to grant your Eidolon Action Points, you can increase the number of Action Points it gains by 2, provided it is within 30 feet of you. Once this property is used, it can't be used again until the next dawn."
             ]
         },
@@ -2781,7 +2781,7 @@
                 "Summoner|SummonerClass24"
             ],
             "entries": [
-                "These fine chains can be worn as a necklace or a bracelet, and they dimly glow while your Eidolon is near. You can use the chains as a spellcasting focus for your spells while wearing it, and you gain a +2 bonus to spell attack rolls ands to the saving throw DCs of your Summoner spells.",
+                "These fine chains can be worn as a necklace or a bracelet, and they dimly glow while your Eidolon is near. You can use the chains as a {@variantrule Spellcasting Focus|XPHB} for your spells while wearing it, and you gain a +2 bonus to spell attack rolls ands to the saving throw DCs of your Summoner spells.",
                 "In addition, when you sacrifice your action or {@variantrule Bonus Action|XPHB} to grant your Eidolon Action Points, you can increase the number of Action Points it gains by 2, provided it is within 30 feet of you. Once this property is used, it can't be used again until the next dawn."
             ]
         },
@@ -2798,7 +2798,7 @@
                 "Summoner|SummonerClass24"
             ],
             "entries": [
-                "These fine chains can be worn as a necklace or a bracelet, and they dimly glow while your Eidolon is near. You can use the chains as a spellcasting focus for your spells while wearing it, and you gain a +3 bonus to spell attack rolls ands to the saving throw DCs of your Summoner spells.",
+                "These fine chains can be worn as a necklace or a bracelet, and they dimly glow while your Eidolon is near. You can use the chains as a {@variantrule Spellcasting Focus|XPHB} for your spells while wearing it, and you gain a +3 bonus to spell attack rolls ands to the saving throw DCs of your Summoner spells.",
                 "In addition, when you sacrifice your action or {@variantrule Bonus Action|XPHB} to grant your Eidolon Action Points, you can increase the number of Action Points it gains by 2, provided it is within 30 feet of you. Once this property is used, it can't be used again until the next dawn."
             ]
         },
