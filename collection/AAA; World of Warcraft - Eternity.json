@@ -1,0 +1,3635 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WarcraftExpanded",
+				"abbreviation": "WoW:E",
+				"full": "World of Warcraft: Expanded",
+				"authors": [
+					"AAA"
+				],
+				"convertedBy": [
+					"Hazmat"
+				],
+				"color": "7e5f98"
+			},
+			{
+				"json": "WarcraftStreamlined",
+				"abbreviation": "WoW:S",
+				"full": "World of Warcraft: Streamlined",
+				"authors": [
+					"AAA"
+				],
+				"convertedBy": [
+					"Hazmat"
+				],
+				"color": "007D2A"
+			}
+		],
+		"featCategories": {
+			"FS:DH": "Fighting Style Replacement (Demon Hunter)"
+		},
+		"edition": "one",
+		"dateAdded": 1791684753,
+		"dateLastModified": 1791684753
+	},
+	"class": [
+		{
+			"name": "Demon Hunter",
+			"source": "WarcraftStreamlined",
+			"edition": "one",
+			"primaryAbility": [
+				{
+					"dex": true,
+					"wis": true
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "artificer",
+			"preparedSpellsProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				6,
+				7,
+				7,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				14,
+				14,
+				15,
+				15
+			],
+			"preparedSpellsChange": "restLong",
+			"classSpells": [
+				{
+					"className": "Ranger",
+					"classSource": "XPHB"
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"hunter's mark|xphb"
+						]
+					}
+				}
+			],
+			"featProgression": [
+				{
+					"name": "Fighting Style",
+					"category": [
+						"FS",
+						"FS:DH"
+					],
+					"progression": {
+						"2": 1
+					}
+				},
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"defaultData": [
+					{
+						"A": [
+							{
+								"item": "studded leather armor|xphb"
+							},
+							{
+								"item": "scimitar|xphb"
+							},
+							{
+								"item": "shortsword|xphb"
+							},
+							{
+								"item": "longbow|xphb"
+							},
+							{
+								"item": "arrows (20)|xphb"
+							},
+							{
+								"item": "quiver|xphb"
+							},
+							{
+								"item": "sprig of mistletoe|xphb"
+							},
+							{
+								"item": "explorer's pack|xphb"
+							},
+							{
+								"value": 700
+							}
+						],
+						"B": [
+							{
+								"value": 15000
+							}
+						]
+					}
+				],
+				"entries": [
+					"{@i Choose A or B:} (A) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Druidic Focus|XPHB} ({@item sprig of mistletoe|XPHB}), {@item Explorer's Pack|XPHB}, and 7 GP; or (B) 150 GP"
+				]
+			},
+			"multiclassing": {
+				"proficienciesGained": {
+					"weapons": [
+						"martial"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"athletics",
+									"insight",
+									"investigation",
+									"nature",
+									"perception",
+									"stealth",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Favored Enemy"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Prepared Spells|spells|level=!0|class=Demon Hunter (wow:s)}"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							12
+						],
+						[
+							14
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							15
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=demon hunter (wow:s)}",
+						"{@filter 2nd|spells|level=2|class=demon hunter (wow:s)}",
+						"{@filter 3rd|spells|level=3|class=demon hunter (wow:s)}",
+						"{@filter 4th|spells|level=4|class=demon hunter (wow:s)}",
+						"{@filter 5th|spells|level=5|class=demon hunter (wow:s)}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Spellcasting|Demon Hunter|WarcraftStreamlined|1",
+				"Favored Enemy|Demon Hunter|WarcraftStreamlined|1",
+				"Weapon Mastery|Ranger|XPHB|1",
+				"Deft Explorer|Ranger|XPHB|2",
+				"Fighting Style|Demon Hunter|WarcraftStreamlined|2",
+				{
+					"classFeature": "Demon Hunter Specialization|Demon Hunter|WarcraftStreamlined|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Demon Hunter|WarcraftStreamlined|4",
+				"Extra Attack|Ranger|XPHB|5",
+				"Roving|Ranger|XPHB|6",
+				{
+					"classFeature": "Specialization Feature|Demon Hunter|WarcraftStreamlined|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Demon Hunter|WarcraftStreamlined|8",
+				"Expertise|Ranger|XPHB|9",
+				"Tireless|Ranger|XPHB|10",
+				{
+					"classFeature": "Specialization Feature|Demon Hunter|WarcraftStreamlined|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Demon Hunter|WarcraftStreamlined|12",
+				"Relentless Hunter|Ranger|XPHB|13",
+				"Nature's Veil|Ranger|XPHB|14",
+				{
+					"classFeature": "Specialization Feature|Demon Hunter|WarcraftStreamlined|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Demon Hunter|WarcraftStreamlined|16",
+				"Precise Hunter|Ranger|XPHB|17",
+				"Improved Spectral Sight|Demon Hunter|WarcraftStreamlined|18",
+				"Epic Boon|Ranger|XPHB|19",
+				"Foe Slayer|Ranger|XPHB|20"
+			],
+			"subclassTitle": "Demon Hunter Specialization",
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"type": "number",
+						"scale": {
+							"1": {
+								"value": 2
+							},
+							"5": {
+								"value": 3
+							},
+							"9": {
+								"value": 4
+							},
+							"13": {
+								"value": 5
+							},
+							"17": {
+								"value": 6
+							}
+						}
+					},
+					"title": "Favored Enemy"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "mark",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"number": 1,
+								"faces": 6
+							},
+							"20": {
+								"number": 1,
+								"faces": 10
+							}
+						}
+					},
+					"title": "Hunter's Mark Damage"
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 1,
+			"entries": [
+				"You have learned to channel the magical essence of nature to cast spells. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Demon Hunter spells, which appear in the {@filter Demon Hunter spell list|spells|class=Demon Hunter (wow:s)} later in the class's description.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spell Slots",
+							"entries": [
+								"The Demon Hunter Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Prepared Spells of Level 1+",
+							"entries": [
+								"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two {@filter level 1 Demon Hunter spells|spells|class=Demon Hunter (wow:s)|level=1}. {@spell Cure Wounds|XPHB} and {@spell Ensnaring Strike|XPHB} are recommended.",
+								"The number of spells on your list increases as you gain Demon Hunter levels, as shown in the Prepared Spells column of the Demon Hunter Features table. Whenever that number increases, choose additional Demon Hunter spells until the number of spells on your list matches the number in the Demon Hunter Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Demon Hunter, your list of prepared spells can include six Demon Hunter spells of level 1 or 2 in any combination.",
+								"If another Demon Hunter feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Demon Hunter spells for you."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Changing Your Prepared Spells",
+							"entries": [
+								"Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one spell on your list with another Demon Hunter spell for which you have spell slots."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spellcasting Ability",
+							"entries": [
+								"Wisdom is your spellcasting ability for your Demon Hunter spells."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spellcasting Focus",
+							"entries": [
+								"You can use an {@item Arcane Focus|XPHB} (not a {@item Druidic Focus|XPHB}) as a {@variantrule Spellcasting Focus|XPHB} for your Demon Hunter spells."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Favored Enemy",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 1,
+			"entries": [
+				"You always have the {@spell Hunter's Mark|XPHB} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a {@variantrule Long Rest|XPHB}.",
+				"The number of times you can cast the spell without a spell slot increases when you reach certain Demon Hunter levels, as shown in the Favored Enemy column of the Demon Hunter Features table."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 2,
+			"entries": [
+				"You gain a {@filter Fighting Style feat|feats|category=FS} of your choice. Instead of choosing one of those feats, you can choose the option below.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "refFeat",
+							"feat": "Void Warrior|WarcraftStreamlined"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Demon Hunter Specialization",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 3,
+			"entries": [
+				"You gain a Demon Hunter Specialization of your choice. For the rest of your career, you gain each of your specialization's features that are of your Demon Hunter level or lower."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 4,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Demon Hunter levels 8, 12, and 16."
+			]
+		},
+		{
+			"name": "Specialization Feature",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 7,
+			"entries": [
+				"You gain a feature from your Demon Hunter Specialization."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 8,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Specialization Feature",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 11,
+			"entries": [
+				"You gain a feature from your Demon Hunter Specialization."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 12,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Specialization Feature",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 15,
+			"entries": [
+				"You gain a feature from your Demon Hunter Specialization."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 16,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Improved Spectral Sight",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 18,
+			"entries": [
+				"Your have {@sense Truesight|XPHB} with a range of 30 feet."
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"name": "Favored Enemy",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 1,
+			"system": {
+				"uses.max": "@scale.demon-hunter.favored-enemy",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
+		},
+		{
+			"name": "Deft Explorer",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 2,
+			"entryData": {
+				"languageProficiencies": [
+					{
+						"any": 2
+					}
+				],
+				"expertise": [
+					{
+						"anyProficientSkill": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Roving",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 6,
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 9,
+			"entryData": {
+				"expertise": [
+					{
+						"anyProficientSkill": 2
+					}
+				]
+			}
+		},
+		{
+			"name": "Tireless",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 10,
+			"activities": [
+				{
+					"name": "Temporary Hit Points",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "(max(1,@abilities.wis.mod))"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"number": 1,
+						"denomination": 8,
+						"types": [
+							"temphp"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "(max(1,@abilities.wis.mod))"
+					}
+				},
+				{
+					"name": "Decrease Exhaustion",
+					"type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "Whenever you finish a Short Rest"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "attribute",
+								"value": "1",
+								"target": "attributes.exhaustion"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Nature's Veil",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 14,
+			"activities": [
+				{
+					"name": "Veil",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "naturesVeil"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "naturesVeil",
+					"name": "Veiled",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"turns": 1
+					},
+					"statuses": [
+						"invisible"
+					]
+				}
+			]
+		},
+		{
+			"name": "Improved Spectral Sight",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"level": 18,
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.senses.truesight",
+							"mode": "UPGRADE",
+							"value": 30
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "XPHB",
+			"className": "Ranger",
+			"classSource": "XPHB",
+			"level": 20,
+			"activities": [
+				{
+					"name": "Improved Hunter's Mark Damage",
+					"type": "damage",
+					"activation": {
+						"type": ""
+					},
+					"range": {
+						"units": "any"
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 10,
+								"types": [
+									"force"
+								]
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Void Warrior",
+			"source": "WarcraftStreamlined",
+			"category": "FS:DH",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "When Gaining the Level 2 Demon Hunter \"Fighting Style\" Feature",
+						"entrySummary": "Special"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=warlock",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"You learn two {@filter Warlock cantrips|spells|level=0|class=warlock} of your choice. {@spell Chill Touch|XPHB} and {@spell Mind Sliver|XPHB} are recommended. The chosen cantrips count as Demon Hunter spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Demon Hunter level, you can replace one of these cantrips with another Warlock cantrip."
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"name": "Demon Hunter",
+			"source": "WarcraftStreamlined",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Demon Hunter",
+					"source": "WarcraftStreamlined",
+					"entries": [
+						"{@i Embrace the Magic of Demons to Fight Fire with Fire}",
+						"Most Demon Hunters joined Illidan on Outland as he marshaled his forces to battle the Burning Legion. You might have followed a different path, inspired by Illidan rather than directly trained by him, but the result is the same: You have embraced the magic of the Burning Legion with the singular goal of defeating it on Azeroth and every other world.",
+						{
+							"type": "inset",
+							"name": "Hero Classes",
+							"entries": [
+								"Three of the World of Warcraft classes\u2014{@class Death Knight|WarcraftStreamlined}, {@class Demon Hunter|WarcraftStreamlined}, and {@class Evoker|WarcraftStreamlined}\u2014are hero classes, meaning that they are typically available only to characters starting at level 3 or higher. In the story of World of Warcraft, characters with these classes are already experienced and powerful adventurers by the time they enter the game."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Playing a Demon Hunter",
+							"entries": [
+								"Demon hunter is a hero class, which means you typically must start play at level 3 or higher (see the \"Hero Classes\" sidebar earlier in this chapter).",
+								"All demon hunters in World of Warcraft lore are elves (blood elves, night elves, or void elves), so check with your DM before playing a demon hunter of another species.",
+								"As a Demon Hunter, you can choose one of three specializations: Devourer, Havoc, or Vengeance.",
+								{
+									"type": "entries",
+									"name": "Havoc Specialization",
+									"entries": [
+										"With the havoc specialization, you are a fierce melee combatant who masters the destructive power of fel magic. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 1",
+											"entries": [
+												"Choose {@item Handaxe|XPHB|Handaxes}, {@item Scimitar|XPHB|Scimitars}, or {@item Shortsword|XPHB|Shortswords} for your Weapon Mastery feature. Choose {@feat Two-Weapon Fighting|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Dual Wielder|XPHB}, {@feat Mage Slayer|XPHB}, and {@feat Slasher|XPHB}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Devourer Specialization:",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Level 1",
+											"entries": [
+												"Choose {@item Handaxe|XPHB|Handaxes}, {@item Scimitar|XPHB|Scimitars}, or {@item Shortsword|XPHB|Shortswords} for your Weapon Mastery feature. Choose the {@feat Void Warrior|WarcraftStreamlined} option instead of a Fighting Style feat, and choose {@spell Chill Touch|XPHB} and {@spell Mind Sliver|XPHB} as your cantrips."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Defensive Duelist|XPHB}, {@feat Mage Slayer|XPHB}, {@feat Shadow-Touched|XPHB}, {@feat Slasher|XPHB}, {@feat Speedy|XPHB}, and {@feat Spell Sniper|XPHB}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Vengeance Specialization",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Level 1",
+											"entries": [
+												"Choose {@item Battleaxe|XPHB|Battleaxes} or {@item Longsword|XPHB|Longswords} for your Weapon Mastery feature. Choose {@feat Interception|XPHB} as your Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Durable|XPHB}, {@feat Sentinel|XPHB}, and {@feat Slasher|XPHB}."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt2eba0922e67b24f1/5ee7963314a7bc718bab615b/70HK5LSS30HD1457037556699.png"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://i.imgur.com/6EPtvF4.png"
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Devourer",
+			"shortName": "Devourer",
+			"source": "WarcraftStreamlined",
+			"edition": "one",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"throw glaive|WarcraftStreamlined",
+							"consume soul|WarcraftStreamlined"
+						],
+						"5": [
+							"sigil of flame|WarcraftStreamlined",
+							"misty step|XPHB"
+						],
+						"9": [
+							"metamorphosis|WarcraftStreamlined",
+							"soul reap|WarcraftStreamlined"
+						],
+						"13": [
+							"chaos nova|WarcraftStreamlined",
+							"collapsing star|WarcraftStreamlined"
+						],
+						"17": [
+							"destructive wave|XPHB",
+							"steel wind strike|XPHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"throw glaive|WarcraftStreamlined",
+				"consume soul|WarcraftStreamlined",
+				"sigil of flame|WarcraftStreamlined",
+				"misty step|XPHB",
+				"metamorphosis|WarcraftStreamlined",
+				"soul reap|WarcraftStreamlined",
+				"chaos nova|WarcraftStreamlined",
+				"collapsing star|WarcraftStreamlined",
+				"destructive wave|XPHB",
+				"steel wind strike|XPHB"
+			],
+			"subclassFeatures": [
+				"Devourer|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3",
+				"Torment|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|7",
+				"Illidari Knowledge|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|11",
+				"Soul Shatter|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|15"
+			]
+		},
+		{
+			"name": "Havoc",
+			"shortName": "Havoc",
+			"source": "WarcraftStreamlined",
+			"edition": "one",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"throw glaive|WarcraftStreamlined",
+							"fel rush|WarcraftStreamlined"
+						],
+						"5": [
+							"sigil of flame|WarcraftStreamlined",
+							"eye beam|WarcraftStreamlined"
+						],
+						"9": [
+							"metamorphosis|WarcraftStreamlined",
+							"blink|XPHB"
+						],
+						"13": [
+							"chaos nova|WarcraftStreamlined",
+							"fire shield|XPHB"
+						],
+						"17": [
+							"destructive wave|XPHB",
+							"conjure volley|XPHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"throw glaive|WarcraftStreamlined",
+				"fel rush|WarcraftStreamlined",
+				"sigil of flame|WarcraftStreamlined",
+				"eye beam|WarcraftStreamlined",
+				"metamorphosis|WarcraftStreamlined",
+				"blink|XPHB",
+				"chaos nova|WarcraftStreamlined",
+				"fire shield|XPHB",
+				"destructive wave|XPHB",
+				"conjure volley|XPHB"
+			],
+			"subclassFeatures": [
+				"Havoc|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3",
+				"Torment|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|7",
+				"Illidari Knowledge|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|11",
+				"Soul Shatter|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|15"
+			]
+		},
+		{
+			"name": "Vengeance",
+			"shortName": "Vengeance",
+			"source": "WarcraftStreamlined",
+			"edition": "one",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"throw glaive|WarcraftStreamlined",
+							"infernal strike|WarcraftStreamlined"
+						],
+						"5": [
+							"sigil of flame|WarcraftStreamlined",
+							"fiery brand|WarcraftStreamlined"
+						],
+						"9": [
+							"metamorphosis|WarcraftStreamlined",
+							"demon spikes|WarcraftStreamlined"
+						],
+						"13": [
+							"chaos nova|WarcraftStreamlined",
+							"banishment|XPHB"
+						],
+						"17": [
+							"destructive wave|XPHB",
+							"sigil of chains|WarcraftStreamlined"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"throw glaive|WarcraftStreamlined",
+				"infernal strike|WarcraftStreamlined",
+				"sigil of flame|WarcraftStreamlined",
+				"fiery brand|WarcraftStreamlined",
+				"metamorphosis|WarcraftStreamlined",
+				"demon spikes|WarcraftStreamlined",
+				"chaos nova|WarcraftStreamlined",
+				"banishment|XPHB",
+				"destructive wave|XPHB",
+				"sigil of chains|WarcraftStreamlined"
+			],
+			"subclassFeatures": [
+				"Vengeance|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3",
+				"Torment|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|7",
+				"Illidari Knowledge|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|11",
+				"Soul Shatter|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|15"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Devourer",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Harnesses the power of the void to crush their enemies and feast on their souls.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Devourer Spells|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soul Fragments|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spectral Sight|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3"
+				}
+			]
+		},
+		{
+			"name": "Havoc",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Havoc",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A brooding master of warglaives and the destructive power of Fel magic.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Havoc Spells|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soul Fragments|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spectral Sight|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3"
+				}
+			]
+		},
+		{
+			"name": "Vengeance",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Embraces the demon within to incinerate enemies and protect their allies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vengeance Spells|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soul Fragments|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spectral Sight|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3"
+				}
+			]
+		},
+		{
+			"name": "Devourer Spells",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you reach a Demon Hunter level specified in the Devourer Spells table, you thereafter always have the spells prepared.",
+				{
+					"type": "table",
+					"caption": "Devourer Spells",
+					"colLabels": [
+						"Demon Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Throw Glaive|WarcraftStreamlined}, {@spell Consume Soul|WarcraftStreamlined}"
+						],
+						[
+							"5th",
+							"{@spell Sigil of Flame|WarcraftStreamlined}, {@spell Misty Step|XPHB}"
+						],
+						[
+							"9th",
+							"{@spell Metamorphosis|WarcraftStreamlined}, {@spell Soul Reap|WarcraftStreamlined}"
+						],
+						[
+							"13th",
+							"{@spell Chaos Nova|WarcraftStreamlined}, {@spell Collapsing Star|WarcraftStreamlined}"
+						],
+						[
+							"17th",
+							"{@spell Destructive Wave|XPHB}, {@spell Steel Wind Strike|XPHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+				"name": "Havoc Spells",
+				"source": "WarcraftStreamlined",
+				"className": "Demon Hunter",
+				"classSource": "WarcraftStreamlined",
+				"subclassShortName": "Havoc",
+				"subclassSource": "WarcraftStreamlined",
+				"level": 3,
+				"header": 2,
+				"entries": [
+					"When you reach a Demon Hunter level specified in the Havoc Spells table, you thereafter always have the spells listed prepared.",
+					{
+						"type": "table",
+						"caption": "Havoc Spells",
+						"colLabels": [
+							"Demon Hunter Level",
+							"Spells"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"3rd",
+								"{@spell Throw Glaive|WarcraftStreamlined}, {@spell Fel Rush|WarcraftStreamlined}"
+							],
+							[
+								"5th",
+								"{@spell Sigil of Flame|WarcraftStreamlined}, {@spell Eye Beam|WarcraftStreamlined}"
+							],
+							[
+								"9th",
+								"{@spell Metamorphosis|WarcraftStreamlined}, {@spell Blink|XPHB}"
+							],
+							[
+								"13th",
+								"{@spell Chaos Nova|WarcraftStreamlined}, {@spell Fire Shield|XPHB}"
+							],
+							[
+								"17th",
+								"{@spell Destructive Wave|XPHB}, {@spell Conjure Volley|XPHB}"
+							]
+						]
+					}
+				]
+			},
+			{
+				"name": "Vengeance Spells",
+				"source": "WarcraftStreamlined",
+				"className": "Demon Hunter",
+				"classSource": "WarcraftStreamlined",
+				"subclassShortName": "Vengeance",
+				"subclassSource": "WarcraftStreamlined",
+				"level": 3,
+				"header": 2,
+				"entries": [
+					"When you reach a Demon Hunter level specified in the Vengeance Spells table, you thereafter always have the spells listed prepared.",
+					{
+						"type": "table",
+						"caption": "Vengeance Spells",
+						"colLabels": [
+							"Demon Hunter Level",
+							"Spells"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"3rd",
+								"{@spell Throw Glaive|WarcraftStreamlined}, {@spell Infernal Strike|WarcraftStreamlined}"
+							],
+							[
+								"5th",
+								"{@spell Sigil of Flame|WarcraftStreamlined}, {@spell Fiery Brand|WarcraftStreamlined}"
+							],
+							[
+								"9th",
+								"{@spell Metamorphosis|WarcraftStreamlined}, {@spell Demon Spikes|WarcraftStreamlined}"
+							],
+							[
+								"13th",
+								"{@spell Chaos Nova|WarcraftStreamlined}, {@spell Banishment|XPHB}"
+							],
+							[
+								"17th",
+								"{@spell Destructive Wave|XPHB}, {@spell Sigil of Chains|WarcraftStreamlined}"
+							]
+						]
+					}
+				]
+			},
+		{
+			"name": "Soul Fragments",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You harvest the energy of souls to fuel some of your special powers. Whenever you finish a {@variantrule Long Rest|XPHB}, you gain a number of soul fragments equal to your Wisdom modifier (minimum of one fragment); each soul fragment is a Tiny object in the form of a crystal. These fragments last until you finish another {@variantrule Long Rest|XPHB}, at which point they disintegrate. If you ever move more than 30 feet from a fragment, the fragment immediately teleports to you, appearing somewhere on your person.",
+				"If a soul fragment effect requires a saving throw, the DC equals your Demon Hunter spell save DC.",
+				"The number of soul fragments you gain when you finish a {@variantrule Long Rest|XPHB} increases when you reach Demon Hunter levels 13 (Wisdom modifier plus one soul fragment) and 17 (Wisdom modifier plus two soul fragments).",
+				{
+					"type": "entries",
+					"name": "Using Soul Fragments",
+					"entries": [
+						"You can use soul fragments in the following ways:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Double Jump",
+									"entry": "You can expend one soul fragment to cast {@spell Feather Fall|XPHB} or {@spell Jump|XPHB} without expending a spell slot."
+								},
+								{
+									"type": "item",
+									"name": "Soul Cleave",
+									"entry": "Once on each of your turns, when you take the {@action Attack|XPHB} action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to 1d12 plus your Wisdom modifier, and you regain {@variantrule Hit Points|XPHB} equal to your Wisdom modifier."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regaining Soul Fragments",
+					"entries": [
+						"When an enemy you can see within 30 feet of you dies, you can take a {@variantrule Reaction|XPHB} to regain one expended soul fragment."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spectral Sight",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You have {@sense Blindsight|XPHB} with a range of 10 feet."
+			]
+		},
+		{
+			"name": "Torment",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A creature marked by your {@spell Hunter's Mark|XPHB} spell has {@variantrule Disadvantage|XPHB} on attack rolls against targets other than you.",
+				"Additionally, once per turn when you hit a creature marked by your {@spell Hunter's Mark|XPHB} with an attack roll with a weapon or a Demon Hunter spell, you can impose one of the following effects on the target (your choice):",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aura of Pain",
+							"entry": "The target subtracts {@dice 1d4} from the next saving throw it makes before the end of your next turn."
+						},
+						{
+							"type": "item",
+							"name": "Chaos Strike",
+							"entry": "The target takes an extra {@damage 1d8} Fire damage."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Illidari Knowledge",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"You gain new mastery over souls, granting you new ways to use {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3}:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Disrupt",
+							"entry": "You can expend two {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3} to cast {@spell Counterspell|XPHB} in response to that spell's trigger, using your spellcasting ability."
+						},
+						{
+							"type": "item",
+							"name": "Warglaive Mastery",
+							"entry": "As a {@variantrule Bonus Action|XPHB}, you can expend one {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3||Soul Fragment} to cast {@spell Throw Glaive|WarcraftStreamlined} without expending a spell slot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul Shatter",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Devourer",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your mastery of fel magic reaches new heights. When you use the Soul Cleave option of {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3}, the damage increases to {@damage 2d12} plus your Wisdom modifier.",
+				"In addition, when you roll {@variantrule Initiative|XPHB}, you regain one {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Devourer|WarcraftStreamlined|3||Soul Fragment} if you have none."
+			]
+		},
+		{
+			"name": "Soul Fragments",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Havoc",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You harvest the energy of souls to fuel some of your special powers. Whenever you finish a {@variantrule Long Rest|XPHB}, you gain a number of soul fragments equal to your Wisdom modifier (minimum of one fragment); each soul fragment is a Tiny object in the form of a crystal. These fragments last until you finish another {@variantrule Long Rest|XPHB}, at which point they disintegrate. If you ever move more than 30 feet from a fragment, the fragment immediately teleports to you, appearing somewhere on your person.",
+				"If a soul fragment effect requires a saving throw, the DC equals your Demon Hunter spell save DC.",
+				"The number of soul fragments you gain when you finish a {@variantrule Long Rest|XPHB} increases when you reach Demon Hunter levels 13 (Wisdom modifier plus one soul fragment) and 17 (Wisdom modifier plus two soul fragments).",
+				{
+					"type": "entries",
+					"name": "Using Soul Fragments",
+					"entries": [
+						"You can use soul fragments in the following ways:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Double Jump",
+									"entry": "You can expend one soul fragment to cast {@spell Feather Fall|XPHB} or {@spell Jump|XPHB} without expending a spell slot."
+								},
+								{
+									"type": "item",
+									"name": "Soul Cleave",
+									"entry": "Once on each of your turns, when you take the {@action Attack|XPHB} action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to 1d12 plus your Wisdom modifier, and you regain {@variantrule Hit Points|XPHB} equal to your Wisdom modifier."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regaining Soul Fragments",
+					"entries": [
+						"When an enemy you can see within 30 feet of you dies, you can take a {@variantrule Reaction|XPHB} to regain one expended soul fragment."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spectral Sight",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Havoc",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You have {@sense Blindsight|XPHB} with a range of 10 feet."
+			]
+		},
+		{
+			"name": "Torment",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Havoc",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A creature marked by your {@spell Hunter's Mark|XPHB} spell has {@variantrule Disadvantage|XPHB} on attack rolls against targets other than you.",
+				"Additionally, once per turn when you hit a creature marked by your {@spell Hunter's Mark|XPHB} with an attack roll with a weapon or a Demon Hunter spell, you can impose one of the following effects on the target (your choice):",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aura of Pain",
+							"entry": "The target subtracts {@dice 1d4} from the next saving throw it makes before the end of your next turn."
+						},
+						{
+							"type": "item",
+							"name": "Chaos Strike",
+							"entry": "The target takes an extra {@damage 1d8} Fire damage."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Illidari Knowledge",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Havoc",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"You gain new mastery over souls, granting you new ways to use {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3}:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Disrupt",
+							"entry": "You can expend two {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3} to cast {@spell Counterspell|XPHB} in response to that spell's trigger, using your spellcasting ability."
+						},
+						{
+							"type": "item",
+							"name": "Warglaive Mastery",
+							"entry": "As a {@variantrule Bonus Action|XPHB}, you can expend one {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3||Soul Fragment} to cast {@spell Throw Glaive|WarcraftStreamlined} without expending a spell slot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul Shatter",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Havoc",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your mastery of fel magic reaches new heights. When you use the Soul Cleave option of {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3}, the damage increases to {@damage 2d12} plus your Wisdom modifier.",
+				"In addition, when you roll {@variantrule Initiative|XPHB}, you regain one {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Havoc|WarcraftStreamlined|3||Soul Fragment} if you have none."
+			]
+		},
+		{
+			"name": "Soul Fragments",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You harvest the energy of souls to fuel some of your special powers. Whenever you finish a {@variantrule Long Rest|XPHB}, you gain a number of soul fragments equal to your Wisdom modifier (minimum of one fragment); each soul fragment is a Tiny object in the form of a crystal. These fragments last until you finish another {@variantrule Long Rest|XPHB}, at which point they disintegrate. If you ever move more than 30 feet from a fragment, the fragment immediately teleports to you, appearing somewhere on your person.",
+				"If a soul fragment effect requires a saving throw, the DC equals your Demon Hunter spell save DC.",
+				"The number of soul fragments you gain when you finish a {@variantrule Long Rest|XPHB} increases when you reach Demon Hunter levels 13 (Wisdom modifier plus one soul fragment) and 17 (Wisdom modifier plus two soul fragments).",
+				{
+					"type": "entries",
+					"name": "Using Soul Fragments",
+					"entries": [
+						"You can use soul fragments in the following ways:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Double Jump",
+									"entry": "You can expend one soul fragment to cast {@spell Feather Fall|XPHB} or {@spell Jump|XPHB} without expending a spell slot."
+								},
+								{
+									"type": "item",
+									"name": "Soul Cleave",
+									"entry": "Once on each of your turns, when you take the {@action Attack|XPHB} action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to 1d12 plus your Wisdom modifier, and you regain {@variantrule Hit Points|XPHB} equal to your Wisdom modifier."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regaining Soul Fragments",
+					"entries": [
+						"When an enemy you can see within 30 feet of you dies, you can take a {@variantrule Reaction|XPHB} to regain one expended soul fragment."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spectral Sight",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You have {@sense Blindsight|XPHB} with a range of 10 feet."
+			]
+		},
+		{
+			"name": "Torment",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A creature marked by your {@spell Hunter's Mark|XPHB} spell has {@variantrule Disadvantage|XPHB} on attack rolls against targets other than you.",
+				"Additionally, once per turn when you hit a creature marked by your {@spell Hunter's Mark|XPHB} with an attack roll with a weapon or a Demon Hunter spell, you can impose one of the following effects on the target (your choice):",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aura of Pain",
+							"entry": "The target subtracts {@dice 1d4} from the next saving throw it makes before the end of your next turn."
+						},
+						{
+							"type": "item",
+							"name": "Chaos Strike",
+							"entry": "The target takes an extra {@damage 1d8} Fire damage."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Illidari Knowledge",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"You gain new mastery over souls, granting you new ways to use {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3}:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Disrupt",
+							"entry": "You can expend two {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3} to cast {@spell Counterspell|XPHB} in response to that spell's trigger, using your spellcasting ability."
+						},
+						{
+							"type": "item",
+							"name": "Warglaive Mastery",
+							"entry": "As a {@variantrule Bonus Action|XPHB}, you can expend one {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3||Soul Fragment} to cast {@spell Throw Glaive|WarcraftStreamlined} without expending a spell slot."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul Shatter",
+			"source": "WarcraftStreamlined",
+			"className": "Demon Hunter",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your mastery of fel magic reaches new heights. When you use the Soul Cleave option of {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3}, the damage increases to {@damage 2d12} plus your Wisdom modifier.",
+				"In addition, when you roll {@variantrule Initiative|XPHB}, you regain one {@subclassFeature Soul Fragments|Demon Hunter|WarcraftStreamlined|Vengeance|WarcraftStreamlined|3||Soul Fragment} if you have none."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Consume Soul",
+			"source": "WarcraftStreamlined",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You drain the essence from a creature within range, which makes a Constitution saving throw. On a failed save, it takes {@damage 4d4} Force damage, and you gain {@variantrule Temporary Hit Points|XPHB} equal to half the Force damage dealt. On a successful save, it takes half as much damage only."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d4} for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
+			"name": "Soul Reap",
+			"source": "WarcraftStreamlined",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cut a hole in the fabric of reality, sending a bolt of cosmic matter toward a creature in range. Make a ranged spell attack against the target, which gains no benefit from {@variantrule Cover|XPHB|Half Cover} or {@variantrule Cover|XPHB|Three-Quarters Cover}. On a hit, you deal {@damage 6d6} Force damage.",
+				"If you roll a 6 on a {@dice d6} for this spell, you can roll another {@dice d6} and add it to the damage. When you cast this spell, the maximum number of these d6s you can add to the spell's damage equals your spellcasting ability modifier."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 3."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Metamorphosis",
+			"source": "WarcraftStreamlined",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "one soul fragment, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Uttering an incantation, you draw on fel or Void magic to transform yourself, taking on demonic features. You gain one of the following benefits of your choice until the spell ends:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Devourer",
+							"entries": [
+								"When you roll damage for a spell, weapon, or feature that deals Force damage, you can treat any 1 or 2 on a damage die as a 3."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Havoc",
+							"entries": [
+								"Whenever you hit a creature with an attack roll using a Melee weapon, the target takes an extra {@damage 1d6} Fire damage."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Vengeance",
+							"entries": [
+								"You have a +2 bonus to AC, and your {@variantrule Hit Points|XPHB|Hit Point} maximum and your current {@variantrule Hit Points|XPHB} increase by 5 for the spell's duration."
+							]
+						}
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Demon Spikes",
+			"source": "WarcraftStreamlined",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You surge with fel power and sprout hard, jagged spikes. You gain a +2 bonus to AC for the duration, and when a creature within 5 feet of you hits you with a melee attack roll, it takes 10 Piercing damage."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"piercing"
+			],
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Sigil of Flame",
+			"source": "WarcraftStreamlined",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You inscribe a sigil in the air that then appears on a creature you can see within range. The target makes a Constitution saving throw, taking {@damage 2d8} Fire damage on a failed save or half as much damage on a successful one. Whether or not the target fails its saving throw, it radiates heat in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself until the end of its next turn. At the start of the target's next turn, the target and each creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} must succeed on a Constitution saving throw or take {@damage 1d8} Fire damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage (both initial and later) increases by {@dice 1d8} for each spell slot level above 2."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Fiery Brand",
+			"source": "WarcraftStreamlined",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You magically place a fiery demonic symbol on a creature within range, which makes a Wisdom saving throw. On a failed save, the creature takes {@damage 3d10} Fire damage and is cursed. While it remains cursed, you have {@variantrule Resistance|XPHB} to all damage it deals. On a successful save, it takes half as much damage only.",
+				"A cursed creature repeats the save at the end of each of its turns, ending the spell on a success."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageResist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Eye Beam",
+			"source": "WarcraftStreamlined",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You concentrate your magic into your eyes. When you cast the spell, and as a {@action Magic|XPHB} action on your subsequent turns for the duration, you can unleash a burst of fel magic. Each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a Dexterity saving throw, taking {@damage 3d6} Force damage on a failed save or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Throw Glaive",
+			"source": "WarcraftStreamlined",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a demonic warglaive and hurl it at a creature or object in range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} Slashing damage plus {@damage 1d8} Fire damage, and the glaive ricochets to a different target of your choice within 30 feet of the target. Make new attack and damage rolls against the new target."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The Fire damage increases by {@dice 1d8} for each spell slot level above 1. The glaive ricochets a maximum number of times equal to the level of the slot expended; a creature can be targeted only once by each casting of this spell."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire",
+				"slashing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Infernal Strike",
+			"source": "WarcraftStreamlined",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You jump through the air without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} and land in an unoccupied space within 30 feet. Each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Dexterity saving throw. On a failed save, a creature takes {@damage 2d6} Fire damage and has {@variantrule Disadvantage|XPHB} on attack rolls against creatures other than you until the start of your next turn. On a successful save, it takes half as much damage only."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Fel Rush",
+			"source": "WarcraftStreamlined",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Fiery fel magic surrounds you and grants you explosive speed. Until the end of your turn, your {@variantrule Speed|XPHB} increases by 30 feet, and your movement doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks}.",
+				"When you move within 5 feet of a creature or an object that isn't being worn or carried, it makes a Dexterity saving throw, taking {@damage 2d6} Fire damage on a failed save or half as much damage on a successful one. A creature or object can take this damage only once per turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Sigil of Chains",
+			"source": "WarcraftStreamlined",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A sigil appears at a point on the ground you can see within range, then erupts in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere}. Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Dexterity saving throw. On a failed save, a creature takes {@damage 5d6} Force damage, is pulled up to 10 feet straight toward the sigil, and has the {@condition Restrained|XPHB} condition until the end of your next turn. On a successful save, the creature takes half as much damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet until the end of your next turn."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV",
+				"SGT"
+			]
+		},
+		{
+			"name": "Collapsing Star",
+			"source": "WarcraftStreamlined",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You channel Void energy into a cataclysmic blast that fills a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you can see within range. Each creature of your choice within the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Constitution saving throw, taking {@damage 4d12} Force damage on a failed save or half as much damage on a successful one."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Chaos Nova",
+			"source": "WarcraftStreamlined",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Chaos energy bursts out in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. Each creature of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} takes {@damage 2d6} Force damage and must succeed on a Wisdom saving throw or have the {@condition Stunned|XPHB} condition until the end of your next turn."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Demon Hunter",
+						"source": "WarcraftStreamlined"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Paladin",
+			"source": "WarcraftExpanded",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Tokens/2.0/Blood%20Elf%20Paladin-Cher-Ro.webp"
+			},
+			"foundryTokenSubjectHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Tokens/2.0/Blood%20Elf%20Paladin-Cher-Ro.webp"
+			},
+			"foundryTokenScale": 2.0,
+			"foundryTokenSubjectScale": 2.0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+7",
+				"con": "+6",
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"insight": "+4",
+				"persuasion": "+6",
+				"religion": "+3"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"gear": [
+				"longsword|xphb",
+				"plate armor|xphb",
+				"shield|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The paladin casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Bless|XPHB}",
+							"{@spell Command|XPHB}",
+							"{@spell Cure Wounds|XPHB}",
+							"{@spell Lesser Restoration|XPHB}",
+							"{@spell Shield of Faith|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devotion Aura",
+					"entries": [
+						"While in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the paladin, the paladin and its allies have {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Charmed|XPHB} condition, provided the paladin doesn't have the {@condition Incapacitated|XPHB} condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The paladin makes two Crusader Strike attacks."
+					]
+				},
+				{
+					"name": "Crusader Strike",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Slashing damage plus 4 ({@damage 1d8}) Radiant damage."
+					]
+				},
+				{
+					"name": "Judgment",
+					"entries": [
+						"{@atkr r} {@hit 6}, range 60 ft. {@h}13 ({@damage 3d8}) Radiant damage, and the next attack roll against the target before the start of the paladin's next turn has {@variantrule Advantage|XPHB}."
+					]
+				},
+				{
+					"name": "Hammer of Justice {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 14}, one creature the paladin can see within 30 feet. {@actSaveFail} 9 ({@damage 2d8}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of the paladin's next turn. {@actSaveSuccess} Half damage only."
+					]
+				},
+				{
+					"name": "Holy Light (3/Day)",
+					"entries": [
+						"The paladin or one creature it can see within 30 feet regains 18 ({@dice 4d8}) {@variantrule Hit Points|XPHB}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Divine Smite (3/Day)",
+					"entries": [
+						"Immediately after hitting a creature with a melee weapon attack, the paladin deals an extra 9 ({@damage 2d8}) Radiant damage to the target. If the target is a Fiend or Undead, the extra damage increases to 13 ({@dice 3d8})."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Divine Shield (1/Day)",
+					"entries": [
+						"{@actTrigger} The paladin takes damage. {@actResponse} The paladin surrounds itself with a barrier of holy energy, reducing the triggering damage to 0. The paladin then has {@variantrule Resistance|XPHB} to all damage until the start of its next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Paladin Initiate",
+			"source": "WarcraftExpanded",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Tokens/2.0/Blood%20Elf%20Paladin-Cher-Ro.webp"
+			},
+			"foundryTokenSubjectHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Tokens/2.0/Blood%20Elf%20Paladin-Cher-Ro.webp"
+			},
+			"foundryTokenScale": 2.0,
+			"foundryTokenSubjectScale": 2.0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 14,
+			"save": {
+				"str": "+4",
+				"wis": "+2",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"insight": "+2",
+				"religion": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"gear": [
+				"chain mail|xphb",
+				"longsword|xphb",
+				"shield|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The paladin casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 12}):"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Bless|XPHB}",
+							"{@spell Shield of Faith|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Steadfast Faith",
+					"entries": [
+						"The paladin has {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Frightened|XPHB} condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crusader Strike",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Slashing damage plus 2 ({@damage 1d4}) Radiant damage."
+					]
+				},
+				{
+					"name": "Judgment",
+					"entries": [
+						"{@atkr r} {@hit 4}, range 60 ft. {@h}7 ({@damage 2d6}) Radiant damage."
+					]
+				},
+				{
+					"name": "Holy Light (1/Day)",
+					"entries": [
+						"The paladin or one creature it can see within 30 feet regains 7 ({@dice 2d6}) {@variantrule Hit Points|XPHB}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Divine Smite (1/Day)",
+					"entries": [
+						"Immediately after hitting a creature with a melee weapon attack, the paladin deals an extra 9 ({@damage 2d8}) Radiant damage to the target. If the target is a Fiend or Undead, the extra damage increases to 13 ({@dice 3d8})."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Paladin Champion",
+			"source": "WarcraftExpanded",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Tokens/2.0/Blood%20Elf%20Paladin-Cher-Ro.webp"
+			},
+			"foundryTokenSubjectHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Tokens/2.0/Blood%20Elf%20Paladin-Cher-Ro.webp"
+			},
+			"foundryTokenScale": 2.0,
+			"foundryTokenSubjectScale": 2.0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 171,
+				"formula": "18d8 + 90"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+9",
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+9",
+				"insight": "+6",
+				"persuasion": "+8",
+				"religion": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "10",
+			"gear": [
+				"greatsword|xphb",
+				"plate armor|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The paladin casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 16}):"
+					],
+					"daily": {
+						"2e": [
+							"{@spell Bless|XPHB}",
+							"{@spell Lesser Restoration|XPHB}"
+						],
+						"1e": [
+							"{@spell Aura of Vitality|XPHB}",
+							"{@spell Crusader's Mantle|XPHB}",
+							"{@spell Dispel Magic|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devotion Aura",
+					"entries": [
+						"While in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the paladin, the paladin and its allies have {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition, provided the paladin doesn't have the {@condition Incapacitated|XPHB} condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The paladin makes three Crusader Strike attacks. It can replace one attack with a use of Judgment or Hammer of Justice, if available."
+					]
+				},
+				{
+					"name": "Crusader Strike",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 9 ({@damage 2d8}) Radiant damage."
+					]
+				},
+				{
+					"name": "Judgment",
+					"entries": [
+						"{@atkr r} {@hit 8}, range 60 ft. {@h}22 ({@damage 5d8}) Radiant damage, and the next attack roll against the target before the start of the paladin's next turn has {@variantrule Advantage|XPHB}."
+					]
+				},
+				{
+					"name": "Hammer of Justice {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 16}, one creature the paladin can see within 30 feet. {@actSaveFail} 18 ({@damage 4d8}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of the paladin's next turn. {@actSaveSuccess} Half damage only."
+					]
+				},
+				{
+					"name": "Consecration {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 16}, each enemy in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the paladin. {@actSaveFail} 27 ({@damage 6d8}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The ground in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} becomes {@variantrule Difficult Terrain|XPHB} for enemies until the start of the paladin's next turn."
+					]
+				},
+				{
+					"name": "Holy Light (2/Day)",
+					"entries": [
+						"The paladin or one creature it can see within 30 feet regains 18 ({@dice 4d8}) {@variantrule Hit Points|XPHB}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Divine Smite (3/Day)",
+					"entries": [
+						"Immediately after hitting a creature with a melee weapon attack, the paladin deals an extra 18 ({@damage 4d8}) Radiant damage to the target. If the target is a Fiend or Undead, the extra damage increases to 22 ({@dice 5d8})."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Divine Shield (1/Day)",
+					"entries": [
+						"{@actTrigger} The paladin takes damage. {@actResponse} The paladin surrounds itself with a barrier of holy energy, reducing the triggering damage to 0. The paladin then has {@variantrule Resistance|XPHB} to all damage until the start of its next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Demon Hunter Initiate",
+			"source": "WarcraftExpanded",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"Darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"gear": [
+				"leather armor|xphb",
+				{
+					"item": "warglaive|WarcraftExpanded",
+					"quantity": 2
+				}
+			],
+			"trait": [
+				{
+					"name": "Glide",
+					"entries": [
+						"The demon hunter takes no damage from falling while it doesn't have the {@condition Incapacitated|XPHB} condition."
+					]
+				},
+				{
+					"name": "Spectral Sight",
+					"entries": [
+						"The demon hunter can see creatures and objects that have the {@condition Invisible|XPHB} condition within 10 feet of itself, provided they aren't behind {@variantrule Cover|XPHB|Total Cover}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Demon's Bite",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Slashing damage."
+					]
+				},
+				{
+					"name": "Throw Glaive",
+					"entries": [
+						"{@atkr r} {@hit 5}, range 20/60 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage. The warglaive immediately returns to the demon hunter's hand after the attack."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Chaos Strike (1/Day)",
+					"entries": [
+						"Immediately after hitting a creature with a melee weapon attack, the demon hunter deals an extra 5 ({@damage 2d4}) Force damage to the target."
+					]
+				},
+				{
+					"name": "Fel Rush {@recharge 5}",
+					"entries": [
+						"The demon hunter moves up to 20 feet in a straight line without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. {@actSave dex} {@dc 13}, each creature within 5 feet of the line along which the demon hunter moves. {@actSaveFail} 5 ({@damage 2d4}) Fire damage. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Demon Hunter",
+			"source": "WarcraftExpanded",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 110,
+				"formula": "13d8 + 52"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 18,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"con": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+5",
+				"stealth": "+7",
+				"survival": "+5"
+			},
+			"senses": [
+				"Darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"gear": [
+				"studded leather armor|xphb",
+				{
+					"item": "warglaive|WarcraftExpanded",
+					"quantity": 2
+				}
+			],
+			"trait": [
+				{
+					"name": "Glide",
+					"entries": [
+						"The demon hunter takes no damage from falling while it doesn't have the {@condition Incapacitated|XPHB} condition."
+					]
+				},
+				{
+					"name": "Spectral Sight",
+					"entries": [
+						"The demon hunter can see creatures and objects that have the {@condition Invisible|XPHB} condition within 20 feet of itself, provided they aren't behind {@variantrule Cover|XPHB|Total Cover}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The demon hunter makes two Warglaive attacks."
+					]
+				},
+				{
+					"name": "Warglaive",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}9 ({@damage 1d10 + 4}) Slashing damage plus 4 ({@damage 1d8}) Fire damage."
+					]
+				},
+				{
+					"name": "Throw Glaive",
+					"entries": [
+						"{@atkr r} {@hit 7}, range 30/90 ft. {@h}13 ({@damage 2d8 + 4}) Slashing damage. The warglaive immediately returns to the demon hunter's hand after the attack."
+					]
+				},
+				{
+					"name": "Eye Beam {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 15}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 22 ({@damage 5d8}) Force damage. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Chaos Strike (3/Day)",
+					"entries": [
+						"Immediately after hitting a creature with a melee weapon attack, the demon hunter deals an extra 9 ({@damage 2d8}) Force damage to the target."
+					]
+				},
+				{
+					"name": "Fel Rush {@recharge 5}",
+					"entries": [
+						"The demon hunter moves up to 30 feet in a straight line without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. {@actSave dex} {@dc 15}, each creature within 5 feet of the line along which the demon hunter moves. {@actSaveFail} 7 ({@damage 2d6}) Fire damage. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Blur (2/Day)",
+					"entries": [
+						"{@actTrigger} The demon hunter is hit by an attack roll. {@actResponse} The demon hunter adds 3 to its AC against the triggering attack, potentially causing it to miss."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Demon Hunter Champion",
+			"source": "WarcraftExpanded",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 20,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"dex": "+9",
+				"con": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"athletics": "+7",
+				"perception": "+10",
+				"stealth": "+9",
+				"survival": "+6"
+			},
+			"senses": [
+				"Darkvision 120 ft."
+			],
+			"passive": 20,
+			"languages": [
+				"Common"
+			],
+			"cr": "10",
+			"gear": [
+				"studded leather armor|xphb",
+				{
+					"item": "warglaive|WarcraftExpanded",
+					"quantity": 2
+				}
+			],
+			"trait": [
+				{
+					"name": "Glide",
+					"entries": [
+						"The demon hunter takes no damage from falling while it doesn't have the {@condition Incapacitated|XPHB} condition."
+					]
+				},
+				{
+					"name": "Spectral Sight",
+					"entries": [
+						"The demon hunter can see creatures and objects that have the {@condition Invisible|XPHB} condition within 30 feet of itself, provided they aren't behind {@variantrule Cover|XPHB|Total Cover}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The demon hunter makes three Warglaive attacks. It can replace one attack with a Throw Glaive attack."
+					]
+				},
+				{
+					"name": "Warglaive",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}10 ({@damage 1d10 + 5}) Slashing damage plus 9 ({@damage 2d8}) Force damage."
+					]
+				},
+				{
+					"name": "Throw Glaive",
+					"entries": [
+						"{@atkr r} {@hit 9}, range 30/90 ft. {@h}15 ({@damage 3d6 + 5}) Slashing damage. The warglaive immediately returns to the demon hunter's hand after the attack."
+					]
+				},
+				{
+					"name": "Eye Beam {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 17}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 45 ({@damage 10d8}) Force damage. {@actSaveSuccess} Half damage."
+					]
+				},
+				{
+					"name": "Blade Dance {@recharge 5}",
+					"entries": [
+						"The demon hunter makes one Warglaive attack against each creature of its choice within 5 feet of itself, up to a maximum of four attacks."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Chaos Strike (3/Day)",
+					"entries": [
+						"Immediately after hitting a creature with a melee weapon attack, the demon hunter deals an extra 13 ({@damage 3d8}) Force damage to the target."
+					]
+				},
+				{
+					"name": "Fel Rush {@recharge 5}",
+					"entries": [
+						"The demon hunter moves up to 40 feet in a straight line without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. {@actSave dex} {@dc 17}, each creature within 5 feet of the line along which the demon hunter moves. {@actSaveFail} 14 ({@damage 4d6}) Fire damage. {@actSaveSuccess} Half damage."
+					]
+				},
+				{
+					"name": "Metamorphosis (1/Day)",
+					"entries": [
+						"The demon hunter transforms into a monstrous demonic form for 1 minute. It gains 20 {@variantrule Temporary Hit Points|XPHB}, its {@variantrule Speed|XPHB} increases by 10 feet, and once on each of its turns when it hits with a Warglaive attack, it deals an extra 4 ({@damage 1d8}) Force damage. The transformation ends early if the demon hunter has the {@condition Incapacitated|XPHB} condition."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Blur (2/Day)",
+					"entries": [
+						"{@actTrigger} The demon hunter is hit by an attack roll. {@actResponse} The demon hunter adds 4 to its AC against the triggering attack, potentially causing it to miss."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Paladin",
+			"source": "WarcraftExpanded",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Blood%20Elf%20Paladin-Cher-Ro.webp"
+					},
+					"credit": "{@link Cher-Ro|https://www.deviantart.com/cher-ro}",
+					"width": 2550,
+					"height": 1704
+				}
+			]
+		},
+		{
+			"name": "Paladin Champion",
+			"source": "WarcraftExpanded",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Blood%20Elf%20Paladin-Cher-Ro.webp"
+					},
+					"credit": "{@link Cher-Ro|https://www.deviantart.com/cher-ro}",
+					"width": 2550,
+					"height": 1704
+				}
+			]
+		},
+		{
+			"name": "Paladin Initiate",
+			"source": "WarcraftExpanded",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Creatures/Blood%20Elf%20Paladin-Cher-Ro.webp"
+					},
+					"credit": "{@link Cher-Ro|https://www.deviantart.com/cher-ro}",
+					"width": 2550,
+					"height": 1704
+				}
+			]
+		}
+	],
+    "book": [
+		{
+			"name": "World of Warcraft: Eternity",
+			"id": "WarcraftExpanded",
+			"source": "WarcraftExpanded",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Maps/Azeroth.webp"
+			},
+			"published": "2026-10-14",
+			"contents": [
+				{
+					"name": "What is this?"
+				},
+				{
+					"name": "Maps"
+				}
+			]
+		}
+	],
+    "bookData": [
+		{
+			"id": "WarcraftExpanded",
+			"source": "WarcraftExpanded",
+			"data": [
+                {
+					"type": "section",
+					"name": "What is this?",
+					"entries": [
+						"This is a fan expansion of the {@book World of Warcraft} Universes Beyond book. This book adds additional creatures, spells, species, and factions from Warcraft."
+                    ]
+                },
+				{
+					"type": "section",
+					"name": "World Maps",
+					"entries": [
+						"Every battle map in the Map Library is labelled with a number (1 - 50) and a letter (A or B). The labels on the maps match the contents list below, so you can easily find what you need.",
+						{
+                            "type": "gallery",
+                            "images": [
+                                {
+                                    "type": "image",
+                                    "href": {
+                                        "type": "external",
+                                        "url": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftExpanded/Maps/Azeroth.webp"
+                                    },
+                                    "title": "Azeroth",
+                                    "imageType": "map",
+                                    "width": 12000,
+                                    "height": 10368,
+                                    "credit": "{@link Sub-Thermal|https://www.deviantart.com/sub-thermal/art/WoW-Map-Composition-Shadowlands-Update-861289403}",
+                                    "id": "01a"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
