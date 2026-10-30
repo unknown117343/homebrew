@@ -1105,8 +1105,11 @@
 					"type": "entries",
 					"entries": [
 						{
-							"type": "refFeat",
-							"feat": "Void Warrior|WarcraftStreamlined"
+							"type": "entries",
+							"name": "Void Warrior",
+							"entries": [
+								"You learn two {@filter Warlock cantrips|spells|level=0|class=warlock} of your choice. {@spell Chill Touch|XPHB} and {@spell Mind Sliver|XPHB} are recommended. The chosen cantrips count as Demon Hunter spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Demon Hunter level, you can replace one of these cantrips with another Warlock cantrip."
+							]
 						}
 					]
 				}
@@ -1242,12 +1245,17 @@
 			"entries": [
 				"You can call on the aid of an otherworldly steed. You always have the {@spell Find Steed|XPHB} spell prepared.",
 				"You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
-				"When you cast {@spell Find Steed|XPHB}, the Otherworldly Steed can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this {@variantrule Bonus Action|XPHB}:",
+				"When you cast {@spell Find Steed|XPHB}, the {@creature Otherworldly Steed|XPHB} can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this {@variantrule Bonus Action|XPHB}:",
 				{
 					"type": "entries",
-					"name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
 					"entries": [
-						"The steed and its rider can move through other creatures and objects this turn as if they were {@variantrule Difficult Terrain|XPHB}. Both steed and rider take 5 ({@damage 1d10}) Force damage if they end their turn inside an object."
+						{
+							"type": "entries",
+							"name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
+							"entries": [
+								"The steed and its rider can move through other creatures and objects this turn as if they were {@variantrule Difficult Terrain|XPHB}. Both steed and rider take 5 ({@damage 1d10}) Force damage if they end their turn inside an object."
+							]
+						}
 					]
 				}
 			]
@@ -1279,7 +1287,7 @@
 			"classSource": "WarcraftStreamlined",
 			"level": 14,
 			"entries": [
-				"When you use Death Coil to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain {@variantrule Hit Points|XPHB}, it regains additional {@variantrule Hit Points|XPHB} equal to your Death Knight level."
+				"When you use {@classFeature Death Coil|Death Knight|WarcraftStreamlined|1} to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain {@variantrule Hit Points|XPHB}, it regains additional {@variantrule Hit Points|XPHB} equal to your Death Knight level."
 			]
 		},
         {
@@ -4491,6 +4499,272 @@
 			"miscTags": [
 				"SGT"
 			]
+		},
+		{
+			"name": "Flawed Reconstruction",
+			"source": "WarcraftExpanded",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a needle and thread"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You stitch together the wounds of a creature you touch, which regains {@dice 3d6} {@variantrule Hit Points|XPHB}. However, the mending is imperfect, and the target's {@variantrule Hit Points|XPHB|Hit Point} maximum is reduced by {@dice 1d6}, to a minimum of 1."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The healing increases by {@dice 2d6} and the reduction increases by {@dice 1d6} for each spell slot level above 1."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Death Knight",
+						"source": "WarcraftRevised"
+					}
+				]
+			},
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Flawed Resurrection",
+			"source": "WarcraftExpanded",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of blood, a piece of flesh, and a pinch of bone dust"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You touch a dead Humanoid that has dead been no longer than 10 days and revive it as an intelligent Undead creature. The creature returns to life with 1 {@variantrule Hit Points|XPHB|Hit Point}. This spell closes all mortal wounds, but it doesn't restore missing body parts.",
+				"The creature's type becomes Undead and it gains {@variantrule Immunity|XPHB} to Poison damage and the {@condition Poisoned|XPHB} condition. It doesn't need to eat, drink, sleep, or breathe, though it must still rest for 8 hours to gain the benefits of a {@variantrule Long Rest|XPHB}.",
+				"The Undead body deteriorates over time. Whenever the creature finishes a {@variantrule Long Rest|XPHB}, its {@variantrule Hit Points|XPHB|Hit Point} maximum permanently decreases by 1. The creature's {@variantrule Hit Points|XPHB|Hit Point} maximum can only be restored by the {@spell Greater Restoration|XPHB} spell. If the creature dies and is later targeted by {@spell Resurrection|XPHB} or similar magic, it can be returned to life with its original creature type."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Death Knight",
+						"source": "WarcraftRevised"
+					}
+				]
+			},
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Word of Terror",
+			"source": "WarcraftExpanded",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You recite a word of fear to a creature you can see within range, which makes a Wisdom saving throw. On a failed save, the target takes {@damage 2d6} Psychic damage and has the {@condition Frightened|XPHB} condition until the end of your next turn. On a successful save, it takes half as much damage only."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 2."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Death Knight",
+						"source": "WarcraftRevised"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Dead Fog",
+			"source": "WarcraftExpanded",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of necromantic fog appears centered on a point you can see within range. The fog lasts for the duration or until strong wind (such as the one created by {@spell Gust of Wind|XPHB}) disperses it, ending the spell. Its area is {@variantrule Heavily Obscured|XPHB}.",
+				"Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Constitution saving throw, taking {@damage 3d6} Necrotic damage on a failed save or half as much on a successful one. When you cast the spell, you can empower it with your own life force. You can choose to take 10, 20, or 30 Necrotic damage. This damage ignores {@variantrule Resistance|XPHB} and {@variantrule Immunity|XPHB}. When you do so, the spell's damage increases by {@dice 1d6} for every 10 Necrotic damage you take, up to a maximum of {@dice 10d6}.",
+				"As a {@action Magic|XPHB} action, you can move the fog up to 30 feet. A creature also makes a save against this spell when the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} moves into its space and when it enters the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} or ends its turn there. A creature makes this save only once per turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@dice 1d6} for each spell slot level above 3."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Death Knight",
+						"source": "WarcraftRevised"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBS",
+				"SGT"
+			]
+		},
+		{
+			"name": "Exhume",
+			"source": "WarcraftExpanded",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a Shovel"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Choose an unoccupied 20-foot square on the ground within range. This spell causes one pile of Humanoid bones to rise out of the ground within that square. If you cast this spell within a burial place such as a graveyard, mausoleum, or barrow, {@dice 1d4} corpses or piles of bones are exhumed. The ground itself isn't disturbed by this spell; the bones simply appear out of the ground."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Death Knight",
+						"source": "WarcraftRevised"
+					}
+				]
+			}
 		}
 	],
 	"monster": [
@@ -5439,6 +5713,9 @@
 				},
 				{
 					"name": "Maps"
+				},
+				{
+					"name": "Classes"
 				}
 			]
 		}
@@ -5478,6 +5755,92 @@
                                 }
                             ]
                         }
+                    ]
+                },
+				{
+					"type": "section",
+					"name": "Classes",
+					"entries": [
+						"These are the changes to classes.",
+						{
+							"type": "entries",
+							"name": "Death Knight",
+							"entries": [
+								{
+									"type": "inset",
+									"name": "Why?",
+									"entries": [
+										"Death Knights in the lore do not have healing capabilities. I've changed their spell list to better reflect this."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Spells Removed",
+									"entries": [
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@spell Bless|XPHB}",
+												"{@spell Cure Wounds|XPHB}",
+												"{@spell Divine Favor|XPHB}",
+												"{@spell Divine Smite|XPHB}",
+												"{@spell Gentle Repose|XPHB}",
+												"{@spell Lesser Restoration|XPHB}",
+												"{@spell Heroism|XPHB}",
+												"{@spell Purify Food and Drink|XPHB}",
+												"{@spell Shield of Faith|XPHB}",
+												"{@spell Prayer of Healing|XPHB}",
+												"{@spell Shining Smite|XPHB}",
+												"{@spell Aura of Vitality|XPHB}",
+												"{@spell Blinding Smite|XPHB}",
+												"{@spell Create Food and Water|XPHB}",
+												"{@spell Crusader's Mantle|XPHB}",
+												"{@spell Daylight|XPHB}",
+												"{@spell Revivify|XPHB}",
+												"{@spell Remove Curse|XPHB}",
+												"{@spell Aura of Life|XPHB}",
+												"{@spell Aura of Purity|XPHB}",
+												"{@spell Greater Restoration|XPHB}",
+												"{@spell Raise Dead|XPHB}",
+												"{@spell Summon Celestial|XPHB}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Spells Added",
+									"entries": [
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@spell Bane|XPHB}",
+												"{@spell Enthrall|XPHB}",
+												"{@spell Ray of Enfeeblement|XPHB}",
+												"{@spell Wither and Bloom|AU}",
+												"{@spell Blindness/Deafness|XPHB}",
+												"{@spell Bestow Curse|XPHB}",
+												"{@spell Fear|XPHB}",
+												"{@spell Speak with Dead|XPHB}",
+												"{@spell Blight|XPHB}",
+												"{@spell Contagion|XPHB}",
+												"{@spell Grave Ground|AU}",
+												"{@spell Negative Energy Flood|AU}",
+												"{@spell Antilife Shell|XPHB}",
+												"{@spell Animate Dead|XPHB}",
+												"{@spell Flawed Reconstruction|WarcraftExpanded}",
+												"{@spell Flawed Resurrection|WarcraftExpanded}",
+												"{@spell Word of Terror|WarcraftExpanded}",
+												"{@spell Dead Fog|WarcraftExpanded}",
+												"{@spell Exhume|WarcraftExpanded}"
+											]
+										}
+									]
+								}
+							]
+						}
                     ]
                 }
             ]
