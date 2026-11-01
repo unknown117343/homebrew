@@ -24,10 +24,23 @@
 					"Hazmat"
 				],
 				"color": "007D2A"
+			},
+			{
+				"json": "WarcraftRevised",
+				"abbreviation": "WoW:R",
+				"full": "World of Warcraft: Revised",
+				"authors": [
+					"AAA"
+				],
+				"convertedBy": [
+					"Hazmat"
+				],
+				"color": "007D2A"
 			}
 		],
 		"featCategories": {
-			"FS:DH": "Fighting Style Replacement (Demon Hunter)"
+			"FS:DH": "Fighting Style Replacement (Demon Hunter)",
+			"FS:DK": "Fighting Style Replacement (Death Knight)"
 		},
 		"edition": "one",
 		"dateAdded": 1791684753,
@@ -1026,7 +1039,569 @@
                     "gainSubclassFeature": true
                 }
             ],
-            "subclassTitle": "Death Knight Specialization"
+            "subclassTitle": "Death Knight Specialization",
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "aura",
+						"type": "distance",
+						"scale": {
+							"6": {
+								"value": 10
+							},
+							"18": {
+								"value": 30
+							}
+						}
+					},
+					"title": "Aura Distance"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "channel-divinity",
+						"type": "number",
+						"scale": {
+							"3": {
+								"value": 2
+							},
+							"11": {
+								"value": 3
+							}
+						}
+					},
+					"title": "Channel Divinity Uses"
+				}
+			]
+        },
+		{
+            "name": "Death Knight Revised",
+            "source": "WarcraftRevised",
+            "edition": "one",
+            "primaryAbility": [
+                {
+                    "str": true,
+                    "cha": true
+                }
+            ],
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "wis",
+                "cha"
+            ],
+            "spellcastingAbility": "cha",
+            "casterProgression": "artificer",
+            "preparedSpellsProgression": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                6,
+                7,
+                7,
+                9,
+                9,
+                10,
+                10,
+                11,
+                11,
+                12,
+                12,
+                14,
+                14,
+                15,
+                15
+            ],
+            "preparedSpellsChange": "restLong",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"2": [
+							"rune strike|warcraftstreamlined"
+						],
+						"5": [
+							"find steed|xphb"
+						]
+					}
+				}
+			],
+            "classSpells": [
+                "Aid|XPHB",
+				"Banishing Smite|XPHB",
+				"Banishment|XPHB",
+				"Circle of Power|XPHB",
+				"Command|XPHB",
+				"Compelled Duel|XPHB",
+				"Death Ward|XPHB",
+				"Destructive Wave|XPHB",
+				"Detect Evil and Good|XPHB",
+				"Detect Magic|XPHB",
+				"Detect Poison and Disease|XPHB",
+				"Dispel Evil and Good|XPHB",
+				"Dispel Magic|XPHB",
+				"Dueling Ground|AU",
+				"Elemental Weapon|XPHB",
+				"Find Steed|XPHB",
+				"Geas|XPHB",
+				"Locate Creature|XPHB",
+				"Locate Object|XPHB",
+				"Magic Circle|XPHB",
+				"Magic Weapon|XPHB",
+				"Protection from Evil and Good|XPHB",
+				"Protection from Poison|XPHB",
+				"Searing Smite|XPHB",
+				"Staggering Smite|XPHB",
+				"Thunderous Smite|XPHB",
+				"Wardaway|FRHoF",
+				"Warding Bond|XPHB",
+				"Wrathful Smite|XPHB",
+				"Zone of Truth|XPHB",
+				"Bane|XPHB",
+				"Enthrall|XPHB",
+				"Ray of Enfeeblement|XPHB",
+				"Wither and Bloom|AU",
+				"Blindness/Deafness|XPHB",
+				"Bestow Curse|XPHB",
+				"Fear|XPHB",
+				"Speak with Dead|XPHB",
+				"Blight|XPHB",
+				"Contagion|XPHB",
+				"Grave Ground|AU",
+				"Negative Energy Flood|AU",
+				"Antilife Shell|XPHB",
+				"Animate Dead|XPHB",
+				"Flawed Reconstruction|WarcraftExpanded",
+				"Flawed Resurrection|WarcraftExpanded",
+				"Word of Terror|WarcraftExpanded",
+				"Dead Fog|WarcraftExpanded",
+				"Exhume|WarcraftExpanded",
+				"Rune Strike|WarcraftStreamlined",
+				"Remorseless Winter|WarcraftStreamlined",
+				"Leeching Strike|WarcraftStreamlined",
+				"Frostscythe|WarcraftStreamlined",
+				"Death and Decay|WarcraftStreamlined",
+				"Vampiric Blood|WarcraftStreamlined",
+				"Scourge Strike|WarcraftStreamlined",
+				"Death Grip|WarcraftStreamlined",
+				"Chains of Ice|WarcraftStreamlined",
+				"Summon Undead|XPHB",
+				"Bonestorm|WarcraftStreamlined"
+            ],
+			"featProgression": [
+				{
+					"name": "Fighting Style",
+					"category": [
+						"FS",
+						"FS:DK"
+					],
+					"progression": {
+						"2": 1
+					}
+				},
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "heavy",
+                    "shield"
+                ],
+                "weapons": [
+                    "simple",
+                    "martial"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "athletics",
+                                "insight",
+                                "intimidation",
+                                "medicine",
+                                "persuasion",
+                                "religion"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"defaultData": [
+					{
+						"A": [
+							{
+								"item": "chain mail|xphb"
+							},
+							{
+								"item": "greatsword|xphb"
+							},
+							{
+								"item": "arcane focus|xphb"
+							},
+							{
+								"item": "explorer's pack|xphb"
+							},
+							{
+								"value": 900
+							}
+						],
+						"B": [
+							{
+								"value": 15000
+							}
+						]
+					}
+				],
+				"entries": [
+					"{@i Choose A or B:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Arcane Focus|XPHB}, {@item Explorer's Pack|XPHB}, and 9 GP; or (B) 150 GP"
+				]
+			},
+			"multiclassing": {
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"weapons": [
+						"martial"
+					]
+				}
+			},
+            "classTableGroups": [
+				{
+					"colLabels": [
+						"Runic Empowerment",
+						"{@filter Prepared Spells|spells|level=!0|class=Death Knight Revised (wow:r)}"
+					],
+					"rows": [
+						[
+							0,
+							2
+						],
+						[
+							0,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							7
+						],
+						[
+							2,
+							7
+						],
+						[
+							2,
+							9
+						],
+						[
+							2,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							14
+						],
+						[
+							3,
+							14
+						],
+						[
+							3,
+							15
+						],
+						[
+							3,
+							15
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Death Knight Revised (wow:r)}",
+						"{@filter 2nd|spells|level=2|class=Death Knight Revised (wow:r)}",
+						"{@filter 3rd|spells|level=3|class=Death Knight Revised (wow:r)}",
+						"{@filter 4th|spells|level=4|class=Death Knight Revised (wow:r)}",
+						"{@filter 5th|spells|level=5|class=Death Knight Revised (wow:r)}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+            "classFeatures": [
+				"Death Coil|Death Knight|WarcraftRevised|1",
+                "Spellcasting|Death Knight|WarcraftRevised|1",
+                "Weapon Mastery|Paladin|XPHB|1",
+                "Fighting Style|Death Knight|WarcraftRevised|2",
+                "Runic Smite|Death Knight|WarcraftRevised|2",
+                "Runic Empowerment|Death Knight|WarcraftRevised|3",
+                {
+                    "classFeature": "Death Knight Specialization|Death Knight|WarcraftRevised|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Death Knight|WarcraftRevised|4",
+                "Extra Attack|Paladin|XPHB|5",
+                "Faithful Steed|Death Knight|WarcraftRevised|5",
+                "Aura of Protection|Death Knight|WarcraftRevised|6",
+                {
+                    "classFeature": "Specialization Feature|Death Knight|WarcraftRevised|7",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Death Knight|WarcraftRevised|8",
+                "Abjure Foes|Death Knight|WarcraftRevised|9",
+                "Aura of Courage|Paladin|XPHB|10",
+                "Runic Strikes|Death Knight|WarcraftRevised|11",
+                "Ability Score Improvement|Death Knight|WarcraftRevised|12",
+                "Improved Death Coil|Death Knight|WarcraftRevised|14",
+                {
+                    "classFeature": "Specialization Feature|Death Knight|WarcraftRevised|15",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Death Knight|WarcraftRevised|16",
+                "Aura Expansion|Paladin|XPHB|18",
+                "Epic Boon|Paladin|XPHB|19",
+                {
+                    "classFeature": "Specialization Feature|Death Knight|WarcraftRevised|20",
+                    "gainSubclassFeature": true
+                }
+            ],
+            "subclassTitle": "Death Knight Specialization",
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "aura",
+						"type": "distance",
+						"scale": {
+							"6": {
+								"value": 10
+							},
+							"18": {
+								"value": 30
+							}
+						}
+					},
+					"title": "Aura Distance"
+				},
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "runic-empowerment",
+						"type": "number",
+						"scale": {
+							"3": {
+								"value": 2
+							},
+							"11": {
+								"value": 3
+							}
+						}
+					},
+					"title": "Runic Empowerment Uses"
+				}
+			]
         }
 	],
 	"classFeature": [
@@ -1212,6 +1787,7 @@
 			"classSource": "WarcraftStreamlined",
 			"level": 1,
 			"entries": [
+				"Your creature type becomes Undead.",
 				"You also gain the ability to manipulate negative energy. You have a pool of d8s to fuel this ability. The number of dice in the pool equals one plus your Charisma modifier (minimum of one die).",
 				"As a {@variantrule Bonus Action|XPHB}, you can target a creature you can see within 60 feet of yourself and force it to make a Constitution saving throw, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend. The target takes Necrotic damage equal to the roll's total on a failed save or half as much damage on a successful one. If the target is an Undead, you can choose to have it regain {@variantrule Hit Points|XPHB} equal to the roll's total instead. Your pool regains all expended dice when you finish a {@variantrule Long Rest|XPHB}."
 			]
@@ -1305,6 +1881,285 @@
             "source": "WarcraftStreamlined",
             "className": "Death Knight",
             "classSource": "WarcraftStreamlined",
+            "level": 20,
+            "entries": [
+                "You gain a feature from your Death Knight Specialization."
+            ]
+        },
+		{
+			"name": "Death Coil",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 1,
+			"entries": [
+				"Your creature type becomes Undead.",
+				"You also gain the ability to manipulate negative energy. You have a pool of d8s to fuel this ability. The number of dice in the pool equals one plus your Charisma modifier (minimum of one die).",
+				"As a {@variantrule Bonus Action|XPHB}, you can target a creature you can see within 60 feet of yourself and force it to make a Constitution saving throw, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend. The target takes Necrotic damage equal to the roll's total on a failed save or half as much damage on a successful one. If the target is an Undead, you can choose to have it regain {@variantrule Hit Points|XPHB} equal to the roll's total instead. Your pool regains all expended dice when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 1,
+			"entries": [
+				"You have learned to cast spells through prayer and meditation. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Death Knight spells, which appear in the {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)} later in the class's description.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spell Slots",
+							"entries": [
+								"The Death Knight Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Prepared Spells of Level 1+",
+							"entries": [
+								"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two {@filter level 1 Death Knight spells|spells|class=Death Knight Revised (wow:r)|level=1}. {@spell Bane|XPHB} and {@spell Flawed Reconstruction|WarcraftExpanded} are recommended.",
+								"The number of spells on your list increases as you gain Death Knight levels, as shown in the Prepared Spells column of the Death Knight Features table. Whenever that number increases, choose additional Death Knight spells until the number of spells on your list matches the number in the Death Knight Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Death Knight, your list of prepared spells can include six Death Knight spells of level 1 or 2 in any combination.",
+								"If another Death Knight feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Death Knight spells for you."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Changing Your Prepared Spells",
+							"entries": [
+								"Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one spell on your list with another Death Knight spell for which you have spell slots."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spellcasting Ability",
+							"entries": [
+								"Charisma is your spellcasting ability for your Death Knight spells."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spellcasting Focus",
+							"entries": [
+								"You can use a {@item Arcane Focus|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Death Knight spells."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 2,
+			"entries": [
+				"You gain a {@filter Fighting Style feat|feats|category=FS} of your choice. Instead of choosing one of those feats, you can choose the option below.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Ebon Blade Knight",
+							"entries": [
+								"You learn two {@filter Warlock cantrips|spells|level=0|class=warlock} of your choice. {@spell Eldritch Blast|XPHB} and {@spell Chill Touch|XPHB} are recommended. The chosen cantrips count as Death Knight spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Death Knight level, you can replace one of these cantrips with another Warlock cantrip."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Runic Smite",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 2,
+			"entries": [
+				"You always have the {@spell Rune Strike|WarcraftStreamlined} spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"name": "Runic Empowerment",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 3,
+			"entries": [
+				"You can channel energy directly from the Shadowlands, using it to fuel magical effects. You start with one such effect: Grave Sense, which is described below. Other Death Knight features give additional Runic Empowerment effect options. Each time you use this class's Runic Empowerment, you choose which effect from this class to create.",
+				"You can use this class's Runic Empowerment twice. You regain one of its expended uses when you finish a {@variantrule Short Rest|XPHB}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You gain an additional use when you reach Death Knight level 11.",
+				"If a Runic Empowerment effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "Grave Sense|Death Knight|WarcraftRevised|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Grave Sense",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 3,
+			"consumes": {
+				"name": "Runic Empowerment"
+			},
+			"entries": [
+				"As a {@variantrule Bonus Action|XPHB}, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the {@condition Incapacitated|XPHB} condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the {@spell Hallow|XPHB} spell."
+			]
+		},
+		{
+            "name": "Death Knight Specialization",
+            "source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+            "level": 3,
+            "entries": [
+                "You gain a Death Knight Specialization of your choice: Blood, Frost, or Unholy. For the rest of your career, you gain each of your specialization's features that are of your Death Knight level or lower."
+            ]
+        },
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 4,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Death Knight levels 8, 12, and 16."
+			]
+		},
+		{
+			"name": "Faithful Steed",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 5,
+			"entries": [
+				"You can call on the aid of an otherworldly steed. You always have the {@spell Find Steed|XPHB} spell prepared.",
+				"You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+				"When you cast {@spell Find Steed|XPHB}, the {@creature Otherworldly Steed|XPHB} can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this {@variantrule Bonus Action|XPHB}:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
+							"entries": [
+								"The steed and its rider can move through other creatures and objects this turn as if they were {@variantrule Difficult Terrain|XPHB}. Both steed and rider take 5 ({@damage 1d10}) Force damage if they end their turn inside an object."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Protection",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 6,
+			"entries": [
+				"You radiate a protective, unseeable aura in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that originates from you. The aura is inactive while you have the {@condition Incapacitated|XPHB} condition.",
+				"You and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).",
+				"If another Death Knight or Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them."
+			]
+		},
+        {
+            "name": "Specialization Feature",
+            "source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+            "level": 7,
+            "entries": [
+                "You gain a feature from your Death Knight Specialization."
+            ]
+        },
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 8,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Abjure Foes",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 9,
+			"consumes": {
+				"name": "Runic Empowerment"
+			},
+			"entries": [
+				"As a {@action Magic|XPHB} action, you can expend one use of this class's Runic Empowerment to overwhelm foes with awe. As you present your weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the {@condition Frightened|XPHB} condition for 1 minute or until it takes any damage. While {@condition Frightened|XPHB} in this way, a target can do only one of the following on its turns: move, take an action, or take a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"name": "Runic Strikes",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 11,
+			"entries": [
+				"When you hit a target with an attack roll using a Melee weapon or an {@variantrule Unarmed Strike|XPHB}, the target takes an extra {@damage 1d8} Necrotic damage."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 12,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Improved Death Coil",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 14,
+			"entries": [
+				"When you use {@classFeature Death Coil|Death Knight|WarcraftStreamlined|1} to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain {@variantrule Hit Points|XPHB}, it regains additional {@variantrule Hit Points|XPHB} equal to your Death Knight level."
+			]
+		},
+        {
+            "name": "Specialization Feature",
+            "source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+            "level": 15,
+            "entries": [
+                "You gain a feature from your Death Knight Specialization."
+            ]
+        },
+		{
+			"name": "Ability Score Improvement",
+			"source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
+			"level": 16,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+        {
+            "name": "Specialization Feature",
+            "source": "WarcraftRevised",
+			"className": "Death Knight",
+			"classSource": "WarcraftRevised",
             "level": 20,
             "entries": [
                 "You gain a feature from your Death Knight Specialization."
@@ -1547,6 +2402,345 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Runic Smite",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"level": 2,
+			"activities": [
+				{
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "1"
+					},
+					"spell": {
+						"uuid": "@spell[Rune Strike|WarcraftStreamlined]"
+					}
+				}
+			]
+		},
+		{
+			"name": "Divine Sense",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"level": 3,
+			"activities": [
+				{
+					"name": "Divine Sense",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"name": "Channel Divinity"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"effects": [
+						{
+							"foundryId": "divineSense"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "divineSense",
+					"duration": {
+						"seconds": 600
+					},
+					"description": "You know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell."
+				}
+			]
+		},
+		{
+			"name": "Runic Smite",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 2,
+			"activities": [
+				{
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "1"
+					},
+					"spell": {
+						"uuid": "@spell[Rune Strike|WarcraftStreamlined]"
+					}
+				}
+			]
+		},
+		{
+			"name": "Runic Empowerment",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 3,
+			"system": {
+				"uses.max": "@scale.death-knight-revised.runic-empowerment",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					},
+					{
+						"period": "sr",
+						"type": "formula",
+						"formula": "1"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grave Sense",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 3,
+			"activities": [
+				{
+					"name": "Grave Sense",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"name": "Runic Empowerment"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"effects": [
+						{
+							"foundryId": "graveSense"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "graveSense",
+					"duration": {
+						"seconds": 600
+					},
+					"description": "You know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell."
+				}
+			]
+		},
+		{
+			"name": "Aura of Protection",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 6,
+			"effects": [
+				{
+					"name": "Protected",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.abilities.save",
+							"mode": "ADD",
+							"value": "@abilities.cha.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Abjure Foes",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 9,
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"consumes": {
+										"name": "Runic Empowerment"
+									}
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"count": "(max(1,@abilities.cha.mod))",
+							"type": "creature",
+							"special": "That you can see"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "abjureFoes"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "abjureFoes",
+					"name": "Abjured",
+					"duration": {
+						"seconds": 60
+					},
+					"statuses": [
+						"frightened"
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Courage",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 10,
+			"activities": [
+				{
+					"name": "Aura of Courage",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "radius",
+							"size": "@scale.death-knight-revised.aura"
+						},
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfCourage"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfCourage",
+					"name": "Courageous",
+					"description": "You and your allies have Immunity to the Frightened condition while in your Aura of Protection."
+				}
+			]
+		},
+		{
+			"name": "Radiant Strikes",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"level": 11,
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "1d8[necrotic]"
+						}
+					]
+				}
+			]
 		}
 	],
 	"feat": [
@@ -1577,6 +2771,35 @@
 			],
 			"entries": [
 				"You learn two {@filter Warlock cantrips|spells|level=0|class=warlock} of your choice. {@spell Chill Touch|XPHB} and {@spell Mind Sliver|XPHB} are recommended. The chosen cantrips count as Demon Hunter spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Demon Hunter level, you can replace one of these cantrips with another Warlock cantrip."
+			]
+		},
+		{
+			"name": "Ebon Blade Knight",
+			"source": "WarcraftRevised",
+			"category": "FS:DK",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "When Gaining the Level 2 Death Knight \"Fighting Style\" Feature",
+						"entrySummary": "Special"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=warlock",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"You learn two {@filter Warlock cantrips|spells|level=0|class=warlock} of your choice. {@spell Eldritch Blast|XPHB} and {@spell Chill Touch|XPHB} are recommended. The chosen cantrips count as Death Knight spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Death Knight level, you can replace one of these cantrips with another Warlock cantrip."
 			]
 		}
 	],
@@ -1685,6 +2908,224 @@
 					"href": {
 						"type": "external",
 						"url": "https://i.imgur.com/6EPtvF4.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Death Knight",
+			"source": "WarcraftStreamlined",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Death Knight",
+					"source": "WarcraftStreamlined",
+					"entries": [
+						"{@i Wield the Power of Death Against the Scourge}",
+						"The Oath of the Ebon Blade unites the free death knights of Azeroth. No longer directly under the Lich King's control, they still serve Bolvar Fordragon—first as agents of the new Lich King, and later, after the destruction of the Helm of Domination, as troops devoted to stopping the Scourge's spread.",
+						{
+							"type": "inset",
+							"name": "Hero Classes",
+							"entries": [
+								"Three of the World of Warcraft classes\u2014{@class Death Knight|WarcraftStreamlined}, {@class Demon Hunter|WarcraftStreamlined}, and {@class Evoker|WarcraftStreamlined}\u2014are hero classes, meaning that they are typically available only to characters starting at level 3 or higher. In the story of World of Warcraft, characters with these classes are already experienced and powerful adventurers by the time they enter the game."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Playing a Death Knight",
+							"entries": [
+								"Death knight is a hero class, which means you typically must start play at level 3 or higher (see the “Hero Classes” sidebar).",
+								"As a death knight, you can choose one of three specializations by inscribing the corresponding rune on your weapon using your Runeforging feature: Blood, Frost, or Unholy.",
+								{
+									"type": "entries",
+									"name": "Blood Specialization",
+									"entries": [
+										"With the Blood rune, you are a dark guardian who manipulates and corrupts life energy to sustain yourself in the face of an enemy onslaught. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 3",
+											"entries": [
+												"Choose {@item Greataxe|XPHB|Greataxes}, {@item Greatsword|XPHB|Greatswords}, or {@item Maul|XPHB|Mauls} for your Weapon Mastery feature. Choose {@feat Interception|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Crusher|XPHB}, {@feat Great Weapon Fighting|XPHB}, {@feat Great Weapon Master|XPHB}, {@feat Heavy Armor Master|XPHB}, {@feat Piercer|XPHB}, {@feat Slasher|XPHB}, and {@feat Tough|XPHB}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Frost Specialization",
+									"entries": [
+										"Wielding the Frost rune, you are an icy harbinger of doom, channeling runic power and delivering vicious weapon strikes. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 3",
+											"entries": [
+												"Choose {@item Light Hammer|XPHB|Light Hammers} or {@item Scimitar|XPHB|Scimitars} for your Weapon Mastery feature. Choose {@feat Two-Weapon Fighting|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Crusher|XPHB}, {@feat Dual Wielder|XPHB}, and {@feat Slasher|XPHB}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Unholy Specialization",
+									"entries": [
+										"With the Unholy rune, you become a master of death and decay, spreading infection and controlling undead minions. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 3",
+											"entries": [
+												"Choose {@item Greataxe|XPHB|Greataxes}, {@item Greatsword|XPHB|Greatswords}, or {@item Maul|XPHB|Mauls} for your Weapon Mastery feature. Choose {@feat Great Weapon Fighting|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Crusher|XPHB}, {@feat Great Weapon Master|XPHB}, {@feat Piercer|XPHB}, and {@feat Slasher|XPHB}."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt53c129fceb86b6e0/5ee3e3d5e35f99710ac78ebd/W4Q96YE42NCC1457037563833.png"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://warcraft.wiki.gg/images/Death_Knight_Crest.png?b8a0e2"
+					}
+				}
+			]
+		},
+		{
+			"name": "Death Knight Revised",
+			"source": "WarcraftRevised",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Death Knight",
+					"source": "WarcraftRevised",
+					"entries": [
+						"{@i Wield the Power of Death Against the Scourge}",
+						"The Oath of the Ebon Blade unites the free death knights of Azeroth. No longer directly under the Lich King's control, they still serve Bolvar Fordragon—first as agents of the new Lich King, and later, after the destruction of the Helm of Domination, as troops devoted to stopping the Scourge's spread.",
+						{
+							"type": "inset",
+							"name": "Hero Classes",
+							"entries": [
+								"Three of the World of Warcraft classes\u2014{@class Death Knight|WarcraftRevised}, {@class Demon Hunter|WarcraftStreamlined}, and {@class Evoker|WarcraftStreamlined}\u2014are hero classes, meaning that they are typically available only to characters starting at level 3 or higher. In the story of World of Warcraft, characters with these classes are already experienced and powerful adventurers by the time they enter the game."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Playing a Death Knight",
+							"entries": [
+								"Death knight is a hero class, which means you typically must start play at level 3 or higher (see the “Hero Classes” sidebar).",
+								"As a death knight, you can choose one of three specializations by inscribing the corresponding rune on your weapon using your Runeforging feature: Blood, Frost, or Unholy.",
+								{
+									"type": "entries",
+									"name": "Blood Specialization",
+									"entries": [
+										"With the Blood rune, you are a dark guardian who manipulates and corrupts life energy to sustain yourself in the face of an enemy onslaught. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 3",
+											"entries": [
+												"Choose {@item Greataxe|XPHB|Greataxes}, {@item Greatsword|XPHB|Greatswords}, or {@item Maul|XPHB|Mauls} for your Weapon Mastery feature. Choose {@feat Interception|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Crusher|XPHB}, {@feat Great Weapon Fighting|XPHB}, {@feat Great Weapon Master|XPHB}, {@feat Heavy Armor Master|XPHB}, {@feat Piercer|XPHB}, {@feat Slasher|XPHB}, and {@feat Tough|XPHB}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Frost Specialization",
+									"entries": [
+										"Wielding the Frost rune, you are an icy harbinger of doom, channeling runic power and delivering vicious weapon strikes. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 3",
+											"entries": [
+												"Choose {@item Light Hammer|XPHB|Light Hammers} or {@item Scimitar|XPHB|Scimitars} for your Weapon Mastery feature. Choose {@feat Two-Weapon Fighting|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Crusher|XPHB}, {@feat Dual Wielder|XPHB}, and {@feat Slasher|XPHB}."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Unholy Specialization",
+									"entries": [
+										"With the Unholy rune, you become a master of death and decay, spreading infection and controlling undead minions. The following choices will help you focus on this specialization:",
+										{
+											"type": "entries",
+											"name": "Level 3",
+											"entries": [
+												"Choose {@item Greataxe|XPHB|Greataxes}, {@item Greatsword|XPHB|Greatswords}, or {@item Maul|XPHB|Mauls} for your Weapon Mastery feature. Choose {@feat Great Weapon Fighting|XPHB} for a Fighting Style feat."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Feats",
+											"entries": [
+												"Consider the following feats at higher levels: {@feat Charger|XPHB}, {@feat Crusher|XPHB}, {@feat Great Weapon Master|XPHB}, {@feat Piercer|XPHB}, and {@feat Slasher|XPHB}."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt53c129fceb86b6e0/5ee3e3d5e35f99710ac78ebd/W4Q96YE42NCC1457037563833.png"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://warcraft.wiki.gg/images/Death_Knight_Crest.png?b8a0e2"
 					}
 				}
 			]
@@ -1897,7 +3338,9 @@
                 "Aura of Deathly Endurance|Death Knight|WarcraftStreamlined|Blood|WarcraftStreamlined|7",
                 "Runic Mastery|Death Knight|WarcraftStreamlined|Blood|WarcraftStreamlined|15",
                 "Aspect of the Horsemen|Death Knight|WarcraftStreamlined|Blood|WarcraftStreamlined|20"
-            ]
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
         },
         {
             "name": "Frost",
@@ -1949,7 +3392,9 @@
                 "Aura of Deathly Endurance|Death Knight|WarcraftStreamlined|Frost|WarcraftStreamlined|7",
                 "Runic Mastery|Death Knight|WarcraftStreamlined|Frost|WarcraftStreamlined|15",
                 "Aspect of the Horsemen|Death Knight|WarcraftStreamlined|Frost|WarcraftStreamlined|20"
-            ]
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
         },
         {
             "name": "Unholy",
@@ -2001,8 +3446,276 @@
                 "Aura of Deathly Endurance|Death Knight|WarcraftStreamlined|Unholy|WarcraftStreamlined|7",
                 "Runic Mastery|Death Knight|WarcraftStreamlined|Unholy|WarcraftStreamlined|15",
                 "Aspect of the Horsemen|Death Knight|WarcraftStreamlined|Unholy|WarcraftStreamlined|20"
-            ]
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+		{
+            "name": "Blood",
+            "shortName": "Blood",
+            "source": "WarcraftRevised",
+            "edition": "one",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "death grip|WarcraftStreamlined",
+                            "vampiric blood|WarcraftStreamlined"
+                        ],
+                        "5": [
+                            "death and decay|WarcraftStreamlined",
+                            "spiritual weapon|XPHB"
+                        ],
+                        "9": [
+                            "summon undead|XPHB",
+                            "leeching strike|WarcraftStreamlined"
+                        ],
+                        "13": [
+                            "freedom of movement|XPHB",
+                            "evard's black tentacles|XPHB"
+                        ],
+                        "17": [
+                            "circle of power|XPHB",
+                            "bonestorm|WarcraftStreamlined"
+                        ]
+                    }
+                }
+            ],
+            "subclassSpells": [
+                "death grip|WarcraftStreamlined",
+                "vampiric blood|WarcraftStreamlined",
+                "death and decay|WarcraftStreamlined",
+                "spiritual weapon|XPHB",
+                "summon undead|XPHB",
+                "leeching strike|WarcraftStreamlined",
+                "freedom of movement|XPHB",
+                "evard's black tentacles|XPHB",
+                "circle of power|XPHB",
+                "bonestorm|WarcraftStreamlined"
+            ],
+            "subclassFeatures": [
+                "Blood|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|3",
+                "Aura of Deathly Endurance|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|7",
+                "Runic Mastery|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|15",
+                "Aspect of the Horsemen|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|20"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Frost",
+            "shortName": "Frost",
+            "source": "WarcraftRevised",
+            "edition": "one",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "death grip|WarcraftStreamlined",
+                            "chains of ice|WarcraftStreamlined"
+                        ],
+                        "5": [
+                            "death and decay|WarcraftStreamlined",
+                            "frostscythe|WarcraftStreamlined"
+                        ],
+                        "9": [
+                            "summon undead|XPHB",
+                            "remorseless winter|WarcraftStreamlined"
+                        ],
+                        "13": [
+                            "freedom of movement|XPHB",
+                            "ice storm|XPHB"
+                        ],
+                        "17": [
+                            "circle of power|XPHB",
+                            "cone of cold|XPHB"
+                        ]
+                    }
+                }
+            ],
+            "subclassSpells": [
+                "death grip|WarcraftStreamlined",
+                "chains of ice|WarcraftStreamlined",
+                "death and decay|WarcraftStreamlined",
+                "frostscythe|WarcraftStreamlined",
+                "summon undead|XPHB",
+                "remorseless winter|WarcraftStreamlined",
+                "freedom of movement|XPHB",
+                "ice storm|XPHB",
+                "circle of power|XPHB",
+                "cone of cold|XPHB"
+            ],
+            "subclassFeatures": [
+                "Frost|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|3",
+                "Aura of Deathly Endurance|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|7",
+                "Runic Mastery|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|15",
+                "Aspect of the Horsemen|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|20"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
+        },
+        {
+            "name": "Unholy",
+            "shortName": "Unholy",
+            "source": "WarcraftRevised",
+            "edition": "one",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "death grip|WarcraftStreamlined",
+                            "scourge strike|WarcraftStreamlined"
+                        ],
+                        "5": [
+                            "death and decay|WarcraftStreamlined",
+                            "ray of enfeeblement|XPHB"
+                        ],
+                        "9": [
+                            "summon undead|XPHB",
+                            "bestow curse|XPHB"
+                        ],
+                        "13": [
+                            "freedom of movement|XPHB",
+                            "blight|XPHB"
+                        ],
+                        "17": [
+                            "circle of power|XPHB",
+                            "contagion|XPHB"
+                        ]
+                    }
+                }
+            ],
+            "subclassSpells": [
+                "death grip|WarcraftStreamlined",
+                "scourge strike|WarcraftStreamlined",
+                "death and decay|WarcraftStreamlined",
+                "ray of enfeeblement|XPHB",
+                "summon undead|XPHB",
+                "bestow curse|XPHB",
+                "freedom of movement|XPHB",
+                "blight|XPHB",
+                "circle of power|XPHB",
+                "contagion|XPHB"
+            ],
+            "subclassFeatures": [
+                "Unholy|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|3",
+                "Aura of Deathly Endurance|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|7",
+                "Runic Mastery|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|15",
+                "Aspect of the Horsemen|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|20"
+            ],
+			"hasFluff": true,
+			"hasFluffImages": true
         }
+	],
+	"subclassFluff": [
+		{
+			"name": "Blood",
+			"shortName": "Blood",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://cdna.artstation.com/p/assets/images/images/053/338/256/large/dmitry-prozorov-part-2.jpg?1661969401"
+					},
+					"credit": "Dmitry Prozorov"
+				}
+			]
+		},
+		{
+			"name": "Blood",
+			"shortName": "Blood",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://cdna.artstation.com/p/assets/images/images/053/338/256/large/dmitry-prozorov-part-2.jpg?1661969401"
+					},
+					"credit": "Dmitry Prozorov"
+				}
+			]
+		},
+		{
+			"name": "Frost",
+			"shortName": "Frost",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://cdna.artstation.com/p/assets/images/images/053/338/252/large/dmitry-prozorov-part-3.jpg?1661969388"
+					},
+					"credit": "Dmitry Prozorov"
+				}
+			]
+		},
+		{
+			"name": "Frost",
+			"shortName": "Frost",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://cdna.artstation.com/p/assets/images/images/053/338/252/large/dmitry-prozorov-part-3.jpg?1661969388"
+					},
+					"credit": "Dmitry Prozorov"
+				}
+			]
+		},
+		{
+			"name": "Unholy",
+			"shortName": "Unholy",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://cdnb.artstation.com/p/assets/images/images/053/338/259/large/dmitry-prozorov-part-1.jpg?1661969412"
+					},
+					"credit": "Dmitry Prozorov"
+				}
+			]
+		},
+		{
+			"name": "Unholy",
+			"shortName": "Unholy",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://cdnb.artstation.com/p/assets/images/images/053/338/259/large/dmitry-prozorov-part-1.jpg?1661969412"
+					},
+					"credit": "Dmitry Prozorov"
+				}
+			]
+		}
 	],
 	"subclassFeature": [
 		{
@@ -2624,6 +4337,7 @@
             "level": 3,
             "header": 1,
             "entries": [
+				"A dark guardian who manipulates and corrupts life energy to sustain themselves in the face of an enemy onslaught.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Blood Spells|Death Knight|WarcraftStreamlined|Blood|WarcraftStreamlined|3"
@@ -2728,6 +4442,9 @@
             "subclassSource": "WarcraftStreamlined",
             "level": 3,
             "header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
             "entries": [
 				"Immediately after you cast {@spell Rune Strike|WarcraftStreamlined}, you can expend one use of your Channel Divinity to gain one of the following benefits based on the rune inscribed on your weapon.",
 				{
@@ -2781,7 +4498,7 @@
 					"type": "entries",
 					"name": "Blood",
 					"entries": [
-						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Paladin level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Paladin level."
+						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Death Knight level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Death Knight level."
 					]
 				},
 				{
@@ -2795,7 +4512,7 @@
 					"type": "entries",
 					"name": "Unholy",
 					"entries": [
-						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Paladin level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Paladin level (round up)."
+						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Death Knight level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Death Knight level (round up)."
 					]
 				}
             ]
@@ -2837,6 +4554,7 @@
             "level": 3,
             "header": 1,
             "entries": [
+				"An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Frost Spells|Death Knight|WarcraftStreamlined|Frost|WarcraftStreamlined|3"
@@ -2941,6 +4659,9 @@
             "subclassSource": "WarcraftStreamlined",
             "level": 3,
             "header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
             "entries": [
                 "Immediately after you cast {@spell Rune Strike|WarcraftStreamlined}, you can expend one use of your Channel Divinity to gain one of the following benefits based on the rune inscribed on your weapon.",
 				{
@@ -2994,7 +4715,7 @@
 					"type": "entries",
 					"name": "Blood",
 					"entries": [
-						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Paladin level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Paladin level."
+						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Death Knight level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Death Knight level."
 					]
 				},
 				{
@@ -3008,7 +4729,7 @@
 					"type": "entries",
 					"name": "Unholy",
 					"entries": [
-						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Paladin level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Paladin level (round up)."
+						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Death Knight level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Death Knight level (round up)."
 					]
 				}
             ]
@@ -3050,6 +4771,7 @@
             "level": 3,
             "header": 1,
             "entries": [
+				"A master of death and decay, spreading infection and controlling undead minions to do their bidding.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Unholy Spells|Death Knight|WarcraftStreamlined|Unholy|WarcraftStreamlined|3"
@@ -3154,6 +4876,9 @@
             "subclassSource": "WarcraftStreamlined",
             "level": 3,
             "header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
             "entries": [
                 "Immediately after you cast {@spell Rune Strike|WarcraftStreamlined}, you can expend one use of your Channel Divinity to gain one of the following benefits based on the rune inscribed on your weapon.",
 				{
@@ -3207,7 +4932,7 @@
 					"type": "entries",
 					"name": "Blood",
 					"entries": [
-						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Paladin level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Paladin level."
+						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Death Knight level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Death Knight level."
 					]
 				},
 				{
@@ -3221,7 +4946,7 @@
 					"type": "entries",
 					"name": "Unholy",
 					"entries": [
-						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Paladin level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Paladin level (round up)."
+						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Death Knight level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Death Knight level (round up)."
 					]
 				}
             ]
@@ -3252,7 +4977,993 @@
 					]
 				}
             ]
+        },
+		{
+            "name": "Blood",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 1,
+            "entries": [
+				"A dark guardian who manipulates and corrupts life energy to sustain themselves in the face of an enemy onslaught.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Blood Spells|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runeforging|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runic Power|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|3"
+                }
+            ]
+        },
+        {
+            "name": "Blood Spells",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "When you reach a Death Knight level specified in the Blood Spells table, you thereafter always have the spells listed prepared.",
+                {
+                    "type": "table",
+                    "caption": "Blood Spells",
+                    "colLabels": [
+                        "Death Knight Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Death Grip|WarcraftStreamlined}, {@spell Vampiric Blood|WarcraftStreamlined}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Death and Decay|WarcraftStreamlined}, {@spell Spiritual Weapon|XPHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Summon Undead|XPHB}, {@spell Leeching Strike|WarcraftStreamlined}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Freedom of Movement|XPHB}, {@spell Evard's Black Tentacles|XPHB}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power|XPHB}, {@spell Bonestorm|WarcraftStreamlined}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Runeforging",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "When you finish a {@variantrule Long Rest|XPHB}, you can inscribe one of the following runes on a melee weapon you are holding, or you can transfer the rune to a different weapon. Whenever you gain a level, you can replace it with a different rune.",
+				"In addition, you can use the inscribed weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)}.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"When you inscribe this rune on your weapon, and whenever you finish a {@variantrule Long Rest|XPHB} while the rune is inscribed on your weapon, you gain {@variantrule Temporary Hit Points|XPHB} equal to your Charisma modifier plus your Death Knight level. While you are wielding your inscribed weapon, you gain these {@variantrule Temporary Hit Points|XPHB} whenever you reduce an enemy to 0 {@variantrule Hit Points|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"While you are wielding your inscribed weapon, damage from your weapon attacks, Death Knight spells, and Death Knight features ignores {@variantrule Resistance|XPHB} to Cold damage. When you make the extra attack of the {@itemProperty L|XPHB|Light} property and hit while wielding your inscribed weapon, you deal an extra {@damage 1d4} Cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"While you are wielding your inscribed weapon, damage from your weapon attacks, Death Knight spells, and Death Knight features ignores {@variantrule Resistance|XPHB} to Necrotic damage. If your inscribed weapon has the {@itemProperty H|XPHB|Heavy} property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1)."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Runic Power",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+			"consumes": {
+				"name": "Runic Empowerment"
+			},
+            "entries": [
+				"Immediately after you cast {@spell Rune Strike|WarcraftStreamlined}, you can expend one use of your Runic Empowerment to gain one of the following benefits based on the rune inscribed on your weapon.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"You regain a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt with your {@spell Rune Strike|WarcraftStreamlined}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"Frost covers your weapon and shatters on impact. The target of your {@spell Rune Strike|WarcraftStreamlined} and each enemy in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the target take {@damage 2d6} Cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"The target of your {@spell Rune Strike|WarcraftStreamlined} is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts {@dice 1d6} from the roll, and the curse ends."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Aura of Deathly Endurance",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You and your allies have {@variantrule Resistance|XPHB} to Cold, Necrotic, and Psychic damage while in your Aura of Protection."
+            ]
+        },
+        {
+            "name": "Runic Mastery",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "You can invoke the power of the rune inscribed on your weapon. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB}. The effect depends on the rune you have inscribed.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Death Knight level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Death Knight level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"When you take the {@action Attack|XPHB} action on your turn, you can replace one attack with an exhalation of frost magic in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in that area makes a Dexterity saving throw against your spell save DC. A creature takes {@damage 8d6} Cold damage on a failed save or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Death Knight level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Death Knight level (round up)."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Aspect of the Horsemen",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Blood",
+            "subclassSource": "WarcraftRevised",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				{
+					"type": "entries",
+					"name": "Generate Runic Power",
+					"entries": [
+						"You can restore a use of your Runic Mastery by expending a level 4 spell slot (no action required)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Runeforging",
+					"entries": [
+						"When you use your Runic Power and Runic Mastery features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Frost",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 1,
+            "entries": [
+				"An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Frost Spells|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runeforging|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runic Power|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|3"
+                }
+            ]
+        },
+        {
+            "name": "Frost Spells",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "When you reach a Death Knight level specified in the Frost Spells table, you thereafter always have the spells listed prepared.",
+                {
+                    "type": "table",
+                    "caption": "Frost Spells",
+                    "colLabels": [
+                        "Death Knight Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Death Grip|WarcraftStreamlined}, {@spell Chains of Ice|WarcraftStreamlined}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Death and Decay|WarcraftStreamlined}, {@spell Frostscythe|WarcraftStreamlined}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Summon Undead|XPHB}, {@spell Remorseless Winter|WarcraftStreamlined}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Freedom of Movement|XPHB}, {@spell Ice Storm|XPHB}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power|XPHB}, {@spell Cone of Cold|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Runeforging",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "When you finish a {@variantrule Long Rest|XPHB}, you can inscribe one of the following runes on a melee weapon you are holding, or you can transfer the rune to a different weapon. Whenever you gain a level, you can replace it with a different rune.",
+				"In addition, you can use the inscribed weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)}.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"When you inscribe this rune on your weapon, and whenever you finish a {@variantrule Long Rest|XPHB} while the rune is inscribed on your weapon, you gain {@variantrule Temporary Hit Points|XPHB} equal to your Charisma modifier plus your Death Knight level. While you are wielding your inscribed weapon, you gain these {@variantrule Temporary Hit Points|XPHB} whenever you reduce an enemy to 0 {@variantrule Hit Points|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"While you are wielding your inscribed weapon, damage from your weapon attacks, Death Knight spells, and Death Knight features ignores {@variantrule Resistance|XPHB} to Cold damage. When you make the extra attack of the {@itemProperty L|XPHB|Light} property and hit while wielding your inscribed weapon, you deal an extra {@damage 1d4} Cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"While you are wielding your inscribed weapon, damage from your weapon attacks, Death Knight spells, and Death Knight features ignores {@variantrule Resistance|XPHB} to Necrotic damage. If your inscribed weapon has the {@itemProperty H|XPHB|Heavy} property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1)."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Runic Power",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+			"consumes": {
+				"name": "Runic Empowerment"
+			},
+            "entries": [
+                "Immediately after you cast {@spell Rune Strike|WarcraftStreamlined}, you can expend one use of your Runic Empowerment to gain one of the following benefits based on the rune inscribed on your weapon.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"You regain a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt with your {@spell Rune Strike|WarcraftStreamlined}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"Frost covers your weapon and shatters on impact. The target of your {@spell Rune Strike|WarcraftStreamlined} and each enemy in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the target take {@damage 2d6} Cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"The target of your {@spell Rune Strike|WarcraftStreamlined} is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts {@dice 1d6} from the roll, and the curse ends."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Aura of Deathly Endurance",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You and your allies have {@variantrule Resistance|XPHB} to Cold, Necrotic, and Psychic damage while in your Aura of Protection."
+            ]
+        },
+        {
+            "name": "Runic Mastery",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "You can invoke the power of the rune inscribed on your weapon. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB}. The effect depends on the rune you have inscribed.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Death Knight level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Death Knight level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"When you take the {@action Attack|XPHB} action on your turn, you can replace one attack with an exhalation of frost magic in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in that area makes a Dexterity saving throw against your spell save DC. A creature takes {@damage 8d6} Cold damage on a failed save or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Death Knight level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Death Knight level (round up)."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Aspect of the Horsemen",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Frost",
+            "subclassSource": "WarcraftRevised",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				{
+					"type": "entries",
+					"name": "Generate Runic Power",
+					"entries": [
+						"You can restore a use of your Runic Mastery by expending a level 4 spell slot (no action required)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Runeforging",
+					"entries": [
+						"When you use your Runic Power and Runic Mastery features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Unholy",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 1,
+            "entries": [
+				"A master of death and decay, spreading infection and controlling undead minions to do their bidding.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Unholy Spells|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runeforging|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runic Power|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|3"
+                }
+            ]
+        },
+        {
+            "name": "Unholy Spells",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "When you reach a Death Knight level specified in the Unholy Spells table, you thereafter always have the spells listed prepared.",
+                {
+                    "type": "table",
+                    "caption": "Unholy Spells",
+                    "colLabels": [
+                        "Death Knight Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Death Grip|WarcraftStreamlined}, {@spell Scourge Strike|WarcraftStreamlined}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Death and Decay|WarcraftStreamlined}, {@spell Ray of Enfeeblement|XPHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Summon Undead|XPHB}, {@spell Bestow Curse|XPHB}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Freedom of Movement|XPHB}, {@spell Blight|XPHB}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power|XPHB}, {@spell Contagion|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Runeforging",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+            "entries": [
+				"When you finish a {@variantrule Long Rest|XPHB}, you can inscribe one of the following runes on a melee weapon you are holding, or you can transfer the rune to a different weapon. Whenever you gain a level, you can replace it with a different rune.",
+				"In addition, you can use the inscribed weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)}.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"When you inscribe this rune on your weapon, and whenever you finish a {@variantrule Long Rest|XPHB} while the rune is inscribed on your weapon, you gain {@variantrule Temporary Hit Points|XPHB} equal to your Charisma modifier plus your Death Knight level. While you are wielding your inscribed weapon, you gain these {@variantrule Temporary Hit Points|XPHB} whenever you reduce an enemy to 0 {@variantrule Hit Points|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"While you are wielding your inscribed weapon, damage from your weapon attacks, Death Knight spells, and Death Knight features ignores {@variantrule Resistance|XPHB} to Cold damage. When you make the extra attack of the {@itemProperty L|XPHB|Light} property and hit while wielding your inscribed weapon, you deal an extra {@damage 1d4} Cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"While you are wielding your inscribed weapon, damage from your weapon attacks, Death Knight spells, and Death Knight features ignores {@variantrule Resistance|XPHB} to Necrotic damage. If your inscribed weapon has the {@itemProperty H|XPHB|Heavy} property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1)."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Runic Power",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 3,
+            "header": 2,
+			"consumes": {
+				"name": "Runic Empowerment"
+			},
+            "entries": [
+                "Immediately after you cast {@spell Rune Strike|WarcraftStreamlined}, you can expend one use of your Runic Empowerment to gain one of the following benefits based on the rune inscribed on your weapon.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"You regain a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt with your {@spell Rune Strike|WarcraftStreamlined}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"Frost covers your weapon and shatters on impact. The target of your {@spell Rune Strike|WarcraftStreamlined} and each enemy in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the target take {@damage 2d6} Cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"The target of your {@spell Rune Strike|WarcraftStreamlined} is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts {@dice 1d6} from the roll, and the curse ends."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Aura of Deathly Endurance",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You and your allies have {@variantrule Resistance|XPHB} to Cold, Necrotic, and Psychic damage while in your Aura of Protection."
+            ]
+        },
+        {
+            "name": "Runic Mastery",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "You can invoke the power of the rune inscribed on your weapon. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB}. The effect depends on the rune you have inscribed.",
+				{
+					"type": "entries",
+					"name": "Blood",
+					"entries": [
+						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Death Knight level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Death Knight level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost",
+					"entries": [
+						"When you take the {@action Attack|XPHB} action on your turn, you can replace one attack with an exhalation of frost magic in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in that area makes a Dexterity saving throw against your spell save DC. A creature takes {@damage 8d6} Cold damage on a failed save or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unholy",
+					"entries": [
+						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@creature Undead Spirit|XPHB} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Death Knight level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Death Knight level (round up)."
+					]
+				}
+            ]
+        },
+        {
+            "name": "Aspect of the Horsemen",
+            "source": "WarcraftRevised",
+            "className": "Death Knight Revised",
+            "classSource": "WarcraftRevised",
+            "subclassShortName": "Unholy",
+            "subclassSource": "WarcraftRevised",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				{
+					"type": "entries",
+					"name": "Generate Runic Power",
+					"entries": [
+						"You can restore a use of your Runic Mastery by expending a level 4 spell slot (no action required)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Runeforging",
+					"entries": [
+						"When you use your Runic Power and Runic Mastery features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon."
+					]
+				}
+            ]
         }
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Aura of Deathly Endurance",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Blood",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 7,
+			"activities": [
+				{
+					"name": "Grant Resistances",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "@scale.death-knight-revised.aura"
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfDeathlyEndurance"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfDeathlyEndurance",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Deathly Endurance",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Frost",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 7,
+			"activities": [
+				{
+					"name": "Grant Resistances",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "@scale.death-knight-revised.aura"
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfDeathlyEndurance"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfDeathlyEndurance",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Deathly Endurance",
+			"source": "WarcraftStreamlined",
+			"className": "Death Knight",
+			"classSource": "WarcraftStreamlined",
+			"subclassShortName": "Unholy",
+			"subclassSource": "WarcraftStreamlined",
+			"level": 7,
+			"activities": [
+				{
+					"name": "Grant Resistances",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "@scale.death-knight-revised.aura"
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfDeathlyEndurance"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfDeathlyEndurance",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Deathly Endurance",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"subclassShortName": "Blood",
+			"subclassSource": "WarcraftRevised",
+			"level": 7,
+			"activities": [
+				{
+					"name": "Grant Resistances",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "@scale.death-knight-revised.aura"
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfDeathlyEndurance"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfDeathlyEndurance",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Deathly Endurance",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"subclassShortName": "Frost",
+			"subclassSource": "WarcraftRevised",
+			"level": 7,
+			"activities": [
+				{
+					"name": "Grant Resistances",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "@scale.death-knight-revised.aura"
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfDeathlyEndurance"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfDeathlyEndurance",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Deathly Endurance",
+			"source": "WarcraftRevised",
+			"className": "Death Knight Revised",
+			"classSource": "WarcraftRevised",
+			"subclassShortName": "Unholy",
+			"subclassSource": "WarcraftRevised",
+			"level": 7,
+			"activities": [
+				{
+					"name": "Grant Resistances",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "ally"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "@scale.death-knight-revised.aura"
+					},
+					"effects": [
+						{
+							"foundryId": "auraOfDeathlyEndurance"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "auraOfDeathlyEndurance",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				}
+			]
+		}
 	],
 	"spell": [
 		{
@@ -4543,7 +7254,7 @@
 				"fromClassList": [
 					{
 						"name": "Death Knight",
-						"source": "WarcraftRevised"
+						"source": "WarcraftStreamlined"
 					}
 				]
 			},
@@ -4587,7 +7298,7 @@
 				"fromClassList": [
 					{
 						"name": "Death Knight",
-						"source": "WarcraftRevised"
+						"source": "WarcraftStreamlined"
 					}
 				]
 			},
@@ -4641,7 +7352,7 @@
 				"fromClassList": [
 					{
 						"name": "Death Knight",
-						"source": "WarcraftRevised"
+						"source": "WarcraftStreamlined"
 					}
 				]
 			},
@@ -4708,7 +7419,7 @@
 				"fromClassList": [
 					{
 						"name": "Death Knight",
-						"source": "WarcraftRevised"
+						"source": "WarcraftStreamlined"
 					}
 				]
 			},
@@ -4761,7 +7472,7 @@
 				"fromClassList": [
 					{
 						"name": "Death Knight",
-						"source": "WarcraftRevised"
+						"source": "WarcraftStreamlined"
 					}
 				]
 			}
@@ -5834,11 +8545,16 @@
 												"{@spell Flawed Resurrection|WarcraftExpanded}",
 												"{@spell Word of Terror|WarcraftExpanded}",
 												"{@spell Dead Fog|WarcraftExpanded}",
-												"{@spell Exhume|WarcraftExpanded}"
+												"{@spell Exhume|WarcraftExpanded}",
+												"{@spell Summon Undead|XPHB}"
 											]
 										}
 									]
-								}
+								},
+								"Javelins, Longsword, Shield, Holy Symbol, and Priest Pack were removed in favor of Greatsword, Arcane Focus, and Explorer's Pack.",
+								"The Runeforging feature has had the following text added:",
+								"In addition, you can use the inscribed weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)}.",
+								"This was added due to the removal of the Holy Symbol from starting equipment."
 							]
 						}
                     ]
