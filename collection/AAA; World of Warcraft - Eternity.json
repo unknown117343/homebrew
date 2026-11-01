@@ -8536,11 +8536,7 @@
 				"special": "10 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)"
 			},
 			"speed": {
-				"walk": 60,
-				"fly": {
-					"number": 60,
-					"condition": "(requires level 4+ spell)"
-				}
+				"walk": 60
 			},
 			"str": 18,
 			"dex": 12,
@@ -8863,6 +8859,19 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Deathcharger",
+			"source": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://hearthstone.wiki.gg/images/Deathcharger_full.jpg?83a90d=&format=original"
+					}
+				}
+			]
 		}
 	],
     "book": [
@@ -9013,7 +9022,7 @@
 								"The Runeforging feature has had the following text added:",
 								"In addition, you can use the inscribed weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)}.",
 								"This was added due to the removal of the Holy Symbol from starting equipment.",
-								"Lost the Find Steed spell. Gained the Summon Deathcharger spell instead. It is the same as Find Steed, but the Otherwordly Steed is now called a Deathcharger and lost both the Fey & Celestial options (but still gains the new undead option from this class). It also receieved a +1 AC & +5 initial HP bonus.",
+								"Lost the Find Steed spell. Gained the Summon Deathcharger spell instead. It is the same as Find Steed, but the Otherwordly Steed is now called a Deathcharger and lost both the Fey & Celestial options (but still gains the new undead option from this class). It also receieved a +1 AC & +5 initial HP bonus. The new Druid spell Innervate is intentionally accounted for to prevent early access to a flying mount.",
 								"Added a new spell: {@spell Summon Frostwyrm|warcraftrevised}"
 							]
 						}
