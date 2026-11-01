@@ -603,6 +603,7 @@
 		{
             "name": "Death Knight",
             "source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/DeathKnight.webp",
             "edition": "one",
             "primaryAbility": [
                 {
@@ -1080,6 +1081,7 @@
 		{
             "name": "Death Knight Revised",
             "source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/DeathKnight.webp",
             "edition": "one",
             "primaryAbility": [
                 {
@@ -1127,7 +1129,10 @@
 							"rune strike|warcraftstreamlined"
 						],
 						"5": [
-							"find steed|xphb"
+							"Summon Deathcharger|warcraftrevised"
+						],
+						"517": [
+							"Summon Frostwyrm|warcraftrevised"
 						]
 					}
 				}
@@ -1148,7 +1153,6 @@
 				"Dispel Magic|XPHB",
 				"Dueling Ground|AU",
 				"Elemental Weapon|XPHB",
-				"Find Steed|XPHB",
 				"Geas|XPHB",
 				"Locate Creature|XPHB",
 				"Locate Object|XPHB",
@@ -1192,7 +1196,9 @@
 				"Death Grip|WarcraftStreamlined",
 				"Chains of Ice|WarcraftStreamlined",
 				"Summon Undead|XPHB",
-				"Bonestorm|WarcraftStreamlined"
+				"Bonestorm|WarcraftStreamlined",
+				"Summon Deathcharger|warcraftrevised",
+				"Summon Frostwyrm|warcraftrevised"
             ],
 			"featProgression": [
 				{
@@ -1541,7 +1547,7 @@
                 },
                 "Ability Score Improvement|Death Knight|WarcraftRevised|4",
                 "Extra Attack|Paladin|XPHB|5",
-                "Faithful Steed|Death Knight|WarcraftRevised|5",
+                "Deathcharger|Death Knight|WarcraftRevised|5",
                 "Aura of Protection|Death Knight|WarcraftRevised|6",
                 {
                     "classFeature": "Specialization Feature|Death Knight|WarcraftRevised|7",
@@ -1889,6 +1895,7 @@
 		{
 			"name": "Death Coil",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/DeathCoil.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 1,
@@ -1943,7 +1950,7 @@
 							"type": "entries",
 							"name": "Spellcasting Focus",
 							"entries": [
-								"You can use a {@item Arcane Focus|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Death Knight spells."
+								"You can use an {@item Arcane Focus|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Death Knight spells."
 							]
 						}
 					]
@@ -1975,6 +1982,7 @@
 		{
 			"name": "Runic Smite",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/RuneStrike.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 2,
@@ -1985,6 +1993,7 @@
 		{
 			"name": "Runic Empowerment",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/RunicEmpowerment.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 3,
@@ -2037,32 +2046,21 @@
 			]
 		},
 		{
-			"name": "Faithful Steed",
+			"name": "Deathcharger",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Deathcharger.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 5,
 			"entries": [
-				"You can call on the aid of an otherworldly steed. You always have the {@spell Find Steed|XPHB} spell prepared.",
-				"You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
-				"When you cast {@spell Find Steed|XPHB}, the {@creature Otherworldly Steed|XPHB} can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this {@variantrule Bonus Action|XPHB}:",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
-							"entries": [
-								"The steed and its rider can move through other creatures and objects this turn as if they were {@variantrule Difficult Terrain|XPHB}. Both steed and rider take 5 ({@damage 1d10}) Force damage if they end their turn inside an object."
-							]
-						}
-					]
-				}
+				"You can call on the aid of an otherworldly steed. You always have the {@spell Summon Deathcharger|WarcraftRevised} spell prepared.",
+				"You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}."
 			]
 		},
 		{
 			"name": "Aura of Protection",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/AuraOfProtection.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 6,
@@ -2108,6 +2106,7 @@
 		{
 			"name": "Runic Strikes",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/RunicStrikes.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 11,
@@ -2128,6 +2127,7 @@
 		{
 			"name": "Improved Death Coil",
 			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/DeathCoil.webp",
 			"className": "Death Knight",
 			"classSource": "WarcraftRevised",
 			"level": 14,
@@ -3292,6 +3292,7 @@
             "name": "Blood",
             "shortName": "Blood",
             "source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Blood.webp",
             "edition": "one",
             "className": "Death Knight",
             "classSource": "WarcraftStreamlined",
@@ -3346,6 +3347,7 @@
             "name": "Frost",
             "shortName": "Frost",
             "source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Frost.webp",
             "edition": "one",
             "className": "Death Knight",
             "classSource": "WarcraftStreamlined",
@@ -3400,6 +3402,7 @@
             "name": "Unholy",
             "shortName": "Unholy",
             "source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Unholy.webp",
             "edition": "one",
             "className": "Death Knight",
             "classSource": "WarcraftStreamlined",
@@ -3454,6 +3457,7 @@
             "name": "Blood",
             "shortName": "Blood",
             "source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Blood.webp",
             "edition": "one",
             "className": "Death Knight Revised",
             "classSource": "WarcraftRevised",
@@ -3478,7 +3482,8 @@
                         ],
                         "17": [
                             "circle of power|XPHB",
-                            "bonestorm|WarcraftStreamlined"
+                            "bonestorm|WarcraftStreamlined",
+							"Summon Frostwyrm|warcraftrevised"
                         ]
                     }
                 }
@@ -3493,7 +3498,8 @@
                 "freedom of movement|XPHB",
                 "evard's black tentacles|XPHB",
                 "circle of power|XPHB",
-                "bonestorm|WarcraftStreamlined"
+                "bonestorm|WarcraftStreamlined",
+				"Summon Frostwyrm|warcraftrevised"
             ],
             "subclassFeatures": [
                 "Blood|Death Knight Revised|WarcraftRevised|Blood|WarcraftRevised|3",
@@ -3508,6 +3514,7 @@
             "name": "Frost",
             "shortName": "Frost",
             "source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Frost.webp",
             "edition": "one",
             "className": "Death Knight Revised",
             "classSource": "WarcraftRevised",
@@ -3532,7 +3539,8 @@
                         ],
                         "17": [
                             "circle of power|XPHB",
-                            "cone of cold|XPHB"
+                            "cone of cold|XPHB",
+							"Summon Frostwyrm|warcraftrevised"
                         ]
                     }
                 }
@@ -3547,7 +3555,8 @@
                 "freedom of movement|XPHB",
                 "ice storm|XPHB",
                 "circle of power|XPHB",
-                "cone of cold|XPHB"
+                "cone of cold|XPHB",
+				"Summon Frostwyrm|warcraftrevised"
             ],
             "subclassFeatures": [
                 "Frost|Death Knight Revised|WarcraftRevised|Frost|WarcraftRevised|3",
@@ -3562,6 +3571,7 @@
             "name": "Unholy",
             "shortName": "Unholy",
             "source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Unholy.webp",
             "edition": "one",
             "className": "Death Knight Revised",
             "classSource": "WarcraftRevised",
@@ -3586,7 +3596,8 @@
                         ],
                         "17": [
                             "circle of power|XPHB",
-                            "contagion|XPHB"
+                            "contagion|XPHB",
+							"Summon Frostwyrm|warcraftrevised"
                         ]
                     }
                 }
@@ -3601,7 +3612,8 @@
                 "freedom of movement|XPHB",
                 "blight|XPHB",
                 "circle of power|XPHB",
-                "contagion|XPHB"
+                "contagion|XPHB",
+				"Summon Frostwyrm|warcraftrevised"
             ],
             "subclassFeatures": [
                 "Unholy|Death Knight Revised|WarcraftRevised|Unholy|WarcraftRevised|3",
@@ -5044,7 +5056,7 @@
                         ],
                         [
                             "17th",
-                            "{@spell Circle of Power|XPHB}, {@spell Bonestorm|WarcraftStreamlined}"
+                            "{@spell Circle of Power|XPHB}, {@spell Bonestorm|WarcraftStreamlined}, {@spell Summon Frostwyrm|warcraftrevised}"
                         ]
                     ]
                 }
@@ -5262,7 +5274,7 @@
                         ],
                         [
                             "17th",
-                            "{@spell Circle of Power|XPHB}, {@spell Cone of Cold|XPHB}"
+                            "{@spell Circle of Power|XPHB}, {@spell Cone of Cold|XPHB}, {@spell Summon Frostwyrm|warcraftrevised}"
                         ]
                     ]
                 }
@@ -5480,7 +5492,7 @@
                         ],
                         [
                             "17th",
-                            "{@spell Circle of Power|XPHB}, {@spell Contagion|XPHB}"
+                            "{@spell Circle of Power|XPHB}, {@spell Contagion|XPHB}, {@spell Summon Frostwyrm|warcraftrevised}"
                         ]
                     ]
                 }
@@ -5966,6 +5978,66 @@
 		}
 	],
 	"spell": [
+		{
+			"name": "Summon Deathcharger",
+			"source": "WarcraftRevised",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Deathcharger.webp",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the {@creature Deathcharger|WarcraftRevised} stat block. If you already have a steed from this spell, the steed is replaced by the new one.",
+				"The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type—Fiend or Undead—which determines certain traits in the stat block.",
+				{
+					"type": "entries",
+					"name": "Combat",
+					"entries": [
+						"The steed is an ally to you and your allies. In combat, it shares your {@variantrule Initiative|XPHB} count, and it functions as a controlled mount while you ride it (as defined in the rules on {@book mounted combat|XPHB|1|Mounted Combat}). If you have the {@condition Incapacitated|XPHB} condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Disappearance of the Steed",
+					"entries": [
+						"The steed disappears if it drops to 0 {@variantrule Hit Points|XPHB} or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"Use the spell slot's level for the spell's level in the stat block."
+					]
+				}
+			],
+			"miscTags": [
+				"PRM",
+				"SMN"
+			]
+		},
 		{
 			"name": "Consume Soul",
 			"source": "WarcraftStreamlined",
@@ -6699,6 +6771,7 @@
 		{
 			"name": "Rune Strike",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/RuneStrike.webp",
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -6749,6 +6822,7 @@
 		{
 			"name": "Bonestorm",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Bonestorm.webp",
 			"level": 5,
 			"school": "A",
 			"time": [
@@ -6795,6 +6869,7 @@
 		{
 			"name": "Remorseless Winter",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/RemorselessWinter.webp",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -6847,6 +6922,7 @@
 		{
 			"name": "Leeching Strike",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/LeechingStrike.webp",
 			"level": 3,
 			"school": "N",
 			"time": [
@@ -6900,6 +6976,7 @@
 		{
 			"name": "Frostscythe",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/Frostscythe.webp",
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -6952,6 +7029,7 @@
 		{
 			"name": "Death and Decay",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/DeathAndDecay.webp",
 			"level": 2,
 			"school": "N",
 			"time": [
@@ -6999,6 +7077,7 @@
 		{
 			"name": "Vampiric Blood",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/VampiricBlood.webp",
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -7053,6 +7132,7 @@
 		{
 			"name": "Scourge Strike",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/ScourgeStrike.webp",
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -7113,6 +7193,7 @@
 		{
 			"name": "Death Grip",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/DeathGrip.webp",
 			"level": 1,
 			"school": "A",
 			"time": [
@@ -7158,6 +7239,7 @@
 		{
 			"name": "Chains of Ice",
 			"source": "WarcraftStreamlined",
+			"foundryImg": "https://raw.githubusercontent.com/unknown117343/homebrew-img/refs/heads/fixy/img/WarcraftRevised/Icons/Class/Death%20Knight/ChainsOfIce.webp",
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -7476,6 +7558,76 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Summon Frostwyrm",
+			"source": "WarcraftRevised",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an object with the image of a frostwyrm engraved on it worth 500+ GP",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call forth a Frostwyrm spirit. It manifests in an unoccupied space that you can see within range and uses the {@creature Frostwyrm Spirit|WarcraftRevised} stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"Use the spell slot's level for the spell's level in the stat block."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"spellFluff": [
+		{
+			"name": "Summon Frostwyrm",
+			"source": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://warcraft.wiki.gg/images/thumb/D%26D_World_of_Warcraft_-_Frost_wyrm.png/1920px-D%26D_World_of_Warcraft_-_Frost_wyrm.png?206246"
+					}
+				}
+			]
 		}
 	],
 	"monster": [
@@ -8355,6 +8507,299 @@
 			"savingThrowForced": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Deathcharger",
+			"source": "WarcraftRevised",
+			"summonedBySpell": "Summon Deathcharger|WarcraftRevised",
+			"summonedBySpellLevel": 2,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"fiend",
+						"undead"
+					]
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "11 + 1 per spell level"
+				}
+			],
+			"hp": {
+				"special": "10 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(requires level 4+ spell)"
+				}
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"languages": [
+				"telepathy 1 mile (works only with you)"
+			],
+			"pbNote": "equals your Proficiency Bonus",
+			"trait": [
+				{
+					"name": "Life Bond",
+					"entries": [
+						"When you regain {@variantrule Hit Points|XPHB} from a level 1+ spell, the steed regains the same number of {@variantrule Hit Points|XPHB} if you're within 5 feet of it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Otherworldly Slam",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} of Necrotic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+					"entries": [
+						"{@actSave wis} DC equals your spell save DC, one creature within 60 feet the steed can see. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of your next turn."
+					]
+				},
+				{
+					"name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
+					"entries": [
+						"The steed and its rider can move through other creatures and objects this turn as if they were {@variantrule Difficult Terrain|XPHB}. Both steed and rider take 5 ({@damage 1d10}) Force damage if they end their turn inside an object."
+					]
+				}
+			],
+			"languageTags": [
+				"TP"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"damageTags": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"foundryTokenScale": 1.1,
+			"_versions": [
+				{
+					"name": "Deathcharger (Undead)",
+					"source": "WarcraftExpanded",
+					"_mod": {
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Fell Glare (Fiend Only; Recharges after a Long Rest)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
+									"with": "Ghostly Stride (Recharges After a Long Rest)"
+								}
+							}
+						]
+					},
+					"type": "undead"
+				},
+				{
+					"name": "Deathcharger (Fiend)",
+					"source": "WarcraftExpanded",
+					"_mod": {
+						"bonus": [
+							{
+								"mode": "removeArr",
+								"names": [
+									"Ghostly Stride (Undead Only; Recharges After a Long Rest)"
+								]
+							},
+							{
+								"mode": "renameArr",
+								"renames": {
+									"rename": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+									"with": "Fell Glare (Recharges after a Long Rest)"
+								}
+							}
+						]
+					},
+					"type": "fiend"
+				}
+			]
+		},
+		{
+			"name": "Frostwyrm Spirit",
+			"source": "WarcraftRevised",
+			"summonedBySpell": "Summon Frostwyrm|WarcraftRevised",
+			"summonedBySpellLevel": 5,
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"special": "60"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"swim": 30
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 17,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"senses": [
+				"Blindsight 30 ft.",
+				"Darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Draconic",
+				"understands the languages you know"
+			],
+			"pbNote": "equals your Proficiency Bonus",
+			"trait": [
+				{
+					"name": "Shared Resistances",
+					"entries": [
+						"When you summon the spirit, choose one of its Resistances. You have {@variantrule Resistance|XPHB} to the chosen damage type until the spell ends."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spirit makes two Rend attacks, and it uses Breath Weapon."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atk m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 10 feet. {@h}{@damage 1d6 + 9} Piercing damage."
+					]
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"{@actSave dex} DC equals your spell save DC, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} {@damage 2d6} damage of a type this spirit has {@variantrule Resistance|XPHB} to (your choice when you cast the spell). {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"_abstract": {
+						"name": "Draconic Spirit ({{resist}})",
+						"source": "XPHB",
+						"_mod": {
+							"trait": [
+								{
+									"mode": "replaceArr",
+									"replace": "Shared Resistances",
+									"items": {
+										"name": "Shared Resistances",
+										"entries": [
+											"You have {@variantrule Resistance|XPHB} to {{resist}} damage until the spell ends."
+										]
+									}
+								}
+							],
+							"action": [
+								{
+									"mode": "replaceArr",
+									"replace": "Breath Weapon",
+									"items": {
+										"name": "Breath Weapon",
+										"entries": [
+											"{@actSave dex} DC equals your spell save DC, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} {@damage 2d6} {{resist}} damage. {@actSaveSuccess} Half damage."
+										]
+									}
+								}
+							]
+						}
+					},
+					"_implementations": [
+						{
+							"_variables": {
+								"resist": "Acid"
+							}
+						},
+						{
+							"_variables": {
+								"resist": "Cold"
+							}
+						},
+						{
+							"_variables": {
+								"resist": "Fire"
+							}
+						},
+						{
+							"_variables": {
+								"resist": "Lightning"
+							}
+						},
+						{
+							"_variables": {
+								"resist": "Poison"
+							}
+						}
+					]
+				}
+			]
 		}
 	],
 	"monsterFluff": [
@@ -8403,6 +8848,19 @@
 					"credit": "{@link Cher-Ro|https://www.deviantart.com/cher-ro}",
 					"width": 2550,
 					"height": 1704
+				}
+			]
+		},
+		{
+			"name": "Frostwyrm Spirit",
+			"source": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://warcraft.wiki.gg/images/thumb/D%26D_World_of_Warcraft_-_Frost_wyrm.png/1920px-D%26D_World_of_Warcraft_-_Frost_wyrm.png?206246"
+					}
 				}
 			]
 		}
@@ -8554,7 +9012,9 @@
 								"Javelins, Longsword, Shield, Holy Symbol, and Priest Pack were removed in favor of Greatsword, Arcane Focus, and Explorer's Pack.",
 								"The Runeforging feature has had the following text added:",
 								"In addition, you can use the inscribed weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Death Knight spell list|spells|class=Death Knight Revised (wow:r)}.",
-								"This was added due to the removal of the Holy Symbol from starting equipment."
+								"This was added due to the removal of the Holy Symbol from starting equipment.",
+								"Lost the Find Steed spell. Gained the Summon Deathcharger spell instead. It is the same as Find Steed, but the Otherwordly Steed is now called a Deathcharger and lost both the Fey & Celestial options (but still gains the new undead option from this class). It also receieved a +1 AC & +5 initial HP bonus.",
+								"Added a new spell: {@spell Summon Frostwyrm|warcraftrevised}"
 							]
 						}
                     ]
