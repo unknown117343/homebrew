@@ -6036,7 +6036,8 @@
 			"miscTags": [
 				"PRM",
 				"SMN"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Consume Soul",
@@ -7616,6 +7617,19 @@
 		}
 	],
 	"spellFluff": [
+		{
+			"name": "Summon Deathcharger",
+			"source": "WarcraftRevised",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://hearthstone.wiki.gg/images/Deathcharger_full.jpg?83a90d=&format=original"
+					}
+				}
+			]
+		},
 		{
 			"name": "Summon Frostwyrm",
 			"source": "WarcraftRevised",
